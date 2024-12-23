@@ -1,10 +1,7 @@
-<Blok Name="1">
- <Line Width="0.5">
-  <Pt X="20" Y="5"></Pt>
-  <Pt X="20" Y="-5" H="1"></Pt>
-  <Pt X="-5" Y="-5" H="1" W="1"></Pt>
-  <Pt X="-5" Y="5" W="1"></Pt>
-  <Pt X="20" Y="5"></Pt>
+<Blok Name='1'>
+ <Line Width='0.5'>
+  <Pt X='20' Y='5'></Pt>
+  <Pt X='20' Y='-5' H='1'></Pt>
  </Line>
- <Text Size="2.5" Aligned="1" X="-25" Y="2.5" W="1" AlY="1" PList="1"></Text>
+ <Text Size='2.5' Aligned='1' X='-25' Y='2.5' W='1' AlY='1' PList='1'></Text>
 </Blok>
