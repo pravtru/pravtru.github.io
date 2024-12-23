@@ -1,4 +1,4 @@
-<Blok Name="Рамка">
+<Blok Name="1">
  <Line Width="0.5">
   <Pt X="20" Y="5"></Pt>
   <Pt X="20" Y="-5" H="1"></Pt>
