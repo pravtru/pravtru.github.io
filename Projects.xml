@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<projects>
+	<project id="0">
+		<name>Приточная вентиляция</name>
+		<description>Проект приточной вентиляции. Это описание. HTML внутри.</description>
+		<var id="fans_amount" name="Количество вентиляторов" type="i" default="1" min="1" max="3" />
+		<var id="water_heater" name="Водяной калорифер" type="b" default="true" />
+		<var id="project_name" name="Здание" type="s" default="Дом Колотушкина по ул. Пушкина" />
+	</project>
+</projects>
