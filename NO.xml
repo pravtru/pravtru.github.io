@@ -1,0 +1,12 @@
+<Blok Name="NO">
+
+<svg viewBox="-10 -10 30 20" xmlns="http://www.w3.org/2000/svg">
+    <text id="1" font-family="'!GOST_A'" font-size="5.11" x="7.5" y="-4" stroke-width="0" text-anchor="middle">K1</text>
+    <line x1="1" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+    <line x1="5" y1="0" x2="10" y2="-3.5" stroke="#000000" stroke-width="0.2"/>
+    <line x1="10" y1="0" x2="14" y2="0" stroke="#000000" stroke-width="0.2"/>
+    <Blok Name="XT1" x="0" y="0"><Pr bid="1" id="2">13</Pr></Blok>
+    <Blok Name="XT1" x="15" y="0"><Pr bid="1" id="3">14</Pr></Blok>
+</svg>
+
+</Blok>
