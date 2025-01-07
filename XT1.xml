@@ -1,8 +1,10 @@
 <Blok Name="XT1">
 
 <svg viewBox="-10 -10 20 20" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="0" cy="0" r="1" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
-    <text id="1" font-family="'!GOST_A'" font-size="3.65" x="0" y="4" stroke-width="0" text-anchor="middle">1</text>
+ <g id="1" transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="0" r="1" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-family="'!GOST_A'" font-size="3.65" x="0" y="4" stroke-width="0" text-anchor="middle">1</text>
+ </g>
 </svg>
 
 </Blok>
