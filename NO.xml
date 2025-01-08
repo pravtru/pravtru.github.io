@@ -6,8 +6,8 @@
   <line x1="1" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
   <line x1="4" y1="0" x2="10" y2="-3.5" stroke="#000000" stroke-width="0.2"/>
   <line x1="10" y1="0" x2="14" y2="0" stroke="#000000" stroke-width="0.2"/>
-  <Blok Name="XT1" x="0" y="0"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">13</Pr></Blok>
-  <Blok Name="XT1" x="15" y="0"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">14</Pr></Blok>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">13</Pr></Blok>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">14</Pr></Blok>
  </g>
 </svg>
 
