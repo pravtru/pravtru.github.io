@@ -2,7 +2,7 @@
 
 <svg viewBox="-10 -10 30 20" xmlns="http://www.w3.org/2000/svg">
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
-  <text id="2" font-size="5.11" x="7.5" y="-4" stroke-width="0" text-anchor="middle">K1</text>
+  <text id="2" font-size="5.11" x="7.5" y="-4" stroke-width="0" text-anchor="middle" class="text">K1</text>
   <line x1="1" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
   <line x1="4" y1="0" x2="10" y2="-3.5" stroke="#000000" stroke-width="0.2"/>
   <line x1="10" y1="0" x2="14" y2="0" stroke="#000000" stroke-width="0.2"/>

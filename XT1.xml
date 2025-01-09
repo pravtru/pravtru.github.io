@@ -3,7 +3,7 @@
 <svg viewBox="-10 -10 20 20" xmlns="http://www.w3.org/2000/svg">
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
   <circle cx="0" cy="0" r="1" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
-  <text id="2" font-size="3.65" x="0" y="4" stroke-width="0" text-anchor="middle">1</text>
+  <text id="2" font-size="3.65" x="0" y="4" stroke-width="0" text-anchor="middle" class="text">1</text>
  </g>
 </svg>
 
