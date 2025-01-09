@@ -1,6 +1,7 @@
 <Blok Name="2NO">
 
 <svg viewBox="-10 -10 30 40" xmlns="http://www.w3.org/2000/svg">
+ <Blok Name="Font"></Blok>
  <g transform="translate(0 0) rotate(0 0 0)">
   <Blok Name="NO"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2">K1</Pr><Pr bid="3">1</Pr><Pr bid="4">2</Pr></Blok>
   <Blok Name="NO"><Pr bid="1" transform="translate(0 20) rotate(0 0 0)"></Pr><Pr bid="2">K2</Pr><Pr bid="3">3</Pr><Pr bid="4">4</Pr></Blok>
