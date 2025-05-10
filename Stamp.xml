@@ -1,5 +1,5 @@
 <blok name="stamp">
-    <svg version="1.1" width="185mm" height="55mm" viewBox="0 0 185 55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none">
+    <svg viewBox="0 0 185 55" xmlns="http://www.w3.org/2000/svg" fill="none">
         <!--
             main - контейнер
             cpher - шифр
