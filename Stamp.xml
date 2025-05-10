@@ -1,19 +1,5 @@
 <blok name="stamp">
     <svg viewBox="0 0 185 55" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <!--
-            main - контейнер
-            cpher - шифр
-            developer - разработчик
-            customer - заказчик
-            page - лист
-            pages - листов
-            building - здание
-            stage - стадия
-            person-#-job - должность
-            person-#-name - имя
-            person-#-date - дата
-                # - цифра от 0 до 5
-         -->
         <g id="main" transform="translate(0, 0)">
 	        <polyline fill="none" stroke="#000000" stroke-width="0.4" points="0,55 0,0 185,0"/>
 	        <polyline points="0,0 185,0" stroke-width="0.8" stroke="black" fill="none" />
