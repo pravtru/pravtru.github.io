@@ -1,8 +1,8 @@
 <blok name="2 pages">
     <svg viewBox="0 0 210 297" width="210" height="297" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <blok name="border A4"></blok>
+        <blok name="A4 with stamp"></blok>
     </svg>
     <svg viewBox="0 0 210 297" width="210" height="297" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <blok name="border A4"></blok>
+        <blok name="A4 with stamp"></blok>
     </svg>
 </blok>
