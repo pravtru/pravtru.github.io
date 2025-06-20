@@ -60,7 +60,7 @@
 	        <text id="page" fill="#000000" text-anchor="middle" x="157.5" y="37.5" class="text" font-family="gost" font-size="7"></text>
 	        <text id="pages" fill="#000000" text-anchor="middle" x="175" y="37.5" class="text" font-family="gost" font-size="7"></text>
 	        <text id="developer" fill="#000000" text-anchor="middle" x="157.5" y="50" class="text" font-family="gost" font-size="7"></text>
-	        <text id="building" fill="#000000" text-anchor="middle" x="125" y="20" class="text" font-family="gost" 5" class="text"font-size="7"></text>
+	        <text id="building" fill="#000000" text-anchor="middle" x="125" y="20" class="text" font-family="gost" font-size="7"></text>
         </g>
     </svg>
 </blok>
