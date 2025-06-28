@@ -1,10 +1,11 @@
 <Blok name="Термометр сопротивления горизонтальный">
   <svg version="1.1" width="420mm" height="297mm" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
+    <Blok name="Font"></Blok>
     <g id="main" transform="translate(0,0)">
       <rect x="0" y="0" width="10" height="4"/>
       <polyline points="-3,-2 0,-2 10,6"/>
-      <text x="-1.5" y="-3" text-anchor="middle" class="text" font-size="3.5">°C</text>
-      <text id="position" x="5" y="-2" text-anchor="middle" class="text" font-size="5">2a</text>
+      <text x="-1.5" y="-3" text-anchor="middle" class="text" font-family="gost" font-size="3.5">°C</text>
+      <text id="position" x="5" y="-2" text-anchor="middle" class="text" font-family="gost" font-size="5">2a</text>
     </g>
   </svg>
 </Blok>
