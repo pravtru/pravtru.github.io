@@ -1,5 +1,6 @@
 <blok name="corner specification 6 rows">
     <svg viewBox="0 0 185 40" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <Blok name="Font"></Blok>
         <g id="main" transform="translate(0, 0)" fill="none" stroke="black" stroke-width="0.2">
                     <rect x="0" y="0" width="185" height="40" />
 
@@ -9,42 +10,42 @@
                     <line x1="185" y1="0" x2="185" y2="40" />
 
 
-                    <text x="10" y="6" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01">Обозначение</text>
-                    <text x="87.5" y="6" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01">Наименование</text>
-                    <text x="160" y="6" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01">Кол-во</text>
-                    <text x="175" y="6" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01">Примечание</text>
+                    <text x="10" y="6" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01">Обозначение</text>
+                    <text x="87.5" y="6" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01">Наименование</text>
+                    <text x="160" y="6" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01">Кол-во</text>
+                    <text x="175" y="6" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01">Примечание</text>
 
-                    <text id="header 1" x="87.5" y="13.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="header 1" x="87.5" y="13.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
                     
-                    <text id="header 2" x="87.5" y="18.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
-                    <text id="21" x="10" y="19" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="22" x="22" y="19" fill="black" text-anchor="start" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="23" x="160" y="19" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="24" x="175" y="19" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="header 2" x="87.5" y="18.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="21" x="10" y="19" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="22" x="22" y="19" fill="black" text-anchor="start" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="23" x="160" y="19" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="24" x="175" y="19" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
 
-                    <text id="header 3" x="87.5" y="23.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
-                    <text id="31" x="10" y="24" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="32" x="22" y="24" fill="black" text-anchor="start" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="33" x="160" y="24" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="34" x="175" y="24" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="header 3" x="87.5" y="23.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="31" x="10" y="24" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="32" x="22" y="24" fill="black" text-anchor="start" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="33" x="160" y="24" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="34" x="175" y="24" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
 
-                    <text id="header 4" x="87.5" y="28.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
-                    <text id="41" x="10" y="29" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="42" x="22" y="29" fill="black" text-anchor="start" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="43" x="160" y="29" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="44" x="175" y="29" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="header 4" x="87.5" y="28.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="41" x="10" y="29" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="42" x="22" y="29" fill="black" text-anchor="start" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="43" x="160" y="29" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="44" x="175" y="29" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
 
-                    <text id="header 5" x="87.5" y="33.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
-                    <text id="51" x="10" y="34" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="52" x="22" y="34" fill="black" text-anchor="start" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="53" x="160" y="34" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="54" x="175" y="34" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="header 5" x="87.5" y="33.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="51" x="10" y="34" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="52" x="22" y="34" fill="black" text-anchor="start" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="53" x="160" y="34" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="54" x="175" y="34" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
 
-                    <text id="header 6" x="87.5" y="38.5" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
-                    <text id="61" x="10" y="39" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="62" x="22" y="39" fill="black" text-anchor="start" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="63" x="160" y="39" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
-                    <text id="64" x="175" y="39" fill="black" text-anchor="middle" class="text" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="header 6" x="87.5" y="38.5" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01" text-decoration="underline"></text>
+                    <text id="61" x="10" y="39" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="62" x="22" y="39" fill="black" text-anchor="start" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="63" x="160" y="39" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
+                    <text id="64" x="175" y="39" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01"></text>
 
 
                     <line x1="0" y1="10" x2="185" y2="10" />
