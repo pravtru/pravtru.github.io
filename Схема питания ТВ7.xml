@@ -1,0 +1,181 @@
+<blok name="Схема питания ТВ7">
+  <svg version="1.1" width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4"
+       stroke="black">
+      <Blok name="Font"></Blok>
+      <Blok name="A4 with stamp"></Blok>
+  
+      <g fill="none" stroke="black" stroke-width="0.2" transform="translate(0, 30)">
+  
+          <text x="87.5" y="9" class="text" font-size="3.5" text-anchor="middle">800</text>
+          <polyline points="82.5,20 82.5,10 192.5,10 192.5,65" stroke-width="0.2" />
+          <text x="95" y="14" class="text" font-size="3.5" text-anchor="middle">N</text>
+          <polyline points="90,20 90,15 187.5,15 187.5,65" stroke-width="0.2" />
+  
+      <g transform="translate(77.5,20)" stroke-width="0.2">
+              <Blok name="Power supply"><Pr bid="position">G4</Pr></Blok>
+              
+              <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
+              <circle fill="black" cx="5" cy="-30" r="0.5" />
+              <line x1="12.5" x2="12.5" y1="0" y2="-25" stroke-width="0.2" />
+              <circle fill="black" cx="12.5" cy="-25" r="0.5" />
+  
+              <line x1="5" x2="5" y1="15" y2="25" stroke-width="0.2" />
+              <line x1="12.5" x2="12.5" y1="15" y2="25" stroke-width="0.2" />
+              <text x="4" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,4,20)">801</text>
+              <text x="11.5" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,11.5,20)">802</text>
+      </g>        
+  
+  
+      <g transform="translate(82.5,35)" stroke-width="0.2">
+              <text x="-12.5" y="10" class="text" font-size="5" text-anchor="middle">QF1</text>
+              <line x1="-16" x2="-8" y1="11" y2="11" />
+              <text x="-12.5" y="15" class="text" font-size="5" text-anchor="middle">2A</text>
+  
+              <text x="-1" y="5" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,-1,5)">L1</text>
+              <line x1="0" x2="0" y1="0" y2="10" />
+              <circle fill="white" cx="0" cy="7.5" r="0.5" />
+              <g transform="rotate(25,0,10)">
+                  <line x1="0" x2="0" y1="10" y2="17.5" />
+                  <rect x="-1.5" y="12" width="1.5" height="3" />
+              </g>
+              <line x1="0" x2="0" y1="17.5" y2="30" />
+              <circle fill="white" cx="0" cy="20" r="0.5" />
+              <text x="-1" y="25" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,-1,25)">L</text>
+              <text x="6.5" y="25" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,6.5,25)">N</text>
+  
+              <line x1="7.5" x2="7.5" y1="0" y2="30" />
+          </g>
+  
+  
+          <g transform="translate(100,40)" stroke-width="0.2">
+                  <Blok name="Power supply"><Pr bid="position">G1</Pr></Blok>
+                  
+                  <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
+                  <circle fill="black" cx="5" cy="-30" r="0.5" />
+                  <line x1="12.5" x2="12.5" y1="0" y2="-25" stroke-width="0.2" />
+                  <circle fill="black" cx="12.5" cy="-25" r="0.5" />
+  
+                  <line x1="5" x2="5" y1="15" y2="25" stroke-width="0.2" />
+                  <line x1="12.5" x2="12.5" y1="15" y2="25" stroke-width="0.2" />
+                  <text x="4" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,4,20)">801</text>
+                  <text x="11.5" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,11.5,20)">802</text>
+          </g>   
+          
+          <g transform="translate(122.5,40)" stroke-width="0.2">
+                  <Blok name="Power supply"><Pr bid="position">G2</Pr></Blok>
+                  
+                  <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
+                  <circle fill="black" cx="5" cy="-30" r="0.5" />
+                  <line x1="12.5" x2="12.5" y1="0" y2="-25" stroke-width="0.2" />
+                  <circle fill="black" cx="12.5" cy="-25" r="0.5" />
+  
+                  <line x1="5" x2="5" y1="15" y2="25" stroke-width="0.2" />
+                  <line x1="12.5" x2="12.5" y1="15" y2="25" stroke-width="0.2" />
+                  <text x="4" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,4,20)">803</text>
+                  <text x="11.5" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,11.5,20)">804</text>4
+          </g>   
+  
+          <g transform="translate(145,40)">
+              <Blok name="Power supply"><Pr bid="position">G3</Pr></Blok>
+  
+              <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
+              <circle fill="black" cx="5" cy="-30" r="0.5" />
+              <line x1="12.5" x2="12.5" y1="0" y2="-25" stroke-width="0.2" />
+              <circle fill="black" cx="12.5" cy="-25" r="0.5" />
+  
+              <line x1="5" x2="5" y1="15" y2="25" stroke-width="0.2" />
+              <line x1="12.5" x2="12.5" y1="15" y2="25" stroke-width="0.2" />
+              <text x="4" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,4,20)">805</text>
+              <text x="11.5" y="20" class="text" font-size="3.5" text-anchor="middle" transform="rotate(-90,11.5,20)">806</text>
+          </g>
+  
+          <g transform="translate(28,65)" stroke-width="0.2">
+              <rect x="0" y="0" width="170" height="40" />
+  
+              <line x1="12" x2="12" y1="0" y2="40" />
+              <line x1="48" x2="48" y1="0" y2="40" />
+              <line x1="68" x2="68" y1="0" y2="40" />
+              <line x1="92" x2="92" y1="0" y2="40" />
+              <line x1="114" x2="114" y1="0" y2="40" />
+              <line x1="136" x2="136" y1="0" y2="40" />
+  
+              <line x1="12" x2="48" y1="10" y2="10" />
+              <line x1="12" x2="170" y1="20" y2="20" />
+              <line x1="12" x2="170" y1="30" y2="30" />
+              <line x1="68" x2="170" y1="10" y2="10" />
+  
+              <text x="5" y="20" text-anchor="middle" class="text" transform="rotate(-90,5,20)" font-size="5">Характеристики</text>
+              <text x="9" y="20" text-anchor="middle" class="text" transform="rotate(-90,9,20)" font-size="5">электроприемника</text>
+              <text x="30" y="7" text-anchor="middle" class="text" font-size="5">Позиция</text>
+              <text x="30" y="17" text-anchor="middle" class="text" font-size="5">Тип</text>
+              <text x="30" y="27" text-anchor="middle" class="text" font-size="5">Напряжение, В</text>
+              <text x="30" y="37" text-anchor="middle" class="text" font-size="5">Мощность, Вт</text>
+  
+              <text x="58" y="9" text-anchor="middle" class="text" font-size="5">Ввод</text>
+              <text x="58" y="14" text-anchor="middle" class="text" font-size="5">питания</text>
+              <text x="58" y="27" text-anchor="middle" class="text" font-size="5">~220</text>
+              <text x="58" y="37" text-anchor="middle" class="text" font-size="5">317</text>
+  
+              <text x="80" y="7" text-anchor="middle" class="text" font-size="5">4</text>
+              <text x="80" y="14.5" text-anchor="middle" class="text" font-size="5">Тепло-</text>
+              <text x="80" y="18.5" text-anchor="middle" class="text" font-size="5">вычислитель</text>
+              <text x="80" y="27" text-anchor="middle" class="text" font-size="5">~220</text>
+              <text x="80" y="37" text-anchor="middle" class="text" font-size="5">200</text>
+  
+              <text x="103" y="7" text-anchor="middle" class="text" font-size="5">1а, 1б</text>
+              <text x="103" y="14.5" text-anchor="middle" class="text" font-size="5">Датчики</text>
+              <text x="103" y="18.5" text-anchor="middle" class="text" font-size="5">расхода</text>
+              <text x="103" y="27" text-anchor="middle" class="text" font-size="5">=12</text>
+              <text x="103" y="37" text-anchor="middle" class="text" font-size="5">15</text>
+  
+              <text x="125" y="7" text-anchor="middle" class="text" font-size="5">3а, 3б</text>
+              <text x="125" y="14.5" text-anchor="middle" class="text" font-size="5">Датчики</text>
+              <text x="125" y="18.5" text-anchor="middle" class="text" font-size="5">давления</text>
+              <text x="125" y="27" text-anchor="middle" class="text" font-size="5">=12</text>
+              <text x="125" y="37" text-anchor="middle" class="text" font-size="5">2</text>
+  
+              <text x="153" y="7" text-anchor="middle" class="text" font-size="5">XS1, 5</text>
+              <text x="153" y="17" text-anchor="middle" class="text" font-size="5">Модем</text>
+              <text x="153" y="27" text-anchor="middle" class="text" font-size="5">~220</text>
+              <text x="153" y="37" text-anchor="middle" class="text" font-size="5">100</text>
+  
+          </g>
+  
+          <g transform="translate(20, 130)" fill="none" stroke="#000000" stroke-width="0.2">
+              <Blok name="corner spec 6">
+                  <Pr bid="header 1">Щит УУТЭ</Pr>
+  
+                  <Pr bid="21">QF1</Pr>
+                  <Pr bid="22">Выключатель автоматический FAZ-C2/1</Pr>
+                  <Pr bid="23">1</Pr>
+  
+                  <Pr bid="31">XS1</Pr>
+                  <Pr bid="32">Розетка на din-рейку</Pr>
+                  <Pr bid="33">1</Pr>
+  
+                  <Pr bid="41">G1...3</Pr>
+                  <Pr bid="42">Блок питания</Pr>
+                  <Pr bid="43">3</Pr>
+  
+                  <Pr bid="51">5</Pr>
+                  <Pr bid="52">Модем АТМ21А с блоком питания</Pr>
+                  <Pr bid="53">1</Pr>
+  
+                  <Pr bid="51">G4</Pr>
+                  <Pr bid="52">ИБП Ippon Black Power Pro 800</Pr>
+                  <Pr bid="53">1</Pr>
+              </Blok>
+  
+              <text x="175" y="27.25" fill="#000000" text-anchor="middle" class="text" font-size="2.5" stroke-width="0.01">В комплекте</text>
+              <text x="175" y="29.25" fill="#000000" text-anchor="middle" class="text" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+          </g>
+  
+      </g>
+  
+      <text x="177.5" y="274.5" fill="#000000" text-anchor="middle" class="text" font-size="7">1</text>
+      <text x="195" y="274.5" fill="#000000" text-anchor="middle" class="text" font-size="7">2</text>
+      <text x="120" y="286" fill="#000000" text-anchor="middle" class="text" font-size="7">Схема питания</text>
+
+  </svg>        
+</blok>
