@@ -136,9 +136,9 @@
                   <Pr bid="52">Модем АТМ21А с блоком питания</Pr>
                   <Pr bid="53">1</Pr>
   
-                  <Pr bid="51">G4</Pr>
-                  <Pr bid="52">ИБП Ippon Black Power Pro 800</Pr>
-                  <Pr bid="53">1</Pr>
+                  <Pr bid="61">G4</Pr>
+                  <Pr bid="62">ИБП Ippon Black Power Pro 800</Pr>
+                  <Pr bid="63">1</Pr>
               </Blok>
   
               <text x="175" y="27.25" fill="#000000" text-anchor="middle" class="text" font-size="2.5" stroke-width="0.01">В комплекте</text>
