@@ -1,0 +1,452 @@
+<blok name="Схема подключения ТВ7">
+  <svg version="1.1" width="420mm" height="297mm" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4"
+       stroke="black">
+      <Blok name="Font"></Blok>
+      <Blok name="A4 with stamp"></Blok>
+  
+      <g fill="none" stroke="black" stroke-width="0.2" transform="translate(30, 15)">
+
+        <g transform="translate(-2.5, -2.5)">
+            <rect x="0" y="0" width="36" height="202.5"/>
+            <line x1="6" x2="6" y1="0" y2="202.5"/>
+            <line x1="6" x2="36" y1="25" y2="25"/>
+            <line x1="0" x2="36" y1="50" y2="50"/>
+            <line x1="6" x2="36" y1="85" y2="85"/>
+            <line x1="6" x2="36" y1="124" y2="124"/>
+            <line x1="0" x2="36" y1="161" y2="161"/>
+            <line x1="6" x2="36" y1="184" y2="184"/>
+
+            <text x="4.5" y="25" transform="rotate(-90,4.5,25)" text-anchor="middle" class="text" font-family="gost" font-size="5">Датчики
+                температуры
+            </text>
+            <text x="4.5" y="105.5" transform="rotate(-90,4.5,105.5)" text-anchor="middle" class="text" font-family="gost" font-size="5">
+                Датчики расхода
+            </text>
+            <text x="4.5" y="181.75" transform="rotate(-90,4.5,181.75)" text-anchor="middle" class="text" font-family="gost" font-size="5">
+                Датчики давления
+            </text>
+
+            <text x="21" y="10" text-anchor="middle" class="text" font-family="gost" font-size="5">Прямой</text>
+            <text x="21" y="15" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+            <text x="21" y="35" text-anchor="middle" class="text" font-family="gost" font-size="5">Обратный</text>
+            <text x="21" y="40" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+            <text x="21" y="65" text-anchor="middle" class="text" font-family="gost" font-size="5">Прямой</text>
+            <text x="21" y="70" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+            <text x="21" y="102.5" text-anchor="middle" class="text" font-family="gost" font-size="5">Обратный</text>
+            <text x="21" y="107.5" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+            <text x="21" y="142.5" text-anchor="middle" class="text" font-family="gost" font-size="5">Подпитка</text>
+            <text x="21" y="170" text-anchor="middle" class="text" font-family="gost" font-size="5">Прямой</text>
+            <text x="21" y="175" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+            <text x="21" y="190.75" text-anchor="middle" class="text" font-family="gost" font-size="5">Обратный</text>
+            <text x="21" y="195.75" text-anchor="middle" class="text" font-family="gost" font-size="5">трубопровод</text>
+        </g>
+
+        <g transform="translate(45,0)">
+            <Blok name="Термометр сопротивления горизонтальный с 4-мя проводами"></Blok>
+            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-0.5)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position">2</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+            <line x1="83" x2="120" y1="2" y2="2"/>
+            <text x="87" y="1" text-anchor="middle" class="text" font-size="3.5">300</text>
+            <line x1="83" x2="120" y1="7" y2="7"/>
+            <text x="87" y="6" text-anchor="middle" class="text" font-size="3.5">301</text>
+            <line x1="83" x2="120" y1="12" y2="12"/>
+            <text x="87" y="11" text-anchor="middle" class="text" font-size="3.5">302</text>
+            <line x1="83" x2="120" y1="17" y2="17"/>
+            <text x="87" y="16" text-anchor="middle" class="text" font-size="3.5">303</text>
+        </g>
+
+        <g transform="translate(45,25)">
+            <Blok name="Термометр сопротивления горизонтальный с 4-мя проводами"><Pr bid="position">2б</Pr><Pr bid="1">304</Pr><Pr bid="2">305</Pr><Pr bid="3">306</Pr><Pr bid="4">307</Pr></Blok>
+            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-0.5)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position">1</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">3 м</Pr></Blok>
+            <line x1="83" x2="120" y1="2" y2="2"/>
+            <text x="87" y="1" text-anchor="middle" class="text" font-size="3.5">304</text>
+            <line x1="83" x2="120" y1="7" y2="7"/>
+            <text x="87" y="6" text-anchor="middle" class="text" font-size="3.5">305</text>
+            <line x1="83" x2="120" y1="12" y2="12"/>
+            <text x="87" y="11" text-anchor="middle" class="text" font-size="3.5">306</text>
+            <line x1="83" x2="120" y1="17" y2="17"/>
+            <text x="87" y="16" text-anchor="middle" class="text" font-size="3.5">307</text>
+        </g>
+
+        <g transform="translate(37.5,50)">
+            <Blok name="Преобразователи расхода Питерфлоу PC50-36"></Blok>
+            <g transform="translate(10,2.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">312</text>
+            </g>
+            <g transform="translate(10,7.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">313</text>
+            </g>
+            <g transform="translate(10,17.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
+            </g>
+            <g transform="translate(10,22.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">804</text>
+            </g>
+
+            <g transform="translate(15,12.5)">
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-10)"></Pr><Pr bid="position">3</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+
+                <line x1="76" x2="112.5" y1="-7.5" y2="-7.5"/>
+                <text x="80" y="-8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">313</text>
+                <line x1="76" x2="112.5" y1="-2.5" y2="-2.5"/>
+                <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">312</text>
+
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,4)"></Pr><Pr bid="position">4</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
+
+                <text x="80" y="6.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
+                <line x1="76" x2="101" y1="7.5" y2="7.5"/>
+                <text x="80" y="11.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">804</text>
+                <line x1="76" x2="96" y1="12.5" y2="12.5"/>
+            </g>
+        </g>
+
+        <g transform="translate(37.5,87.5)">
+            <Blok name="Преобразователи расхода Питерфлоу PC50-36"><Pr bid="position">1б</Pr></Blok>
+            <g transform="translate(10,2.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">314</text>
+            </g>
+            <g transform="translate(10,7.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">315</text>
+            </g>
+            <g transform="translate(10,17.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
+            </g>
+            <g transform="translate(10,22.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">804</text>
+            </g>
+
+            <g transform="translate(15,12.5)">
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-10)"></Pr><Pr bid="position">5</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+
+                <line x1="76" x2="112.5" y1="-7.5" y2="-7.5"/>
+                <text x="80" y="-8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">315</text>
+                <line x1="76" x2="112.5" y1="-2.5" y2="-2.5"/>
+                <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">314</text>
+
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,4)"></Pr><Pr bid="position">6</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
+
+                <text x="80" y="6.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
+                <line x1="76" x2="101" y1="7.5" y2="7.5"/>
+                <circle cx="101" cy="7.5" r="0.5" fill="black"/>
+                <text x="80" y="11.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">804</text>
+                <line x1="76" x2="96" y1="12.5" y2="12.5"/>
+                <circle cx="96" cy="12.5" r="0.5" fill="black"/>
+            </g>
+
+        </g>
+
+        <g transform="translate(37.5,125)">
+            <Blok name="Преобразователь расхода"></Blok>
+            <g transform="translate(10,10)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">316</text>
+            </g>
+            <g transform="translate(10,15)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">317</text>
+            </g>
+
+
+            <g transform="translate(15,20)">
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-10)"></Pr><Pr bid="position">7</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+
+                <line x1="76" x2="112.5" y1="-7.5" y2="-7.5"/>
+                <text x="80" y="-8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">317</text>
+                <line x1="76" x2="112.5" y1="-2.5" y2="-2.5"/>
+                <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">316</text>
+            </g>
+
+        </g>
+
+        <g transform="translate(37.5,162.5)">
+            <Blok name="Преобразователь давления 4...20"></Blok>
+            <g transform="translate(10,2.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">805</text>
+            </g>
+            <g transform="translate(10,7.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">318</text>
+            </g>
+
+
+            <g transform="translate(15,12.5)">
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-10)"></Pr><Pr bid="position">8</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+
+                <line x1="76" x2="112.5" y1="-7.5" y2="-7.5"/>
+                <text x="80" y="-8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">318</text>
+                <line x1="76" x2="91" y1="-2.5" y2="-2.5"/>
+                <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">805</text>
+
+            </g>
+
+        </g>
+
+        <g transform="translate(37.5,185)">
+            <Blok name="Преобразователь давления 4...20"><Pr bid="position">3б</Pr></Blok>
+            <g transform="translate(10,2.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">805</text>
+            </g>
+            <g transform="translate(10,7.5)">
+                <line x1="5" x2="20" y1="2.5" y2="2.5"/>
+                <text x="16" y="1.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">319</text>
+            </g>
+
+
+            <g transform="translate(15,12.5)">
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-10)"></Pr><Pr bid="position">9</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+
+                <line x1="76" x2="112.5" y1="-7.5" y2="-7.5"/>
+                <text x="80" y="-8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">319</text>
+                <line x1="76" x2="91" y1="-2.5" y2="-2.5"/>
+                <circle cx="91" cy="-2.5" r="0.5" fill="black"/>
+                <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">805</text>
+
+            </g>
+
+        </g>
+
+        <g transform="translate(165, -3)">
+            <rect x="0" y="0" width="15" height="202.5"/>
+            <text x="7.5" y="-1.5" text-anchor="middle" class="text" font-family="gost" font-size="5">4</text>
+
+            <g transform="translate(0,2.5)">
+                <rect x="5" y="0" width="5" height="20"/>
+                <text x="8.75" y="10" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,10)">
+                    X1
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+                <g transform="translate(0,10)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">3</text>
+                </g>
+                <g transform="translate(0,15)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">4</text>
+                </g>
+            </g>
+
+            <g transform="translate(0,27.5)">
+                <rect x="5" y="0" width="5" height="20"/>
+                <text x="8.75" y="10" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,10)">
+                    X2
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+                <g transform="translate(0,10)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">3</text>
+                </g>
+                <g transform="translate(0,15)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">4</text>
+                </g>
+            </g>
+
+            <g transform="translate(0,55.5)">
+                <rect x="5" y="0" width="5" height="10"/>
+                <text x="8.75" y="5" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,5)">
+                    X7
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+
+            </g>
+
+            <g transform="translate(0,93)">
+                <rect x="5" y="0" width="5" height="10"/>
+                <text x="8.75" y="5" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,5)">
+                    X7
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+
+            </g>
+
+            <g transform="translate(0,138)">
+                <rect x="5" y="0" width="5" height="10"/>
+                <text x="8.75" y="5" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,5)">
+                    X8
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+
+            </g>
+
+            <g transform="translate(0,163)">
+                <rect x="5" y="0" width="5" height="10"/>
+                <text x="8.75" y="5" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,5)">
+                    X10
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">1</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">2</text>
+                </g>
+
+            </g>
+
+            <g transform="translate(0,185.5)">
+                <rect x="5" y="0" width="5" height="10"/>
+                <text x="8.75" y="5" text-anchor="middle" class="text" font-family="gost" font-size="3.5" transform="rotate(-90,8.75,5)">
+                    X10
+                </text>
+
+                <g transform="translate(0,0)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">3</text>
+                </g>
+                <g transform="translate(0,5)">
+                    <rect x="0" y="0" width="5" height="5"/>
+                    <text x="2.5" y="3.75" text-anchor="middle" class="text" font-family="gost" font-size="3.5">4</text>
+                </g>
+
+            </g>
+
+        </g>
+
+        <g transform="translate(165,207)">
+            <Blok name="Блок питания 12 В горизонтальный"></Blok>
+
+            <g transform="translate(0,2.5)">
+                <polyline points="0,2.5 -11.5,2.5 -11.5,-139.5"/>
+                <g transform="translate(0,5)">
+                    <polyline points="0,2.5 -16.5,2.5 -16.5,-139.5"/>
+                </g>
+            </g>
+        </g>
+
+        <g transform="translate(165,229.5)">
+            <Blok name="Блок питания 12 В горизонтальный"><Pr bid="position">G3</Pr></Blok>
+
+            <g transform="translate(0,2.5)">
+                <polyline points="0,2.5 -6.5,2.5 -6.5,-69.5 0,-69.5"/>
+                <g transform="translate(0,5)">
+                    <polyline points="0,2.5 -21.5,2.5 -21.5,-64.5"/>
+                </g>
+
+            </g>
+        </g>
+
+    </g>
+
+    <g transform="translate(230,5)" stroke-width="0.2">
+        <Blok name="Угловая спецификация 12">
+            <Pr bid="header 1">Щит УУТЭ</Pr>
+
+            <Pr bid="21">4</Pr>
+            <Pr bid="22">Термотроник ТВ7-04.1М</Pr>
+            <Pr bid="23">1</Pr>
+
+            <Pr bid="31">G2, 3</Pr>
+            <Pr bid="32">Блок питания</Pr>
+            <Pr bid="33">2</Pr>
+
+            <Pr bid="header 4">По месту</Pr>
+
+            <Pr bid="51">2а, 2б</Pr>
+            <Pr bid="52">Термопреобразователь сопротивления</Pr>
+            <Pr bid="53">2</Pr>
+
+            <Pr bid="61">1а, 1б</Pr>
+            <Pr bid="62">Преобразователи расхода Питерфлоу PC50-36</Pr>
+            <Pr bid="63">2</Pr>
+
+            <Pr bid="71">1в</Pr>
+            <Pr bid="72">Преобразователи расхода</Pr>
+            <Pr bid="73">1</Pr>
+
+            <Pr bid="81">3а, 3б</Pr>
+            <Pr bid="82">Преобразователь давления, 4-20 мА</Pr>
+            <Pr bid="83">2</Pr>
+
+            <Pr bid="102">Кабель монтажный МКШ 3х0,5</Pr>
+            <Pr bid="103">10</Pr>
+            <Pr bid="104">м</Pr>
+
+            <Pr bid="112">Кабель монтажный МКЭШ 3х0,5</Pr>
+            <Pr bid="113">18</Pr>
+            <Pr bid="114">м</Pr>
+
+            <Pr bid="122">Кабель монтажный МКЭШ 5х0,5</Pr>
+            <Pr bid="123">7</Pr>
+            <Pr bid="124">м</Pr>
+        </Blok>
+        
+        <text x="175" y="22.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="24.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+        <text x="175" y="17.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="19.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+ 
+        <text x="175" y="32.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="34.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+
+        <text x="175" y="37.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="39.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+
+        <text x="175" y="42.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="44.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+
+        <text x="175" y="47.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
+        <text x="175" y="49.25" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
+
+    </g>
+
+    <text x="230" y="220" fill="#000000" text-anchor="start" class="text" font-family="gost" font-size="5">Примечания:</text>
+    <text x="230" y="225" fill="#000000" text-anchor="start" class="text" font-family="gost" font-size="5">1. Длины кабелей и труб перед нарезкой уточнить</text>
+  
+      <text x="177.5" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
+      <text x="195" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
+      <text x="120" y="286" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">Схема питания</text>
+
+  </svg>        
+</blok>
