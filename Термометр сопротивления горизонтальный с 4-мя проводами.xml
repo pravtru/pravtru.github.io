@@ -1,16 +1,17 @@
 <Blok name="Термометр сопротивления горизонтальный">
-  <svg version="1.1" width="420mm" height="297mm" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
+  <svg version="1.1" width="50mm" height="50mm" viewBox="-25 -25 25 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
     <Blok name="Font"></Blok>
     <g id="main" transform="translate(0,0)">
-      <Blok name="Термометр сопротивления горизонтальный"></Blok>
-        <polyline points="10,2 22,2"/>
-        <text id="1" x="18" y="1" text-anchor="middle" class="text" font-family="gost" font-size="3.5">300</text>
-        <polyline points="10,2 15,7 22,7"/>
-        <text id="2" x="18" y="6" text-anchor="middle" class="text" font-family="gost" font-size="3.5">301</text>
-        <polyline points="0,2 -5,5 -5,12 22,12"/>
-        <text id="3" x="18" y="11" text-anchor="middle" class="text" font-family="gost" font-size="3.5">302</text>
-        <polyline points="0,2 -7.5,2 -7.5,17 22,17"/>
-        <text id="4" x="18" y="16" text-anchor="middle" class="text" font-family="gost" font-size="3.5">303</text>
+      <Blok name="Термометр сопротивления горизонтальный"><Pr bid="position" visibility="hidden"></Pr></Blok>
+      <text id="position" x="5" y="-2" text-anchor="middle" class="text" font-family="gost" font-size="5">2a</text>
+      <polyline points="10,2 22,2"/>
+      <text id="1" x="18" y="1" text-anchor="middle" class="text" font-family="gost" font-size="3.5">300</text>
+      <polyline points="10,2 15,7 22,7"/>
+      <text id="2" x="18" y="6" text-anchor="middle" class="text" font-family="gost" font-size="3.5">301</text>
+      <polyline points="0,2 -5,5 -5,12 22,12"/>
+      <text id="3" x="18" y="11" text-anchor="middle" class="text" font-family="gost" font-size="3.5">302</text>
+      <polyline points="0,2 -7.5,2 -7.5,17 22,17"/>
+      <text id="4" x="18" y="16" text-anchor="middle" class="text" font-family="gost" font-size="3.5">303</text>
     </g>
   </svg>
 </Blok>
