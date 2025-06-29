@@ -3,7 +3,7 @@
        xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4"
        stroke="black">
       <Blok name="Font"></Blok>
-      <Blok name="A4 with stamp"></Blok>
+      <Blok name="A3 горизонтальный со штампом"></Blok>
   
       <g fill="none" stroke="black" stroke-width="0.2" transform="translate(30, 15)">
 
@@ -44,7 +44,7 @@
 
         <g transform="translate(45,0)">
             <Blok name="Термометр сопротивления горизонтальный с 4-мя проводами"></Blok>
-            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-0.5)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position">2</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">4 м</Pr></Blok>
+            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(7,2)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position" y="8.5">1</Pr><Pr bid="cable" y="6">МКЭШ 5x0,5</Pr><Pr bid="length" y="11">4 м</Pr></Blok>
             <line x1="83" x2="120" y1="2" y2="2"/>
             <text x="87" y="1" text-anchor="middle" class="text" font-size="3.5">300</text>
             <line x1="83" x2="120" y1="7" y2="7"/>
@@ -57,7 +57,7 @@
 
         <g transform="translate(45,25)">
             <Blok name="Термометр сопротивления горизонтальный с 4-мя проводами"><Pr bid="position">2б</Pr><Pr bid="1">304</Pr><Pr bid="2">305</Pr><Pr bid="3">306</Pr><Pr bid="4">307</Pr></Blok>
-            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,-0.5)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position">1</Pr><Pr bid="cable">МКЭШ 5x0,5</Pr><Pr bid="length">3 м</Pr></Blok>
+            <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(7,2)"></Pr><Pr bid="vertical-1" y1="0" y2="15"></Pr><Pr bid="vertical-2" y1="0" y2="15"></Pr><Pr bid="horizontal" y1="7.5" y2="7.5"></Pr><Pr bid="circle" cy="7.5"></Pr><Pr bid="position" y="8.5">2</Pr><Pr bid="cable" y="6">МКЭШ 5x0,5</Pr><Pr bid="length" y="11">3 м</Pr></Blok>
             <line x1="83" x2="120" y1="2" y2="2"/>
             <text x="87" y="1" text-anchor="middle" class="text" font-size="3.5">304</text>
             <line x1="83" x2="120" y1="7" y2="7"/>
@@ -95,7 +95,7 @@
                 <line x1="76" x2="112.5" y1="-2.5" y2="-2.5"/>
                 <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">312</text>
 
-                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,4)"></Pr><Pr bid="position">4</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,5)"></Pr><Pr bid="position">4</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
 
                 <text x="80" y="6.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
                 <line x1="76" x2="101" y1="7.5" y2="7.5"/>
@@ -131,7 +131,7 @@
                 <line x1="76" x2="112.5" y1="-2.5" y2="-2.5"/>
                 <text x="80" y="-3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">314</text>
 
-                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,4)"></Pr><Pr bid="position">6</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
+                <Blok name="Кабель горизонтальный"><Pr bid="main" transform="translate(0,5)"></Pr><Pr bid="position">6</Pr><Pr bid="cable">МКЭШ 3x0,5</Pr><Pr bid="length">2 м</Pr></Blok>
 
                 <text x="80" y="6.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">803</text>
                 <line x1="76" x2="101" y1="7.5" y2="7.5"/>
@@ -444,9 +444,9 @@
     <text x="230" y="220" fill="#000000" text-anchor="start" class="text" font-family="gost" font-size="5">Примечания:</text>
     <text x="230" y="225" fill="#000000" text-anchor="start" class="text" font-family="gost" font-size="5">1. Длины кабелей и труб перед нарезкой уточнить</text>
   
-      <text x="177.5" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
-      <text x="195" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
-      <text x="120" y="286" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">Схема питания</text>
+      <text x="387.5" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
+      <text x="405" y="274.5" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">2</text>
+      <text x="330" y="286" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">Схема подключения</text>
 
   </svg>        
 </blok>
