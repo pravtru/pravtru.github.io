@@ -1,0 +1,10 @@
+<blok name="border A3">
+    <svg viewBox="0 0 420 297" width="420mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
+        <g transform="translate(0, 0)">
+            <polyline fill="none" stroke="#000000" stroke-width="0.4" points="20,5 415,5 415,292 20,292 20,5"/>
+            <g transform="translate(0, 0)">
+                <blok name="Stamp"><pr bid="main" transform="translate(230, 237)"></pr></blok>    
+            </g>
+        </g>
+    </svg>
+</blok>
