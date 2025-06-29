@@ -1,0 +1,14 @@
+<Blok name="Кабель горизонтальный">
+  <svg version="1.1" width="15mm" height="30mm" viewBox="0 0 15 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
+    <Blok name="Font"></Blok>
+      <g id="main" transform="translate(0,0)">
+        <line id="vertical-1" x1="15" x2="15" y1="2.5" y2="7.5" stroke-width="0.4"/>
+        <line id="horizontal" x1="15" x2="76" y1="5" y2="5" stroke-width="0.4"/>
+        <circle id="circle" cx="29" cy="5" r="5" stroke-width="0.4" fill="white" />
+        <text id="position" x="29" y="5.75" text-anchor="middle" class="text" font-family="gost" font-size="5">7</text>
+        <text id="cable" x="55" y="3.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">МКЭШ 3x0,5</text>
+        <text id="length" x="55" y="8.5" text-anchor="middle" class="text" font-family="gost" font-size="3.5">4 м</text>
+        <line id="vertical-2" x1="76" x2="76" y1="2.5" y2="7.5" stroke-width="0.4"/>
+    </g>
+  </svg>
+</Blok>
