@@ -1,13 +1,13 @@
 <blok name="corner specification 6 rows">
-    <svg viewBox="0 0 185 40" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <svg width="185mm" height="70mm" viewBox="0 0 185 70" xmlns="http://www.w3.org/2000/svg" fill="none">
         <Blok name="Font"></Blok>
         <g id="main" transform="translate(0, 0)" fill="none" stroke="black" stroke-width="0.2">
-          <rect x="0" y="0" width="185" height="40" />
+          <rect x="0" y="0" width="185" height="70" />
   
-          <line x1="20" y1="0" x2="20" y2="40" />
-          <line x1="155" y1="0" x2="155" y2="40" />
-          <line x1="165" y1="0" x2="165" y2="40" />
-          <line x1="185" y1="0" x2="185" y2="40" />
+          <line x1="20" y1="0" x2="20" y2="70" />
+          <line x1="155" y1="0" x2="155" y2="70" />
+          <line x1="165" y1="0" x2="165" y2="70" />
+          <line x1="185" y1="0" x2="185" y2="70" />
   
   
           <text x="10" y="6" fill="black" text-anchor="middle" class="text" font-family="gost" font-size="3.5" stroke-width="0.01">Обозначение</text>
