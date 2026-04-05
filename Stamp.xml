@@ -1,4 +1,4 @@
-<blok name="stamp">
+﻿<Blok name="stamp">
     <svg viewBox="0 0 185 55" xmlns="http://www.w3.org/2000/svg" fill="none">
 	<Blok Name="Font"></Blok>
         <g id="main" transform="translate(0, 0)">
@@ -63,4 +63,4 @@
 	        <text id="building" fill="#000000" text-anchor="middle" x="125" y="20" class="text" font-family="gost" font-size="7"></text>
         </g>
     </svg>
-</blok>
+</Blok>

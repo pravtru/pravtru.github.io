@@ -1,4 +1,4 @@
-<Blok name="Термометр сопротивления горизонтальный">
+﻿<Blok name="Термометр сопротивления горизонтальный">
   <svg version="1.1" width="50mm" height="50mm" viewBox="-25 -25 25 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
     <Blok name="Font"></Blok>
     <g id="main" transform="translate(0,0)">

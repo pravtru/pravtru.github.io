@@ -1,4 +1,4 @@
-<blok name="Power supply">
+<Blok name="Power supply">
     <svg viewBox="-5 20 -5 20" xmlns="http://www.w3.org/2000/svg" fill="none">
         <Blok Name="Font"></Blok>
         <g id="main" transform="translate(0,0)" stroke-width="0.2">
@@ -15,4 +15,4 @@
             <text id="4" x="12.5" y="14" class="text" font-family="gost" font-size="3.5" text-anchor="middle">0V</text>
         </g>
     </svg>
-</blok>
+</Blok>

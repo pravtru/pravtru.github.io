@@ -1,4 +1,4 @@
-<blok name="corner specification 6 rows">
+﻿<Blok name="corner specification 6 rows">
     <svg width="185mm" height="70mm" viewBox="0 0 185 70" xmlns="http://www.w3.org/2000/svg" fill="none">
         <Blok name="Font"></Blok>
         <g id="main" transform="translate(0, 0)" fill="none" stroke="black" stroke-width="0.2">
@@ -97,4 +97,4 @@
           <line x1="0" y1="65" x2="185" y2="65" />
       </g>
     </svg>
-</blok>
+</Blok>

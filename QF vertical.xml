@@ -1,4 +1,4 @@
-<blok name="Circuit breaker vertical">
+<Blok name="Circuit breaker vertical">
   <svg viewBox="-20 20 -20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
     <g id="main" transform="translate(0, 0)" stroke-width="0.2">
             <text id="QF" x="-12.5" y="10" class="text" font-size="5" text-anchor="middle">QF</text>
@@ -17,4 +17,4 @@
             <line x1="7.5" x2="7.5" y1="0" y2="30" />
     </g>
   </svg>
-</blok>
+</Blok>
