@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title id="tit">Описание</title>
+    <LINK href="https://pravtru.github.io/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://pravtru.github.io/bootstrap.bundle.min.js"></script>
+  </head>
+<body>
+<div class="container">
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
+  <div class="container-fluid">
+    <div id="nzv">Описание</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <button type="button" class="nav-link active" id="mn1">Параметры</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br />
+<div class="page-header"></div>
+<div class="row">
+
+ <div class="col-lg-3">
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+   <div class="card-header" >Изображение</div>
+   <div class="card-body" id="id1"></div>
+  </div>
+ </div>
+
+ <div class="col-lg-8">
+  <div class="card border-primary mb-3" style="max-width: 80rem;">
+   <div class="card-header">Исходный код</div>
+    <div class="card-body">
+     <pre><code id="id3" style="white-space: pre-wrap;"></code></pre>
+    </div>
+   </div>
+  </div>
+
+ <div class="col-lg-8">
+  <div class="card border-primary mb-3" style="max-width: 80rem;">
+   <div class="card-header">SVG</div>
+    <div class="card-body">
+     <pre><code id="id2" style="white-space: pre-wrap;"></code></pre>
+    </div>
+   </div>
+  </div>
+
+</div></div>
+
+<div class="modal fade" id="Md1" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Запрос модели</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="Md1_In">
+    <div>
+      <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+      <select class="form-select" id="eS1">
+        <option>XT1</option>
+        <option>NO</option>
+        <option>2NO</option>
+      </select>
+    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="mdl1k">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Md2" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Параметры</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="Md2_In">
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Параметр 1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+     <label for="exampleTextarea" class="form-label mt-4">Свойства</label>
+      <textarea class="form-control" id="1_eT1" rows="3"></textarea>
+     <label for="exampleTextarea" class="form-label mt-4">Значение</label>
+      <textarea class="form-control" id="1_eT2" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Параметр 2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+     <label for="exampleTextarea" class="form-label mt-4">Свойства</label>
+      <textarea class="form-control" id="2_eT1" rows="3"></textarea>
+     <label for="exampleTextarea" class="form-label mt-4">Значение</label>
+      <textarea class="form-control" id="2_eT2" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Параметр 3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+
+      </div>
+    </div>
+  </div>
+</div>            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="mdl2k">Задать</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var p1, xmlDoc, t0, t1, x1;
+//Параметры строки
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get('name');
+
+//Если пустой параметр, то запросить
+if (!name) {
+ var myModal = new bootstrap.Modal(document.getElementById('Md1'), {});
+ myModal.show();
+} else {
+ zpr( name ); //Запрос основного
+}
+
+//События кнопок
+document.getElementById('mn1').addEventListener('click', function () {
+ var myModal = new bootstrap.Modal(document.getElementById('Md2'), {});
+ myModal.show();
+});
+document.getElementById('mdl1k').addEventListener('click', function () {
+ zpr( document.getElementById('eS1').value ); //Запрос выбранного
+});
+document.getElementById('mdl2k').addEventListener('click', function () {
+    console.log( document.getElementById('1_eT1').value );
+    console.log( document.getElementById('1_eT2').value );
+});
+
+//Функция запроса данных
+function getData( url, ready ) {
+  var xhr = new XMLHttpRequest();
+  xhr.open( 'GET', url, true );
+  xhr.onreadystatechange = function() {
+   if( this.readyState === 4 && this.status !== 404 ) {
+    ready( this.responseText );
+   }
+  }
+  xhr.send();
+}
+
+//Запрос первого
+function zpr( nm1 ) {
+getData( 'https://pravtru.github.io/' + nm1 + '.xml', function( templateData ) {
+    console.log( templateData );
+    p1 = new DOMParser();
+    xmlDoc = p1.parseFromString(templateData,"text/xml");
+    t0 = xmlDoc.getElementsByTagName("Blok");
+    console.log( t0 );
+
+    if (t0.length > 1) {
+     for (let i = 1; i < t0.length; i++) {
+      //inBl(t0[i]);
+      zpr0(t0[i], t0[i].parentNode);
+      t0[i].parentNode.removeChild(t0[i]);
+      i--;
+     }
+    }
+
+    //Вывод в содержимое    
+    document.getElementById("tit").innerHTML = xmlDoc.getElementsByTagName("Blok")[0].getAttribute('Name');
+    document.getElementById("nzv").innerHTML = 'Содержание ' + xmlDoc.getElementsByTagName("Blok")[0].getAttribute('Name');
+    document.getElementById("id1").innerHTML = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
+    document.getElementById("id2").textContent = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
+    document.getElementById("id3").textContent = templateData;
+
+});
+}
+
+//Запрос дочерних блоков
+function zpr0(nm1, N0) {
+getData( 'https://pravtru.github.io/' + nm1.getAttribute('Name') + '.xml', function( templateData ) {
+    p1 = new DOMParser();
+    var xmlDoc1 = p1.parseFromString(templateData,"text/xml");
+    //console.log(xmlDoc1.getElementsByTagName("svg")[0].children[0]);
+
+    t0 = xmlDoc.getElementsByTagName("Blok");
+
+    if (t0.length > 1) {
+     for (let i = 1; i < t0.length; i++) {
+      //inBl(t0[i]);
+      zpr0(t0[i], t0[i].parentNode);
+      t0[i].parentNode.removeChild(t0[i]);
+      i--;
+     }
+    }
+
+
+    var N1 = xmlDoc1.getElementsByTagName("svg")[0].children[0].attributes;
+    var markerDiv = xmlDoc.createElement(xmlDoc1.getElementsByTagName("svg")[0].children[0].nodeName);
+    markerDiv.innerHTML = xmlDoc1.getElementsByTagName("svg")[0].children[0].innerHTML;
+    for (let i = 0; i < N1.length; i++) {
+     markerDiv.setAttribute(N1[i].name, N1[i].value);
+    }
+
+    inPr(nm1, markerDiv);
+
+    N0.appendChild(markerDiv);
+
+    document.getElementById("id1").innerHTML = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
+    document.getElementById("id2").textContent = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
+
+});
+}
+
+function inPr(Prs, N0) {
+ var Pr = Prs.children;
+ var id = N0.getAttribute('id');
+ 
+ N0.removeAttribute('id');
+
+ if (id !== null) {
+  for (let i = 0; i < Pr.length; i++) {
+   var bid = Pr[i].getAttribute('bid');
+    if (id === bid) {
+     var N1 = Pr[i].attributes; //пербор атрибутов
+     for (let j = 0; j < N1.length; j++) {
+      if (N1[j].name !== 'bid') {
+       N0.setAttribute(N1[j].name, N1[j].value); //присвоение атрибутов из Pr
+      }
+     }
+     if (Pr[i].innerHTML.length > 0) {
+      N0.innerHTML = Pr[i].innerHTML;
+     }
+    }
+   //markerDiv.setAttribute(N2[i].name, N2[i].value);
+   //console.log(bid);
+  }
+ }
+ var Cd = N0.children;
+ if (Cd.length > 0) {
+  for (let i = 0; i < Cd.length; i++) {
+   inPr(Prs, Cd[i]);
+  }
+ }
+}
+
+</script>
+
+
+</body>
+</html>
