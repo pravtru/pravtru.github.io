@@ -28,12 +28,7 @@
 <div class="page-header"></div>
 <div class="row">
 
- <div class="col-lg-3">
-  <div class="card border-primary mb-3" style="max-width: 20rem;">
-   <div class="card-header" >Изображение</div>
-   <div class="card-body" id="id1"></div>
-  </div>
- </div>
+<div class="card-body" id="id1"></div>
 
  <div class="col-lg-8">
   <div class="card border-primary mb-3" style="max-width: 80rem;">
@@ -140,7 +135,7 @@
 </div>
 
 <script>
-var p1, xmlDoc, t0, t1, x1;
+var p1, xmlDoc, xmlBlk, t0, t1, x1;
 //Параметры строки
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name');
@@ -181,73 +176,92 @@ function getData( url, ready ) {
 //Запрос первого
 function zpr( nm1 ) {
 getData( 'https://pravtru.github.io/' + nm1 + '.xml', function( templateData ) {
-    console.log( templateData );
     p1 = new DOMParser();
     xmlDoc = p1.parseFromString(templateData,"text/xml");
-    t0 = xmlDoc.getElementsByTagName("Blok");
-    console.log( t0 );
+    xmlBlk = xmlDoc.children[0];    
+    document.getElementById("tit").innerHTML = xmlBlk.getAttribute('Name');
+    document.getElementById("nzv").innerHTML = 'Содержание ' + xmlBlk.getAttribute('Name') + '(' + nm1 + '.xml)';
+    document.getElementById("id3").textContent = templateData;
 
-    if (t0.length > 1) {
-     for (let i = 1; i < t0.length; i++) {
-      //inBl(t0[i]);
-      zpr0(t0[i], t0[i].parentNode);
-      t0[i].parentNode.removeChild(t0[i]);
-      i--;
+    //Перебор дочерних
+    var Cd = xmlBlk.children;
+    if (Cd.length > 0) {
+     for (let i = 0; i < Cd.length; i++) {
+      cild(Cd[i]);
      }
     }
 
-    //Вывод в содержимое    
-    document.getElementById("tit").innerHTML = xmlDoc.getElementsByTagName("Blok")[0].getAttribute('Name');
-    document.getElementById("nzv").innerHTML = 'Содержание ' + xmlDoc.getElementsByTagName("Blok")[0].getAttribute('Name');
-    document.getElementById("id1").innerHTML = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
-    document.getElementById("id2").textContent = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
-    document.getElementById("id3").textContent = templateData;
-
+    vyvod();
 });
 }
 
+//Проверка на блок и просмотр дочерних
+function cild(Cd0) {
+ var cName = Cd0.getAttribute('Name');
+ if (cName !== null) {
+  if (cName = 'Blok') {
+   zpr0(Cd0, Cd0.parentNode);
+   
+  }
+ }
+
+ //Поиск дочерних
+ var Cd = Cd0.children;
+ if (Cd.length > 0) {
+  for (let i = 0; i < Cd.length; i++) {
+   cild(Cd[i]);
+  }
+ }
+}
+
 //Запрос дочерних блоков
-function zpr0(nm1, N0) {
+function zpr0(nm1, N0) { //Искомый блок и родитель
 getData( 'https://pravtru.github.io/' + nm1.getAttribute('Name') + '.xml', function( templateData ) {
+    N0.removeChild(nm1);
+
     p1 = new DOMParser();
     var xmlDoc1 = p1.parseFromString(templateData,"text/xml");
     //console.log(xmlDoc1.getElementsByTagName("svg")[0].children[0]);
 
-    t0 = xmlDoc.getElementsByTagName("Blok");
 
-    if (t0.length > 1) {
-     for (let i = 1; i < t0.length; i++) {
-      //inBl(t0[i]);
-      zpr0(t0[i], t0[i].parentNode);
-      t0[i].parentNode.removeChild(t0[i]);
-      i--;
+    //Перенос атрибутов и содержимого в новые элементы
+    var CdS = xmlDoc1.getElementsByTagName("svg")[0].children;
+    if (CdS.length > 0) {
+     for (let i = 0; i < CdS.length; i++) {
+      var N1 = CdS[i].attributes;
+      var markerDiv = xmlDoc.createElement(CdS[i].nodeName);
+      markerDiv.innerHTML = CdS[i].innerHTML;
+      for (let j = 0; j < N1.length; j++) {
+       markerDiv.setAttribute(N1[j].name, N1[j].value);
+      }
+      inPr(nm1, markerDiv); 
+      N0.appendChild(markerDiv);
      }
     }
 
 
-    var N1 = xmlDoc1.getElementsByTagName("svg")[0].children[0].attributes;
-    var markerDiv = xmlDoc.createElement(xmlDoc1.getElementsByTagName("svg")[0].children[0].nodeName);
-    markerDiv.innerHTML = xmlDoc1.getElementsByTagName("svg")[0].children[0].innerHTML;
-    for (let i = 0; i < N1.length; i++) {
-     markerDiv.setAttribute(N1[i].name, N1[i].value);
+    //console.log(markerDiv.children);
+
+    //Перебор дочерних
+    var Cd = N0.children;
+    if (Cd.length > 0) {
+     for (let i = 0; i < Cd.length; i++) {
+      cild(Cd[i]);
+     }
     }
 
-    inPr(nm1, markerDiv);
-
-    N0.appendChild(markerDiv);
-
-    document.getElementById("id1").innerHTML = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
-    document.getElementById("id2").textContent = xmlDoc.getElementsByTagName("svg")[0].outerHTML;
-
+    vyvod();
 });
 }
 
-function inPr(Prs, N0) {
+//
+function inPr(Prs, N0) { //Искомый блок и новый элемент для добавления
  var Pr = Prs.children;
  var id = N0.getAttribute('id');
  
  N0.removeAttribute('id');
 
+ //Замена на параметры
  if (id !== null) {
   for (let i = 0; i < Pr.length; i++) {
    var bid = Pr[i].getAttribute('bid');
@@ -262,16 +276,32 @@ function inPr(Prs, N0) {
       N0.innerHTML = Pr[i].innerHTML;
      }
     }
-   //markerDiv.setAttribute(N2[i].name, N2[i].value);
-   //console.log(bid);
   }
  }
+
+ //Пребор всех наследников
  var Cd = N0.children;
  if (Cd.length > 0) {
   for (let i = 0; i < Cd.length; i++) {
    inPr(Prs, Cd[i]);
   }
  }
+}
+
+//Вывод содержимого
+function vyvod() {
+ var ih = '';
+ var Svg = xmlBlk.children;
+ if (Svg.length > 0) {
+   ih = Svg[0].outerHTML;
+ }
+ if (Svg.length > 1) {
+  for (let i = 1; i < Svg.length; i++) {
+   ih = ih + '<br />' + Svg[i].outerHTML;
+  }
+ }
+ document.getElementById("id1").innerHTML = ih;
+ document.getElementById("id2").textContent = ih;
 }
 
 </script>
