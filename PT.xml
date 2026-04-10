@@ -1,6 +1,6 @@
-﻿<Blok name="Преобразователь давления, 4...20 мА">
+﻿<Blok Name="Преобразователь давления, 4...20 мА">
   <svg version="1.1" width="15mm" height="15mm" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4" stroke="black">
-    <Blok name="Font"></Blok>
+    <Blok Name="Font"></Blok>
     <g id="main" transform="translate(0,0)">
       <text id="position" x="3" y="-2" text-anchor="middle" class="text" font-family="gost" font-size="5">3а</text>
       <rect x="0" y="0" width="15" height="15"/>
