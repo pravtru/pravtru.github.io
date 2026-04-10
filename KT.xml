@@ -1,4 +1,4 @@
-<Blok Name="K1">
+<Blok Name="KT">
 
 <svg viewBox="-10 -12 35 60" xmlns="http://www.w3.org/2000/svg">
  <Blok0 Name="Font"></Blok0>
@@ -10,11 +10,9 @@
   <line x1="4.5" y1="6" x2="4.5" y2="-6" stroke="#000000" stroke-width="0.2"/>
   <line x1="10.5" y1="6" x2="10.5" y2="-6" stroke="#000000" stroke-width="0.2"/>
   <line x1="10.5" y1="0" x2="15" y2="0" stroke="#000000" stroke-width="0.2"/>
-  <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2">A1</Pr></Blok>
-  <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2">A2</Pr></Blok>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">A1</Pr></Blok>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">A2</Pr></Blok>
  </g>
-  <Blok Name="NO"><Pr bid="1" id="2" transform="translate(0 20) rotate(0 0 0)"></Pr><Pr bid="2">K1</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Blok>
-  <Blok Name="NC"><Pr bid="1" id="3" transform="translate(0 30) rotate(0 0 0)" opacity="0.5"></Pr><Pr bid="2">K1</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Blok>
 </svg>
 
 </Blok>
