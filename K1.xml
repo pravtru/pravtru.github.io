@@ -1,6 +1,6 @@
 <Blok Name="K1">
 
-<svg viewBox="-10 -20 35 20" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-10 -20 35 80" xmlns="http://www.w3.org/2000/svg">
  <Blok0 Name="Font"></Blok0>
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
   <text id="2" font-size="5.11" x="7.5" y="-8" stroke-width="0" text-anchor="middle" class="text" font-family="gost">K1</text>
@@ -12,6 +12,14 @@
   <line x1="10.5" y1="0" x2="15" y2="0" stroke="#000000" stroke-width="0.2"/>
   <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">A1</Pr></Blok>
   <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">A2</Pr></Blok>
+ </g>
+ <g id="5" transform="translate(0 20) rotate(0 0 0)">
+  <text id="6" font-size="5.11" x="7.5" y="-4" stroke-width="0" text-anchor="middle" class="text" font-family="gost">K1</text>
+  <line x1="0" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="4" y1="0" x2="10" y2="-3.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="10" y1="0" x2="15" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="7" id="3">13</Pr></Blok>
+  <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="8" id="4">14</Pr></Blok>
  </g>
 </svg>
 
