@@ -1,6 +1,6 @@
 <Blok Name="K1">
 
-<svg viewBox="-10 -16 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-10 -12 35 60" xmlns="http://www.w3.org/2000/svg">
  <Blok0 Name="Font"></Blok0>
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
   <text id="2" font-size="5.11" x="7.5" y="-8" stroke-width="0" text-anchor="middle" class="text" font-family="gost">K1</text>
