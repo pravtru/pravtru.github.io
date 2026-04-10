@@ -183,6 +183,8 @@ getData( 'https://pravtru.github.io/' + nm1 + '.xml', function( templateData ) {
     document.getElementById("nzv").innerHTML = 'Содержание ' + xmlBlk.getAttribute('Name') + '(' + nm1 + '.xml)';
     document.getElementById("id3").textContent = templateData;
 
+    //console.log(xmlBlk.children);
+
     //Перебор дочерних
     var Cd = xmlBlk.children;
     if (Cd.length > 0) {
@@ -197,12 +199,9 @@ getData( 'https://pravtru.github.io/' + nm1 + '.xml', function( templateData ) {
 
 //Проверка на блок и просмотр дочерних
 function cild(Cd0) {
- var cName = Cd0.getAttribute('Name');
- if (cName !== null) {
-  if (cName = 'Blok') {
-   zpr0(Cd0, Cd0.parentNode);
-   
-  }
+ var cName = Cd0.nodeName;
+ if (cName === "Blok") {
+  zpr0(Cd0);
  }
 
  //Поиск дочерних
@@ -215,9 +214,11 @@ function cild(Cd0) {
 }
 
 //Запрос дочерних блоков
-function zpr0(nm1, N0) { //Искомый блок и родитель
+function zpr0(nm1) { //Искомый блок и родитель
+var N0 = nm1.parentNode;
+N0.removeChild(nm1);
+
 getData( 'https://pravtru.github.io/' + nm1.getAttribute('Name') + '.xml', function( templateData ) {
-    N0.removeChild(nm1);
 
     p1 = new DOMParser();
     var xmlDoc1 = p1.parseFromString(templateData,"text/xml");
