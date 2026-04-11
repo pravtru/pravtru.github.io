@@ -1,6 +1,6 @@
 <Blok Name="QF3">
 
-<svg viewBox="-15 -15 55 20" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-15 -20 55 25" xmlns="http://www.w3.org/2000/svg">
  <Blok0 Name="Font"></Blok0>
  <g id="1" transform="translate(0 0) rotate(270 0 0)">
   <text id="2" font-size="5.11" x="7.5" y="-5" stroke-width="0" text-anchor="middle" class="text" font-family="gost">QF3</text>
