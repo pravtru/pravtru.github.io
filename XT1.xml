@@ -1,4 +1,4 @@
-<Blok Name="XT1">
+<Bl Name="XT1">
 
 <svg viewBox="-10 -10 20 20" xmlns="http://www.w3.org/2000/svg">
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
@@ -7,4 +7,4 @@
  </g>
 </svg>
 
-</Blok>
+</Bl>

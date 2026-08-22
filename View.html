@@ -202,12 +202,12 @@ getData( 'https://pravtru.github.io/' + nm1 + '.xml', function( templateData ) {
 //Проверка на блок и просмотр дочерних
 function cild(Cd0, glb) {
  var cName = Cd0.nodeName;
- if (cName === "Blok") {
+ if (cName === "Bl") {
   zpr0(Cd0);
   Cd0.parentNode.removeChild(Cd0);
  }
 
- if (cName === "Blok0") {
+ if (cName === "Bl0") {
   if (glb == 0) {
    zpr0(Cd0);
   }

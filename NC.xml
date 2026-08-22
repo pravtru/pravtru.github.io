@@ -1,14 +1,14 @@
-<Blok Name="NC">
+<Bl Name="NC">
 
 <svg viewBox="-10 -10 35 20" xmlns="http://www.w3.org/2000/svg">
- <Blok0 Name="Font"></Blok0>
+ <Bl0 Name="Font"></Bl0>
  <g id="1" transform="translate(0 0) rotate(0 0 0)">
   <text id="2" font-size="5.11" x="7.5" y="-2" stroke-width="0" text-anchor="middle" class="text" font-family="gost">K1</text>
   <polyline points="0 0 4 0 4 5 11.5 1.5" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="10 3 10 0 15 0" fill="none" stroke="#000000" stroke-width="0.2"/>
-  <Blok Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">11</Pr></Blok>
-  <Blok Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">12</Pr></Blok>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">11</Pr></Bl>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">12</Pr></Bl>
  </g>
 </svg>
 
-</Blok>
+</Bl>

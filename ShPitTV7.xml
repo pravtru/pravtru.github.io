@@ -1,9 +1,9 @@
-﻿<Blok Name="ShPitTV7">
+﻿<Bl Name="ShPitTV7">
   <svg version="1.1" width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"
        xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto" font-size="3.5" stroke-width="0.4"
        stroke="black">
-      <Blok Name="Font"></Blok>
-      <Blok Name="A4WithStamp"></Blok>
+      <Bl Name="Font"></Bl>
+      <Bl Name="A4WithStamp"></Bl>
   
       <g fill="none" stroke="black" stroke-width="0.2" transform="translate(0, 30)">
   
@@ -13,19 +13,19 @@
           <polyline points="90,20 90,15 187.5,15 187.5,65" stroke-width="0.2" />
   
       <g transform="translate(77.5,20)" stroke-width="0.2">
-              <Blok Name="PowerSupply"><Pr bid="position">G4</Pr></Blok>
+              <Bl Name="PowerSupply"><Pr bid="position">G4</Pr></Bl>
               <text x="9" y="25" class="text" font-family="gost" font-size="3.5" text-anchor="middle" transform="rotate(-90,9,25)">N</text>
       </g>        
   
   
       <g transform="translate(82.5,35)" stroke-width="0.2">
               <line x1="-16" x2="-8" y1="11" y2="11" />
-              <Blok Name="QFVertical"></Blok>
+              <Bl Name="QFVertical"></Bl>
       </g>
   
   
           <g transform="translate(100,40)" stroke-width="0.2">
-                  <Blok Name="PowerSupply"><Pr bid="position">G1</Pr></Blok>
+                  <Bl Name="PowerSupply"><Pr bid="position">G1</Pr></Bl>
                   
                   <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
                   <circle fill="black" cx="5" cy="-30" r="0.5" />
@@ -39,7 +39,7 @@
           </g>   
           
           <g transform="translate(122.5,40)" stroke-width="0.2">
-                  <Blok Name="PowerSupply"><Pr bid="position">G2</Pr></Blok>
+                  <Bl Name="PowerSupply"><Pr bid="position">G2</Pr></Bl>
                   
                   <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
                   <circle fill="black" cx="5" cy="-30" r="0.5" />
@@ -53,7 +53,7 @@
           </g>   
   
           <g transform="translate(145,40)">
-              <Blok Name="PowerSupply"><Pr bid="position">G3</Pr></Blok>
+              <Bl Name="PowerSupply"><Pr bid="position">G3</Pr></Bl>
   
               <line x1="5" x2="5" y1="0" y2="-30" stroke-width="0.2" />
               <circle fill="black" cx="5" cy="-30" r="0.5" />
@@ -119,7 +119,7 @@
           </g>
   
           <g transform="translate(20, 130)" fill="none" stroke="#000000" stroke-width="0.2">
-              <Blok Name="CornerSpec6">
+              <Bl Name="CornerSpec6">
                   <Pr bid="header 1">Щит УУТЭ</Pr>
   
                   <Pr bid="21">QF1</Pr>
@@ -141,7 +141,7 @@
                   <Pr bid="61">G4</Pr>
                   <Pr bid="62">ИБП Ippon Black Power Pro 800</Pr>
                   <Pr bid="63">1</Pr>
-              </Blok>
+              </Bl>
   
               <text x="175" y="27.25" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">В комплекте</text>
               <text x="175" y="29.25" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="2.5" stroke-width="0.01">теплосчетчика</text>
@@ -154,4 +154,4 @@
       <text x="120" y="286" fill="#000000" text-anchor="middle" class="text" font-family="gost" font-size="7">Схема питания</text>
 
   </svg>        
-</Blok>
+</Bl>

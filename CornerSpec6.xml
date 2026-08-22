@@ -1,6 +1,6 @@
 <blok name="corner specification 6 rows">
     <svg viewBox="0 0 185 40" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <Blok name="Font"></Blok>
+        <Bl name="Font"></Bl>
         <g id="main" transform="translate(0, 0)" fill="none" stroke="black" stroke-width="0.2">
                     <rect x="0" y="0" width="185" height="40" />
 

@@ -1,10 +1,10 @@
-<Blok Name="K1">
+<Bl Name="K1">
 
 <svg viewBox="-10 -12 35 60" xmlns="http://www.w3.org/2000/svg">
- <Blok0 Name="Font"></Blok0>
-  <Blok Name="KT"><Pr bid="1" id="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Blok>
-  <Blok Name="NO"><Pr bid="1" id="2" transform="translate(0 20) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Blok>
-  <Blok Name="NC"><Pr bid="1" id="3" transform="translate(0 30) rotate(0 0 0)" opacity="0"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Blok>
+ <Bl0 Name="Font"></Bl0>
+  <Bl Name="KT"><Pr bid="1" id="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+  <Bl Name="NO"><Pr bid="1" id="2" transform="translate(0 20) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+  <Bl Name="NC"><Pr bid="1" id="3" transform="translate(0 30) rotate(0 0 0)" opacity="0"></Pr><Pr bid="2" id="pz">K1</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Bl>
 </svg>
 
-</Blok>
+</Bl>
