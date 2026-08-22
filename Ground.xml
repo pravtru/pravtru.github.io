@@ -1,0 +1,13 @@
+<Bl Name="Заземление">
+
+<svg viewBox="-6 -10 16 16" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <line x1="0" y1="-8" x2="0" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-4" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="0" y1="0" x2="-4" y2="4" stroke="#000000" stroke-width="0.2"/>
+  <line x1="0" y1="0" x2="4" y2="4" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-2" y1="2.4" x2="2" y2="2.4" stroke="#000000" stroke-width="0.4"/>
+ </g>
+</svg>
+
+</Bl>

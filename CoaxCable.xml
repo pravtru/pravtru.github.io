@@ -1,0 +1,11 @@
+<Bl Name="Кабель коаксиальный">
+
+<svg viewBox="-4 -8 24 16" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="8" cy="0" r="3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-2" y1="0" x2="5" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="11" y1="0" x2="18" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

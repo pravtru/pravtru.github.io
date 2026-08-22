@@ -1,0 +1,13 @@
+<Bl Name="Контакты разборного и неразборного соединений">
+
+<svg viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <line x1="0" y1="0" x2="8" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="10" cy="0" r="2" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="14" cy="0" r="1" fill="#000000" stroke="#000000" stroke-width="0.2"/>
+  <line x1="16" y1="0" x2="20" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

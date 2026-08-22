@@ -1,0 +1,13 @@
+<Bl Name="Головка громкоговорителя">
+
+<svg viewBox="-6 -10 22 20" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="8" y="-8" text-anchor="middle" class="text" font-family="gost">BA1</text>
+  <polygon points="0,-1 0,1 6,5 6,-5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-4" y1="-0.5" x2="0" y2="-0.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-4" y1="0.5" x2="0" y2="0.5" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

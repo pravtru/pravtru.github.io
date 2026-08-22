@@ -1,0 +1,14 @@
+<Bl Name="Стабилитрон">
+
+<svg viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="10" y="-5" text-anchor="middle" class="text" font-family="gost">VD5</text>
+  <line x1="0" y1="0" x2="9" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <polygon points="9,-2.5 9,2.5 13,0" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="14.5,-2.5 13,-2.5 13,2.5 11.5,2.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="13" y1="0" x2="20" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

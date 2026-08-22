@@ -26,47 +26,37 @@
 
 ### Блоки (`<Bl>`)
 
-| Файл | Name |
-|---|---|
-| `1.xml` | 1 |
-| `2 pages.xml` | 2 pages |
-| `2NO.xml` | 2NO |
-| `A3BS.xml` | border A3 |
-| `A4WithStamp.xml` | border A4 |
-| `Cp.xml` | Cp |
-| `CpV.xml` | CpV |
-| `CornerSpec6.xml` | corner specification 6 rows |
-| `Font.xml` | Font (шрифт ГОСТ, подключается почти во все блоки как `<Bl0 Name="Font">`) |
-| `K1.xml` | K1 |
-| `K2.xml` | K2 |
-| `KM1.xml` | KM1 |
-| `KT.xml` | KT |
-| `Kbl.xml` | Кабель горизонтальный |
-| `Kl1.xml` | Kl1 |
-| `Kl2.xml` | Kl2 |
-| `NC.xml` | NC |
-| `NO.xml` | NO |
-| `NP.xml` | NP |
-| `PT.xml` | Преобразователь давления, 4...20 мА |
-| `PowerSupply.xml` | Power supply |
-| `QF1.xml` | QF |
-| `QF3.xml` | QF3 |
-| `QFVertical.xml` | Circuit breaker vertical |
-| `SB1.xml` | SB1 |
-| `SB2.xml` | SB2 |
-| `ShPitTV7.xml` | ShPitTV7 |
-| `ShPodTV7.xml` | Схема подключения ТВ7 |
-| `Stamp.xml` | stamp |
-| `TSP.xml` | Термометр сопротивления горизонтальный |
-| `TSP4V.xml` | Термометр сопротивления горизонтальный |
-| `TV7.xml` | ТВ7 |
-| `WE.xml` | Преобразователь расхода |
-| `WT.xml` | Термометр сопротивления горизонтальный |
-| `XT1.xml` | XT1 |
-| `Блок питания 12 В горизонтальный.xml` | Блок питания 12 В горизонтальный |
-| `Угловая спецификация 12.xml` | corner specification 6 rows |
+Полный список (135 файлов) сгруппирован по разделам справочника УГО (условные графические обозначения, ЕСКД) — та же группировка используется в каталоге `Blok.htm`.
 
-Каждый файл можно открыть в `View.html?name=ИмяФайла`; те же ссылки продублированы в `Ob.htm`/`El.htm`/`Blok.htm`.
+**Компоновка листов, штампы и спецификации**: `1.xml`, `2 pages.xml`, `A3BS.xml` (border A3), `A4WithStamp.xml` (border A4), `CornerSpec6.xml`, `Stamp.xml`, `Угловая спецификация 12.xml`
+
+**Шрифт**: `Font.xml`
+
+**Клеммы, кабели и автоматика**: `XT1.xml`, `Kbl.xml` (кабель горизонтальный), `Kl1.xml`, `Kl2.xml`, `QF1.xml`, `QF3.xml`, `QFVertical.xml`
+
+**КИПиА (технологические приборы)**: `PT.xml` (преобразователь давления), `WE.xml` (преобразователь расхода), `TSP.xml`, `TSP4V.xml`, `WT.xml` (термометры сопротивления), `TV7.xml`, `ShPitTV7.xml`, `ShPodTV7.xml`, `PowerSupply.xml`, `Блок питания 12 В горизонтальный.xml`, `Cp.xml`, `CpV.xml`
+
+**Реле, контакты и кнопки**: `K1.xml`, `K2.xml`, `KM1.xml`, `KT.xml` (катушка), `K_Polarized.xml` (реле поляризованное), `NO.xml`, `NC.xml`, `NP.xml`, `2NO.xml`, `SB1.xml`, `SB2.xml`, `SB_Return.xml`, `SF1.xml` (геркон), `SA_2P3N.xml`, `SA_6P1N.xml`, `SA_3P2N.xml` (переключатели), `S1_Jumper.xml` (перемычка контактная)
+
+**Разъёмы и соединители**: `XP_XS_Tel.xml` (штепсель/гнездо телефонные), `XTsoed.xml` (контакты разборного/неразборного соединений), `XW1.xml` (штырь/гнездо коаксиальный), `XP_XS_Plug.xml` (вилка/розетка)
+
+**Электроакустика**: `BM1.xml` (микрофон), `BF1.xml` (телефон), `BA1.xml` (громкоговоритель), `BS1.xml` (магнитная головка), `BS_Hydrophone.xml`, `ZQ1.xml` (кварцевый резонатор)
+
+**Пассивные компоненты**: `R1.xml`, `R_Variable.xml`, `R_VariableDual.xml`, `R_VariableSwitch.xml`, `R_Trimmer.xml`, `RK_Thermistor.xml`, `RU_Varistor.xml` (резисторы), `C1.xml`, `C_Electrolytic.xml`, `C_Trimmer.xml`, `C_Variable.xml`, `C_VariableDual.xml`, `C_Feedthrough.xml` (конденсаторы), `L1.xml`, `L_Core.xml` (катушки/дроссели), `T1.xml` (трансформатор)
+
+**Полупроводники**: `VD1.xml`, `VD_Bridge.xml`, `VD_Zener.xml`, `VD_Schottky.xml`, `VD_Varicap.xml`, `VD_VaricapMatrix.xml` (диоды), `VS_Dinistor.xml`, `VS_Thyristor.xml`, `VS_Triac.xml` (тиристоры), `VT_PNP.xml`, `VT_NPN.xml`, `VT_Unijunction.xml`, `VT_FET_P.xml`, `VT_MOSFET_P.xml`, `VT_MOSFET_DualGate.xml` (транзисторы), `R_Photo.xml`, `VD_Photo_LED.xml`, `VT_Photo.xml` (фотоприборы), `Opto_R.xml`, `Opto_Diode.xml`, `Opto_Thyristor.xml`, `Opto_Transistor.xml` (оптроны)
+
+**Электронные лампы**: `VL_Triode.xml`, `VL_DoubleTriode.xml`, `VL_Pentode.xml`
+
+**Электрические машины, источники и индикация**: `M1.xml`, `M2.xml` (электродвигатели), `GB1.xml` (батарея), `EL1.xml`, `HL_Gas.xml` (лампы), `B1.xml` (датчик Холла), `WA1.xml`, `WA2.xml` (антенны)
+
+**Измерение и датчики**: `PA1.xml` (электроизмерительный прибор), `BK1.xml` (датчик температуры), `BP1.xml` (датчик давления)
+
+**Линии связи и соединения**: `Ground.xml`, `Chassis.xml`, `LineBranch.xml`, `ShieldedLine.xml`, `ShieldGroup.xml`, `CoaxCable.xml`, `TwistedPair.xml`, `FlexWire.xml`, `GroupLine.xml`, `SignalArrow.xml`, `DataFlow.xml`, `MechLink.xml`
+
+**Аналоговые и цифровые ИС, функциональные блоки**: `DA_OpAmp.xml`, `DA_Comparator.xml`, `DA_Timer.xml`, `DD_AND.xml`, `DD_OR.xml`, `DD_NOT.xml`, `DD_Trigger.xml`, `HG1.xml`, `DR1.xml`, `DA_Stabilizer.xml`, `S_Commutator.xml`, `A1.xml`, `A_Attenuator.xml`, `G_Generator.xml`, `U_Converter.xml`, `Z_Filter.xml`, `DT_Delay.xml`
+
+Каждый файл можно открыть в `View.html?name=ИмяФайла`; те же ссылки продублированы (с группировкой) в `Blok.htm`.
 
 ## Механизм подстановки блоков
 

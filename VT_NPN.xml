@@ -1,0 +1,18 @@
+<Bl Name="Транзистор n-p-n">
+
+<svg viewBox="-8 -12 28 24" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(6 0) scale(0.75) translate(-6 0)">
+  <text font-size="3.65" x="6" y="-9" text-anchor="middle" class="text" font-family="gost">VT2</text>
+  <circle cx="6" cy="0" r="8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-6" y1="0" x2="2" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="2" y1="-4" x2="2" y2="4" stroke="#000000" stroke-width="0.3"/>
+  <line x1="2" y1="-2" x2="8" y2="-6" stroke="#000000" stroke-width="0.2"/>
+  <line x1="8" y1="-6" x2="8" y2="-10" stroke="#000000" stroke-width="0.2"/>
+  <line x1="2" y1="2" x2="8" y2="6" stroke="#000000" stroke-width="0.2"/>
+  <line x1="8" y1="6" x2="8" y2="10" stroke="#000000" stroke-width="0.2"/>
+  <polygon points="8,6 5,5.2 6.3,7.9" fill="#000000"/>
+ </g>
+</svg>
+
+</Bl>

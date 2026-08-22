@@ -1,0 +1,25 @@
+<Bl Name="Двойной триод">
+
+<svg viewBox="-2 -12 42 24" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="10" y="-9" text-anchor="middle" class="text" font-family="gost">VL2.1</text>
+  <circle cx="10" cy="0" r="7" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="6" y1="-3" x2="14" y2="-3" stroke="#000000" stroke-width="0.3"/>
+  <line x1="6" y1="0" x2="14" y2="0" stroke="#000000" stroke-width="0.2" stroke-dasharray="1 1"/>
+  <path d="M6,3 q4,3 8,0" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <line x1="10" y1="-3" x2="10" y2="-10" stroke="#000000" stroke-width="0.2"/>
+  <line x1="10" y1="0" x2="4" y2="-6" stroke="#000000" stroke-width="0.2"/>
+  <line x1="8" y1="4" x2="6" y2="9" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.65" x="30" y="-9" text-anchor="middle" class="text" font-family="gost">VL2.2</text>
+  <circle cx="30" cy="0" r="7" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="26" y1="-3" x2="34" y2="-3" stroke="#000000" stroke-width="0.3"/>
+  <line x1="26" y1="0" x2="34" y2="0" stroke="#000000" stroke-width="0.2" stroke-dasharray="1 1"/>
+  <path d="M26,3 q4,3 8,0" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <line x1="30" y1="-3" x2="30" y2="-10" stroke="#000000" stroke-width="0.2"/>
+  <line x1="30" y1="0" x2="24" y2="-6" stroke="#000000" stroke-width="0.2"/>
+  <line x1="32" y1="4" x2="34" y2="9" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

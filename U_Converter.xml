@@ -1,0 +1,16 @@
+<Bl Name="Преобразователь">
+
+<svg viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="10" y="-6" text-anchor="middle" class="text" font-family="gost">U1</text>
+  <rect x="4" y="-4" width="12" height="8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="4" y1="-4" x2="16" y2="4" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3" x="7" y="-0.8" class="text" font-family="gost">~</text>
+  <text font-size="3" x="11.5" y="3" class="text" font-family="gost">=</text>
+  <line x1="0" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="16" y1="0" x2="20" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

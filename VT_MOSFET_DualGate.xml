@@ -1,0 +1,20 @@
+<Bl Name="Транзистор полевой с двумя изолированными затворами">
+
+<svg viewBox="-8 -12 28 24" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(6 0) scale(0.75) translate(-6 0)">
+  <text font-size="3.65" x="6" y="-9" text-anchor="middle" class="text" font-family="gost">VT11</text>
+  <circle cx="6" cy="0" r="8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="3" y1="-5" x2="3" y2="-2" stroke="#000000" stroke-width="0.3"/>
+  <line x1="3" y1="-1" x2="3" y2="1" stroke="#000000" stroke-width="0.3"/>
+  <line x1="3" y1="2" x2="3" y2="5" stroke="#000000" stroke-width="0.3"/>
+  <line x1="3" y1="-3.5" x2="9" y2="-3.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="9" y1="-3.5" x2="9" y2="-10" stroke="#000000" stroke-width="0.2"/>
+  <line x1="3" y1="3.5" x2="9" y2="3.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="9" y1="3.5" x2="9" y2="10" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-6" y1="-1.5" x2="0" y2="-1.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-6" y1="1.5" x2="0" y2="1.5" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

@@ -1,0 +1,13 @@
+<Bl Name="Антенна магнитная">
+
+<svg viewBox="-6 -10 20 18" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="6" y="-9" text-anchor="middle" class="text" font-family="gost">WA3</text>
+  <polygon points="6,-6 12,0 6,6 0,0" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="0" y1="0" x2="-3" y2="4" stroke="#000000" stroke-width="0.2"/>
+  <line x1="6" y1="6" x2="6" y2="9" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

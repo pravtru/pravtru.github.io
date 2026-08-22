@@ -1,0 +1,20 @@
+<Bl Name="Оптрон резисторный">
+
+<svg viewBox="-4 -10 34 20" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="13" y="-8" text-anchor="middle" class="text" font-family="gost">U1</text>
+  <rect x="0" y="-6" width="26" height="12" rx="6" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-4" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <polygon points="4,-3 4,3 9,0" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="9" y1="-3" x2="9" y2="3" stroke="#000000" stroke-width="0.2"/>
+  <line x1="6" y1="-6" x2="8" y2="-9" stroke="#000000" stroke-width="0.2"/>
+  <line x1="9" y1="-6" x2="11" y2="-9" stroke="#000000" stroke-width="0.2"/>
+  <line x1="9" y1="0" x2="14" y2="0" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.5 0.5"/>
+  <rect x="14" y="-3" width="8" height="6" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3" x="18" y="1.2" text-anchor="middle" class="text" font-family="gost">R</text>
+  <line x1="22" y1="0" x2="30" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>

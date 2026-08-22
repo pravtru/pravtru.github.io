@@ -1,0 +1,14 @@
+<Bl Name="Микрофон">
+
+<svg viewBox="-4 -10 22 20" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.65" x="8" y="-8" text-anchor="middle" class="text" font-family="gost">BM1</text>
+  <circle cx="8" cy="0" r="4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="5.5" y1="-2" x2="10.5" y2="2" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-2" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="12" y1="0" x2="18" y2="0" stroke="#000000" stroke-width="0.2"/>
+ </g>
+</svg>
+
+</Bl>
