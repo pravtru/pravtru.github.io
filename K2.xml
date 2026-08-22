@@ -1,0 +1,9 @@
+<Bl Name="K2">
+
+<svg viewBox="-10 -12 35 40" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+  <Bl Name="KT"><Pr bid="1" id="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K2</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+  <Bl Name="NO"><Pr bid="1" id="2" transform="translate(0 20) rotate(0 0 0)"></Pr><Pr bid="2" id="pz">K2</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+</svg>
+
+</Bl>
