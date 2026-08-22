@@ -1,24 +1,24 @@
 <El Name="Повысительный насос">
 
 <Elem>
-</ Elem>
+</Elem>
 
-<SVG tip="SA" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SA" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)"></g>
 </svg>
 
-<SVG tip="SP" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SP" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)"></g>
 </svg>
 
-<SVG tip="SV" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SV" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)"></g>
-</SVG>
+</svg>
 
-<SVG tip="PL" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="PL" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)"></g>
 </svg>

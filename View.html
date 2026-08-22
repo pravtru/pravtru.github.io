@@ -29,6 +29,11 @@
 <div class="row">
 
 <div class="card-body" id="id1"></div>
+<div id="pgNav" class="d-flex align-items-center gap-2 mb-3" style="display:none;">
+ <button type="button" class="btn btn-secondary btn-sm" id="pgPrev">&laquo; Назад</button>
+ <span id="pgInfo"></span>
+ <button type="button" class="btn btn-secondary btn-sm" id="pgNext">Вперёд &raquo;</button>
+</div>
 
  <div class="col-lg-8">
   <div class="card border-primary mb-3" style="max-width: 80rem;">
@@ -138,6 +143,8 @@
 
 <script>
 var p1, xmlDoc, xmlBlk, t0, t1, x1;
+var svgPages = [];
+var curPage = 0;
 //Параметры строки
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name');
@@ -161,6 +168,18 @@ document.getElementById('mdl1k').addEventListener('click', function () {
 document.getElementById('mdl2k').addEventListener('click', function () {
     console.log( document.getElementById('1_eT1').value );
     console.log( document.getElementById('1_eT2').value );
+});
+document.getElementById('pgPrev').addEventListener('click', function () {
+ if (curPage > 0) {
+  curPage--;
+  renderPage();
+ }
+});
+document.getElementById('pgNext').addEventListener('click', function () {
+ if (curPage < svgPages.length - 1) {
+  curPage++;
+  renderPage();
+ }
 });
 
 //Функция запроса данных
@@ -297,20 +316,36 @@ function inPr(Prs, N0) { //Искомый блок и новый элемент 
  }
 }
 
-//Вывод содержимого
+//Вывод содержимого (постранично, если тегов SVG несколько)
 function vyvod() {
- var ih = '';
- var Svg = xmlBlk.children;
- if (Svg.length > 0) {
-   ih = Svg[0].outerHTML;
+ svgPages = Array.prototype.filter.call(xmlBlk.children, function (c) {
+  return c.nodeName.toLowerCase() === 'svg';
+ });
+ if (curPage >= svgPages.length) {
+  curPage = 0;
  }
- if (Svg.length > 1) {
-  for (let i = 1; i < Svg.length; i++) {
-   ih = ih + '<br />' + Svg[i].outerHTML;
-  }
+ renderPage();
+}
+
+//Отрисовка текущей страницы
+function renderPage() {
+ var ih = '';
+ if (svgPages.length > 0) {
+  ih = svgPages[curPage].outerHTML;
  }
  document.getElementById("id1").innerHTML = ih;
  document.getElementById("id2").textContent = ih;
+
+ var nav = document.getElementById("pgNav");
+ if (svgPages.length > 1) {
+  nav.style.display = "flex";
+  var tip = svgPages[curPage].getAttribute('tip');
+  document.getElementById("pgInfo").textContent = 'Страница ' + (curPage + 1) + ' из ' + svgPages.length + (tip ? ' (' + tip + ')' : '');
+  document.getElementById("pgPrev").disabled = (curPage === 0);
+  document.getElementById("pgNext").disabled = (curPage === svgPages.length - 1);
+ } else {
+  nav.style.display = "none";
+ }
 }
 
 </script>
