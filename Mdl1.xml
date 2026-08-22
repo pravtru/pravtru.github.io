@@ -1,4 +1,23 @@
-<Mdl Name="Mdl1">
+<Mdl Name="Реверсивный привод">
+
+<Elements>
+ <El Name="QF_PKZM0" poz="QF1" kol="1" prim="см. проект ЭМ"/>
+ <El Name="KM_DILM7" poz="KM1" kol="1"/>
+ <El Name="KM_DILM7" poz="KM2" kol="1"/>
+ <El Name="QF_FAZ" poz="QF2" kol="1"/>
+ <El Name="Rele_MR207A" poz="K1" kol="1"/>
+ <El Name="Rele_MR207A" poz="K2" kol="1"/>
+ <El Name="Rele_MR207A" poz="K3" kol="1"/>
+ <El Name="Modul_MK110" poz="A1" kol="1"/>
+ <El Name="Perekl_MTB2ED3" poz="SA1" kol="1"/>
+ <El Name="Lampa_MT22A63" poz="HL1" kol="1"/>
+ <El Name="Lampa_MT22A63" poz="HL2" kol="1"/>
+ <El Name="Lampa_MT22A64" poz="HL3" kol="1"/>
+ <El Name="Knopka_MTB2EA331" poz="SB1" kol="1"/>
+ <El Name="Knopka_MTB2EA331" poz="SB2" kol="1"/>
+ <El Name="Knopka_MTB2EA434" poz="SB3" kol="1"/>
+ <El Name="Privod_Auma" poz="S1..5,F1,R1" kol="1" prim="см. проект ТМ"/>
+</Elements>
 
 <svg tip="A3" viewBox="0 0 420 297" width="420mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
  <Bl Name="A3BS"></Bl>

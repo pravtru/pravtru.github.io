@@ -1,0 +1,19 @@
+<El Name="Электропривод задвижки Auma">
+
+<Elem>
+</Elem>
+
+<svg tip="SP" viewBox="-4 -12 62 30" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <text font-size="3.65" x="27" y="-9" text-anchor="middle" class="text" font-family="gost">Auma</text>
+ <rect x="0" y="-6" width="54" height="20" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="2 1"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(2 -4) rotate(0 0 0)"></Pr><Pr bid="2">S1</Pr><Pr bid="3">1</Pr><Pr bid="4">2</Pr></Bl>
+ <Bl Name="NC"><Pr bid="1" transform="translate(2 4) rotate(0 0 0)"></Pr><Pr bid="2">S2</Pr><Pr bid="3">3</Pr><Pr bid="4">4</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(20 -4) rotate(0 0 0)"></Pr><Pr bid="2">S3</Pr><Pr bid="3">5</Pr><Pr bid="4">6</Pr></Bl>
+ <Bl Name="NC"><Pr bid="1" transform="translate(20 4) rotate(0 0 0)"></Pr><Pr bid="2">S4</Pr><Pr bid="3">7</Pr><Pr bid="4">8</Pr></Bl>
+ <g transform="translate(38 0)">
+  <Bl Name="R1"></Bl>
+ </g>
+</svg>
+
+</El>
