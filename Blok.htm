@@ -1,13 +1,63 @@
-﻿<html>
+<html>
   <head>
     <meta charset="utf-8" />
     <title>Блок</title>
+    <LINK href="bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
+<div class="container">
 Блоки используются для объединения повторяющихся элементов.
 <br>
 Блоки содержат изменяемые параметры, которые передаются в вызывающем теге. Далее вызванные параметры используются для подстановки в элементы блока и изменения графического представления.
 Для каждого тега в блоке имеющего id будет произведена замена свойства и значений на соответствующие свойства и значения параметра.
 
+<br><br>
+Ниже приведён список всех блоков (тег <code>&lt;Bl&gt;</code>), хранящихся в отдельных XML-файлах проекта.
+
+<table class="table table-sm table-bordered table-striped" style="margin-top: 1rem;">
+<thead>
+<tr><th>Файл</th><th>Название (Name)</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>1.xml</td><td>1</td><td><a href="View.html?name=1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>2 pages.xml</td><td>2 pages</td><td><a href="View.html?name=2 pages" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>2NO.xml</td><td>2NO</td><td><a href="View.html?name=2NO" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>A3BS.xml</td><td>border A3</td><td><a href="View.html?name=A3BS" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>A4WithStamp.xml</td><td>border A4</td><td><a href="View.html?name=A4WithStamp" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Cp.xml</td><td>Cp</td><td><a href="View.html?name=Cp" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>CpV.xml</td><td>CpV</td><td><a href="View.html?name=CpV" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>CornerSpec6.xml</td><td>corner specification 6 rows</td><td><a href="View.html?name=CornerSpec6" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Font.xml</td><td>Font</td><td><a href="View.html?name=Font" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>K1.xml</td><td>K1</td><td><a href="View.html?name=K1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>KM1.xml</td><td>KM1</td><td><a href="View.html?name=KM1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>KT.xml</td><td>KT</td><td><a href="View.html?name=KT" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Kbl.xml</td><td>Кабель горизонтальный</td><td><a href="View.html?name=Kbl" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Kl1.xml</td><td>Kl1</td><td><a href="View.html?name=Kl1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Kl2.xml</td><td>Kl2</td><td><a href="View.html?name=Kl2" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>NC.xml</td><td>NC</td><td><a href="View.html?name=NC" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>NO.xml</td><td>NO</td><td><a href="View.html?name=NO" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>NP.xml</td><td>NP</td><td><a href="View.html?name=NP" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>PT.xml</td><td>Преобразователь давления, 4...20 мА</td><td><a href="View.html?name=PT" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>PowerSupply.xml</td><td>Power supply</td><td><a href="View.html?name=PowerSupply" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>QF1.xml</td><td>QF</td><td><a href="View.html?name=QF1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>QF3.xml</td><td>QF3</td><td><a href="View.html?name=QF3" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>QFVertical.xml</td><td>Circuit breaker vertical</td><td><a href="View.html?name=QFVertical" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>SB1.xml</td><td>SB1</td><td><a href="View.html?name=SB1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>SB2.xml</td><td>SB2</td><td><a href="View.html?name=SB2" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>ShPitTV7.xml</td><td>ShPitTV7</td><td><a href="View.html?name=ShPitTV7" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>ShPodTV7.xml</td><td>Схема подключения ТВ7</td><td><a href="View.html?name=ShPodTV7" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Stamp.xml</td><td>stamp</td><td><a href="View.html?name=Stamp" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>TSP.xml</td><td>Термометр сопротивления горизонтальный</td><td><a href="View.html?name=TSP" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>TSP4V.xml</td><td>Термометр сопротивления горизонтальный</td><td><a href="View.html?name=TSP4V" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>TV7.xml</td><td>ТВ7</td><td><a href="View.html?name=TV7" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>WE.xml</td><td>Преобразователь расхода</td><td><a href="View.html?name=WE" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>WT.xml</td><td>Термометр сопротивления горизонтальный</td><td><a href="View.html?name=WT" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>XT1.xml</td><td>XT1</td><td><a href="View.html?name=XT1" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Блок питания 12 В горизонтальный.xml</td><td>Блок питания 12 В горизонтальный</td><td><a href="View.html?name=Блок питания 12 В горизонтальный" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+<tr><td>Угловая спецификация 12.xml</td><td>corner specification 6 rows</td><td><a href="View.html?name=Угловая спецификация 12" class="btn btn-info btn-sm">Просмотреть</a></td></tr>
+</tbody>
+</table>
+
+</div>
   </body>
 </html>
