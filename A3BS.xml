@@ -3,6 +3,7 @@
   <Bl0 Name="Font"></Bl0>
   <polyline fill="none" stroke="#000000" stroke-width="0.2" points="420,297 0,297 0,0 420,0 420,297"/>
   <polyline fill="none" stroke="#000000" stroke-width="0.4" points="415,292 20,292 20,5 415,5 415,292"/>
-  <Bl Name="BS"><Pr bid="main" transform="translate(230, 237)"></Pr></Bl>    
+  <Bl Name="BS"><Pr bid="main" transform="translate(230, 237)"></Pr></Bl>
+  <Bl Name="IS"><Pr bid="main" transform="translate(8, 207)"></Pr></Bl>
  </svg>
 </Bl>
