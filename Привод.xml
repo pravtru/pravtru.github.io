@@ -1,0 +1,170 @@
+﻿<Bl Name="Привод">
+
+<svg viewBox="32 -273 191 126" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="50" cy="-170" r="5" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <circle cx="50" cy="-170" r="10" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="40,-180 40,-199" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-180 60,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-180 57,-177" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-180 43,-177" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="35" y="-207.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 35 -207.5)">КМ1</text>
+  <circle cx="40" cy="-200" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="45" y="-200" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 45 -200)">2</text>
+  <polyline points="40,-201 40,-204" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-204 36.5,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-210 40,-214" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M40,-212 A1,1 0 0,1 40,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-215" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="45" y="-215" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 45 -215)">1</text>
+  <polyline points="40,-216 40,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="35" y="-242.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 35 -242.5)">QF1</text>
+  <circle cx="40" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-236 40,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-239 36.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-245 40,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="39.01,-240.7 38.14,-240.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="38.14,-240.2 36.63,-242.79" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="36.63,-242.79 37.49,-243.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-251 40,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="40" y="-262" text-anchor="middle" class="text" font-family="gost">L</text>
+  <text font-size="3.5" x="60" y="-262" text-anchor="middle" class="text" font-family="gost">N</text>
+  <polyline points="60,-250 175,-250" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-250" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="175,-225 175,-250" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-180 40,-199" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-180 50,-199" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-180 60,-199" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-180 57,-177" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-180 43,-177" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="35" y="-207.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 35 -207.5)">КМ1</text>
+  <circle cx="40" cy="-200" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="45" y="-200" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 45 -200)">2</text>
+  <polyline points="40,-201 40,-204" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-204 36.5,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-210 40,-214" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M40,-212 A1,1 0 0,1 40,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-215" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="45" y="-215" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 45 -215)">1</text>
+  <circle cx="50" cy="-200" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="55" y="-200" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 55 -200)">4</text>
+  <polyline points="50,-201 50,-204" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-204 46.5,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-210 50,-214" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M50,-212 A1,1 0 0,1 50,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-215" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="55" y="-215" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 55 -215)">3</text>
+  <circle cx="60" cy="-200" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="65" y="-200" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 65 -200)">6</text>
+  <polyline points="60,-201 60,-204" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-204 56.5,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-210 60,-214" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M60,-212 A1,1 0 0,1 60,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-215" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="65" y="-215" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 65 -215)">5</text>
+  <polyline points="40,-216 40,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-216 50,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-216 60,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="35" y="-242.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 35 -242.5)">QF1</text>
+  <circle cx="40" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-236 40,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-239 36.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-245 40,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="39.01,-240.7 38.14,-240.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="38.14,-240.2 36.63,-242.79" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="36.63,-242.79 37.49,-243.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-236 50,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-239 46.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-245 50,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-236 60,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-239 56.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-245 60,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-251 40,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-251 50,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-251 60,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="38.69,-241.25 58.69,-241.25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="37.81,-242.75 57.81,-242.75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="40" y="-262" text-anchor="middle" class="text" font-family="gost">L1</text>
+  <text font-size="3.5" x="50" y="-262" text-anchor="middle" class="text" font-family="gost">L2</text>
+  <text font-size="3.5" x="60" y="-262" text-anchor="middle" class="text" font-family="gost">L3</text>
+  <polyline points="175,-225 175,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="175" y="-262" text-anchor="middle" class="text" font-family="gost">N</text>
+  <polyline points="40,-225 79,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <text font-size="2.5" x="70" y="-227" text-anchor="middle" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="87.5" y="-231" text-anchor="middle" class="text" font-family="gost">SB2</text>
+  <circle cx="80" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="80" y="-220" text-anchor="middle" class="text" font-family="gost">1</text>
+  <polyline points="81,-225 84,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="84,-225 84,-220" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="84,-220 90.86,-224" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="90,-225 90,-222" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="90,-225 94,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="95" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="95" y="-220" text-anchor="middle" class="text" font-family="gost">2</text>
+  <polyline points="84,-227 84,-229" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="84,-229 90,-229" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="90,-229 90,-227" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="86.25,-229 86.25,-221.31" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="87.75,-229 87.75,-222.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="105" y="-227" text-anchor="middle" class="text" font-family="gost">2</text>
+  <polyline points="96,-225 114,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="105" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <text font-size="3.5" x="122.5" y="-234" text-anchor="middle" class="text" font-family="gost">SB1</text>
+  <circle cx="115" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="115" y="-220" text-anchor="middle" class="text" font-family="gost">3</text>
+  <polyline points="116,-225 119,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119,-225 125,-228.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="125,-225 129,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="130" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="130" y="-220" text-anchor="middle" class="text" font-family="gost">4</text>
+  <polyline points="119,-230 119,-232" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119,-232 125,-232" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="125,-232 125,-230" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="121.25,-232 121.25,-226.31" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="122.75,-232 122.75,-227.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="140" y="-227" text-anchor="middle" class="text" font-family="gost">3</text>
+  <polyline points="131,-225 149,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="140" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <text font-size="3.5" x="122.5" y="-215" text-anchor="middle" class="text" font-family="gost">КМ1</text>
+  <circle cx="115" cy="-210" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="115" y="-205" text-anchor="middle" class="text" font-family="gost">13</text>
+  <polyline points="116,-210 119,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119,-210 125,-213.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="125,-210 129,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="130" cy="-210" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="130" y="-205" text-anchor="middle" class="text" font-family="gost">14</text>
+  <polyline points="105,-210 114,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="105,-210 105,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="131,-210 140,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="140,-225 140,-210" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="157.5" y="-233" text-anchor="middle" class="text" font-family="gost">КМ1</text>
+  <circle cx="150" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="150" y="-220" text-anchor="middle" class="text" font-family="gost">A1</text>
+  <polyline points="151,-225 154.5,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="154.5,-219 154.5,-231" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="160.5,-219 160.5,-231" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="154.5,-219 160.5,-219" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="154.5,-231 160.5,-231" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="160.5,-225 164,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="165" cy="-225" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="165" y="-220" text-anchor="middle" class="text" font-family="gost">A2</text>
+  <polyline points="166,-225 175,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="185,-270 220,-270 220,-150 185,-150 185,-270" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="185,-255 220,-255" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="202.5" y="-262.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Питание, ~220В</text>
+  <text id="2" font-size="3.5" x="202.5" y="-262.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Питание, ~380В</text>
+  <polyline points="185,-190 220,-190" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="3" font-size="3.5" x="202.5" y="-222.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 202.5 -222.5)">Цепи управления</text>
+  <text id="4" font-size="3.5" x="202.5" y="-170" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Двигатель</text>
+</g>
+</svg>
+
+</Bl>

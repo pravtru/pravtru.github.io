@@ -1,0 +1,214 @@
+﻿<Bl Name="Задвижка. Схема электрическая принципиальная.">
+
+<svg viewBox="17 2 356 221" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <g transform="translate(25 140)"><Bl Name="Силовая часть реверсивного привода"></Bl></g>
+  <text font-size="3.5" x="95" y="50.5" text-anchor="middle" class="text" font-family="gost">n-A1</text>
+  <polyline points="85,52.5 105,52.5 105,195 85,195 85,52.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_1" font-size="2.5" x="65" y="43" text-anchor="middle" class="text" font-family="gost">n-1</text>
+  <circle cx="75" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="75,45 135,45" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 62.5)"><Bl Name="Klemma"><Pr bid="1">1</Pr></Bl></g>
+  <polyline points="105,60 114,60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_22" font-size="2.5" x="110" y="58" text-anchor="middle" class="text" font-family="gost">n-23</text>
+  <g transform="translate(115 60)"><Bl Name="Штамп (Форма 3)"><Pr bid="0">1</Pr></Bl></g>
+  <polyline points="131,60 135,60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="135" cy="60" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="135,45 135,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 72.5)"><Bl Name="Klemma"><Pr bid="1">15</Pr></Bl></g>
+  <polyline points="105,70 114,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_2" font-size="2.5" x="110" y="68" text-anchor="middle" class="text" font-family="gost">n-2</text>
+  <g transform="translate(115 70)"><Bl Name="NC"><Pr bid="1">n-F1</Pr><Pr bid="2">19</Pr><Pr bid="3">20</Pr></Bl></g>
+  <polyline points="131,70 135,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 82.5)"><Bl Name="Klemma"><Pr bid="1">19</Pr></Bl></g>
+  <polyline points="105,80 180,80" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(125 100)"><Bl Name="SB2"><Pr bid="1">n-SB3</Pr><Pr bid="2">21</Pr><Pr bid="3">22</Pr></Bl></g>
+  <polyline points="115,100 124,100" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_3" font-size="2.5" x="120" y="98" text-anchor="middle" class="text" font-family="gost">n-3</text>
+  <polyline points="115,100 115,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="115,110 145,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="145,110 145,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141,100 150,100" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="150" cy="100" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <text id="14_4" font-size="2.5" x="145" y="98" text-anchor="middle" class="text" font-family="gost">n-4</text>
+  <g transform="translate(100 132.5)"><Bl Name="Klemma"><Pr bid="1">16</Pr></Bl></g>
+  <polyline points="105,130 114,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_16" font-size="2.5" x="110" y="128" text-anchor="middle" class="text" font-family="gost">n-16</text>
+  <polyline points="110,150 114,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="110,130 110,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="110" cy="130" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(115 130)"><Bl Name="Perekl3"><Pr bid="1">n-SA1</Pr><Pr bid="2_0">13</Pr><Pr bid="3_0">14</Pr><Pr bid="2_1">23</Pr><Pr bid="3_1">24</Pr><Pr bid="4_0">Местн.</Pr><Pr bid="4_1">Откл.</Pr><Pr bid="4_2">Дистан.</Pr></Bl></g>
+  <polyline points="126,130 145,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="126,150 145,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 162.5)"><Bl Name="Klemma"><Pr bid="1">18</Pr></Bl></g>
+  <polyline points="105,160 145,160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_17" font-size="2.5" x="110" y="158" text-anchor="middle" class="text" font-family="gost">n-17</text>
+  <polyline points="145,150 145,160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 167)"><Bl Name="Klemma"><Pr bid="1">23</Pr></Bl></g>
+  <polyline points="105,165 110,165" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="110,165 110,160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="110" cy="160" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(100 172.5)"><Bl Name="Klemma"><Pr bid="1">24</Pr></Bl></g>
+  <polyline points="105,170 180,170" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(100 187)"><Bl Name="Klemma"><Pr bid="1">2</Pr></Bl></g>
+  <polyline points="105,185 330,185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(85 100)"><Bl Name="Klemma"><Pr bid="1">4</Pr></Bl></g>
+  <polyline points="80,97.5 85,97.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="80,97.5 80,117.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(85 105)"><Bl Name="Klemma"><Pr bid="1">6</Pr></Bl></g>
+  <polyline points="80,102.5 85,102.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="80" cy="102.5" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 110)"><Bl Name="Klemma"><Pr bid="1">8</Pr></Bl></g>
+  <polyline points="80,107.5 85,107.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="80" cy="107.5" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 115)"><Bl Name="Klemma"><Pr bid="1">10</Pr></Bl></g>
+  <polyline points="80,112.5 85,112.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="80" cy="112.5" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 120)"><Bl Name="Klemma"><Pr bid="1">12</Pr></Bl></g>
+  <polyline points="80,117.5 85,117.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(85 132.5)"><Bl Name="Klemma"><Pr bid="1">3</Pr></Bl></g>
+  <polyline points="45,130 85,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_18" font-size="2.5" x="75" y="128" text-anchor="middle" class="text" font-family="gost">n-18</text>
+  <polyline points="45,130 45,185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(85 142.5)"><Bl Name="Klemma"><Pr bid="1">5</Pr></Bl></g>
+  <polyline points="66,140 85,140" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_19" font-size="2.5" x="75" y="138" text-anchor="middle" class="text" font-family="gost">n-19</text>
+  <g transform="translate(50 140)"><Bl Name="NO"><Pr bid="1">n-K1</Pr><Pr bid="2">11</Pr><Pr bid="3">14</Pr></Bl></g>
+  <polyline points="45,140 49,140" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="45" cy="140" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 152.5)"><Bl Name="Klemma"><Pr bid="1">7</Pr></Bl></g>
+  <polyline points="66,150 85,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_20" font-size="2.5" x="75" y="148" text-anchor="middle" class="text" font-family="gost">n-20</text>
+  <g transform="translate(50 150)"><Bl Name="NO"><Pr bid="1">n-K2</Pr><Pr bid="2">11</Pr><Pr bid="3">14</Pr></Bl></g>
+  <polyline points="45,150 49,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="45" cy="150" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 162.5)"><Bl Name="Klemma"><Pr bid="1">9</Pr></Bl></g>
+  <polyline points="66,160 85,160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_21" font-size="2.5" x="75" y="158" text-anchor="middle" class="text" font-family="gost">n-21</text>
+  <g transform="translate(50 160)"><Bl Name="NO"><Pr bid="1">n-K3</Pr><Pr bid="2">11</Pr><Pr bid="3">14</Pr></Bl></g>
+  <polyline points="45,160 49,160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="45" cy="160" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(85 187.5)"><Bl Name="Klemma"><Pr bid="1">11</Pr></Bl></g>
+  <polyline points="61,185 85,185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_22" font-size="2.5" x="80" y="183" text-anchor="middle" class="text" font-family="gost">n-22</text>
+  <g transform="translate(50 185)"><Bl Name="Perekl3"><Pr bid="1">n-SA1</Pr><Pr bid="2_0">33</Pr><Pr bid="3_0">34</Pr><Pr bid="4_0">Местн.</Pr><Pr bid="4_1">Откл.</Pr><Pr bid="4_2">Дистан.</Pr></Bl></g>
+  <polyline points="45,185 49,185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="150,55 150,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="190,35 190,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="190" cy="35" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="295,15 304,15" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="295,15 295,35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="295" cy="35" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(305 15)"><Bl Name="EL1"><Pr bid="1">n-HL1</Pr></Bl></g>
+  <polyline points="321,15 330,15" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="15" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="75,45 75,35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="75,35 234,35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="251,35 304,35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_11" font-size="2.5" x="260" y="33" text-anchor="middle" class="text" font-family="gost">n-10</text>
+  <g transform="translate(305 35)"><Bl Name="KT"><Pr bid="1">n-К1</Pr></Bl></g>
+  <polyline points="321,35 330,35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="35" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="150,55 154,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(155 55)"><Bl Name="SB1"><Pr bid="1">n-SB1</Pr></Bl></g>
+  <polyline points="171,55 199,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_5" font-size="2.5" x="180" y="53" text-anchor="middle" class="text" font-family="gost">n-5</text>
+  <g transform="translate(200 55)"><Bl Name="Концевые выключатели Auma"><Pr bid="1">2</Pr></Bl></g>
+  <polyline points="216,55 234,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_7" font-size="2.5" x="225" y="53" text-anchor="middle" class="text" font-family="gost">n-7</text>
+  <g transform="translate(235 55)"><Bl Name="Концевые выключатели Auma"><Pr bid="1">4</Pr></Bl></g>
+  <polyline points="251,55 269,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_11" font-size="2.5" x="260" y="53" text-anchor="middle" class="text" font-family="gost">n-11</text>
+  <g transform="translate(270 55)"><Bl Name="NC"><Pr bid="1">n-КМ2</Pr><Pr bid="2">21</Pr><Pr bid="3">22</Pr></Bl></g>
+  <g transform="translate(285 55)"><Bl Name="ChainNumber"><Pr bid="1">n-14</Pr></Bl></g>
+  <g transform="translate(305 55)"><Bl Name="KT"><Pr bid="1">n-КМ1</Pr></Bl></g>
+  <polyline points="321,55 330,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="55" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="190,65 199,65" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="190" cy="65" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="216,65 225,65" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="225,65 225,145" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="150" cy="70" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="150,70 154,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(155 70)"><Bl Name="NO"><Pr bid="1">КМ1</Pr></Bl></g>
+  <polyline points="171,70 180,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="70" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="180,80 180,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="55" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="295,75 304,75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="295,75 295,95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="295" cy="95" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(305 75)"><Bl Name="EL1"><Pr bid="1">n-HL3</Pr></Bl></g>
+  <polyline points="321,75 330,75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="75" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="225" cy="95" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="225,95 304,95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_8" font-size="2.5" x="235" y="93" text-anchor="middle" class="text" font-family="gost">n-8</text>
+  <g transform="translate(305 95)"><Bl Name="KT"><Pr bid="1">n-К3</Pr></Bl></g>
+  <polyline points="321,95 330,95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="95" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="190" cy="115" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="190,115 299,115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(300 115)"><Bl Name="R1"><Pr bid="1">n-R1</Pr><Pr bid="2">47</Pr><Pr bid="3">48</Pr></Bl></g>
+  <polyline points="321,115 330,115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="115" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="150" cy="135" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="150,135 154,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(155 135)"><Bl Name="SB1"><Pr bid="1">n-SB2</Pr></Bl></g>
+  <polyline points="171,135 199,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_6" font-size="2.5" x="180" y="133" text-anchor="middle" class="text" font-family="gost">n-6</text>
+  <g transform="translate(200 135)"><Bl Name="Концевые выключатели Auma"><Pr bid="1">1</Pr></Bl></g>
+  <polyline points="216,135 234,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_9" font-size="2.5" x="220" y="133" text-anchor="middle" class="text" font-family="gost">n-9</text>
+  <g transform="translate(235 135)"><Bl Name="Концевые выключатели Auma"><Pr bid="1">3</Pr></Bl></g>
+  <polyline points="251,135 269,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_12" font-size="2.5" x="260" y="133" text-anchor="middle" class="text" font-family="gost">n-12</text>
+  <g transform="translate(270 135)"><Bl Name="NC"><Pr bid="1">n-КМ1</Pr><Pr bid="2">21</Pr><Pr bid="3">22</Pr></Bl></g>
+  <g transform="translate(285 135)"><Bl Name="ChainNumber"><Pr bid="1">n-15</Pr></Bl></g>
+  <g transform="translate(305 135)"><Bl Name="KT"><Pr bid="1">n-КМ2</Pr></Bl></g>
+  <polyline points="321,135 330,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="135" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="190,145 199,145" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="190" cy="145" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="216,145 225,145" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="150,150 154,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(155 150)"><Bl Name="NO"><Pr bid="1">КМ2</Pr></Bl></g>
+  <polyline points="171,150 180,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="150" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="180,170 180,135" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="135" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="190,155 234,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="251,155 304,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="14_13" font-size="2.5" x="260" y="153" text-anchor="middle" class="text" font-family="gost">n-13</text>
+  <g transform="translate(305 155)"><Bl Name="KT"><Pr bid="1">n-К2</Pr></Bl></g>
+  <polyline points="321,155 330,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="155" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="295,175 304,175" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="295,175 295,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="295" cy="155" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(305 175)"><Bl Name="EL1"><Pr bid="1">n-HL2</Pr></Bl></g>
+  <polyline points="321,175 330,175" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="330" cy="175" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="330,185 330,10" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="330" y="8" text-anchor="middle" class="text" font-family="gost">N</text>
+  <polyline points="340,5 370,5 370,185 340,185 340,5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="340,45 370,45" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="340,65 370,65" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="340,105 370,105" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="340,125 370,125" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="340,145 370,145" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="355" y="25" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Сигнализация
+&quot;Открыто&quot;</text>
+  <text font-size="3.5" x="355" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Цепи открытия</text>
+  <text font-size="3.5" x="355" y="85" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Сигнализация
+&quot;Авария&quot;</text>
+  <text font-size="3.5" x="355" y="115" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Подогрев</text>
+  <text font-size="3.5" x="355" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Цепи закрытия</text>
+  <text font-size="3.5" x="355" y="165" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Сигнализация
+&quot;Закрыто&quot;</text>
+  <g transform="translate(20 215)"><Bl Name="Диаграмма Auma"></Bl></g>
+</g>
+</svg>
+
+</Bl>

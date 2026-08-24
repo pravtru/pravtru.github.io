@@ -1,0 +1,21 @@
+﻿<Bl Name="Подвал">
+
+<svg viewBox="-3 -88 201 91" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.5" x="5" y="-30" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 5 -30)">Щит силовой</text>
+  <polyline points="0,0 0,-60 195,-60 195,0 0,0" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="10,0 10,-60" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="35,-5 185,-5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(35 -5)"><Bl Name="Задвижка, подвал СА"><Pr bid="1">1</Pr><Pr bid="6">1</Pr></Bl></g>
+  <g transform="translate(90 -5)"><Bl Name="Задвижка, подвал СА"><Pr bid="1">2</Pr><Pr bid="6">2</Pr></Bl></g>
+  <g transform="translate(145 -5)"><Bl Name="Задвижка, подвал СА"><Pr bid="1">3</Pr><Pr bid="6">3</Pr></Bl></g>
+  <g transform="translate(185 -15)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">YT</Pr><Pr bid="3">A0</Pr></Bl></g>
+  <polyline points="185,-5 185,-10" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="185,-20 185,-85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="182" y="-72.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 182 -72.5)">От кнопок у</text>
+  <text font-size="2.5" x="188" y="-72.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 188 -72.5)">пожарных кранов</text>
+</g>
+</svg>
+
+</Bl>

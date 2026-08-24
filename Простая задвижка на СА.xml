@@ -1,0 +1,14 @@
+﻿<Bl Name="Задвижка простая">
+
+<svg viewBox="-6 -81 9 84" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="0,0 0,-20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 -25)"><Bl Name="PriborSA"><Pr bid="1">5</Pr><Pr bid="2">HS</Pr><Pr bid="3">1-SA1</Pr></Bl></g>
+  <polyline points="0,-30 0,-75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="6" font-size="2.5" x="0" y="-78" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="-3" y="-65" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 -3 -65)">Управление</text>
+</g>
+</svg>
+
+</Bl>

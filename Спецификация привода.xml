@@ -1,0 +1,97 @@
+﻿<Bl Name="Спецификация">
+
+<svg viewBox="-193 2 191 78" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="-190,5 -190,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-170,5 -170,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-60,5 -60,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-50,5 -50,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,21 -5,21" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,29 -5,29" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,37 -5,37" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,45 -5,45" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,53 -5,53" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,61 -5,61" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,69 -5,69" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,77 -5,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="3.5" x="-180" y="11.75" text-anchor="middle" class="text" font-family="gost">Поз.</text>
+  <text font-size="3.5" x="-180" y="17.75" text-anchor="middle" class="text" font-family="gost">обозн.</text>
+  <text font-size="3.5" x="-115" y="14.75" text-anchor="middle" class="text" font-family="gost">Наименование</text>
+  <text font-size="3.5" x="-55" y="14.75" text-anchor="middle" class="text" font-family="gost">Кол.</text>
+  <text font-size="3.5" x="-27.5" y="14.75" text-anchor="middle" class="text" font-family="gost">Примечание</text>
+  <text id="1" font-size="2.5" x="-115" y="26.25" text-anchor="middle" class="text" font-family="gost">Щит силовой ЩС</text>
+  <text font-size="2.5" x="-180" y="34.25" text-anchor="middle" class="text" font-family="gost">QF1</text>
+  <text font-size="2.5" x="-55" y="34.25" text-anchor="middle" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="-180" y="42.25" text-anchor="middle" class="text" font-family="gost">КМ1</text>
+  <text font-size="2.5" x="-55" y="42.25" text-anchor="middle" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-0,25</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-0,4</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-0,63</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-0,63</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-0,1</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-1,6</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-1,6</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-2,5</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-4</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-4</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-6,3</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-10</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM7</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-10</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM9</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-12</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM12</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-16</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM17</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-25</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM25</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM0-32</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM32</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM4-40</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM40</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM4-50</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM40</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический PKZM4-58</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM65</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN1-M80</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM80</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN1-M100</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM95</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN1-M100</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM115</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN2-M160</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM150</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN2-M200</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM185</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN2-M200</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM225</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN3-ME350</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM300</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN3-ME350</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM300</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN3-ME350</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM400</text>
+  <text font-size="2.5" x="-169" y="34.25" class="text" font-family="gost">Выключатель автоматический NZMN3-ME450</text>
+  <text font-size="2.5" x="-169" y="42.25" class="text" font-family="gost">Контактор DILM500</text>
+  <text font-size="2.5" x="-180" y="50.25" text-anchor="middle" class="text" font-family="gost">SB1</text>
+  <text font-size="2.5" x="-169" y="50.25" class="text" font-family="gost">Кнопка зелёная MTB2-EA331, MTB2-EZ11</text>
+  <text font-size="2.5" x="-55" y="50.25" text-anchor="middle" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="-180" y="58.25" text-anchor="middle" class="text" font-family="gost">SB2</text>
+  <text font-size="2.5" x="-169" y="58.25" class="text" font-family="gost">Кнопка красная MTB2-EA432, MTB2-EZ12</text>
+  <text font-size="2.5" x="-55" y="58.25" text-anchor="middle" class="text" font-family="gost">1</text>
+</g>
+</svg>
+
+</Bl>

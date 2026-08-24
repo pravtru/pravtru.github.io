@@ -1,0 +1,22 @@
+<Bl Name="Программируемое реле">
+
+<svg viewBox="-2 -4 47 58" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text id="1" font-size="3.5" x="20" y="-2" text-anchor="middle" class="text" font-family="gost">A1</text>
+  <text font-size="2.5" x="20" y="4" text-anchor="middle" class="text" font-family="gost">ПР200-24.1.1.0</text>
+  <rect x="0" y="0" width="40" height="50" fill="none" stroke="#000000" stroke-width="0.2"/>
+
+  <g transform="translate(0 10)"><Bl Name="Klemma"><Pr bid="1">1</Pr></Bl></g>
+  <g transform="translate(0 15)"><Bl Name="Klemma"><Pr bid="1">2</Pr></Bl></g>
+  <g transform="translate(0 25)"><Bl Name="Klemma"><Pr bid="1">3</Pr></Bl></g>
+  <g transform="translate(0 30)"><Bl Name="Klemma"><Pr bid="1">4</Pr></Bl></g>
+  <g transform="translate(0 40)"><Bl Name="Klemma"><Pr bid="1">5</Pr></Bl></g>
+  <g transform="translate(35 25)"><Bl Name="Klemma"><Pr bid="1">15</Pr></Bl></g>
+  <g transform="translate(35 30)"><Bl Name="Klemma"><Pr bid="1">16</Pr></Bl></g>
+  <g transform="translate(35 40)"><Bl Name="Klemma"><Pr bid="1">18</Pr></Bl></g>
+  <g transform="translate(35 45)"><Bl Name="Klemma"><Pr bid="1">19</Pr></Bl></g>
+ </g>
+</svg>
+
+</Bl>

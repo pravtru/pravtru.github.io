@@ -1,0 +1,30 @@
+﻿<Bl Name="Концевые выключатели Auma">
+
+<svg viewBox="-3 -31 15 59" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.5" x="7.5" y="-8" text-anchor="middle" class="text" font-family="gost">S1</text>
+  <circle cx="7.5" cy="-5" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 0)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2">1</Pr><Pr bid="3">2</Pr></Bl></g>
+  <g transform="translate(0 10)"><Bl Name="NO"><Pr bid="1"></Pr><Pr bid="2">3</Pr><Pr bid="3">4</Pr></Bl></g>
+  <polyline points="7.5,-4 7.5,7.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="7.5" y="-8" text-anchor="middle" class="text" font-family="gost">S2</text>
+  <circle cx="7.5" cy="-5" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 0)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2">5</Pr><Pr bid="3">6</Pr></Bl></g>
+  <g transform="translate(0 10)"><Bl Name="NO"><Pr bid="1"></Pr><Pr bid="2">7</Pr><Pr bid="3">8</Pr></Bl></g>
+  <polyline points="7.5,-4 7.5,7.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="7.5" y="-8" text-anchor="middle" class="text" font-family="gost">S3</text>
+  <circle cx="7.5" cy="-5" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 0)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2">9</Pr><Pr bid="3">10</Pr></Bl></g>
+  <g transform="translate(0 20)"><Bl Name="NO"><Pr bid="1"></Pr><Pr bid="2">11</Pr><Pr bid="3">12</Pr></Bl></g>
+  <polyline points="7.5,-4 7.5,17.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="7.5" y="-28" text-anchor="middle" class="text" font-family="gost">S4</text>
+  <circle cx="7.5" cy="-25" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 0)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2">13</Pr><Pr bid="3">14</Pr></Bl></g>
+  <g transform="translate(0 -20)"><Bl Name="NO"><Pr bid="1"></Pr><Pr bid="2">15</Pr><Pr bid="3">16</Pr></Bl></g>
+  <polyline points="7.5,-24 7.5,2.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 0)"><Bl Name="NC"><Pr bid="1">F1</Pr><Pr bid="2">19</Pr><Pr bid="3">20</Pr></Bl></g>
+</g>
+</svg>
+
+</Bl>

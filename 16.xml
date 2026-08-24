@@ -1,0 +1,114 @@
+﻿<Bl Name="16">
+
+<svg viewBox="17 -295 191 166" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="205,-292 20,-292" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="24.56" y="-279.33" class="text" font-family="gost">Обозн.</text>
+  <text font-size="3.5" x="26.56" y="-285.17" class="text" font-family="gost">Поз.</text>
+  <text font-size="3.5" x="172.24" y="-282.75" class="text" font-family="gost">Примечание</text>
+  <text font-size="3.5" x="151.49" y="-282.25" class="text" font-family="gost">Кол.</text>
+  <text font-size="3.5" x="82.73" y="-282.25" class="text" font-family="gost">Наименование</text>
+  <text font-size="3.5" x="78.85" y="-270.82" class="text" font-family="gost">%%UЩит силовой ЩПН</text>
+  <text font-size="2.5" x="71.52" y="-255.1" class="text" font-family="gost">DIULM</text>
+  <text font-size="2.5" x="41.84" y="-255.1" class="text" font-family="gost">Магнитный пускатель </text>
+  <text font-size="2.5" x="32.87" y="-252.66" class="text" font-family="gost">2</text>
+  <text font-size="2.5" x="29.3" y="-252.66" class="text" font-family="gost">КМ</text>
+  <text font-size="2.5" x="26.8" y="-252.66" class="text" font-family="gost">1-</text>
+  <text font-size="2.5" x="25.46" y="-252.66" class="text" font-family="gost">з</text>
+  <text font-size="2.5" x="32.88" y="-256.85" class="text" font-family="gost">1,</text>
+  <text font-size="2.5" x="29.31" y="-256.85" class="text" font-family="gost">КМ</text>
+  <text font-size="2.5" x="26.81" y="-256.85" class="text" font-family="gost">1-</text>
+  <text font-size="2.5" x="25.47" y="-256.85" class="text" font-family="gost">з</text>
+  <text font-size="2.5" x="154.83" y="-255.34" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="26.8" y="-262.76" class="text" font-family="gost">1-QF1</text>
+  <text font-size="2.5" x="25.46" y="-262.76" class="text" font-family="gost">з</text>
+  <text font-size="2.5" x="154.83" y="-263.34" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="90.83" y="-263.11" class="text" font-family="gost">2</text>
+  <text font-size="2.5" x="89.4" y="-263.11" class="text" font-family="gost">С</text>
+  <text font-size="2.5" x="82.07" y="-263.11" class="text" font-family="gost">CLS6-</text>
+  <text font-size="2.5" x="41.84" y="-263.11" class="text" font-family="gost">Выключатель автоматический </text>
+  <text font-size="2.5" x="154.19" y="-206.81" class="text" font-family="gost">2</text>
+  <text font-size="2.5" x="69.67" y="-159.04" class="text" font-family="gost">M22S-ST-X</text>
+  <text font-size="2.5" x="40.34" y="-159.04" class="text" font-family="gost"> Держатель таблички </text>
+  <text font-size="2.5" x="154.2" y="-158.79" class="text" font-family="gost">6</text>
+  <text font-size="2.5" x="70.04" y="-207.07" class="text" font-family="gost">M22-L-G</text>
+  <text font-size="2.5" x="40" y="-207.07" class="text" font-family="gost"> Арматура сигнальная </text>
+  <text font-size="2.5" x="160" y="-206.72" class="text" font-family="gost"> Зелёная линза</text>
+  <text font-size="2.5" x="26.61" y="-204.65" class="text" font-family="gost">-HL2</text>
+  <text font-size="2.5" x="26.62" y="-208.82" class="text" font-family="gost">-HL1,</text>
+  <text font-size="3" x="154.36" y="-198.57" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="160" y="-199.08" class="text" font-family="gost"> Красная линза</text>
+  <text font-size="2.5" x="26.71" y="-198.73" class="text" font-family="gost">-HL3</text>
+  <text font-size="2.5" x="40" y="-143.08" class="text" font-family="gost"> Электропривод задвижки</text>
+  <text font-size="2.5" x="27.24" y="-142.73" class="text" font-family="gost">1-AB</text>
+  <text font-size="2.5" x="25.9" y="-142.73" class="text" font-family="gost">з</text>
+  <text font-size="2.5" x="154.47" y="-142.82" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="86.62" y="-238.97" class="text" font-family="gost">%%UПо месту</text>
+  <text font-size="2.5" x="181.98" y="-271.07" class="text" font-family="gost">&quot;</text>
+  <text font-size="2.5" x="176.8" y="-271.07" class="text" font-family="gost">ЭОМ</text>
+  <text font-size="2.5" x="175.91" y="-271.07" class="text" font-family="gost">&quot;</text>
+  <text font-size="2.5" x="165.72" y="-271.07" class="text" font-family="gost">проект </text>
+  <text font-size="2.5" x="164.11" y="-271.07" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="160" y="-271.07" class="text" font-family="gost"> см</text>
+  <text font-size="2.5" x="80.15" y="-174.91" class="text" font-family="gost">M22-D-G-X1/K10</text>
+  <text font-size="2.5" x="69.15" y="-174.91" class="text" font-family="gost">зелёная </text>
+  <text font-size="2.5" x="67.55" y="-174.91" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="40" y="-174.91" class="text" font-family="gost"> Управляющая кнопка</text>
+  <text font-size="2.5" x="25.63" y="-174.92" class="text" font-family="gost">-SB1,2</text>
+  <text font-size="2.5" x="154.19" y="-174.81" class="text" font-family="gost">2</text>
+  <text font-size="2.5" x="70.04" y="-199.07" class="text" font-family="gost">M22-L-R</text>
+  <text font-size="2.5" x="40" y="-199.07" class="text" font-family="gost"> Арматура сигнальная </text>
+  <text font-size="3" x="154.14" y="-190.56" class="text" font-family="gost">3</text>
+  <text font-size="2.5" x="66.28" y="-191.07" class="text" font-family="gost"> M22-A</text>
+  <text font-size="2.5" x="40" y="-191.07" class="text" font-family="gost"> Крепёжный адаптер</text>
+  <text font-size="3" x="154.14" y="-182.56" class="text" font-family="gost">3</text>
+  <text font-size="2.5" x="68.97" y="-182.72" class="text" font-family="gost">M22-LED230-W</text>
+  <text font-size="2.5" x="40" y="-182.72" class="text" font-family="gost"> Элемент светодиода </text>
+  <text font-size="2.5" x="80.25" y="-166.91" class="text" font-family="gost">M22-D-R-X0/K01</text>
+  <text font-size="2.5" x="69.15" y="-166.91" class="text" font-family="gost">красная </text>
+  <text font-size="2.5" x="67.55" y="-166.91" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="40" y="-166.91" class="text" font-family="gost"> Управляющая кнопка</text>
+  <text font-size="2.5" x="26.53" y="-166.73" class="text" font-family="gost">-SB3</text>
+  <text font-size="2.5" x="154.47" y="-166.82" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="180.02" y="-143.08" class="text" font-family="gost">&quot;</text>
+  <text font-size="2.5" x="176.8" y="-143.08" class="text" font-family="gost">ВК</text>
+  <text font-size="2.5" x="175.91" y="-143.08" class="text" font-family="gost">&quot;</text>
+  <text font-size="2.5" x="165.72" y="-143.08" class="text" font-family="gost">проект </text>
+  <text font-size="2.5" x="164.11" y="-143.08" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="160" y="-143.08" class="text" font-family="gost"> см</text>
+  <text font-size="2.5" x="77.55" y="-223.08" class="text" font-family="gost">:</text>
+  <text font-size="2.5" x="64.5" y="-223.08" class="text" font-family="gost">в составе</text>
+  <text font-size="2.5" x="62.89" y="-223.08" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="40" y="-223.08" class="text" font-family="gost"> Пост управления</text>
+  <text font-size="2.5" x="27.38" y="-222.73" class="text" font-family="gost">1-S-</text>
+  <text font-size="2.5" x="26.04" y="-222.73" class="text" font-family="gost">з</text>
+  <text font-size="2.5" x="90.07" y="-215.07" class="text" font-family="gost">M22-I6</text>
+  <text font-size="2.5" x="40" y="-215.07" class="text" font-family="gost"> Корпус для поверхностного монтажа </text>
+  <text font-size="3" x="154.36" y="-214.57" class="text" font-family="gost">1</text>
+  <polyline points="205,-132 20,-132" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-140 20,-140" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-148 20,-148" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-156 20,-156" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-164 20,-164" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-172 20,-172" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-180 20,-180" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-188 20,-188" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-196 20,-196" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-204 20,-204" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-212 20,-212" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-220 20,-220" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-228 20,-228" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-236 20,-236" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-244 20,-244" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-252 20,-252" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-260 20,-260" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-268 20,-268" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="205,-276 20,-276" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="40,-292 40,-132" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="160,-292 160,-132" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="150,-292 150,-132" fill="none" stroke="#000000" stroke-width="0.3"/>
+</g>
+</svg>
+
+</Bl>

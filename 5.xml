@@ -1,0 +1,227 @@
+﻿<Bl Name="5">
+
+<svg viewBox="24 -275 375 156" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="296.8,-149.93 296.8,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="296.8,-149.93 256.53,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="296.8,-135.28 296.8,-149.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="299.23,-132.86 306.8,-132.86" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="4" x="295.51" y="-131.45" class="text" font-family="gost">м</text>
+  <circle cx="296.8" cy="-132.86" r="2.43" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="316.79,-143.39 311.8,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M306.815,-133.236 A5,5 0 1,1 316.796,-132.655" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <circle cx="311.8" cy="-132.86" r="1.5" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M311.8,-137.86 A5,5 0 0,1 311.8,-127.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="311.8,-143.39 311.8,-137.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="316.79,-132.49 316.79,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="313.45" y="-121.87" class="text" font-family="gost">3</text>
+  <text font-size="3.5" x="308.7" y="-121.87" class="text" font-family="gost">ВД</text>
+  <text font-size="2.5" x="300.2" y="-237.38" class="text" font-family="gost" transform="rotate(-90 300.2 -237.38)">2/44</text>
+  <text font-size="2.5" x="300.2" y="-222.54" class="text" font-family="gost" transform="rotate(-90 300.2 -222.54)">помещения </text>
+  <text font-size="2.5" x="295.69" y="-221.24" class="text" font-family="gost" transform="rotate(-90 295.69 -221.24)">Сигнал задымления</text>
+  <polyline points="298.09,-217.17 296.8,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="296.8,-214.93 295.51,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="295.51,-217.17 298.09,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="296.88,-251.01 296.88,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="304.3" y="-177.33" class="text" font-family="gost" transform="rotate(-90 304.3 -177.33)">клапана</text>
+  <text font-size="2.5" x="300.13" y="-175.64" class="text" font-family="gost" transform="rotate(-90 300.13 -175.64)"> открытии</text>
+  <text font-size="2.5" x="295.97" y="-173.22" class="text" font-family="gost" transform="rotate(-90 295.97 -173.22)">включение при</text>
+  <polyline points="298.09,-172.17 296.8,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="296.8,-169.93 295.51,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="295.51,-172.17 298.09,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="296.8,-194.93 296.8,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="314.3,-194.93 279.3,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="314.3,-214.93 279.3,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="314.3,-194.93 314.3,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="279.3,-194.93 314.3,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="279.3,-214.93 279.3,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="306.56" y="-200.38" class="text" font-family="gost">3</text>
+  <text font-size="3.5" x="285.04" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="303.32" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="299.56" y="-206.22" class="text" font-family="gost">2 </text>
+  <text font-size="3.5" x="285.8" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <text font-size="2.5" x="259.77" y="-239.26" class="text" font-family="gost" transform="rotate(-90 259.77 -239.26)">50</text>
+  <text font-size="2.5" x="259.77" y="-224.41" class="text" font-family="gost" transform="rotate(-90 259.77 -224.41)">помещения </text>
+  <text font-size="2.5" x="255.6" y="-221.24" class="text" font-family="gost" transform="rotate(-90 255.6 -221.24)">Сигнал задымления</text>
+  <polyline points="257.82,-217.17 256.53,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="256.53,-214.93 255.23,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="255.23,-217.17 257.82,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="256.61,-251.01 256.61,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="264.03" y="-177.33" class="text" font-family="gost" transform="rotate(-90 264.03 -177.33)">клапана</text>
+  <text font-size="2.5" x="259.86" y="-175.64" class="text" font-family="gost" transform="rotate(-90 259.86 -175.64)"> открытии</text>
+  <text font-size="2.5" x="255.69" y="-173.22" class="text" font-family="gost" transform="rotate(-90 255.69 -173.22)">включение при</text>
+  <polyline points="257.82,-172.17 256.53,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="256.53,-169.93 255.23,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="255.23,-172.17 257.82,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="256.53,-194.93 256.53,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="274.03,-194.93 239.03,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="274.03,-214.93 239.03,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="274.03,-194.93 274.03,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="239.03,-194.93 274.03,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="239.03,-214.93 239.03,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="266.29" y="-200.38" class="text" font-family="gost">3</text>
+  <text font-size="3.5" x="244.77" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="262.67" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="259.67" y="-206.22" class="text" font-family="gost">1 </text>
+  <text font-size="3.5" x="245.9" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <polyline points="211.64,-149.93 211.64,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="211.64,-149.93 171.37,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="211.64,-135.28 211.64,-149.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="214.07,-132.86 221.64,-132.86" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="4" x="210.35" y="-131.45" class="text" font-family="gost">м</text>
+  <circle cx="211.64" cy="-132.86" r="2.43" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="231.63,-143.39 226.64,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M221.655,-133.236 A5,5 0 1,1 231.636,-132.655" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <circle cx="226.64" cy="-132.86" r="1.5" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M226.64,-137.86 A5,5 0 0,1 226.64,-127.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="226.64,-143.39 226.64,-137.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="231.63,-132.49 231.63,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="228.16" y="-121.87" class="text" font-family="gost">2</text>
+  <text font-size="3.5" x="223.41" y="-121.87" class="text" font-family="gost">ВД</text>
+  <text font-size="2.5" x="215.04" y="-237.47" class="text" font-family="gost" transform="rotate(-90 215.04 -237.47)">2/25</text>
+  <text font-size="2.5" x="215.04" y="-222.63" class="text" font-family="gost" transform="rotate(-90 215.04 -222.63)">помещения </text>
+  <text font-size="2.5" x="210.54" y="-221.24" class="text" font-family="gost" transform="rotate(-90 210.54 -221.24)">Сигнал задымления</text>
+  <polyline points="212.94,-217.17 211.64,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="211.64,-214.93 210.35,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="210.35,-217.17 212.94,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="211.73,-251.01 211.73,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="219.14" y="-177.33" class="text" font-family="gost" transform="rotate(-90 219.14 -177.33)">клапана</text>
+  <text font-size="2.5" x="214.97" y="-175.64" class="text" font-family="gost" transform="rotate(-90 214.97 -175.64)"> открытии</text>
+  <text font-size="2.5" x="210.81" y="-173.22" class="text" font-family="gost" transform="rotate(-90 210.81 -173.22)">включение при</text>
+  <polyline points="212.94,-172.17 211.64,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="211.64,-169.93 210.35,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="210.35,-172.17 212.94,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="211.64,-194.93 211.64,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="229.14,-194.93 194.14,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="229.14,-214.93 194.14,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="229.14,-194.93 229.14,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="194.14,-194.93 229.14,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="194.14,-214.93 194.14,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="221.26" y="-200.38" class="text" font-family="gost">2</text>
+  <text font-size="3.5" x="199.75" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="218.16" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="214.41" y="-206.22" class="text" font-family="gost">2 </text>
+  <text font-size="3.5" x="200.64" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <text font-size="2.5" x="174.61" y="-239.17" class="text" font-family="gost" transform="rotate(-90 174.61 -239.17)">27</text>
+  <text font-size="2.5" x="174.61" y="-224.32" class="text" font-family="gost" transform="rotate(-90 174.61 -224.32)">помещения </text>
+  <text font-size="2.5" x="170.44" y="-221.24" class="text" font-family="gost" transform="rotate(-90 170.44 -221.24)">Сигнал задымления</text>
+  <polyline points="172.67,-217.17 171.37,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="171.37,-214.93 170.08,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="170.08,-217.17 172.67,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="171.45,-251.01 171.45,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="178.87" y="-177.33" class="text" font-family="gost" transform="rotate(-90 178.87 -177.33)">клапана</text>
+  <text font-size="2.5" x="174.7" y="-175.64" class="text" font-family="gost" transform="rotate(-90 174.7 -175.64)"> открытии</text>
+  <text font-size="2.5" x="170.54" y="-173.22" class="text" font-family="gost" transform="rotate(-90 170.54 -173.22)">включение при</text>
+  <polyline points="172.67,-172.17 171.37,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="171.37,-169.93 170.08,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="170.08,-172.17 172.67,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="171.37,-194.93 171.37,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="188.87,-194.93 153.87,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="188.87,-214.93 153.87,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="188.87,-194.93 188.87,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="153.87,-194.93 188.87,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="153.87,-214.93 153.87,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="180.99" y="-200.38" class="text" font-family="gost">2</text>
+  <text font-size="3.5" x="159.48" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="177.51" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="174.51" y="-206.22" class="text" font-family="gost">1 </text>
+  <text font-size="3.5" x="160.74" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <text font-size="2.5" x="376.18" y="-221.6" class="text" font-family="gost" transform="rotate(-90 376.18 -221.6)">о пожаре в здании</text>
+  <text font-size="2.5" x="372.01" y="-224.5" class="text" font-family="gost" transform="rotate(-90 372.01 -224.5)">Общий сигнал</text>
+  <polyline points="374.41,-217.17 373.11,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="373.11,-214.93 371.82,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="371.82,-217.17 374.41,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="373.2,-251.01 373.2,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="390.61,-194.93 355.61,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="390.61,-214.93 355.61,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="390.61,-194.93 390.61,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="355.61,-194.93 390.61,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="355.61,-214.93 355.61,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="362.6" y="-197.6" class="text" font-family="gost">вентиляции</text>
+  <text font-size="3.5" x="367.23" y="-203.43" class="text" font-family="gost">щитов</text>
+  <text font-size="3.5" x="362.47" y="-209.26" class="text" font-family="gost">Отключение</text>
+  <polyline points="319.47,-169.93 319.47,-149.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="126.49,-149.93 126.49,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="126.49,-149.93 86.21,-169.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="126.49,-135.28 126.49,-149.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="128.91,-132.86 136.48,-132.86" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="4" x="125.19" y="-131.45" class="text" font-family="gost">м</text>
+  <circle cx="126.49" cy="-132.86" r="2.43" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="146.47,-143.39 141.49,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M136.495,-133.236 A5,5 0 1,1 146.476,-132.655" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <circle cx="141.49" cy="-132.86" r="1.5" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <path d="M141.49,-137.86 A5,5 0 0,1 141.49,-127.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="141.49,-143.39 141.49,-137.86" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="146.47,-132.49 146.47,-143.39" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="143.39" y="-121.87" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="138.64" y="-121.87" class="text" font-family="gost">ВД</text>
+  <text font-size="2.5" x="129.89" y="-237.65" class="text" font-family="gost" transform="rotate(-90 129.89 -237.65)">2/21</text>
+  <text font-size="2.5" x="129.89" y="-222.81" class="text" font-family="gost" transform="rotate(-90 129.89 -222.81)">помещения </text>
+  <text font-size="2.5" x="125.38" y="-221.24" class="text" font-family="gost" transform="rotate(-90 125.38 -221.24)">Сигнал задымления</text>
+  <polyline points="127.78,-217.17 126.49,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="126.49,-214.93 125.19,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="125.19,-217.17 127.78,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="126.57,-251.01 126.57,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="133.98" y="-177.33" class="text" font-family="gost" transform="rotate(-90 133.98 -177.33)">клапана</text>
+  <text font-size="2.5" x="129.82" y="-175.64" class="text" font-family="gost" transform="rotate(-90 129.82 -175.64)"> открытии</text>
+  <text font-size="2.5" x="125.65" y="-173.22" class="text" font-family="gost" transform="rotate(-90 125.65 -173.22)">включение при</text>
+  <polyline points="127.78,-172.17 126.49,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="126.49,-169.93 125.19,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="125.19,-172.17 127.78,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="126.49,-194.93 126.49,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="143.99,-194.93 108.99,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="143.99,-214.93 108.99,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="143.99,-194.93 143.99,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="108.99,-194.93 143.99,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="108.99,-214.93 108.99,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="136.49" y="-200.38" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="114.98" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="133" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="129.25" y="-206.22" class="text" font-family="gost">2 </text>
+  <text font-size="3.5" x="115.48" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <text font-size="2.5" x="89.46" y="-239.17" class="text" font-family="gost" transform="rotate(-90 89.46 -239.17)">24</text>
+  <text font-size="2.5" x="89.46" y="-224.33" class="text" font-family="gost" transform="rotate(-90 89.46 -224.33)">помещения </text>
+  <text font-size="2.5" x="85.29" y="-221.24" class="text" font-family="gost" transform="rotate(-90 85.29 -221.24)">Сигнал задымления</text>
+  <polyline points="87.51,-217.17 86.21,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="86.21,-214.93 84.92,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="84.92,-217.17 87.51,-217.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="86.3,-251.01 86.3,-215.7" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="2.5" x="93.71" y="-177.33" class="text" font-family="gost" transform="rotate(-90 93.71 -177.33)">клапана</text>
+  <text font-size="2.5" x="89.55" y="-175.64" class="text" font-family="gost" transform="rotate(-90 89.55 -175.64)"> открытии</text>
+  <text font-size="2.5" x="85.38" y="-173.22" class="text" font-family="gost" transform="rotate(-90 85.38 -173.22)">включение при</text>
+  <polyline points="87.51,-172.17 86.21,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="86.21,-169.93 84.92,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="84.92,-172.17 87.51,-172.17" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="86.21,-194.93 86.21,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="103.71,-194.93 68.71,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="103.71,-214.93 68.71,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="103.71,-194.93 103.71,-214.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="68.71,-194.93 103.71,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="68.71,-214.93 68.71,-194.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="96.22" y="-200.38" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="74.7" y="-200.38" class="text" font-family="gost">системы ВД</text>
+  <text font-size="3.5" x="92.36" y="-206.22" class="text" font-family="gost">НЗ</text>
+  <text font-size="3.5" x="89.35" y="-206.22" class="text" font-family="gost">1 </text>
+  <text font-size="3.5" x="75.58" y="-206.22" class="text" font-family="gost">Клапан </text>
+  <polyline points="54.63,-169.4 72.75,-162.49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="27.54,-169.4 54.63,-169.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="28.99" y="-164.4" class="text" font-family="gost">дымоудаления</text>
+  <text font-size="3.5" x="29.62" y="-170.24" class="text" font-family="gost">Силовой щит</text>
+  <polyline points="319.47,-149.93 68.59,-149.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="319.47,-169.93 68.59,-169.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="68.59,-169.93 68.59,-149.93" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="253.66" y="-256.71" class="text" font-family="gost">)</text>
+  <text font-size="3.5" x="171.41" y="-256.71" class="text" font-family="gost">сигнал срабатывания пожарной сигнализации</text>
+  <text font-size="3.5" x="170.41" y="-256.71" class="text" font-family="gost">(</text>
+  <text font-size="3.5" x="220.81" y="-262.8" class="text" font-family="gost">пусковой</text>
+  <text font-size="3.5" x="218.8" y="-262.8" class="text" font-family="gost">-</text>
+  <text font-size="3.5" x="188.26" y="-262.8" class="text" font-family="gost">Блок контрольно</text>
+  <polyline points="396.18,-271.01 396.18,-251.01" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="28.91,-271.01 28.91,-251.01" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="396.18,-251.01 28.91,-251.01" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="396.18,-271.01 28.91,-271.01" fill="none" stroke="#000000" stroke-width="0.4"/>
+</g>
+</svg>
+
+</Bl>

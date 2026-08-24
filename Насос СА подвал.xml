@@ -1,0 +1,24 @@
+﻿<Bl Name="Насос">
+
+<svg viewBox="-21 -66 49 58" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-12.5" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-13.5 0,-16.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-18.5 0,-25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 -30)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">NSA</Pr><Pr bid="3">1-КМ</Pr></Bl></g>
+  <polyline points="-10,-30 -5,-30" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="-14" cy="-30" r="4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-16.82,-27.18 -11.18,-32.82" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-16.82,-32.82 -11.18,-27.18" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5" font-size="2.5" x="-14" y="-37" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">1-HL</text>
+  <polyline points="5,-30 10,-30" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(15 -30)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">HS</Pr><Pr bid="3">1-SA</Pr></Bl></g>
+  <polyline points="0,-35 0,-60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">1</text>
+  <text font-size="2.5" x="-2" y="-50" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">Управление</text>
+</g>
+</svg>
+
+</Bl>

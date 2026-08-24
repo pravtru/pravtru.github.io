@@ -1,0 +1,11 @@
+﻿<Bl Name="Общие цепи ТК">
+
+<svg viewBox="2 5 6 17" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.5" x="5" y="8" text-anchor="middle" class="text" font-family="gost">L</text>
+  <polyline points="5,19 5,10" fill="none" stroke="#000000" stroke-width="0.2"/>
+</g>
+</svg>
+
+</Bl>

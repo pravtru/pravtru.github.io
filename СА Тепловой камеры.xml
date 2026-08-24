@@ -1,0 +1,81 @@
+﻿<Bl Name="Схема автоматизации тепловой камеры">
+
+<svg viewBox="-113 -38 334 151" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="3.5" x="-110" y="-25" dominant-baseline="middle" class="text" font-family="gost">T1 в тепловую сеть</text>
+  <polyline points="-64,-25 60,-25" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(60 -25)"><Bl Name="Задвижка на СА"><Pr bid="2">3</Pr></Bl></g>
+  <g transform="translate(-65 -25)"><Bl Name="TreugolnikSA"></Bl></g>
+  <polyline points="70,-25 205,-25" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(205 -25)"><Bl Name="TreugolnikSA"></Bl></g>
+  <text font-size="3.5" x="218" y="-25" dominant-baseline="middle" class="text" font-family="gost">T1 в тоннель</text>
+  <text font-size="3.5" x="-110" y="0" dominant-baseline="middle" class="text" font-family="gost">T2 в тепловую сеть</text>
+  <polyline points="-64,0 60,0" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(60 0)"><Bl Name="Задвижка на СА"><Pr bid="2">3</Pr></Bl></g>
+  <g transform="translate(-65 0)"><Bl Name="TreugolnikSA"></Bl></g>
+  <polyline points="70,0 205,0" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(205 0)"><Bl Name="TreugolnikSA"></Bl></g>
+  <text font-size="3.5" x="218" y="0" dominant-baseline="middle" class="text" font-family="gost">T2 в тоннель</text>
+  <polyline points="45,-25 45,-3" fill="none" stroke="#000000" stroke-width="1"/>
+  <path d="M45,3 A3,3 0 0,1 45,-3" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="45,3 45,25" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="45,25 60,25" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(60 25)"><Bl Name="Задвижка на СА"><Pr bid="2">3</Pr></Bl></g>
+  <polyline points="70,25 90,25" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="90,25 90,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="30,0 30,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="30,50 60,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(60 50)"><Bl Name="Задвижка на СА"><Pr bid="2">3</Pr></Bl></g>
+  <polyline points="70,50 205,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(205 50)"><Bl Name="TreugolnikSA"></Bl></g>
+  <text font-size="3.5" x="218" y="50" dominant-baseline="middle" class="text" font-family="gost">Резерв в тоннель</text>
+  <polyline points="-5,-35 145,-35 145,70 -5,70 -5,-35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="30,70 30,90 -5,90 -5,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="-110" y="50" dominant-baseline="middle" class="text" font-family="gost">В канализацию</text>
+  <polyline points="-64,50 20,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(-65 50)"><Bl Name="TreugolnikSA"><Pr bid="0">2</Pr></Bl></g>
+  <g transform="translate(0 82.5)"><Bl Name="NasosSA"><Pr bid="0">0</Pr><Pr bid="1">Н1</Pr><Pr bid="2">4</Pr></Bl></g>
+  <polyline points="5,77.5 5,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(15 82.5)"><Bl Name="NasosSA"><Pr bid="0">0</Pr><Pr bid="1">Н2</Pr><Pr bid="2">5</Pr></Bl></g>
+  <polyline points="20,77.5 20,50" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(-20 60)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">LY</Pr><Pr bid="3">LE1</Pr></Bl></g>
+  <polyline points="-30,60 -25,60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-15,60 -5,60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="-30" y="110" text-anchor="middle" class="text" font-family="gost">1</text>
+  <polyline points="-30,60 -30,105" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(-20 80)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">LS</Pr><Pr bid="3">LE2</Pr></Bl></g>
+  <polyline points="-15,80 -5,80" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="-20" y="110" text-anchor="middle" class="text" font-family="gost">2</text>
+  <polyline points="-20,85 -20,105" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(45 80)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">TY</Pr><Pr bid="3">TE1</Pr></Bl></g>
+  <polyline points="30,80 40,80" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="45" y="110" text-anchor="middle" class="text" font-family="gost">3</text>
+  <polyline points="45,85 45,105" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(-40 10)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">AS</Pr><Pr bid="3">AE1</Pr></Bl></g>
+  <polyline points="-40,5 -40,-25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="-40" y="25" text-anchor="middle" class="text" font-family="gost">6</text>
+  <polyline points="-40,15 -40,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(-20 10)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">AS</Pr><Pr bid="3">AE2</Pr></Bl></g>
+  <polyline points="-20,5 -20,0" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="-20" y="25" text-anchor="middle" class="text" font-family="gost">7</text>
+  <polyline points="-20,15 -20,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(160 10)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">AS</Pr><Pr bid="3">AE3</Pr></Bl></g>
+  <polyline points="160,5 160,-25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="160" y="25" text-anchor="middle" class="text" font-family="gost">8</text>
+  <polyline points="160,15 160,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(180 10)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">AS</Pr><Pr bid="3">AE4</Pr></Bl></g>
+  <polyline points="180,5 180,0" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="180" y="25" text-anchor="middle" class="text" font-family="gost">9</text>
+  <polyline points="180,15 180,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(160 60)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">AS</Pr><Pr bid="3">AE5</Pr></Bl></g>
+  <polyline points="160,55 160,50" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.5" x="160" y="110" text-anchor="middle" class="text" font-family="gost">10</text>
+  <polyline points="160,65 160,105" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(10 10)"><Bl Name="PriborSA"><Pr bid="1">0</Pr><Pr bid="2">TE</Pr><Pr bid="3">TE2</Pr></Bl></g>
+  <text id="2" font-size="3.5" x="10" y="25" text-anchor="middle" class="text" font-family="gost">11</text>
+  <polyline points="10,15 10,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+</g>
+</svg>
+
+</Bl>

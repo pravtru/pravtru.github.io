@@ -1,0 +1,18 @@
+<Bl Name="Задвижка принципиалка">
+
+<svg viewBox="-2 -40 24 44" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text id="1" font-size="3.5" x="10" y="-37" text-anchor="middle" class="text" font-family="gost">3-YA</text>
+  <rect x="0" y="-35" width="20" height="35" fill="none" stroke="#000000" stroke-width="0.2"/>
+
+  <g transform="translate(0 -25)"><Bl Name="Klemma"><Pr bid="1">8</Pr></Bl></g>
+  <g transform="translate(0 -15)"><Bl Name="Klemma"><Pr bid="1">7</Pr></Bl></g>
+  <g transform="translate(0 -5)"><Bl Name="Klemma"><Pr bid="1">9</Pr></Bl></g>
+  <g transform="translate(15 -25)"><Bl Name="Klemma"><Pr bid="1">6</Pr></Bl></g>
+  <g transform="translate(15 -15)"><Bl Name="Klemma"><Pr bid="1">5</Pr></Bl></g>
+  <g transform="translate(15 -5)"><Bl Name="Klemma"><Pr bid="1">12</Pr></Bl></g>
+ </g>
+</svg>
+
+</Bl>

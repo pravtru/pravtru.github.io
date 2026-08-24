@@ -1,0 +1,139 @@
+﻿<Bl Name="Спецификация">
+
+<svg viewBox="-193 2 191 182" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="-190,5 -190,181" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-170,5 -170,181" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-60,5 -60,181" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-50,5 -50,181" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,21 -5,21" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,29 -5,29" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,37 -5,37" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,45 -5,45" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,53 -5,53" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,61 -5,61" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,69 -5,69" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,77 -5,77" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,85 -5,85" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,93 -5,93" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,101 -5,101" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,109 -5,109" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,117 -5,117" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,125 -5,125" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,133 -5,133" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,141 -5,141" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,149 -5,149" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,157 -5,157" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,165 -5,165" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,173 -5,173" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-190,181 -5,181" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="3.5" x="-180" y="11.75" text-anchor="middle" class="text" font-family="gost">Поз.</text>
+  <text font-size="3.5" x="-180" y="17.75" text-anchor="middle" class="text" font-family="gost">обозн.</text>
+  <text font-size="3.5" x="-115" y="14.75" text-anchor="middle" class="text" font-family="gost">Наименование</text>
+  <text font-size="3.5" x="-55" y="14.75" text-anchor="middle" class="text" font-family="gost">Кол.</text>
+  <text font-size="3.5" x="-27.5" y="14.75" text-anchor="middle" class="text" font-family="gost">Примечание</text>
+  <text id="1_0" font-size="2.5" x="-115" y="26.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_1" font-size="2.5" x="-115" y="34.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_2" font-size="2.5" x="-115" y="42.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_3" font-size="2.5" x="-115" y="50.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_4" font-size="2.5" x="-115" y="58.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_5" font-size="2.5" x="-115" y="66.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_6" font-size="2.5" x="-115" y="74.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_7" font-size="2.5" x="-115" y="82.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_8" font-size="2.5" x="-115" y="90.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_9" font-size="2.5" x="-115" y="98.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_10" font-size="2.5" x="-115" y="106.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_11" font-size="2.5" x="-115" y="114.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_12" font-size="2.5" x="-115" y="122.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_13" font-size="2.5" x="-115" y="130.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_14" font-size="2.5" x="-115" y="138.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_15" font-size="2.5" x="-115" y="146.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_16" font-size="2.5" x="-115" y="154.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_17" font-size="2.5" x="-115" y="162.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_18" font-size="2.5" x="-115" y="170.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="1_19" font-size="2.5" x="-115" y="178.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_0" font-size="2.5" x="-180" y="26.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_1" font-size="2.5" x="-180" y="34.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_2" font-size="2.5" x="-180" y="42.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_3" font-size="2.5" x="-180" y="50.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_4" font-size="2.5" x="-180" y="58.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_5" font-size="2.5" x="-180" y="66.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_6" font-size="2.5" x="-180" y="74.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_7" font-size="2.5" x="-180" y="82.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_8" font-size="2.5" x="-180" y="90.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_9" font-size="2.5" x="-180" y="98.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_10" font-size="2.5" x="-180" y="106.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_11" font-size="2.5" x="-180" y="114.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_12" font-size="2.5" x="-180" y="122.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_13" font-size="2.5" x="-180" y="130.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_14" font-size="2.5" x="-180" y="138.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_15" font-size="2.5" x="-180" y="146.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_16" font-size="2.5" x="-180" y="154.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_17" font-size="2.5" x="-180" y="162.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_18" font-size="2.5" x="-180" y="170.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="2_19" font-size="2.5" x="-180" y="178.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="3_0" font-size="2.5" x="-169" y="26.25" class="text" font-family="gost"></text>
+  <text id="3_1" font-size="2.5" x="-169" y="34.25" class="text" font-family="gost"></text>
+  <text id="3_2" font-size="2.5" x="-169" y="42.25" class="text" font-family="gost"></text>
+  <text id="3_3" font-size="2.5" x="-169" y="50.25" class="text" font-family="gost"></text>
+  <text id="3_4" font-size="2.5" x="-169" y="58.25" class="text" font-family="gost"></text>
+  <text id="3_5" font-size="2.5" x="-169" y="66.25" class="text" font-family="gost"></text>
+  <text id="3_6" font-size="2.5" x="-169" y="74.25" class="text" font-family="gost"></text>
+  <text id="3_7" font-size="2.5" x="-169" y="82.25" class="text" font-family="gost"></text>
+  <text id="3_8" font-size="2.5" x="-169" y="90.25" class="text" font-family="gost"></text>
+  <text id="3_9" font-size="2.5" x="-169" y="98.25" class="text" font-family="gost"></text>
+  <text id="3_10" font-size="2.5" x="-169" y="106.25" class="text" font-family="gost"></text>
+  <text id="3_11" font-size="2.5" x="-169" y="114.25" class="text" font-family="gost"></text>
+  <text id="3_12" font-size="2.5" x="-169" y="122.25" class="text" font-family="gost"></text>
+  <text id="3_13" font-size="2.5" x="-169" y="130.25" class="text" font-family="gost"></text>
+  <text id="3_14" font-size="2.5" x="-169" y="138.25" class="text" font-family="gost"></text>
+  <text id="3_15" font-size="2.5" x="-169" y="146.25" class="text" font-family="gost"></text>
+  <text id="3_16" font-size="2.5" x="-169" y="154.25" class="text" font-family="gost"></text>
+  <text id="3_17" font-size="2.5" x="-169" y="162.25" class="text" font-family="gost"></text>
+  <text id="3_18" font-size="2.5" x="-169" y="170.25" class="text" font-family="gost"></text>
+  <text id="3_19" font-size="2.5" x="-169" y="178.25" class="text" font-family="gost"></text>
+  <text id="4_0" font-size="2.5" x="-55" y="26.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_1" font-size="2.5" x="-55" y="34.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_2" font-size="2.5" x="-55" y="42.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_3" font-size="2.5" x="-55" y="50.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_4" font-size="2.5" x="-55" y="58.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_5" font-size="2.5" x="-55" y="66.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_6" font-size="2.5" x="-55" y="74.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_7" font-size="2.5" x="-55" y="82.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_8" font-size="2.5" x="-55" y="90.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_9" font-size="2.5" x="-55" y="98.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_10" font-size="2.5" x="-55" y="106.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_11" font-size="2.5" x="-55" y="114.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_12" font-size="2.5" x="-55" y="122.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_13" font-size="2.5" x="-55" y="130.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_14" font-size="2.5" x="-55" y="138.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_15" font-size="2.5" x="-55" y="146.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_16" font-size="2.5" x="-55" y="154.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_17" font-size="2.5" x="-55" y="162.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_18" font-size="2.5" x="-55" y="170.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="4_19" font-size="2.5" x="-55" y="178.25" text-anchor="middle" class="text" font-family="gost"></text>
+  <text id="5_0" font-size="2.5" x="-49" y="26.25" class="text" font-family="gost"></text>
+  <text id="5_1" font-size="2.5" x="-49" y="34.25" class="text" font-family="gost"></text>
+  <text id="5_2" font-size="2.5" x="-49" y="42.25" class="text" font-family="gost"></text>
+  <text id="5_3" font-size="2.5" x="-49" y="50.25" class="text" font-family="gost"></text>
+  <text id="5_4" font-size="2.5" x="-49" y="58.25" class="text" font-family="gost"></text>
+  <text id="5_5" font-size="2.5" x="-49" y="66.25" class="text" font-family="gost"></text>
+  <text id="5_6" font-size="2.5" x="-49" y="74.25" class="text" font-family="gost"></text>
+  <text id="5_7" font-size="2.5" x="-49" y="82.25" class="text" font-family="gost"></text>
+  <text id="5_8" font-size="2.5" x="-49" y="90.25" class="text" font-family="gost"></text>
+  <text id="5_9" font-size="2.5" x="-49" y="98.25" class="text" font-family="gost"></text>
+  <text id="5_10" font-size="2.5" x="-49" y="106.25" class="text" font-family="gost"></text>
+  <text id="5_11" font-size="2.5" x="-49" y="114.25" class="text" font-family="gost"></text>
+  <text id="5_12" font-size="2.5" x="-49" y="122.25" class="text" font-family="gost"></text>
+  <text id="5_13" font-size="2.5" x="-49" y="130.25" class="text" font-family="gost"></text>
+  <text id="5_14" font-size="2.5" x="-49" y="138.25" class="text" font-family="gost"></text>
+  <text id="5_15" font-size="2.5" x="-49" y="146.25" class="text" font-family="gost"></text>
+  <text id="5_16" font-size="2.5" x="-49" y="154.25" class="text" font-family="gost"></text>
+  <text id="5_17" font-size="2.5" x="-49" y="162.25" class="text" font-family="gost"></text>
+  <text id="5_18" font-size="2.5" x="-49" y="170.25" class="text" font-family="gost"></text>
+  <text id="5_19" font-size="2.5" x="-49" y="178.25" class="text" font-family="gost"></text>
+</g>
+</svg>
+
+</Bl>

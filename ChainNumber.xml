@@ -1,0 +1,11 @@
+<Bl Name="Маркировка номера цепи">
+
+<svg viewBox="-2 -6 24 10" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <line x1="1" y1="0" x2="19" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <text id="1" font-size="2.5" x="10" y="-2" text-anchor="middle" class="text" font-family="gost">1</text>
+ </g>
+</svg>
+
+</Bl>

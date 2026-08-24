@@ -1,0 +1,394 @@
+﻿<Bl Name="План">
+
+<svg viewBox="18 -287 182 228" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="2.5" x="58.83" y="-61.51" class="text" font-family="gost">)</text>
+  <text font-size="2.5" x="22.35" y="-61.51" class="text" font-family="gost">главной заземляющей шиной</text>
+  <text font-size="2.5" x="164.9" y="-65.86" class="text" font-family="gost">ДШУП соединяется с ГЗШ</text>
+  <text font-size="2.5" x="163.29" y="-65.86" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="110.17" y="-65.86" class="text" font-family="gost">а также металлические корпуса насосов</text>
+  <text font-size="2.5" x="108.57" y="-65.86" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="21.65" y="-65.86" class="text" font-family="gost">открытые проводящие части стационарного электрооборудования</text>
+  <text font-size="2.5" x="151.22" y="-70.03" class="text" font-family="gost">одновременно доступные прикосновению</text>
+  <text font-size="2.5" x="149.61" y="-70.03" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="119.03" y="-70.03" class="text" font-family="gost">кабельных конструкций</text>
+  <text font-size="2.5" x="117.43" y="-70.03" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="96.5" y="-70.03" class="text" font-family="gost">корпусов щитов</text>
+  <text font-size="2.5" x="94.89" y="-70.03" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="77.81" y="-70.03" class="text" font-family="gost">воздуховодов</text>
+  <text font-size="2.5" x="76.2" y="-70.03" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="21.65" y="-70.03" class="text" font-family="gost">собой всех металлических трубопроводов</text>
+  <text font-size="2.5" x="144.78" y="-74.2" class="text" font-family="gost">ДШУП представляет собой соединение между</text>
+  <text font-size="2.5" x="143.17" y="-74.2" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="25.32" y="-74.2" class="text" font-family="gost">В помещении насосной предусмотреть дополнительную систему уравнивания потенциалов</text>
+  <text font-size="2.5" x="129.21" y="-78.37" class="text" font-family="gost">)</text>
+  <text font-size="2.5" x="122.78" y="-78.37" class="text" font-family="gost">ЯТПР</text>
+  <text font-size="2.5" x="122.07" y="-78.37" class="text" font-family="gost">(</text>
+  <text font-size="2.5" x="25.32" y="-78.37" class="text" font-family="gost">В помещении насосной предусмотреть аварийное и ремонтное освещение </text>
+  <text font-size="2.5" x="39.28" y="-82.71" class="text" font-family="gost">.</text>
+  <text font-size="2.5" x="21.66" y="-82.71" class="text" font-family="gost">безопасности</text>
+  <text font-size="2.5" x="25.32" y="-86.88" class="text" font-family="gost">Применяемые ПВХ трубы соответствуют требованиям пожарной безопасности и имеют сертификат соответствия пожарной</text>
+  <text font-size="2.5" x="54.65" y="-91.06" class="text" font-family="gost">.</text>
+  <text font-size="2.5" x="21.65" y="-91.06" class="text" font-family="gost">из негорючего материала</text>
+  <text font-size="2.5" x="111.07" y="-95.22" class="text" font-family="gost">Зазоры между кабелями и трубой заделывать легкоудаляемой массой</text>
+  <text font-size="2.5" x="109.46" y="-95.22" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="79.77" y="-95.22" class="text" font-family="gost">в которой он выполнен</text>
+  <text font-size="2.5" x="78.17" y="-95.22" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="21.65" y="-95.22" class="text" font-family="gost">огнестойкости строительной конструкции</text>
+  <text font-size="2.5" x="134.59" y="-99.39" class="text" font-family="gost">огнестойкость прохода должна быть не менее</text>
+  <text font-size="2.5" x="132.98" y="-99.39" class="text" font-family="gost">; </text>
+  <text font-size="2.5" x="21.65" y="-99.39" class="text" font-family="gost">обеспечения возможности смены электропроводки проход кабелей выполнен в трубах</text>
+  <text font-size="2.5" x="188.1" y="-103.56" class="text" font-family="gost">Для</text>
+  <text font-size="2.5" x="186.5" y="-103.56" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="181.68" y="-103.56" class="text" font-family="gost">ПУЭ</text>
+  <text font-size="2.5" x="177.39" y="-103.56" class="text" font-family="gost">2.1 </text>
+  <text font-size="2.5" x="174.89" y="-103.56" class="text" font-family="gost">и </text>
+  <text font-size="2.5" x="163.63" y="-103.56" class="text" font-family="gost">50571.15 </text>
+  <text font-size="2.5" x="39" y="-103.56" class="text" font-family="gost">междуэтажные перекрытия должны иметь уплотнения в соответствии с требованиями ГОСТ Р </text>
+  <text font-size="2.5" x="37.39" y="-103.56" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="21.65" y="-103.56" class="text" font-family="gost">перегородки</text>
+  <text font-size="2.5" x="196.9" y="-107.73" class="text" font-family="gost">,</text>
+  <text font-size="2.5" x="149.42" y="-107.73" class="text" font-family="gost">Места прохода кабелей через стены</text>
+  <text font-size="2.5" x="147.81" y="-107.73" class="text" font-family="gost">. </text>
+  <text font-size="2.5" x="59.2" y="-107.73" class="text" font-family="gost">замкнутом канале конструкции или на одном лотке не допускается</text>
+  <text font-size="2.5" x="57.59" y="-107.73" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="49.54" y="-107.73" class="text" font-family="gost">жгуте</text>
+  <text font-size="2.5" x="47.94" y="-107.73" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="40.25" y="-107.73" class="text" font-family="gost">трубе</text>
+  <text font-size="2.5" x="38.64" y="-107.73" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="21.65" y="-107.73" class="text" font-family="gost">одном коробе</text>
+  <text font-size="2.5" x="66.42" y="-111.92" class="text" font-family="gost">совместная прокладка кабельных систем противопожарной защиты с другими кабелями и проводами в</text>
+  <text font-size="2.5" x="60.17" y="-111.92" class="text" font-family="gost">.4.13 </text>
+  <text font-size="2.5" x="58.74" y="-111.92" class="text" font-family="gost">п</text>
+  <text font-size="2.5" x="41.95" y="-111.92" class="text" font-family="gost">6.13130.2009 </text>
+  <text font-size="2.5" x="25.32" y="-111.92" class="text" font-family="gost">Согласно СП </text>
+  <text font-size="2.5" x="157.19" y="-116.09" class="text" font-family="gost">соответствующего сечения</text>
+  <text font-size="2.5" x="148.79" y="-116.09" class="text" font-family="gost">-FRLS </text>
+  <text font-size="2.5" x="121.61" y="-116.09" class="text" font-family="gost">кабелем марки ВВГнг</text>
+  <text font-size="2.5" x="120.01" y="-116.09" class="text" font-family="gost">, </text>
+  <text font-size="2.5" x="25.32" y="-116.09" class="text" font-family="gost">Щит ЩПН запитать по первой категории надежности электроснабжения</text>
+  <text font-size="2.5" x="36.31" y="-120.26" class="text" font-family="gost">:</text>
+  <text font-size="2.5" x="21.65" y="-120.26" class="text" font-family="gost">Примечание</text>
+  <polyline points="69.75,-200.65 65.51,-204.89" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-184.4 67.63,-202.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-184.4 110.64,-184.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-191.4 67.63,-184.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="110.64,-191.4 67.63,-191.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="110.64,-184.4 110.64,-191.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-184.4 110.64,-184.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-184.4 67.63,-191.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.63,-184.4 110.64,-184.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="67.68" y="-185.4" class="text" font-family="gost">ЩПН сущ. гр. 1;2</text>
+  <polyline points="69.85,-204.89 74.09,-200.65" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="71.97,-213.99 71.97,-202.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="71.97,-213.99 107.17,-213.99" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="77.77" y="-207.99" class="text" font-family="gost">h=3000мм</text>
+  <text font-size="5" x="72.74" y="-215" class="text" font-family="gost">Л  ПВХ 25 СП</text>
+  <polyline points="137.45,-223.77 141.45,-223.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.45,-223.77 141.45,-219.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.45,-219.77 137.45,-219.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="137.45,-219.77 137.45,-223.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="139.45,-223.77 139.45,-231.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="139.45,-202.77 139.45,-219.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.07,-202.77 139.45,-202.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.07,-210.34 67.07,-202.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="65.07,-210.34 67.07,-210.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-221.77 137.45,-221.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="137.45,-235.77 141.45,-235.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.45,-235.77 141.45,-231.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.45,-231.77 137.45,-231.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="137.45,-231.77 137.45,-235.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-233.77 137.45,-233.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="69.48,-223.55 62.07,-218.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="69.48,-223.55 94.62,-223.55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="69.53" y="-224.55" class="text" font-family="gost">ЩПН сущ.</text>
+  <polyline points="61.07,-218.34 61.07,-202.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.07,-218.34 59.07,-202.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.07,-218.34 65.07,-218.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="65.07,-218.34 65.07,-202.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.07,-202.34 65.07,-202.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119.15,-282.48 128.47,-233.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="140.19,-195.75 128.47,-221.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="140.19,-195.75 178.46,-195.75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="145.25" y="-189.75" class="text" font-family="gost">4кВт, h=0,5</text>
+  <text font-size="5" x="140.24" y="-196.75" class="text" font-family="gost">ЩПН сущ.: Гр.2</text>
+  <polyline points="135.01,-181.51 119.26,-220.61" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="135.01,-181.51 192.06,-181.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="190.19" y="-182.16" class="text" font-family="gost">)</text>
+  <text font-size="5" x="164.26" y="-182.16" class="text" font-family="gost">резервный</text>
+  <text font-size="5" x="152.46" y="-182.16" class="text" font-family="gost">№2 (</text>
+  <text font-size="5" x="135.65" y="-182.16" class="text" font-family="gost">Насос </text>
+  <polyline points="115.57,-265.7 121.19,-235.83" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="109.4,-227.77 109.4,-215.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="128.47" cy="-221.77" r="3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-215.77 133.4,-227.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-227.77 109.4,-227.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="109.4,-215.77 133.4,-215.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="109.4,-239.77 109.4,-227.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="128.47" cy="-233.77" r="3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-227.77 133.4,-239.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.4,-239.77 109.4,-239.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="109.4,-227.77 133.4,-227.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="149.57" y="-219.33" class="text" font-family="gost">105</text>
+  <circle cx="153.33" cy="-221.83" r="6" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="79.81" y="-233.84" class="text" font-family="gost">104</text>
+  <circle cx="84.1" cy="-236.35" r="6" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="148.45" y="-126.2" class="text" font-family="gost">2,00</text>
+  <polyline points="46.67,-148.03 46.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="46.67,-163.03 46.67,-148.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="167.37,-220.95 164.5,-218.22" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="170.24,-217 167.37,-214.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="170.24,-217 164.5,-218.22" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="41.19,-220.95 38.33,-218.22" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="44.06,-217 41.19,-214.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="44.06,-217 38.33,-218.22" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="112.8,-178.29 110.07,-181.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.85,-175.42 106.12,-178.29" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.85,-175.42 110.07,-181.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="167.37,-214.27 167.37,-171.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="167.37,-265.67 167.37,-220.95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="41.19,-214.27 41.19,-171.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="41.19,-265.67 41.19,-220.95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="112.8,-178.29 184.05,-178.29" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="34.87,-178.29 106.12,-178.29" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="57.18,-168.96 57.18,-268.91" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="177.18,-159.01 177.18,-268.91" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="49.03,-236.79 57.25,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="158.78,-199.83 145.89,-208.28" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="158.61,-206.68 163.56,-206.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="158.61,-208.28 161.96,-208.28" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="158.61,-208.28 158.61,-206.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="161.96,-250.76 161.96,-208.28" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="163.56,-206.68 163.56,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="145.89,-208.28 145.89,-206.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="129.07,-176.1 119.04,-195.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="117.45,-199.17 117.44,-195.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.45,-250.76 141.45,-200.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="143.05,-199.17 143.05,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56.88,-178.29 47.64,-191.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="117.44,-195.24 119.04,-195.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119.04,-199.17 119.04,-195.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-196.51 59.05,-196.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.93,-196.51 58.93,-196.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="143.05,-206.68 145.89,-206.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.05,-199.17 143.05,-199.17" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="143.05,-206.68 145.89,-206.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.06,-200.75 141.45,-200.77" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="143.05,-208.28 145.89,-208.28" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-240.55 59.05,-240.55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.25,-220.35 57.25,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="57.25,-240.55 55.25,-240.55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.25,-220.35 57.25,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-240.55 59.05,-240.55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-220.35 59.05,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.96,-245.78 54.96,-247.87" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.72,-245.78 54.96,-245.78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.72,-250.76 54.72,-245.78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.64,-245.78 59.64,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.4,-245.78 59.64,-245.78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.4,-247.87 59.4,-245.78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="57.72,-240.65 59.05,-241.98" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56.31,-240.65 59.05,-243.39" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-240.8 59.05,-244.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-242.22 59.05,-246.22" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-243.63 59.05,-247.63" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-245.05 58.2,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="146.3,-247.12 146.3,-236.57" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="147.45,-247.59 158.9,-236.14" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="159.98,-235.96 159.98,-248.92" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M159.08,-235.06 A0.9,0.9 0 0,1 159.98,-235.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="146.12,-235.06 159.08,-235.06" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M145.22,-235.96 A0.9,0.9 0 0,1 146.12,-235.06" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="145.22,-248.92 145.22,-235.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="160.7,-235.24 160.7,-249.64" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M159.8,-234.34 A0.9,0.9 0 0,1 160.7,-235.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="145.4,-234.34 159.8,-234.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M144.5,-235.24 A0.9,0.9 0 0,1 145.4,-234.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="144.5,-249.64 144.5,-235.24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-220.35 55.05,-196.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.07,-220.35 59.05,-196.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.07,-220.35 59.07,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-240.55 55.05,-248.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.05,-240.55 59.05,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="58.72,-196.51 59.05,-196.85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="57.3,-196.51 59.05,-198.26" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.89,-196.51 59.05,-199.68" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-197.08 59.06,-201.09" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-198.5 59.06,-202.51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-199.92 59.06,-203.93" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-201.33 59.06,-205.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-202.75 59.06,-206.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-204.16 59.06,-208.17" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-205.58 59.07,-209.59" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-206.99 59.07,-211" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-208.41 59.07,-212.42" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-209.82 59.07,-213.83" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-211.24 59.07,-215.25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-212.66 59.07,-216.66" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-214.07 59.07,-218.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-215.49 59.07,-219.49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.06,-216.9 58.51,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.07,-218.32 57.1,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.17,-219.84 55.68,-220.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="163.68" y="-134.18" class="text" font-family="gost">Д</text>
+  <text font-size="2.5" x="65.21" y="-125.8" class="text" font-family="gost">Душевая</text>
+  <text font-size="2.5" x="148.45" y="-134.2" class="text" font-family="gost">10,80</text>
+  <text font-size="2.5" x="65.21" y="-133.8" class="text" font-family="gost">Насосная пожаротушения, водомерный узел</text>
+  <text font-size="2.5" x="51.03" y="-125.7" class="text" font-family="gost">105</text>
+  <text font-size="2.5" x="51.03" y="-133.7" class="text" font-family="gost">104</text>
+  <text font-size="2.5" x="51.03" y="-141.7" class="text" font-family="gost">102</text>
+  <text font-size="2.5" x="149.1" y="-142.2" class="text" font-family="gost">4,30</text>
+  <text font-size="2.5" x="65.21" y="-141.8" class="text" font-family="gost">Тамбур</text>
+  <text font-size="3.5" x="85.73" y="-169.34" class="text" font-family="gost">Экспликация помещений на отм. 0,000</text>
+  <text font-size="2.5" x="162.84" y="-156.89" class="text" font-family="gost">Кат.</text>
+  <text font-size="2.5" x="145.82" y="-156.89" class="text" font-family="gost">Площадь</text>
+  <polyline points="46.67,-163.03 171.67,-163.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="171.67,-163.03 171.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="145.82" y="-151.05" class="text" font-family="gost"> кв. м</text>
+  <polyline points="46.67,-148.03 171.67,-148.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="46.67,-132.03 171.67,-132.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="46.67,-124.03 171.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="46.67,-140.03 171.67,-140.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="162.31" y="-153.4" class="text" font-family="gost">поме-</text>
+  <text font-size="2.5" x="162.18" y="-150.6" class="text" font-family="gost">щения</text>
+  <polyline points="141.67,-148.03 141.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="161.67,-163.03 161.67,-148.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="161.67,-148.03 161.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.67,-163.03 141.67,-148.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="95.53" y="-154.28" class="text" font-family="gost">Наименование</text>
+  <polyline points="61.67,-148.03 61.67,-124.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="61.67,-163.03 61.67,-148.03" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="48.44" y="-156.95" class="text" font-family="gost"> поме-</text>
+  <text font-size="2.5" x="48.37" y="-153.4" class="text" font-family="gost">щения</text>
+  <polyline points="81.99,-282.48 119.15,-282.48" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="86.5" y="-276.48" class="text" font-family="gost">4кВт, h=0,5</text>
+  <text font-size="5" x="82.03" y="-283.48" class="text" font-family="gost">ЩПН сущ.: Гр.1</text>
+  <polyline points="65.49,-265.7 115.57,-265.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="5" x="87.12" y="-267.86" class="text" font-family="gost">1 (рабочий)</text>
+  <text font-size="5" x="82.11" y="-267.86" class="text" font-family="gost">№</text>
+  <text font-size="5" x="65.54" y="-267.86" class="text" font-family="gost">Насос </text>
+  <polyline points="112.8,-259.74 110.07,-262.61" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.85,-256.87 106.12,-259.74" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.85,-256.87 110.07,-262.61" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="112.8,-259.74 184.05,-259.74" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="34.87,-259.74 106.12,-259.74" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="33.49,-248.27 194.56,-248.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.19,-251.97 41.19,-251.97" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M45.48,-251.08 A0.19,0.19 0 0,1 45.29,-251.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="43.27,-251.27 45.29,-251.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M43.27,-251.27 A0.19,0.19 0 0,1 43.08,-251.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="43.08,-249.07 43.08,-251.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M43.08,-249.07 A0.19,0.19 0 0,1 43.27,-248.88" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="45.29,-248.87 43.27,-248.87" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M45.29,-248.88 A0.19,0.19 0 0,1 45.48,-249.07" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="45.48,-251.08 45.48,-249.07" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M45.4,-251.08 A0.11,0.11 0 0,1 45.29,-251.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="43.27,-251.19 45.29,-251.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M43.27,-251.19 A0.11,0.11 0 0,1 43.16,-251.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="43.16,-249.07 43.16,-251.08" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M43.16,-249.07 A0.11,0.11 0 0,1 43.27,-248.96" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="45.29,-248.95 43.27,-248.95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M45.29,-248.96 A0.11,0.11 0 0,1 45.4,-249.07" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="45.4,-251.08 45.4,-249.07" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.96,-250.76 54.72,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="54.96,-248.67 54.96,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M54.96,-248.67 A0.32,0.32 0 0,1 55.28,-248.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.08,-248.35 55.28,-248.35" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M59.08,-248.35 A0.32,0.32 0 0,1 59.4,-248.67" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.4,-250.76 59.4,-248.67" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.64,-250.76 59.4,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M59.4,-247.87 A0.32,0.32 0 0,1 59.08,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.28,-248.19 59.08,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M55.28,-248.19 A0.32,0.32 0 0,1 54.96,-247.87" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="58.36,-248.35 59.05,-249.05" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56.94,-248.35 59.05,-250.46" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-246.46 56.78,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.53,-248.35 57.94,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-247.88 55.37,-248.19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-249.29 56.52,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-250.7 55.11,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="146.3" cy="-248.74" r="0.54" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="148.08,-248.74 158.62,-248.74" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M146.12,-249.82 A0.9,0.9 0 0,1 145.22,-248.92" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="159.08,-249.82 146.12,-249.82" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M159.98,-248.92 A0.9,0.9 0 0,1 159.08,-249.82" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M145.4,-250.54 A0.9,0.9 0 0,1 144.5,-249.64" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="159.8,-250.54 145.4,-250.54" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <path d="M160.7,-249.64 A0.9,0.9 0 0,1 159.8,-250.54" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.19,-253.16 52.19,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="55.05,-248.45 55.05,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.19,-250.76 167.37,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="59.05,-248.35 59.05,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.66,-250.76 41.19,-250.76" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.19,-253.16 41.19,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="41.19,-248.27 167.37,-248.27" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="167.37,-253.16 52.19,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="167.12,-250.77 164.73,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="163.45,-250.77 161.05,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="159.77,-250.77 157.37,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="156.09,-250.77 153.7,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="152.41,-250.77 150.02,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="148.74,-250.77 146.34,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="145.06,-250.77 142.66,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.38,-250.77 138.99,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="137.71,-250.77 135.31,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="134.03,-250.77 131.63,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="130.35,-250.77 127.96,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="126.67,-250.77 124.28,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="123,-250.77 120.6,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119.32,-250.77 116.93,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="115.64,-250.77 113.25,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="111.97,-250.77 109.57,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="107.7,-251.36 105.9,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.29,-250.77 107.72,-251.34" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="104.61,-250.77 102.22,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="100.93,-250.77 98.54,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="97.26,-250.77 94.86,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="93.58,-250.77 91.19,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="89.9,-250.77 87.51,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="86.22,-250.77 83.83,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="82.55,-250.77 80.16,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="78.87,-250.77 76.48,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="75.19,-250.77 72.8,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="71.52,-250.77 69.13,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.84,-250.77 65.45,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="64.16,-250.77 61.77,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60.48,-250.77 58.1,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56.81,-250.78 54.42,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="53.13,-250.78 52.19,-251.71" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="163.17,-250.77 165.57,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="159.5,-250.77 161.89,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="155.82,-250.77 158.21,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="152.14,-250.77 154.54,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="148.46,-250.77 150.86,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="144.79,-250.77 147.18,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="141.11,-250.77 143.51,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="137.43,-250.77 139.83,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="133.76,-250.77 136.15,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="130.08,-250.77 132.48,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="126.4,-250.77 128.8,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="122.73,-250.77 125.12,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="119.05,-250.77 121.45,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="115.37,-250.77 117.77,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="111.7,-250.77 114.09,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="108.02,-250.77 110.41,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="104.34,-250.77 106.74,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="100.67,-250.77 103.06,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="96.99,-250.77 99.38,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="93.31,-250.77 95.71,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="89.64,-250.77 92.03,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="85.96,-250.77 88.35,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="82.28,-250.77 84.68,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="78.61,-250.77 81,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="74.93,-250.77 77.32,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="71.25,-250.77 73.64,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="67.58,-250.77 69.97,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="63.9,-250.77 66.29,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60.22,-250.77 62.61,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56.55,-250.78 58.94,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="52.87,-250.78 55.26,-253.16" fill="none" stroke="#000000" stroke-width="0.2"/>
+</g>
+</svg>
+
+</Bl>

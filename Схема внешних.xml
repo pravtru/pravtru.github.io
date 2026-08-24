@@ -1,0 +1,67 @@
+﻿<Bl Name="Схема внешних">
+
+<svg viewBox="-3 -3 196 152" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="0,0 190,0 190,32 0,32 0,0" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="0,24 190,24" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,0 20,32" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="10" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Позиция</text>
+  <text font-size="2.5" x="10" y="12" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Наименование
+параметра и
+место отбора
+импульса</text>
+  <polyline points="20,131 190,131 190,146 20,146 20,131" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <text font-size="5" x="105" y="138.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Щит ЩА</text>
+  <polyline points="20,8 45,8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="45,0 45,32" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="32.5" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">ДД1</text>
+  <text font-size="2.5" x="32.5" y="4" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Давление</text>
+  <text font-size="2.5" x="32.5" y="16" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Напорный
+трубопровод
+насосов</text>
+  <g transform="translate(22.5 74)"><Bl Name="ДД на сх вн"><Pr bid="1">1</Pr></Bl></g>
+  <text font-size="2.5" x="10" y="124" class="text" font-family="gost">ВВГнг-FRLS
+3х0,5</text>
+  <polyline points="10,125 27.5,125" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="27.5,125 32.6,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="70,0 70,32" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="57.5" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">3-YA</text>
+  <text font-size="2.5" x="57.5" y="12" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Задвижка на
+обводной линии
+водомерного узла</text>
+  <g transform="translate(47.5 74)"><Bl Name="Прибор на сх вн"><Pr bid="1">2</Pr></Bl></g>
+  <text font-size="2.5" x="10" y="114" class="text" font-family="gost">КВВГнг-FRLS
+5х0,5</text>
+  <polyline points="10,115 42.5,115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="42.5,115 47.4,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="70,8 120,8" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="95,8 95,32" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="120,0 120,32" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="82.5" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Н1</text>
+  <text font-size="3.5" x="107.5" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Н2</text>
+  <text font-size="2.5" x="95" y="4" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Двигатель насоса</text>
+  <text font-size="3.5" x="82.5" y="16" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Насос
+1</text>
+  <text font-size="3.5" x="107.5" y="16" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Насос
+2</text>
+  <g transform="translate(72.5 74)"><Bl Name="Насос на сх. вн"><Pr bid="1">3</Pr></Bl></g>
+  <g transform="translate(97.5 74)"><Bl Name="Насос на сх. вн"><Pr bid="1">4</Pr></Bl></g>
+  <text font-size="3.5" x="155" y="28" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">SB1...SBn</text>
+  <text font-size="3.5" x="155" y="12" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">К кнопкам у
+пожарных кранов</text>
+  <g transform="translate(145 74)"><Bl Name="Насос на сх. вн"><Pr bid="1">5</Pr></Bl></g>
+  <g transform="translate(148 43)"><Bl Name="SB1"><Pr bid="1"></Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <text font-size="2.5" x="60" y="124" class="text" font-family="gost">ВВГнг-FRLS
+5х2,5</text>
+  <polyline points="60,125 102.5,125" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="77.5,125 82.6,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="102.5,125 107.1,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="2.5" x="135" y="124" class="text" font-family="gost">ВВГнг-FRLS
+2х0,5</text>
+  <polyline points="135,125 150,125" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="150,125 155,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+</g>
+</svg>
+
+</Bl>

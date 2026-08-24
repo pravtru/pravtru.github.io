@@ -1,0 +1,34 @@
+﻿<Bl Name="Ведомость ссылочных">
+
+<svg viewBox="-3 4 191 77" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text font-size="5" x="92.5" y="7.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">ВЕДОМОСТЬ ССЫЛОЧНЫХ И ПРИЛАГАЕМЫХ ДОКУМЕНТОВ</text>
+  <polyline points="0,15 185,15" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,30 185,30" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,38 185,38" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,46 185,46" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,54 185,54" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,62 185,62" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,70 185,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,78 185,78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,15 0,78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,15 60,78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="155,15 155,78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="185,15 185,78" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="30" y="22.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Обозначение</text>
+  <text font-size="3.5" x="107.5" y="22.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Наименование</text>
+  <text font-size="3.5" x="170" y="22.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Примечание</text>
+  <text font-size="2.5" x="107.5" y="34" text-anchor="middle" class="text" font-family="gost">Ссылочные документы</text>
+  <text font-size="2.5" x="30" y="42" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">СНиП 3.05.07-85</text>
+  <text font-size="2.5" x="61" y="42" dominant-baseline="middle" class="text" font-family="gost">«Системы автоматизации»</text>
+  <text font-size="2.5" x="107.5" y="50" text-anchor="middle" class="text" font-family="gost">Прилагаемые документы</text>
+  <text id="1" font-size="2.5" x="30" y="58" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">.С</text>
+  <text font-size="2.5" x="61" y="58" dominant-baseline="middle" class="text" font-family="gost">Спецификация оборудования, изделий и материалов</text>
+  <text font-size="2.5" x="61" y="66" dominant-baseline="middle" class="text" font-family="gost">Технические данные насоса</text>
+  <text id="2" font-size="2.5" x="30" y="66" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3" font-size="2.5" x="61" y="66" dominant-baseline="middle" class="text" font-family="gost"></text>
+</g>
+</svg>
+
+</Bl>

@@ -1,0 +1,106 @@
+﻿<Bl Name="Реверсивный привод">
+
+<svg viewBox="32 -273 281 166" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="50" cy="-130" r="5" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <circle cx="50" cy="-130" r="10" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="40,-140 40,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-140 50,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-140 60,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-140 57,-137" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-140 43,-137" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(40 -180)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="40,-196 40,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-196 50,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-196 60,-234" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="80,-170 80,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="90,-160 90,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="100,-150 100,-179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(80 -180)"><Bl Name="KM1"><Pr bid="7">КМ2</Pr></Bl></g>
+  <polyline points="80,-196 80,-205" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="90,-196 90,-215" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="100,-196 100,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-170" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="40,-170 80,-170" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-160" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="60,-160 90,-160" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-150" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="50,-150 100,-150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-205" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="40,-205 80,-205" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-215" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="50,-215 90,-215" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="60,-225 100,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="100" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <text font-size="3.5" x="35" y="-242.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 35 -242.5)">QF1</text>
+  <circle cx="40" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-236 40,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-239 36.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-245 40,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="40" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="39.01,-240.7 38.14,-240.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="38.14,-240.2 36.63,-242.79" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="36.63,-242.79 37.49,-243.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-236 50,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-239 46.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-245 50,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="50" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-235" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-236 60,-239" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-239 56.5,-245" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-245 60,-249" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="-250" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-251 40,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-251 50,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="60,-251 60,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="38.69,-241.25 58.69,-241.25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="37.81,-242.75 57.81,-242.75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="40" y="-262" text-anchor="middle" class="text" font-family="gost">L1</text>
+  <text font-size="3.5" x="50" y="-262" text-anchor="middle" class="text" font-family="gost">L2</text>
+  <text font-size="3.5" x="60" y="-262" text-anchor="middle" class="text" font-family="gost">L3</text>
+  <g transform="translate(100 -225)"><Bl Name="ChainNumber"><Pr bid="1">1</Pr></Bl></g>
+  <g transform="translate(120 -225)"><Bl Name="SB2"><Pr bid="1">SB3</Pr></Bl></g>
+  <g transform="translate(135 -225)"><Bl Name="ChainNumber"><Pr bid="1">2</Pr></Bl></g>
+  <g transform="translate(155 -225)"><Bl Name="SB1"><Pr bid="1">SB1</Pr></Bl></g>
+  <g transform="translate(170 -225)"><Bl Name="ChainNumber"><Pr bid="1">3</Pr></Bl></g>
+  <g transform="translate(190 -225)"><Bl Name="NC"><Pr bid="1">КМ2</Pr><Pr bid="2">21</Pr><Pr bid="3">22</Pr></Bl></g>
+  <g transform="translate(205 -225)"><Bl Name="ChainNumber"><Pr bid="1">4</Pr></Bl></g>
+  <g transform="translate(225 -225)"><Bl Name="KT"><Pr bid="1">КМ1</Pr></Bl></g>
+  <polyline points="241,-225 250,-225 250,-260" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="250" y="-262" text-anchor="middle" class="text" font-family="gost">N</text>
+  <g transform="translate(155 -205)"><Bl Name="NO"><Pr bid="1">КМ1</Pr></Bl></g>
+  <polyline points="171,-205 180,-205 180,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="154,-205 145,-205 145,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="145" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(155 -185)"><Bl Name="SB1"><Pr bid="1">SB2</Pr></Bl></g>
+  <g transform="translate(170 -185)"><Bl Name="ChainNumber"><Pr bid="1">5</Pr></Bl></g>
+  <g transform="translate(190 -185)"><Bl Name="NC"><Pr bid="1">КМ1</Pr><Pr bid="2">21</Pr><Pr bid="3">22</Pr></Bl></g>
+  <g transform="translate(205 -185)"><Bl Name="ChainNumber"><Pr bid="1">6</Pr></Bl></g>
+  <g transform="translate(225 -185)"><Bl Name="KT"><Pr bid="1">КМ2</Pr></Bl></g>
+  <polyline points="241,-185 250,-185 250,-225" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="250" cy="-225" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="154,-185 145,-185 145,-205" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="145" cy="-205" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(155 -165)"><Bl Name="NO"><Pr bid="1">КМ2</Pr></Bl></g>
+  <polyline points="171,-165 180,-165 180,-185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="180" cy="-185" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="154,-165 145,-165 145,-185" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="145" cy="-185" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="270,-270 310,-270 310,-110 270,-110 270,-270" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="270,-250 310,-250" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="270,-200 310,-200" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="270,-150 310,-150" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="1" font-size="3.5" x="290" y="-260" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Питание, ~380В</text>
+  <text id="2" font-size="3.5" x="290" y="-225" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Цепи прямого
+вращения</text>
+  <text id="3" font-size="3.5" x="290" y="-175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Цепи обратного
+вращения</text>
+  <text id="4" font-size="3.5" x="290" y="-130" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Двигатель</text>
+</g>
+</svg>
+
+</Bl>

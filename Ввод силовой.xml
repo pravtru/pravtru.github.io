@@ -1,0 +1,104 @@
+﻿<Bl Name="Ввод силовой">
+
+<svg viewBox="-4 -3 102 137" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <text id="1" font-size="3.5" x="15" y="0" text-anchor="middle" class="text" font-family="gost">Ввод</text>
+  <text font-size="3.5" x="0" y="8" text-anchor="middle" class="text" font-family="gost">L1</text>
+  <text font-size="3.5" x="10" y="8" text-anchor="middle" class="text" font-family="gost">L2</text>
+  <text font-size="3.5" x="20" y="8" text-anchor="middle" class="text" font-family="gost">L3</text>
+  <text font-size="3.5" x="30" y="8" text-anchor="middle" class="text" font-family="gost">N</text>
+  <polyline points="0,10 0,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,10 10,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,10 20,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="30,10 30,86" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 35)"><Bl Name="Штамп (Форма 3)"><Pr bid="0">3</Pr><Pr bid="1">QF1</Pr></Bl></g>
+  <g transform="translate(0 35)"><Bl Name="KM1"><Pr bid="7">QF1</Pr></Bl></g>
+  <circle cx="0" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="0,45 55,45" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_0" font-size="2.5" x="40" y="44" text-anchor="middle" class="text" font-family="gost">1</text>
+  <circle cx="10" cy="50" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="10,50 55,50" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_1" font-size="2.5" x="40" y="49" text-anchor="middle" class="text" font-family="gost">2</text>
+  <circle cx="20" cy="55" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="20,55 55,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_2" font-size="2.5" x="40" y="54" text-anchor="middle" class="text" font-family="gost">3</text>
+  <circle cx="30" cy="60" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="30,60 55,60" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_3" font-size="2.5" x="40" y="59" text-anchor="middle" class="text" font-family="gost">4</text>
+  <text id="4" font-size="3.5" x="60" y="38" text-anchor="middle" class="text" font-family="gost">K1</text>
+  <polyline points="55,40 65,40 65,65 55,65 55,40" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(55 47.4)"><Bl Name="Klemma"><Pr bid="1">A</Pr></Bl></g>
+  <g transform="translate(55 52.5)"><Bl Name="Klemma"><Pr bid="1">B</Pr></Bl></g>
+  <g transform="translate(55 57.4)"><Bl Name="Klemma"><Pr bid="1">C</Pr></Bl></g>
+  <g transform="translate(55 62.4)"><Bl Name="Klemma"><Pr bid="1">N</Pr></Bl></g>
+  <circle cx="35" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="35,45 35,70 39,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(40 70)"><Bl Name="NO"><Pr bid="1">К1</Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="0,36 0,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,36 10,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,36 20,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 85)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="56,70 65,70 65,85 56,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_4" font-size="2.5" x="60" y="69" text-anchor="middle" class="text" font-family="gost">5</text>
+  <g transform="translate(40 85)"><Bl Name="KT"><Pr bid="1">KM1</Pr></Bl></g>
+  <polyline points="30,85 39,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="30" cy="85" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="35" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="35,45 35,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,36 0,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,36 10,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,36 20,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 85)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="35,70 85,70 85,85 81,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(65 85)"><Bl Name="NO"><Pr bid="1"></Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="56,85 64,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_4" font-size="2.5" x="60" y="84" text-anchor="middle" class="text" font-family="gost">5</text>
+  <g transform="translate(40 85)"><Bl Name="KT"><Pr bid="1">KM1</Pr></Bl></g>
+  <polyline points="30,85 39,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="30" cy="85" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="35" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="35,45 35,70 39,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(40 70)"><Bl Name="NO"><Pr bid="1">К1</Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="0,36 0,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,36 10,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,36 20,69" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 85)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="56,70 85,70 85,85 81,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_4" font-size="2.5" x="60" y="69" text-anchor="middle" class="text" font-family="gost">5</text>
+  <g transform="translate(65 85)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="56,85 64,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_5" font-size="2.5" x="60" y="84" text-anchor="middle" class="text" font-family="gost">6</text>
+  <g transform="translate(40 85)"><Bl Name="KT"><Pr bid="1">KM1</Pr></Bl></g>
+  <polyline points="30,85 39,85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="30" cy="85" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="35" cy="45" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="35,45 35,70 39,70" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(40 70)"><Bl Name="NO"><Pr bid="1">К1</Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="0,36 0,114" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,36 10,114" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="20,36 20,114" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="30,86 30,131" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(0 130)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="56,70 95,70 95,90" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_4" font-size="2.5" x="60" y="69" text-anchor="middle" class="text" font-family="gost">5</text>
+  <g transform="translate(65 90)"><Bl Name="Переключатель 1 контакт"><Pr bid="1">SA1</Pr><Pr bid="5">1</Pr></Bl></g>
+  <polyline points="76,90 95,90 95,110 81,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="95" cy="90" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(65 110)"><Bl Name="NC"><Pr bid="1"></Pr><Pr bid="2"></Pr><Pr bid="3"></Pr></Bl></g>
+  <polyline points="56,90 64,90" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="5_5" font-size="2.5" x="60" y="88" text-anchor="middle" class="text" font-family="gost">6</text>
+  <g transform="translate(40 90)"><Bl Name="KT"><Pr bid="1">KM1</Pr></Bl></g>
+  <polyline points="30,90 39,90" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="30" cy="90" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <g transform="translate(40 110)"><Bl Name="EL1"><Pr bid="1"></Pr></Bl></g>
+  <polyline points="30,110 39,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="30" cy="110" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <circle cx="60" cy="90" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="60,90 60,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="56,110 64,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="60" cy="110" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+</svg>
+
+</Bl>

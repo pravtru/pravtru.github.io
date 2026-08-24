@@ -1,0 +1,14 @@
+﻿<Bl Name="Насос на сх вн">
+
+<svg viewBox="-3 -43 26 103" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="0,-40 0,-25 20,-25 20,-40 0,-40" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="10,-25 10,20" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text id="1" font-size="3.5" x="10" y="25" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">1</text>
+  <circle cx="10" cy="25" r="5" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="10,30 10,57" fill="none" stroke="#000000" stroke-width="0.4"/>
+</g>
+</svg>
+
+</Bl>

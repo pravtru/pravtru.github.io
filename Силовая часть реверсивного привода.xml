@@ -1,0 +1,64 @@
+﻿<Bl Name="Схема электрическая принципиальная силовой части реверсивного электропривода">
+
+<svg viewBox="-18 -135 71 148" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="0" r="5" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <circle cx="0" cy="0" r="10" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <polyline points="-10,-10 -10,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-10 0,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-10 10,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-10 7,-7" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10,-10 -7,-7" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(-10 -50)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <polyline points="-10,-66 -10,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-66 0,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-66 10,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="30,-40 30,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-30 40,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-20 50,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(30 -50)"><Bl Name="KM1"><Pr bid="7">КМ2</Pr></Bl></g>
+  <polyline points="30,-66 30,-75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="40,-66 40,-85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="50,-66 50,-95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="-10" cy="-40" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="-10,-40 30,-40" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="10" cy="-30" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="10,-30 40,-30" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="-20" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="0,-20 50,-20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="-10" cy="-75" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="-10,-75 30,-75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="-85" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="0,-85 40,-85" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="10" cy="-95" r="0.5" fill="none" stroke="#000000" stroke-width="1"/>
+  <polyline points="10,-95 50,-95" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="-15" y="-112.5" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -15 -112.5)">QF1</text>
+  <circle cx="-10" cy="-105" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10,-106 -10,-109" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10,-109 -13.5,-115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10,-115 -10,-119" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="-10" cy="-120" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10.99,-110.7 -11.86,-110.2 -13.37,-112.79 -12.51,-113.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="-105" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-106 0,-109" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-109 -3.5,-115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-115 0,-119" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="-120" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="10" cy="-105" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-106 10,-109" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-109 6.5,-115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-115 0,-119" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="10" cy="-120" r="1" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-10,-121 -10,-130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,-121 0,-130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="10,-121 10,-130" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-11.31,-111.25 8.69,-111.25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="-12.19,-112.75 7.81,-112.75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.5" x="-10" y="-132" text-anchor="middle" class="text" font-family="gost">L1</text>
+  <text font-size="3.5" x="0" y="-132" text-anchor="middle" class="text" font-family="gost">L2</text>
+  <text font-size="3.5" x="10" y="-132" text-anchor="middle" class="text" font-family="gost">L3</text>
+</g>
+</svg>
+
+</Bl>

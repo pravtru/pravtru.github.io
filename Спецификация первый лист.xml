@@ -1,0 +1,290 @@
+﻿<Bl Name="Спецификация">
+
+<svg viewBox="-3 -3 401 225" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g transform="translate(0 0) rotate(0 0 0)">
+  <polyline points="0,0 0,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="20,0 20,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="150,0 150,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="210,0 210,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="245,0 245,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="290,0 290,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="310,0 310,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="330,0 330,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="355,0 355,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="395,0 395,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="0,0 395,0" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="0,33 395,33" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="0,43 395,43" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <polyline points="0,51 395,51" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,59 395,59" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,67 395,67" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,75 395,75" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,83 395,83" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,91 395,91" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,99 395,99" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,107 395,107" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,115 395,115" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,123 395,123" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,131 395,131" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,139 395,139" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,147 395,147" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,155 395,155" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,163 395,163" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,171 395,171" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,179 395,179" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,187 395,187" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,195 395,195" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,203 395,203" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,211 395,211" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="0,219 395,219" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <text font-size="3.5" x="10" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Позиция</text>
+  <text font-size="3.5" x="85" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Наименование и техническая характеристика</text>
+  <text font-size="3.5" x="180" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Тип, марка,
+обозначение документа,
+опросного листа</text>
+  <text font-size="3.5" x="227.5" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Код оборудования,
+изделия,
+материала</text>
+  <text font-size="3.5" x="267.5" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Завод-изготовитель</text>
+  <text font-size="3.5" x="300" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Единица
+измерения</text>
+  <text font-size="3.5" x="320" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Коли-
+чество</text>
+  <text font-size="3.5" x="342.5" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Масса
+единицы,
+кг</text>
+  <text font-size="3.5" x="375" y="16.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">Примечания</text>
+  <text font-size="3.5" x="10" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">1</text>
+  <text font-size="3.5" x="85" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">2</text>
+  <text font-size="3.5" x="180" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">3</text>
+  <text font-size="3.5" x="227.5" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">4</text>
+  <text font-size="3.5" x="267.5" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">5</text>
+  <text font-size="3.5" x="300" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">6</text>
+  <text font-size="3.5" x="320" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">7</text>
+  <text font-size="3.5" x="342.5" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">8</text>
+  <text font-size="3.5" x="375" y="38" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">9</text>
+  <text id="1_0" font-size="2.5" x="85" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_1" font-size="2.5" x="85" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_2" font-size="2.5" x="85" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_3" font-size="2.5" x="85" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_4" font-size="2.5" x="85" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_5" font-size="2.5" x="85" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_6" font-size="2.5" x="85" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_7" font-size="2.5" x="85" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_8" font-size="2.5" x="85" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_9" font-size="2.5" x="85" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_10" font-size="2.5" x="85" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_11" font-size="2.5" x="85" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_12" font-size="2.5" x="85" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_13" font-size="2.5" x="85" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_14" font-size="2.5" x="85" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_15" font-size="2.5" x="85" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_16" font-size="2.5" x="85" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_17" font-size="2.5" x="85" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_18" font-size="2.5" x="85" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_19" font-size="2.5" x="85" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_20" font-size="2.5" x="85" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="1_21" font-size="2.5" x="85" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_0" font-size="2.5" x="10" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_1" font-size="2.5" x="10" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_2" font-size="2.5" x="10" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_3" font-size="2.5" x="10" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_4" font-size="2.5" x="10" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_5" font-size="2.5" x="10" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_6" font-size="2.5" x="10" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_7" font-size="2.5" x="10" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_8" font-size="2.5" x="10" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_9" font-size="2.5" x="10" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_10" font-size="2.5" x="10" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_11" font-size="2.5" x="10" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_12" font-size="2.5" x="10" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_13" font-size="2.5" x="10" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_14" font-size="2.5" x="10" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_15" font-size="2.5" x="10" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_16" font-size="2.5" x="10" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_17" font-size="2.5" x="10" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_18" font-size="2.5" x="10" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_19" font-size="2.5" x="10" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_20" font-size="2.5" x="10" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="2_21" font-size="2.5" x="10" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_0" font-size="2.5" x="21" y="47" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_1" font-size="2.5" x="21" y="55" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_2" font-size="2.5" x="21" y="63" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_3" font-size="2.5" x="21" y="71" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_4" font-size="2.5" x="21" y="79" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_5" font-size="2.5" x="21" y="87" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_6" font-size="2.5" x="21" y="95" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_7" font-size="2.5" x="21" y="103" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_8" font-size="2.5" x="21" y="111" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_9" font-size="2.5" x="21" y="119" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_10" font-size="2.5" x="21" y="127" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_11" font-size="2.5" x="21" y="135" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_12" font-size="2.5" x="21" y="143" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_13" font-size="2.5" x="21" y="151" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_14" font-size="2.5" x="21" y="159" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_15" font-size="2.5" x="21" y="167" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_16" font-size="2.5" x="21" y="175" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_17" font-size="2.5" x="21" y="183" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_18" font-size="2.5" x="21" y="191" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_19" font-size="2.5" x="21" y="199" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_20" font-size="2.5" x="21" y="207" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="3_21" font-size="2.5" x="21" y="215" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_0" font-size="2.5" x="180" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_1" font-size="2.5" x="180" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_2" font-size="2.5" x="180" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_3" font-size="2.5" x="180" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_4" font-size="2.5" x="180" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_5" font-size="2.5" x="180" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_6" font-size="2.5" x="180" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_7" font-size="2.5" x="180" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_8" font-size="2.5" x="180" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_9" font-size="2.5" x="180" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_10" font-size="2.5" x="180" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_11" font-size="2.5" x="180" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_12" font-size="2.5" x="180" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_13" font-size="2.5" x="180" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_14" font-size="2.5" x="180" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_15" font-size="2.5" x="180" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_16" font-size="2.5" x="180" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_17" font-size="2.5" x="180" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_18" font-size="2.5" x="180" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_19" font-size="2.5" x="180" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_20" font-size="2.5" x="180" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="4_21" font-size="2.5" x="180" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_0" font-size="2.5" x="227.5" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_1" font-size="2.5" x="227.5" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_2" font-size="2.5" x="227.5" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_3" font-size="2.5" x="227.5" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_4" font-size="2.5" x="227.5" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_5" font-size="2.5" x="227.5" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_6" font-size="2.5" x="227.5" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_7" font-size="2.5" x="227.5" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_8" font-size="2.5" x="227.5" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_9" font-size="2.5" x="227.5" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_10" font-size="2.5" x="227.5" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_11" font-size="2.5" x="227.5" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_12" font-size="2.5" x="227.5" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_13" font-size="2.5" x="227.5" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_14" font-size="2.5" x="227.5" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_15" font-size="2.5" x="227.5" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_16" font-size="2.5" x="227.5" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_17" font-size="2.5" x="227.5" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_18" font-size="2.5" x="227.5" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_19" font-size="2.5" x="227.5" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_20" font-size="2.5" x="227.5" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="5_21" font-size="2.5" x="227.5" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_0" font-size="2.5" x="267.5" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_1" font-size="2.5" x="267.5" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_2" font-size="2.5" x="267.5" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_3" font-size="2.5" x="267.5" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_4" font-size="2.5" x="267.5" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_5" font-size="2.5" x="267.5" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_6" font-size="2.5" x="267.5" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_7" font-size="2.5" x="267.5" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_8" font-size="2.5" x="267.5" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_9" font-size="2.5" x="267.5" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_10" font-size="2.5" x="267.5" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_11" font-size="2.5" x="267.5" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_12" font-size="2.5" x="267.5" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_13" font-size="2.5" x="267.5" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_14" font-size="2.5" x="267.5" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_15" font-size="2.5" x="267.5" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_16" font-size="2.5" x="267.5" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_17" font-size="2.5" x="267.5" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_18" font-size="2.5" x="267.5" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_19" font-size="2.5" x="267.5" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_20" font-size="2.5" x="267.5" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="6_21" font-size="2.5" x="267.5" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_0" font-size="2.5" x="300" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_1" font-size="2.5" x="300" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_2" font-size="2.5" x="300" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_3" font-size="2.5" x="300" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_4" font-size="2.5" x="300" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_5" font-size="2.5" x="300" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_6" font-size="2.5" x="300" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_7" font-size="2.5" x="300" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_8" font-size="2.5" x="300" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_9" font-size="2.5" x="300" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_10" font-size="2.5" x="300" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_11" font-size="2.5" x="300" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_12" font-size="2.5" x="300" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_13" font-size="2.5" x="300" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_14" font-size="2.5" x="300" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_15" font-size="2.5" x="300" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_16" font-size="2.5" x="300" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_17" font-size="2.5" x="300" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_18" font-size="2.5" x="300" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_19" font-size="2.5" x="300" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_20" font-size="2.5" x="300" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="7_21" font-size="2.5" x="300" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_0" font-size="2.5" x="320" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_1" font-size="2.5" x="320" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_2" font-size="2.5" x="320" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_3" font-size="2.5" x="320" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_4" font-size="2.5" x="320" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_5" font-size="2.5" x="320" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_6" font-size="2.5" x="320" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_7" font-size="2.5" x="320" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_8" font-size="2.5" x="320" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_9" font-size="2.5" x="320" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_10" font-size="2.5" x="320" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_11" font-size="2.5" x="320" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_12" font-size="2.5" x="320" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_13" font-size="2.5" x="320" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_14" font-size="2.5" x="320" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_15" font-size="2.5" x="320" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_16" font-size="2.5" x="320" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_17" font-size="2.5" x="320" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_18" font-size="2.5" x="320" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_19" font-size="2.5" x="320" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_20" font-size="2.5" x="320" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="8_21" font-size="2.5" x="320" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_0" font-size="2.5" x="342.5" y="47" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_1" font-size="2.5" x="342.5" y="55" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_2" font-size="2.5" x="342.5" y="63" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_3" font-size="2.5" x="342.5" y="71" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_4" font-size="2.5" x="342.5" y="79" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_5" font-size="2.5" x="342.5" y="87" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_6" font-size="2.5" x="342.5" y="95" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_7" font-size="2.5" x="342.5" y="103" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_8" font-size="2.5" x="342.5" y="111" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_9" font-size="2.5" x="342.5" y="119" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_10" font-size="2.5" x="342.5" y="127" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_11" font-size="2.5" x="342.5" y="135" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_12" font-size="2.5" x="342.5" y="143" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_13" font-size="2.5" x="342.5" y="151" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_14" font-size="2.5" x="342.5" y="159" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_15" font-size="2.5" x="342.5" y="167" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_16" font-size="2.5" x="342.5" y="175" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_17" font-size="2.5" x="342.5" y="183" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_18" font-size="2.5" x="342.5" y="191" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_19" font-size="2.5" x="342.5" y="199" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_20" font-size="2.5" x="342.5" y="207" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="9_21" font-size="2.5" x="342.5" y="215" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_0" font-size="2.5" x="356" y="47" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_1" font-size="2.5" x="356" y="55" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_2" font-size="2.5" x="356" y="63" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_3" font-size="2.5" x="356" y="71" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_4" font-size="2.5" x="356" y="79" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_5" font-size="2.5" x="356" y="87" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_6" font-size="2.5" x="356" y="95" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_7" font-size="2.5" x="356" y="103" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_8" font-size="2.5" x="356" y="111" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_9" font-size="2.5" x="356" y="119" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_10" font-size="2.5" x="356" y="127" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_11" font-size="2.5" x="356" y="135" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_12" font-size="2.5" x="356" y="143" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_13" font-size="2.5" x="356" y="151" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_14" font-size="2.5" x="356" y="159" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_15" font-size="2.5" x="356" y="167" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_16" font-size="2.5" x="356" y="175" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_17" font-size="2.5" x="356" y="183" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_18" font-size="2.5" x="356" y="191" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_19" font-size="2.5" x="356" y="199" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_20" font-size="2.5" x="356" y="207" dominant-baseline="middle" class="text" font-family="gost"></text>
+  <text id="10_21" font-size="2.5" x="356" y="215" dominant-baseline="middle" class="text" font-family="gost"></text>
+</g>
+</svg>
+
+</Bl>
