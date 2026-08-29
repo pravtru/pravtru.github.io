@@ -3,7 +3,7 @@
 <svg viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)">
-  <text font-size="3.65" x="10" y="-6" text-anchor="middle" class="text" font-family="gost">EL1</text>
+  <text id="2" font-size="3.65" x="10" y="-6" text-anchor="middle" class="text" font-family="gost">EL1</text>
   <circle cx="10" cy="0" r="4" fill="none" stroke="#000000" stroke-width="0.2"/>
   <line x1="7" y1="-3" x2="13" y2="3" stroke="#000000" stroke-width="0.2"/>
   <line x1="7" y1="3" x2="13" y2="-3" stroke="#000000" stroke-width="0.2"/>

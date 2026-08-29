@@ -10,14 +10,14 @@
   <polyline points="10,-10 10,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="10,-10 7,-7" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="-10,-10 -7,-7" fill="none" stroke="#000000" stroke-width="0.2"/>
-  <g transform="translate(-10 -50)"><Bl Name="KM1"><Pr bid="7">КМ1</Pr></Bl></g>
+  <g transform="translate(-10 -50)"><Bl Name="KM1"><Pr bid="pz">КМ1</Pr></Bl></g>
   <polyline points="-10,-66 -10,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="0,-66 0,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="10,-66 10,-104" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="30,-40 30,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="40,-30 40,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="50,-20 50,-49" fill="none" stroke="#000000" stroke-width="0.2"/>
-  <g transform="translate(30 -50)"><Bl Name="KM1"><Pr bid="7">КМ2</Pr></Bl></g>
+  <g transform="translate(30 -50)"><Bl Name="KM1"><Pr bid="pz">КМ2</Pr></Bl></g>
   <polyline points="30,-66 30,-75" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="40,-66 40,-85" fill="none" stroke="#000000" stroke-width="0.2"/>
   <polyline points="50,-66 50,-95" fill="none" stroke="#000000" stroke-width="0.2"/>

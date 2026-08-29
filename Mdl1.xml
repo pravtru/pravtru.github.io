@@ -20,11 +20,155 @@
 </Elements>
 
 <svg tip="A3" viewBox="0 0 420 297" width="420mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
+ <Bl0 Name="Font"></Bl0>
  <Bl Name="A3BS"></Bl>
+
+ <!-- Силовая часть: QF1, KM1/KM2, электродвигатель (см. проект "ЭМ") -->
+ <g transform="translate(75,150)"><Bl Name="Силовая часть реверсивного привода"></Bl></g>
+ <polyline points="75,163 75,172" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="70,172 80,172 75,178 70,172" fill="#000000" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3" x="82" y="176" class="text" font-family="gost">К электродвигателю задвижки (см. проект "ЭМ")</text>
+
+ <!-- Питание цепей управления: QF2, кнопка "Стоп" SB3 -->
+ <g transform="translate(190,20)"><Bl Name="QF1"><Pr bid="2">QF2</Pr></Bl></g>
+ <text font-size="2.5" x="150" y="18" class="text" font-family="gost">~220В (от QF1)</text>
+ <polyline points="140,18 175,18 175,20" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="205,25 205,40" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(190,50)"><Bl Name="SB2"><Pr bid="2">SB3</Pr></Bl></g>
+ <text font-size="2.5" x="197" y="47" class="text" font-family="gost">Стоп</text>
+ <polyline points="205,55 205,65" fill="none" stroke="#000000" stroke-width="0.2"/>
+
+ <!-- Шина "+" и переключатель режима SA1 -->
+ <line x1="175" y1="65" x2="182" y2="65" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="3" x="176" y="63" class="text" font-family="gost">+</text>
+ <polyline points="182,65 182,74" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="182,65 182,82" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(180,78)"><Bl Name="SA_2P3N"><Pr bid="2">SA1</Pr></Bl></g>
+ <text font-size="2.5" x="182" y="70" class="text" font-family="gost">Местн.</text>
+ <text font-size="2.5" x="182" y="90" class="text" font-family="gost">Дистанц.</text>
+ <line x1="198" y1="74" x2="215" y2="74" stroke="#000000" stroke-width="0.2"/>
+ <line x1="198" y1="82" x2="250" y2="82" stroke="#000000" stroke-width="0.2"/>
+ <line x1="215" y1="74" x2="285" y2="74" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="215" cy="74" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
+ <circle cx="285" cy="74" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
+ <circle cx="250" cy="82" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
+ <line x1="320" y1="82" x2="250" y2="82" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="320" cy="82" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
+
+ <!-- Местное управление: SB1 "Открыть", SB2 "Закрыть" -->
+ <polyline points="215,74 215,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(215,110)"><Bl Name="SB1"><Pr bid="2">SB1</Pr></Bl></g>
+ <polyline points="234,110 240,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="241" y="108" class="text" font-family="gost">→ катушка KM1 (Открыть, местн.)</text>
+
+ <polyline points="285,74 285,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(285,110)"><Bl Name="SB1"><Pr bid="2">SB2</Pr></Bl></g>
+ <polyline points="304,110 310,110" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="311" y="108" class="text" font-family="gost">→ катушка KM2 (Закрыть, местн.)</text>
+
+ <!-- Дистанционное управление от модуля A1 -->
+ <polyline points="250,82 250,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="252" y="132" class="text" font-family="gost">А1 (вых. 23)</text>
+ <polyline points="265,130 275,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="276" y="128" class="text" font-family="gost">→ катушка KM1 (Открыть, дист.)</text>
+
+ <polyline points="320,82 320,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="322" y="132" class="text" font-family="gost">А1 (вых. 24)</text>
+ <polyline points="335,130 345,130" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="346" y="128" class="text" font-family="gost">→ катушка KM2 (Закрыть, дист.)</text>
+
+ <!-- Электропривод задвижки Auma (S1..S4, R1) и модуль A1 -->
+ <g transform="translate(220,150)"><Bl Name="Privod_Auma"></Bl></g>
+ <g transform="translate(300,150)"><Bl Name="Modul_MK110"></Bl></g>
+ <polyline points="258,150 258,145 294,145 294,150" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="260" y="143" class="text" font-family="gost">R1 (обратная связь по положению)</text>
+
+ <!-- Разводка на цепи сигнализации K1..K3 -->
+ <polyline points="222,146 222,168 40,168 40,230" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(30,166)"><Bl Name="ChainNumber"><Pr bid="1">20</Pr></Bl></g>
+ <text font-size="2.5" x="223" y="146" class="text" font-family="gost">← S2 "Открыто"</text>
+
+ <polyline points="222,154 222,176 110,176 110,230" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(100,174)"><Bl Name="ChainNumber"><Pr bid="1">21</Pr></Bl></g>
+ <text font-size="2.5" x="223" y="156" class="text" font-family="gost">← S1 "Закрыто"</text>
+
+ <polyline points="240,146 240,184 180,184 180,230" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(170,182)"><Bl Name="ChainNumber"><Pr bid="1">22</Pr></Bl></g>
+ <text font-size="2.5" x="241" y="146" class="text" font-family="gost">← S3/S4 "Авария"</text>
+
+ <!-- Сигнализация положения: K1/HL1 "Открыто", K2/HL2 "Закрыто", K3/HL3 "Авария" -->
+ <g transform="translate(25,230)"><Bl Name="K1"><Pr bid="pz">K1</Pr></Bl></g>
+ <polyline points="40,250 40,258 55,258" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(55,258)"><Bl Name="EL1"><Pr bid="2">HL1</Pr></Bl></g>
+ <text font-size="2.5" x="15" y="292" class="text" font-family="gost">Сигнализация "Открыто"</text>
+
+ <g transform="translate(95,230)"><Bl Name="K1"><Pr bid="pz">K2</Pr></Bl></g>
+ <polyline points="110,250 110,258 125,258" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(125,258)"><Bl Name="EL1"><Pr bid="2">HL2</Pr></Bl></g>
+ <text font-size="2.5" x="85" y="292" class="text" font-family="gost">Сигнализация "Закрыто"</text>
+
+ <g transform="translate(165,230)"><Bl Name="K1"><Pr bid="pz">K3</Pr></Bl></g>
+ <polyline points="180,250 180,258 195,258" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(195,258)"><Bl Name="EL1"><Pr bid="2">HL3</Pr></Bl></g>
+ <text font-size="2.5" x="155" y="292" class="text" font-family="gost">Сигнализация "Авария"</text>
 </svg>
 
 <svg tip="A4" viewBox="0 0 210 297" width="210mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
+ <Bl0 Name="Font"></Bl0>
  <Bl Name="A4MS"></Bl>
+ <g transform="translate(20, 5)">
+  <Bl Name="Спецификация угловая">
+   <Pr bid="1_1">Щит ЩС</Pr>
+
+   <Pr bid="2_2">QF1</Pr>
+   <Pr bid="3_2">Выключатель автоматический PKZM0-1,6</Pr>
+   <Pr bid="4_2">1</Pr>
+   <Pr bid="5_2">см. проект "ЭМ"</Pr>
+
+   <Pr bid="2_3">KM1,KM2</Pr>
+   <Pr bid="3_3">Магнитный пускатель DILM7/21</Pr>
+   <Pr bid="4_3">2</Pr>
+
+   <Pr bid="2_4">QF2</Pr>
+   <Pr bid="3_4">Выключатель автоматический FAZ C2/1</Pr>
+   <Pr bid="4_4">1</Pr>
+
+   <Pr bid="2_5">K1..K3</Pr>
+   <Pr bid="3_5">Реле MR-207A с монтажной колодкой PYF-022BE/2</Pr>
+   <Pr bid="4_5">3</Pr>
+
+   <Pr bid="2_6">A1</Pr>
+   <Pr bid="3_6">Модуль дискретного ввода/вывода MK110-220.4ДН.4Р</Pr>
+   <Pr bid="4_6">1</Pr>
+
+   <Pr bid="2_7">SA1</Pr>
+   <Pr bid="3_7">Переключатель поворотный трёхпозиционный MTB2-ED3</Pr>
+   <Pr bid="4_7">1</Pr>
+
+   <Pr bid="2_8">HL1,HL2</Pr>
+   <Pr bid="3_8">Арматура сигнальная MT22-A63 (зелёная линза)</Pr>
+   <Pr bid="4_8">2</Pr>
+
+   <Pr bid="2_9">HL3</Pr>
+   <Pr bid="3_9">Арматура сигнальная MT22-A64 (красная линза)</Pr>
+   <Pr bid="4_9">1</Pr>
+
+   <Pr bid="2_10">SB1,SB2</Pr>
+   <Pr bid="3_10">Кнопка управляющая, зелёная MTB2-EA331</Pr>
+   <Pr bid="4_10">2</Pr>
+
+   <Pr bid="2_11">SB3</Pr>
+   <Pr bid="3_11">Кнопка управляющая, красная MTB2-EA434</Pr>
+   <Pr bid="4_11">1</Pr>
+
+   <Pr bid="1_12">По месту</Pr>
+
+   <Pr bid="2_13">S1..5,F1,R1</Pr>
+   <Pr bid="3_13">Электропривод задвижки Auma</Pr>
+   <Pr bid="4_13">1</Pr>
+   <Pr bid="5_13">см. проект "ТМ"</Pr>
+  </Bl>
+ </g>
 </svg>
 
 </Mdl>
