@@ -19,6 +19,99 @@
  <El Name="Privod_Auma" poz="S1..5,F1,R1" kol="1" prim="см. проект ТМ"/>
 </Elements>
 
+<!-- Список цепей: начало/конец каждой цепи заданы как клемма (kl) элемента (poz) -->
+<Chains>
+ <!-- Питание цепей управления -->
+ <Chain nom="1" prim="~220В, отпайка от силового ввода QF1, см. Силовая часть реверсивного привода.xml; клемма условная, т.к. QF1 там начерчен без нумерации клемм">
+  <From poz="QF1" kl="L1"/>
+  <To poz="QF2" kl="1"/>
+ </Chain>
+ <Chain nom="2">
+  <From poz="QF2" kl="2"/>
+  <To poz="SB3" kl="1"/>
+ </Chain>
+
+ <!-- Шина "+" через кнопку "Стоп" на переключатель режима SA1 -->
+ <Chain nom="3">
+  <From poz="SB3" kl="2"/>
+  <To poz="SA1" kl="Местн.1"/>
+ </Chain>
+ <Chain nom="4">
+  <From poz="SB3" kl="2"/>
+  <To poz="SA1" kl="Дист.1"/>
+ </Chain>
+
+ <!-- Местное управление: SB1 "Открыть", SB2 "Закрыть" -->
+ <Chain nom="5">
+  <From poz="SA1" kl="Местн.2"/>
+  <To poz="SB1" kl="1"/>
+ </Chain>
+ <Chain nom="6">
+  <From poz="SA1" kl="Местн.2"/>
+  <To poz="SB2" kl="1"/>
+ </Chain>
+ <Chain nom="7" prim="катушка КМ1, см. Силовая часть реверсивного привода.xml">
+  <From poz="SB1" kl="2"/>
+  <To poz="KM1" kl="A1"/>
+ </Chain>
+ <Chain nom="8" prim="катушка КМ2, см. Силовая часть реверсивного привода.xml">
+  <From poz="SB2" kl="2"/>
+  <To poz="KM2" kl="A1"/>
+ </Chain>
+
+ <!-- Дистанционное управление от модуля A1 -->
+ <Chain nom="9">
+  <From poz="SA1" kl="Дист.2"/>
+  <To poz="A1" kl="23"/>
+ </Chain>
+ <Chain nom="10">
+  <From poz="SA1" kl="Дист.2"/>
+  <To poz="A1" kl="24"/>
+ </Chain>
+ <Chain nom="11" prim="катушка КМ1, см. Силовая часть реверсивного привода.xml">
+  <From poz="A1" kl="23"/>
+  <To poz="KM1" kl="A1"/>
+ </Chain>
+ <Chain nom="12" prim="катушка КМ2, см. Силовая часть реверсивного привода.xml">
+  <From poz="A1" kl="24"/>
+  <To poz="KM2" kl="A1"/>
+ </Chain>
+
+ <!-- Обратная связь по положению (R1) на модуль A1 -->
+ <Chain nom="13">
+  <From poz="S1..5,F1,R1" kl="R1"/>
+  <To poz="A1" kl="1"/>
+ </Chain>
+
+ <!-- Сигналы концевых выключателей Auma на катушки реле сигнализации -->
+ <Chain nom="20">
+  <From poz="S1..5,F1,R1" kl="S1.1"/>
+  <To poz="K1" kl="A2"/>
+ </Chain>
+ <Chain nom="21">
+  <From poz="S1..5,F1,R1" kl="S2.3"/>
+  <To poz="K2" kl="A2"/>
+ </Chain>
+ <Chain nom="22" prim="совмещённый сигнал S3/S4 &quot;Авария&quot;">
+  <From poz="S1..5,F1,R1" kl="S3.5"/>
+  <To poz="K3" kl="A2"/>
+ </Chain>
+
+ <!-- Сигнализация положения: контакты K1..K3 на лампы HL1..HL3 -->
+ <Chain nom="23">
+  <From poz="K1" kl="14"/>
+  <To poz="HL1" kl="1"/>
+ </Chain>
+ <Chain nom="24">
+  <From poz="K2" kl="14"/>
+  <To poz="HL2" kl="1"/>
+ </Chain>
+ <Chain nom="25">
+  <From poz="K3" kl="14"/>
+  <To poz="HL3" kl="1"/>
+ </Chain>
+</Chains>
+
 <svg tip="A3" viewBox="0 0 420 297" width="420mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
  <Bl0 Name="Font"></Bl0>
  <Bl Name="A3BS"></Bl>
