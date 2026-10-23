@@ -1,7 +1,10 @@
 <El Name="Арматура сигнальная MT22-A64 (красная линза)">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>MT22-A64</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>MT22-A64</ALIAS>
+ <PRM>линза: красная</PRM>
 
 <svg tip="SP" viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

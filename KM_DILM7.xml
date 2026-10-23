@@ -1,7 +1,11 @@
 <El Name="Магнитный пускатель DILM7/21">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>DILM7/21</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>DILM7/21</ALIAS>
+ <ALIAS>DIULM7/21</ALIAS>
+ <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN> <PIN>A1</PIN> <PIN>A2</PIN> <PIN>21</PIN> <PIN>22</PIN> <PIN>33</PIN> <PIN>34</PIN>
 
 <svg tip="SP" viewBox="-15 -20 85 65" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

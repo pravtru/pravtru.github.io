@@ -1,7 +1,7 @@
 <El Name="Повысительный насос">
 
-<Elem>
-</Elem>
+ <TYPE>насос</TYPE>
+ <UNIT>шт</UNIT>
 
 <svg tip="SA" viewBox="-4 -10 22 37" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

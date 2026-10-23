@@ -1,7 +1,9 @@
 <El Name="Выключатель автоматический PKZM0-1,6">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>PKZM0-1,6</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>PKZM0-1,6</ALIAS>
 
 <svg tip="SP" viewBox="-15 -20 55 25" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

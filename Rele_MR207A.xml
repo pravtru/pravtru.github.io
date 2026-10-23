@@ -1,7 +1,10 @@
 <El Name="Реле MR-207A с монтажной колодкой PYF-022BE/2">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>MR-207A</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>MR-207</ALIAS>
+ <PIN>A1</PIN> <PIN>A2</PIN> <PIN>11</PIN> <PIN>14</PIN>
 
 <svg tip="SP" viewBox="-10 -12 35 60" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

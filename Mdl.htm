@@ -30,27 +30,28 @@
 несколько графических представлений (тег <code>&lt;svg&gt;</code>) — например, разные форматы листов.
 
 <br><br>
-После списка элементов (тег <code>&lt;Elements&gt;</code>) модуль содержит список цепей (тег <code>&lt;Chains&gt;</code>) —
-электрических соединений между клеммами элементов модуля. Каждая цепь (тег <code>&lt;Chain&gt;</code>) задаётся
-номером (<code>nom</code>) и двумя концами — началом (<code>&lt;From&gt;</code>) и концом (<code>&lt;To&gt;</code>), у каждого из которых
-указаны позиционное обозначение элемента (<code>poz</code>, как в <code>&lt;Elements&gt;</code>) и клемма (<code>kl</code>) — обозначение
-контакта элемента, к которому подключена цепь. Необязательный атрибут <code>prim</code> используется для примечания,
-например, когда другой конец цепи находится в отдельном файле (силовой части, схеме внешних связей и т.п.).
-Список цепей — это данные (список соединений), а не графика: рисунок цепи в <code>&lt;svg&gt;</code> при этом должен
-использовать те же графические представления элементов (блоки <code>&lt;Bl&gt;</code>), на клеммах которых она начинается
-и заканчивается.
+После списка элементов (тег <code>&lt;Elements&gt;</code>) модуль содержит список цепей (тег <code>&lt;LNKS&gt;</code>) —
+электрических соединений между выводами элементов модуля. Цепи записываются теми же тегами, что и связи в формате EPX:
+каждый провод — тег <code>&lt;LNK&gt;</code> с видом связи <code>&lt;TYPE&gt;цепь&lt;/TYPE&gt;</code>, номером цепи
+<code>&lt;POS&gt;</code> (как на схеме, например <code>n-5</code>) и двумя концами — <code>&lt;FROM&gt;</code> и <code>&lt;TO&gt;</code>.
+В каждом конце: <code>&lt;SNAME&gt;</code> — позиционное обозначение элемента (как <code>poz</code> в <code>&lt;Elements&gt;</code>)
+и <code>&lt;PIN&gt;</code> — вывод элемента; вывод должен быть в списке <code>&lt;PIN&gt;</code> самого элемента.
+Если вывод на схеме не пронумерован, <code>&lt;PIN&gt;</code> не пишется. Цепь из нескольких выводов записывается
+несколькими проводами с одним номером. Список цепей — это данные (список соединений), а не графика.
 
 <pre><code>&lt;Elements&gt;
  &lt;El Name="..." poz="K1" kol="1"/&gt;
- &lt;El Name="..." poz="HL1" kol="1"/&gt;
+ &lt;El Name="..." poz="A1" kol="1"/&gt;
 &lt;/Elements&gt;
 
-&lt;Chains&gt;
- &lt;Chain nom="20"&gt;
-  &lt;From poz="K1" kl="13"/&gt;
-  &lt;To poz="HL1" kl="1"/&gt;
- &lt;/Chain&gt;
-&lt;/Chains&gt;</code></pre>
+&lt;LNKS&gt;
+ &lt;LNK&gt;
+  &lt;TYPE&gt;цепь&lt;/TYPE&gt;
+  &lt;POS&gt;n-19&lt;/POS&gt;
+  &lt;FROM&gt;&lt;SNAME&gt;K1&lt;/SNAME&gt;&lt;PIN&gt;14&lt;/PIN&gt;&lt;/FROM&gt;
+  &lt;TO&gt;&lt;SNAME&gt;A1&lt;/SNAME&gt;&lt;PIN&gt;5&lt;/PIN&gt;&lt;/TO&gt;
+ &lt;/LNK&gt;
+&lt;/LNKS&gt;</code></pre>
 
 <br>
 Ниже приведён список всех модулей (тег <code>&lt;Mdl&gt;</code>), хранящихся в отдельных XML-файлах проекта.

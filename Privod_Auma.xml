@@ -1,7 +1,11 @@
 <El Name="Электропривод задвижки Auma">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MAKER>Auma</MAKER>
+ <UNIT>шт</UNIT>
+ <ALIAS>Auma SA</ALIAS>
+ <ALIAS>Auma SG</ALIAS>
+ <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN> <PIN>7</PIN> <PIN>8</PIN> <PIN>9</PIN> <PIN>10</PIN> <PIN>11</PIN> <PIN>12</PIN> <PIN>13</PIN> <PIN>14</PIN> <PIN>15</PIN> <PIN>16</PIN> <PIN>19</PIN> <PIN>20</PIN> <PIN>47</PIN> <PIN>48</PIN>
 
 <svg tip="SP" viewBox="-4 -12 62 30" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

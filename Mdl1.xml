@@ -19,191 +19,376 @@
  <El Name="Privod_Auma" poz="S1..5,F1,R1" kol="1" prim="см. проект ТМ"/>
 </Elements>
 
-<!-- Список цепей: начало/конец каждой цепи заданы как клемма (kl) элемента (poz) -->
-<Chains>
- <!-- Питание цепей управления -->
- <Chain nom="1" prim="~220В, отпайка от силового ввода QF1, см. Силовая часть реверсивного привода.xml; клемма условная, т.к. QF1 там начерчен без нумерации клемм">
-  <From poz="QF1" kl="L1"/>
-  <To poz="QF2" kl="1"/>
- </Chain>
- <Chain nom="2">
-  <From poz="QF2" kl="2"/>
-  <To poz="SB3" kl="1"/>
- </Chain>
-
- <!-- Шина "+" через кнопку "Стоп" на переключатель режима SA1 -->
- <Chain nom="3">
-  <From poz="SB3" kl="2"/>
-  <To poz="SA1" kl="Местн.1"/>
- </Chain>
- <Chain nom="4">
-  <From poz="SB3" kl="2"/>
-  <To poz="SA1" kl="Дист.1"/>
- </Chain>
-
- <!-- Местное управление: SB1 "Открыть", SB2 "Закрыть" -->
- <Chain nom="5">
-  <From poz="SA1" kl="Местн.2"/>
-  <To poz="SB1" kl="1"/>
- </Chain>
- <Chain nom="6">
-  <From poz="SA1" kl="Местн.2"/>
-  <To poz="SB2" kl="1"/>
- </Chain>
- <Chain nom="7" prim="катушка КМ1, см. Силовая часть реверсивного привода.xml">
-  <From poz="SB1" kl="2"/>
-  <To poz="KM1" kl="A1"/>
- </Chain>
- <Chain nom="8" prim="катушка КМ2, см. Силовая часть реверсивного привода.xml">
-  <From poz="SB2" kl="2"/>
-  <To poz="KM2" kl="A1"/>
- </Chain>
-
- <!-- Дистанционное управление от модуля A1 -->
- <Chain nom="9">
-  <From poz="SA1" kl="Дист.2"/>
-  <To poz="A1" kl="23"/>
- </Chain>
- <Chain nom="10">
-  <From poz="SA1" kl="Дист.2"/>
-  <To poz="A1" kl="24"/>
- </Chain>
- <Chain nom="11" prim="катушка КМ1, см. Силовая часть реверсивного привода.xml">
-  <From poz="A1" kl="23"/>
-  <To poz="KM1" kl="A1"/>
- </Chain>
- <Chain nom="12" prim="катушка КМ2, см. Силовая часть реверсивного привода.xml">
-  <From poz="A1" kl="24"/>
-  <To poz="KM2" kl="A1"/>
- </Chain>
-
- <!-- Обратная связь по положению (R1) на модуль A1 -->
- <Chain nom="13">
-  <From poz="S1..5,F1,R1" kl="R1"/>
-  <To poz="A1" kl="1"/>
- </Chain>
-
- <!-- Сигналы концевых выключателей Auma на катушки реле сигнализации -->
- <Chain nom="20">
-  <From poz="S1..5,F1,R1" kl="S1.1"/>
-  <To poz="K1" kl="A2"/>
- </Chain>
- <Chain nom="21">
-  <From poz="S1..5,F1,R1" kl="S2.3"/>
-  <To poz="K2" kl="A2"/>
- </Chain>
- <Chain nom="22" prim="совмещённый сигнал S3/S4 &quot;Авария&quot;">
-  <From poz="S1..5,F1,R1" kl="S3.5"/>
-  <To poz="K3" kl="A2"/>
- </Chain>
-
- <!-- Сигнализация положения: контакты K1..K3 на лампы HL1..HL3 -->
- <Chain nom="23">
-  <From poz="K1" kl="14"/>
-  <To poz="HL1" kl="1"/>
- </Chain>
- <Chain nom="24">
-  <From poz="K2" kl="14"/>
-  <To poz="HL2" kl="1"/>
- </Chain>
- <Chain nom="25">
-  <From poz="K3" kl="14"/>
-  <To poz="HL3" kl="1"/>
- </Chain>
-</Chains>
+<!-- Цепи по листу 5 «Пример.pdf» (схема электрическая принципиальная). Каждая LNK — один провод цепи POS
+     между выводами PIN элементов SNAME (позиция из Elements). Вывод не указан, если на листе он не пронумерован.
+     Выводы S1–S4, F1, R1 принадлежат приводу Auma (позиция S1..5,F1,R1). Силовые цепи L1–L3 к пускателям и двигателю
+     на листе без номеров и здесь не записаны. -->
+<LNKS>
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>QF1</SNAME></FROM><TO><SNAME>KM1</SNAME><PIN>2</PIN></TO></LNK> <!-- фаза L1 после QF1; цепь управления питается от L1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>QF1</SNAME></FROM><TO><SNAME>KM2</SNAME><PIN>6</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>QF1</SNAME></FROM><TO><SNAME>QF2</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>QF2</SNAME></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>20</PIN></TO></LNK> <!-- F1 — термовыключатель привода -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>KM2</SNAME><PIN>6</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>16</PIN></TO></LNK> <!-- S4 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>16</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>8</PIN></TO></LNK> <!-- S4 — S2, общая шина -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>8</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>47</PIN></TO></LNK> <!-- S2 — R1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>47</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>4</PIN></TO></LNK> <!-- R1 — S1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-1</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>4</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>12</PIN></TO></LNK> <!-- S1 — S3 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-2</POS><FROM><SNAME>A1</SNAME><PIN>15</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>19</PIN></TO></LNK> <!-- F1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-3</POS><FROM><SNAME>SB3</SNAME><PIN>21</PIN></FROM><TO><SNAME>SA1</SNAME><PIN>14</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-4</POS><FROM><SNAME>SB3</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-4</POS><FROM><SNAME>SB1</SNAME><PIN>13</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>33</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-4</POS><FROM><SNAME>SB3</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>33</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-4</POS><FROM><SNAME>KM2</SNAME><PIN>33</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>13</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-5</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>5</PIN></TO></LNK> <!-- S2 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-5</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>34</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-5</POS><FROM><SNAME>KM1</SNAME><PIN>34</PIN></FROM><TO><SNAME>A1</SNAME><PIN>19</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-6</POS><FROM><SNAME>SB2</SNAME><PIN>14</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>1</PIN></TO></LNK> <!-- S1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-6</POS><FROM><SNAME>SB2</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>34</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-6</POS><FROM><SNAME>SB2</SNAME><PIN>14</PIN></FROM><TO><SNAME>A1</SNAME><PIN>24</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-7</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>6</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>13</PIN></TO></LNK> <!-- S2 — S4 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-8</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>7</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>3</PIN></TO></LNK> <!-- S2 — S1 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-8</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>7</PIN></FROM><TO><SNAME>K3</SNAME><PIN>A1</PIN></TO></LNK> <!-- S2 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-8</POS><FROM><SNAME>K3</SNAME><PIN>A1</PIN></FROM><TO><SNAME>HL3</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-9</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>2</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>9</PIN></TO></LNK> <!-- S1 — S3 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-10</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>15</PIN></FROM><TO><SNAME>K1</SNAME><PIN>A1</PIN></TO></LNK> <!-- S4 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-10</POS><FROM><SNAME>K1</SNAME><PIN>A1</PIN></FROM><TO><SNAME>HL1</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-11</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>21</PIN></TO></LNK> <!-- S4 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-12</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>10</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>21</PIN></TO></LNK> <!-- S3 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-13</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>11</PIN></FROM><TO><SNAME>K2</SNAME><PIN>A1</PIN></TO></LNK> <!-- S3 -->
+ <LNK><TYPE>цепь</TYPE><POS>n-13</POS><FROM><SNAME>K2</SNAME><PIN>A1</PIN></FROM><TO><SNAME>HL2</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-14</POS><FROM><SNAME>KM2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-15</POS><FROM><SNAME>KM1</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>A1</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-16</POS><FROM><SNAME>A1</SNAME><PIN>16</PIN></FROM><TO><SNAME>SA1</SNAME><PIN>13</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-16</POS><FROM><SNAME>A1</SNAME><PIN>16</PIN></FROM><TO><SNAME>SA1</SNAME><PIN>23</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-17</POS><FROM><SNAME>A1</SNAME><PIN>18</PIN></FROM><TO><SNAME>SA1</SNAME><PIN>24</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-17</POS><FROM><SNAME>A1</SNAME><PIN>18</PIN></FROM><TO><SNAME>A1</SNAME><PIN>23</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-18</POS><FROM><SNAME>A1</SNAME><PIN>3</PIN></FROM><TO><SNAME>K1</SNAME><PIN>11</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-18</POS><FROM><SNAME>K1</SNAME><PIN>11</PIN></FROM><TO><SNAME>K2</SNAME><PIN>11</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-18</POS><FROM><SNAME>K2</SNAME><PIN>11</PIN></FROM><TO><SNAME>K3</SNAME><PIN>11</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-18</POS><FROM><SNAME>K3</SNAME><PIN>11</PIN></FROM><TO><SNAME>SA1</SNAME><PIN>33</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-19</POS><FROM><SNAME>K1</SNAME><PIN>14</PIN></FROM><TO><SNAME>A1</SNAME><PIN>5</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-20</POS><FROM><SNAME>K2</SNAME><PIN>14</PIN></FROM><TO><SNAME>A1</SNAME><PIN>7</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-21</POS><FROM><SNAME>K3</SNAME><PIN>14</PIN></FROM><TO><SNAME>A1</SNAME><PIN>9</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-22</POS><FROM><SNAME>SA1</SNAME><PIN>34</PIN></FROM><TO><SNAME>A1</SNAME><PIN>11</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>n-23</POS><FROM><SNAME>A1</SNAME><PIN>1</PIN></FROM><TO><SNAME>QF2</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>HL1</SNAME></FROM><TO><SNAME>K1</SNAME><PIN>A2</PIN></TO></LNK> <!-- нейтраль -->
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>K1</SNAME><PIN>A2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>KM1</SNAME><PIN>A2</PIN></FROM><TO><SNAME>HL3</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>HL3</SNAME></FROM><TO><SNAME>K3</SNAME><PIN>A2</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>K3</SNAME><PIN>A2</PIN></FROM><TO><SNAME>S1..5,F1,R1</SNAME><PIN>48</PIN></TO></LNK> <!-- R1 -->
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>S1..5,F1,R1</SNAME><PIN>48</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>A2</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>KM2</SNAME><PIN>A2</PIN></FROM><TO><SNAME>K2</SNAME><PIN>A2</PIN></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>K2</SNAME><PIN>A2</PIN></FROM><TO><SNAME>HL2</SNAME></TO></LNK>
+ <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>HL2</SNAME></FROM><TO><SNAME>A1</SNAME><PIN>2</PIN></TO></LNK>
+</LNKS>
 
 <svg tip="A3" viewBox="0 0 420 297" width="420mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">
  <Bl0 Name="Font"></Bl0>
  <Bl Name="A3BS"></Bl>
-
- <!-- Силовая часть: QF1, KM1/KM2, электродвигатель (см. проект "ЭМ") -->
- <g transform="translate(75,150)"><Bl Name="Силовая часть реверсивного привода"></Bl></g>
- <polyline points="75,163 75,172" fill="none" stroke="#000000" stroke-width="0.2"/>
- <polyline points="70,172 80,172 75,178 70,172" fill="#000000" stroke="#000000" stroke-width="0.2"/>
- <text font-size="3" x="82" y="176" class="text" font-family="gost">К электродвигателю задвижки (см. проект "ЭМ")</text>
-
- <!-- Питание цепей управления: QF2, кнопка "Стоп" SB3 -->
- <g transform="translate(190,20)"><Bl Name="QF1"><Pr bid="2">QF2</Pr></Bl></g>
- <text font-size="2.5" x="150" y="18" class="text" font-family="gost">~220В (от QF1)</text>
- <polyline points="140,18 175,18 175,20" fill="none" stroke="#000000" stroke-width="0.2"/>
- <polyline points="205,25 205,40" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(190,50)"><Bl Name="SB2"><Pr bid="2">SB3</Pr></Bl></g>
- <text font-size="2.5" x="197" y="47" class="text" font-family="gost">Стоп</text>
- <polyline points="205,55 205,65" fill="none" stroke="#000000" stroke-width="0.2"/>
-
- <!-- Шина "+" и переключатель режима SA1 -->
- <line x1="175" y1="65" x2="182" y2="65" stroke="#000000" stroke-width="0.3"/>
- <text font-size="3" x="176" y="63" class="text" font-family="gost">+</text>
- <polyline points="182,65 182,74" fill="none" stroke="#000000" stroke-width="0.2"/>
- <polyline points="182,65 182,82" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(180,78)"><Bl Name="SA_2P3N"><Pr bid="2">SA1</Pr></Bl></g>
- <text font-size="2.5" x="182" y="70" class="text" font-family="gost">Местн.</text>
- <text font-size="2.5" x="182" y="90" class="text" font-family="gost">Дистанц.</text>
- <line x1="198" y1="74" x2="215" y2="74" stroke="#000000" stroke-width="0.2"/>
- <line x1="198" y1="82" x2="250" y2="82" stroke="#000000" stroke-width="0.2"/>
- <line x1="215" y1="74" x2="285" y2="74" stroke="#000000" stroke-width="0.2"/>
- <circle cx="215" cy="74" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
- <circle cx="285" cy="74" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
- <circle cx="250" cy="82" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
- <line x1="320" y1="82" x2="250" y2="82" stroke="#000000" stroke-width="0.2"/>
- <circle cx="320" cy="82" r="0.5" stroke="#000000" stroke-width="1" fill="none"/>
-
- <!-- Местное управление: SB1 "Открыть", SB2 "Закрыть" -->
- <polyline points="215,74 215,110" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(215,110)"><Bl Name="SB1"><Pr bid="2">SB1</Pr></Bl></g>
- <polyline points="234,110 240,110" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="241" y="108" class="text" font-family="gost">→ катушка KM1 (Открыть, местн.)</text>
-
- <polyline points="285,74 285,110" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(285,110)"><Bl Name="SB1"><Pr bid="2">SB2</Pr></Bl></g>
- <polyline points="304,110 310,110" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="311" y="108" class="text" font-family="gost">→ катушка KM2 (Закрыть, местн.)</text>
-
- <!-- Дистанционное управление от модуля A1 -->
- <polyline points="250,82 250,130" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="252" y="132" class="text" font-family="gost">А1 (вых. 23)</text>
- <polyline points="265,130 275,130" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="276" y="128" class="text" font-family="gost">→ катушка KM1 (Открыть, дист.)</text>
-
- <polyline points="320,82 320,130" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="322" y="132" class="text" font-family="gost">А1 (вых. 24)</text>
- <polyline points="335,130 345,130" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="346" y="128" class="text" font-family="gost">→ катушка KM2 (Закрыть, дист.)</text>
-
- <!-- Электропривод задвижки Auma (S1..S4, R1) и модуль A1 -->
- <g transform="translate(220,150)"><Bl Name="Privod_Auma"></Bl></g>
- <g transform="translate(300,150)"><Bl Name="Modul_MK110"></Bl></g>
- <polyline points="258,150 258,145 294,145 294,150" fill="none" stroke="#000000" stroke-width="0.2"/>
- <text font-size="2.5" x="260" y="143" class="text" font-family="gost">R1 (обратная связь по положению)</text>
-
- <!-- Разводка на цепи сигнализации K1..K3 -->
- <polyline points="222,146 222,168 40,168 40,230" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(30,166)"><Bl Name="ChainNumber"><Pr bid="1">20</Pr></Bl></g>
- <text font-size="2.5" x="223" y="146" class="text" font-family="gost">← S2 "Открыто"</text>
-
- <polyline points="222,154 222,176 110,176 110,230" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(100,174)"><Bl Name="ChainNumber"><Pr bid="1">21</Pr></Bl></g>
- <text font-size="2.5" x="223" y="156" class="text" font-family="gost">← S1 "Закрыто"</text>
-
- <polyline points="240,146 240,184 180,184 180,230" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(170,182)"><Bl Name="ChainNumber"><Pr bid="1">22</Pr></Bl></g>
- <text font-size="2.5" x="241" y="146" class="text" font-family="gost">← S3/S4 "Авария"</text>
-
- <!-- Сигнализация положения: K1/HL1 "Открыто", K2/HL2 "Закрыто", K3/HL3 "Авария" -->
- <g transform="translate(25,230)"><Bl Name="K1"><Pr bid="pz">K1</Pr></Bl></g>
- <polyline points="40,250 40,258 55,258" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(55,258)"><Bl Name="EL1"><Pr bid="2">HL1</Pr></Bl></g>
- <text font-size="2.5" x="15" y="292" class="text" font-family="gost">Сигнализация "Открыто"</text>
-
- <g transform="translate(95,230)"><Bl Name="K1"><Pr bid="pz">K2</Pr></Bl></g>
- <polyline points="110,250 110,258 125,258" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(125,258)"><Bl Name="EL1"><Pr bid="2">HL2</Pr></Bl></g>
- <text font-size="2.5" x="85" y="292" class="text" font-family="gost">Сигнализация "Закрыто"</text>
-
- <g transform="translate(165,230)"><Bl Name="K1"><Pr bid="pz">K3</Pr></Bl></g>
- <polyline points="180,250 180,258 195,258" fill="none" stroke="#000000" stroke-width="0.2"/>
- <g transform="translate(195,258)"><Bl Name="EL1"><Pr bid="2">HL3</Pr></Bl></g>
- <text font-size="2.5" x="155" y="292" class="text" font-family="gost">Сигнализация "Авария"</text>
+ <!-- Схема электрическая принципиальная по листу 5 «Пример.pdf»; номера цепей и выводы — как в <LNKS> -->
+ <text font-size="5" x="27.4" y="30.4" text-anchor="middle" class="text" font-family="gost">PE</text>
+ <text font-size="5" x="39.5" y="30.4" text-anchor="middle" class="text" font-family="gost">L1</text>
+ <text font-size="5" x="49.5" y="30.4" text-anchor="middle" class="text" font-family="gost">L2</text>
+ <text font-size="5" x="59.5" y="30.4" text-anchor="middle" class="text" font-family="gost">L3</text>
+ <polyline points="39.5,33.6 39.5,42.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="49.5,33.6 49.5,42.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="59.5,33.6 59.5,42.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <Bl Name="QF3"><Pr bid="1" transform="translate(39.5 57.6) rotate(270 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3"> </Pr><Pr bid="4"> </Pr><Pr bid="5"> </Pr><Pr bid="6"> </Pr><Pr bid="7"> </Pr><Pr bid="8"> </Pr></Bl>
+ <text font-size="5" x="33" y="50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 33 50)">n-QF1</text>
+ <polyline points="39.5,57.6 39.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="49.5,57.6 49.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="59.5,57.6 59.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="39.5,61.6 171.7,61.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="39.5" cy="61.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <text font-size="3.5" x="77" y="60.4" text-anchor="start" class="text" font-family="gost">n-1</text>
+ <polyline points="97.5,44.5 97.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="97.5" cy="61.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="97.5,44.5 228.9,44.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="49.5,67.7 87.5,67.7 87.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="49.5" cy="67.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="59.5,73.6 77.5,73.6 77.5,78.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="59.5" cy="73.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(39.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">2</Pr><Pr bid="4">1</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(49.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">4</Pr><Pr bid="4">3</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(59.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">6</Pr><Pr bid="4">5</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(77.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">2</Pr><Pr bid="4">1</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(87.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">4</Pr><Pr bid="4">3</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(97.5 78.3) rotate(90 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">6</Pr><Pr bid="4">5</Pr></Bl>
+ <text font-size="5" x="33" y="90" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 33 90)">n-KM1</text>
+ <text font-size="5" x="71" y="90" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 71 90)">n-KM2</text>
+ <polyline points="39.5,93.3 39.5,117" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="49.5,93.3 49.5,117" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="59.5,93.3 59.5,117" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="77.5,93.3 77.5,101 39.5,101" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="39.5" cy="101" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="87.5,93.3 87.5,106.9 49.5,106.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="49.5" cy="106.9" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="97.5,93.3 97.5,112.9 59.5,112.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="59.5" cy="112.9" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="39.5,117 43,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="59.5,117 56,120" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="49.5" cy="126.4" r="9.5" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <circle cx="49.5" cy="126.4" r="4.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="27.4,33.6 27.4,126.4 40,126.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="126.4" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="107.4,70.1 132.9,70.1 132.9,224.1 107.4,224.1 107.4,70.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="120.1" y="66.6" text-anchor="middle" class="text" font-family="gost">n-A1</text>
+ <g transform="translate(127.9 78.8)"><Bl Name="Klemma"><Pr bid="1">1</Pr></Bl></g>
+ <g transform="translate(127.9 89)"><Bl Name="Klemma"><Pr bid="1">15</Pr></Bl></g>
+ <g transform="translate(127.9 102.3)"><Bl Name="Klemma"><Pr bid="1">19</Pr></Bl></g>
+ <g transform="translate(127.9 163.8)"><Bl Name="Klemma"><Pr bid="1">16</Pr></Bl></g>
+ <g transform="translate(127.9 173.9)"><Bl Name="Klemma"><Pr bid="1">18</Pr></Bl></g>
+ <g transform="translate(127.9 187.9)"><Bl Name="Klemma"><Pr bid="1">23</Pr></Bl></g>
+ <g transform="translate(127.9 193.1)"><Bl Name="Klemma"><Pr bid="1">24</Pr></Bl></g>
+ <g transform="translate(127.9 217.3)"><Bl Name="Klemma"><Pr bid="1">2</Pr></Bl></g>
+ <g transform="translate(107.4 115.2)"><Bl Name="Klemma"><Pr bid="1">4</Pr></Bl></g>
+ <g transform="translate(107.4 120.2)"><Bl Name="Klemma"><Pr bid="1">6</Pr></Bl></g>
+ <g transform="translate(107.4 125.2)"><Bl Name="Klemma"><Pr bid="1">8</Pr></Bl></g>
+ <g transform="translate(107.4 130.2)"><Bl Name="Klemma"><Pr bid="1">10</Pr></Bl></g>
+ <g transform="translate(107.4 135.1)"><Bl Name="Klemma"><Pr bid="1">12</Pr></Bl></g>
+ <g transform="translate(107.4 146.6)"><Bl Name="Klemma"><Pr bid="1">3</Pr></Bl></g>
+ <g transform="translate(107.4 160.5)"><Bl Name="Klemma"><Pr bid="1">5</Pr></Bl></g>
+ <g transform="translate(107.4 174.8)"><Bl Name="Klemma"><Pr bid="1">7</Pr></Bl></g>
+ <g transform="translate(107.4 189.2)"><Bl Name="Klemma"><Pr bid="1">9</Pr></Bl></g>
+ <g transform="translate(107.4 207.4)"><Bl Name="Klemma"><Pr bid="1">11</Pr></Bl></g>
+ <polyline points="107.4,112.7 102.3,112.7 102.3,132.6 107.4,132.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="102.3,117.7 107.4,117.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="102.3" cy="117.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="102.3,122.7 107.4,122.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="102.3" cy="122.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="102.3,127.7 107.4,127.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="102.3" cy="127.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="107.4,144.1 57.3,144.1 57.3,204.9 66,204.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="98" y="143" text-anchor="middle" class="text" font-family="gost">n-18</text>
+ <polyline points="57.3,158 67,158" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="57.3" cy="158" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(67 158) rotate(0 0 0)"></Pr><Pr bid="2">n-K1</Pr><Pr bid="3">11</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="82,158 107.4,158" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="98" y="156.8" text-anchor="middle" class="text" font-family="gost">n-19</text>
+ <polyline points="57.3,172.3 67,172.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="57.3" cy="172.3" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(67 172.3) rotate(0 0 0)"></Pr><Pr bid="2">n-K2</Pr><Pr bid="3">11</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="82,172.3 107.4,172.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="98" y="171.1" text-anchor="middle" class="text" font-family="gost">n-20</text>
+ <polyline points="57.3,186.7 67,186.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="57.3" cy="186.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(67 186.7) rotate(0 0 0)"></Pr><Pr bid="2">n-K3</Pr><Pr bid="3">11</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="82,186.7 107.4,186.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="98" y="185.5" text-anchor="middle" class="text" font-family="gost">n-21</text>
+ <g transform="translate(67 204.9)"><Bl Name="XT1"><Pr bid="2">33</Pr></Bl></g>
+ <g transform="translate(77 204.9)"><Bl Name="XT1"><Pr bid="2">34</Pr></Bl></g>
+ <polyline points="57.3,204.9 66,204.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="72" y="199.2" text-anchor="middle" class="text" font-family="gost">n-SA1</text>
+ <polyline points="78,204.9 107.4,204.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="98" y="203.7" text-anchor="middle" class="text" font-family="gost">n-22</text>
+ <polyline points="83.1,201 83.1,211" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="84.1" y="200" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 84.1 200)">Местн.</text>
+ <polyline points="86.8,201 86.8,211" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="87.8" y="200" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 87.8 200)">Откл.</text>
+ <polyline points="90.5,201 90.5,211" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="91.5" y="200" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 91.5 200)">Дистан.</text>
+ <circle cx="90.5" cy="208.4" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="132.9,76.2 143.6,76.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="138" y="75" text-anchor="middle" class="text" font-family="gost">n-23</text>
+ <Bl Name="QF1"><Pr bid="1" transform="translate(143.6 76.2) rotate(0 0 0)"></Pr><Pr bid="2">n-QF2</Pr><Pr bid="3"> </Pr><Pr bid="4"> </Pr></Bl>
+ <polyline points="158.6,76.2 171.7,76.2 171.7,61.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="171.7,76.2 171.7,86.5 158.6,86.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="171.7" cy="76.2" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="132.9,86.5 143.6,86.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="138" y="85.3" text-anchor="middle" class="text" font-family="gost">n-2</text>
+ <Bl Name="NC"><Pr bid="1" transform="translate(143.6 86.5) rotate(0 0 0)"></Pr><Pr bid="2">n-F1</Pr><Pr bid="3">19</Pr><Pr bid="4">20</Pr></Bl>
+ <polyline points="132.9,99.8 219.3,99.8 219.3,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="132.9,161.3 147.5,161.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="141.7" cy="161.3" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="141.7,161.3 141.7,143.6 146.5,143.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="141" y="141.5" text-anchor="middle" class="text" font-family="gost">n-16</text>
+ <g transform="translate(147.5 143.6)"><Bl Name="XT1"><Pr bid="2">13</Pr></Bl></g>
+ <g transform="translate(157.4 143.6)"><Bl Name="XT1"><Pr bid="2">14</Pr></Bl></g>
+ <g transform="translate(147.5 161.3)"><Bl Name="XT1"><Pr bid="2">23</Pr></Bl></g>
+ <g transform="translate(157.4 161.3)"><Bl Name="XT1"><Pr bid="2">24</Pr></Bl></g>
+ <text font-size="5" x="153" y="137.8" text-anchor="middle" class="text" font-family="gost">n-SA1</text>
+ <polyline points="163.4,141 163.4,164.5" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="164.4" y="140" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 164.4 140)">Местн.</text>
+ <polyline points="167.2,141 167.2,164.5" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="168.2" y="140" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 168.2 140)">Откл.</text>
+ <polyline points="171,141 171,164.5" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="2.5" x="172" y="140" text-anchor="start" class="text" font-family="gost" transform="rotate(-90 172 140)">Дистан.</text>
+ <circle cx="163.4" cy="146.9" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="171" cy="163" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="132.9,171.4 178.6,171.4 178.6,161.3 158.4,161.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="137.4" cy="171.4" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="137.4,171.4 137.4,185.4 132.9,185.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="141" y="170.2" text-anchor="middle" class="text" font-family="gost">n-17</text>
+ <Bl Name="SB2"><Pr bid="1" transform="translate(156.9 120.2) rotate(0 0 0)"></Pr><Pr bid="2">n-SB3</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Bl>
+ <polyline points="156.9,120.2 150.9,120.2 150.9,130.1 178.6,130.1 178.6,143.6 158.4,143.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="152" y="119" text-anchor="end" class="text" font-family="gost">n-3</text>
+ <polyline points="171.9,120.2 186.5,120.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="186.5,64.8 186.5,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="186.5" cy="78.8" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="186.5" cy="120.2" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="186.5" cy="154.2" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="186.5,64.8 195.5,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="189" y="63.4" text-anchor="middle" class="text" font-family="gost">n-4</text>
+ <Bl Name="SB1"><Pr bid="1" transform="translate(195.5 64.8) rotate(0 0 0)"></Pr><Pr bid="2">n-SB1</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="186.5,78.8 195.5,78.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(195.5 78.8) rotate(0 0 0)"></Pr><Pr bid="2">n-KM1</Pr><Pr bid="3">33</Pr><Pr bid="4">34</Pr></Bl>
+ <polyline points="210.5,64.8 234.8,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="210.5,78.8 219.3,78.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="219.3" cy="64.8" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="219.3" cy="78.8" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <text font-size="3.5" x="220" y="63.4" text-anchor="middle" class="text" font-family="gost">n-5</text>
+ <polyline points="186.5,154.2 195.5,154.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(195.5 154.2) rotate(0 0 0)"></Pr><Pr bid="2">n-KM2</Pr><Pr bid="3">33</Pr><Pr bid="4">34</Pr></Bl>
+ <polyline points="186.5,170.3 195.5,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <Bl Name="SB1"><Pr bid="1" transform="translate(195.5 170.3) rotate(0 0 0)"></Pr><Pr bid="2">n-SB2</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="210.5,154.2 219.3,154.2 219.3,190.6 132.9,190.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="210.5,170.3 234.8,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="219.3" cy="170.3" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <text font-size="3.5" x="217" y="152.8" text-anchor="middle" class="text" font-family="gost">n-6</text>
+ <polyline points="228.9,44.5 228.9,190.6 268.8,190.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="228.9" cy="44.5" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="228.9" cy="75.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="228.9" cy="130.1" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <circle cx="228.9" cy="159.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="228.9,44.5 268.8,44.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="228.9,75.6 234.8,75.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="228.9,159.7 234.8,159.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="233.4,60.3 251.5,60.3 251.5,81.5 233.4,81.5 233.4,60.3" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="5" x="242.45" y="57.8" text-anchor="middle" class="text" font-family="gost">n-S2</text>
+ <circle cx="242.4" cy="62" r="0.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="242.4,62.9 242.4,71" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <Bl Name="NC"><Pr bid="1" transform="translate(234.8 64.8) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">5</Pr><Pr bid="4">6</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(234.8 75.6) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">8</Pr><Pr bid="4">7</Pr></Bl>
+ <polyline points="233.4,151.6 251.5,151.6 251.5,177.8 233.4,177.8 233.4,151.6" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="5" x="242.45" y="149.1" text-anchor="middle" class="text" font-family="gost">n-S1</text>
+ <circle cx="242.4" cy="153.5" r="0.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="242.4,154.4 242.4,168" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(234.8 159.7) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">4</Pr><Pr bid="4">3</Pr></Bl>
+ <Bl Name="NC"><Pr bid="1" transform="translate(234.8 170.3) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">1</Pr><Pr bid="4">2</Pr></Bl>
+ <polyline points="267.3,36.2 285.5,36.2 285.5,71.7 267.3,71.7 267.3,36.2" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="5" x="276.4" y="33.7" text-anchor="middle" class="text" font-family="gost">n-S4</text>
+ <circle cx="276.2" cy="38.5" r="0.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="276.2,39.4 276.2,66" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <Bl Name="NO"><Pr bid="1" transform="translate(268.8 44.5) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">16</Pr><Pr bid="4">15</Pr></Bl>
+ <Bl Name="NC"><Pr bid="1" transform="translate(268.8 64.8) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+ <polyline points="267.3,166 285.5,166 285.5,196.6 267.3,196.6 267.3,166" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="0.8 0.5"/>
+ <text font-size="5" x="276.4" y="163.5" text-anchor="middle" class="text" font-family="gost">n-S3</text>
+ <circle cx="276.2" cy="168" r="0.9" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="276.2,168.9 276.2,189" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <Bl Name="NC"><Pr bid="1" transform="translate(268.8 170.3) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">9</Pr><Pr bid="4">10</Pr></Bl>
+ <Bl Name="NO"><Pr bid="1" transform="translate(268.8 190.6) rotate(0 0 0)"></Pr><Pr bid="2"> </Pr><Pr bid="3">12</Pr><Pr bid="4">11</Pr></Bl>
+ <polyline points="249.8,64.8 268.8,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="259" y="63.4" text-anchor="middle" class="text" font-family="gost">n-7</text>
+ <polyline points="249.8,75.6 255.5,75.6 255.5,159.7 249.8,159.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="255.5" cy="114.1" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="255.5,114.1 336.6,114.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="264" y="112.9" text-anchor="middle" class="text" font-family="gost">n-8</text>
+ <polyline points="249.8,170.3 268.8,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="259" y="168.9" text-anchor="middle" class="text" font-family="gost">n-9</text>
+ <polyline points="228.9,130.1 267.3,130.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(267.3 130.1)"><Bl Name="XT1"><Pr bid="2">47</Pr></Bl></g>
+ <g transform="translate(287.3 130.1)"><Bl Name="XT1"><Pr bid="2">48</Pr></Bl></g>
+ <rect x="272.3" y="128.1" width="10" height="4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="268.3,130.1 272.3,130.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="282.3,130.1 286.3,130.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="288.3,130.1 360.3,130.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="130.1" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <text font-size="5" x="277.3" y="125" text-anchor="middle" class="text" font-family="gost">n-R1</text>
+ <polyline points="283.8,44.5 336.6,44.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="292" y="43.3" text-anchor="middle" class="text" font-family="gost">n-10</text>
+ <Bl Name="KT"><Pr bid="1" transform="translate(336.6 44.5) rotate(0 0 0)"></Pr><Pr bid="2">n-K1</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+ <polyline points="351.6,44.5 360.3,44.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="44.5" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="330.5,44.5 330.5,26.7 336.6,26.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="330.5" cy="44.5" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <g transform="translate(336.6 26.7)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <g transform="translate(351.6 26.7)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <circle cx="344.1" cy="26.7" r="2.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,25 345.8,28.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,28.4 345.8,25" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="337.6,26.7 341.7,26.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="346.5,26.7 350.6,26.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="344.1" y="21.7" text-anchor="middle" class="text" font-family="gost">n-HL1</text>
+ <polyline points="351.6,26.7 360.3,26.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="26.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="283.8,64.8 303.3,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="292" y="63.4" text-anchor="middle" class="text" font-family="gost">n-11</text>
+ <Bl Name="NC"><Pr bid="1" transform="translate(303.3 64.8) rotate(0 0 0)"></Pr><Pr bid="2">n-KM2</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Bl>
+ <polyline points="318.3,64.8 336.6,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="327" y="63.6" text-anchor="middle" class="text" font-family="gost">n-14</text>
+ <Bl Name="KT"><Pr bid="1" transform="translate(336.6 64.8) rotate(0 0 0)"></Pr><Pr bid="2">n-KM1</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+ <polyline points="351.6,64.8 360.3,64.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="64.8" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="336.6,114.1 336.6,114.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="330.5,114.1 336.6,114.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <Bl Name="KT"><Pr bid="1" transform="translate(336.6 114.1) rotate(0 0 0)"></Pr><Pr bid="2">n-K3</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+ <polyline points="351.6,114.1 360.3,114.1" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="114.1" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="330.5,114.1 330.5,96.2 336.6,96.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="330.5" cy="114.1" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <g transform="translate(336.6 96.2)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <g transform="translate(351.6 96.2)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <circle cx="344.1" cy="96.2" r="2.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,94.5 345.8,97.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,97.9 345.8,94.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="337.6,96.2 341.7,96.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="346.5,96.2 350.6,96.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="344.1" y="91.2" text-anchor="middle" class="text" font-family="gost">n-HL3</text>
+ <polyline points="351.6,96.2 360.3,96.2" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="96.2" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="283.8,170.3 303.3,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="292" y="168.9" text-anchor="middle" class="text" font-family="gost">n-12</text>
+ <Bl Name="NC"><Pr bid="1" transform="translate(303.3 170.3) rotate(0 0 0)"></Pr><Pr bid="2">n-KM1</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Bl>
+ <polyline points="318.3,170.3 336.6,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="327" y="169.1" text-anchor="middle" class="text" font-family="gost">n-15</text>
+ <Bl Name="KT"><Pr bid="1" transform="translate(336.6 170.3) rotate(0 0 0)"></Pr><Pr bid="2">n-KM2</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+ <polyline points="351.6,170.3 360.3,170.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="170.3" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="283.8,190.6 336.6,190.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="292" y="189.4" text-anchor="middle" class="text" font-family="gost">n-13</text>
+ <Bl Name="KT"><Pr bid="1" transform="translate(336.6 190.6) rotate(0 0 0)"></Pr><Pr bid="2">n-K2</Pr><Pr bid="3">A1</Pr><Pr bid="4">A2</Pr></Bl>
+ <polyline points="351.6,190.6 360.3,190.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="190.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="330.5,190.6 330.5,207.7 336.6,207.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="330.5" cy="190.6" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <g transform="translate(336.6 207.7)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <g transform="translate(351.6 207.7)"><Bl Name="XT1"><Pr bid="2"> </Pr></Bl></g>
+ <circle cx="344.1" cy="207.7" r="2.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,206 345.8,209.4" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="342.4,209.4 345.8,206" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="337.6,207.7 341.7,207.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="346.5,207.7 350.6,207.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="344.1" y="202.7" text-anchor="middle" class="text" font-family="gost">n-HL2</text>
+ <polyline points="351.6,207.7 360.3,207.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="360.3" cy="207.7" r="0.5" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+ <polyline points="360.3,17.2 360.3,214.8 132.9,214.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="5" x="360.3" y="14.8" text-anchor="middle" class="text" font-family="gost">N</text>
+ <polyline points="371.2,25.6 409.8,25.6 409.8,210.5 371.2,210.5 371.2,25.6" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="371.2,54 409.8,54" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="38.6" text-anchor="middle" class="text" font-family="gost">Сигнализация</text>
+ <text font-size="3.5" x="390.5" y="43.4" text-anchor="middle" class="text" font-family="gost">"открыто"</text>
+ <polyline points="371.2,76.8 409.8,76.8" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="64.2" text-anchor="middle" class="text" font-family="gost">Цепи открытия</text>
+ <text font-size="3.5" x="390.5" y="69" text-anchor="middle" class="text" font-family="gost">задвижки</text>
+ <polyline points="371.2,109.3 409.8,109.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="89.45" text-anchor="middle" class="text" font-family="gost">Автоматическое</text>
+ <text font-size="3.5" x="390.5" y="94.25" text-anchor="middle" class="text" font-family="gost">управление</text>
+ <text font-size="3.5" x="390.5" y="99.05" text-anchor="middle" class="text" font-family="gost">открытием</text>
+ <polyline points="371.2,129.3 409.8,129.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="118.1" text-anchor="middle" class="text" font-family="gost">Сигнализация</text>
+ <text font-size="3.5" x="390.5" y="122.9" text-anchor="middle" class="text" font-family="gost">аварии задвижки</text>
+ <polyline points="371.2,150.7 409.8,150.7" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="136.4" text-anchor="middle" class="text" font-family="gost">Автоматическое</text>
+ <text font-size="3.5" x="390.5" y="141.2" text-anchor="middle" class="text" font-family="gost">управление</text>
+ <text font-size="3.5" x="390.5" y="146" text-anchor="middle" class="text" font-family="gost">закрытием</text>
+ <polyline points="371.2,181.9 409.8,181.9" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="165.1" text-anchor="middle" class="text" font-family="gost">Цепи закрытия</text>
+ <text font-size="3.5" x="390.5" y="169.9" text-anchor="middle" class="text" font-family="gost">задвижки</text>
+ <polyline points="371.2,210.5 409.8,210.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="3.5" x="390.5" y="195" text-anchor="middle" class="text" font-family="gost">Сигнализация</text>
+ <text font-size="3.5" x="390.5" y="199.8" text-anchor="middle" class="text" font-family="gost">"закрыто"</text>
+ <g transform="translate(25 233)"><Bl Name="Диаграмма Auma"></Bl></g>
+ <text font-size="3" x="229" y="225" text-anchor="start" class="text" font-family="gost">1. "n" в обозначениях — позиция привода задвижки.</text>
 </svg>
 
 <svg tip="A4" viewBox="0 0 210 297" width="210mm" height="297mm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" overflow="auto">

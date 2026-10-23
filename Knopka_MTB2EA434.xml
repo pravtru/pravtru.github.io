@@ -1,7 +1,11 @@
 <El Name="Кнопка управляющая, красная MTB2-EA434">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>MTB2-EA434</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>MTB2-EA434</ALIAS>
+ <PRM>цвет: красный</PRM>
+ <PIN>21</PIN> <PIN>22</PIN>
 
 <svg tip="SP" viewBox="-10 -10 35 20" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

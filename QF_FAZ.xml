@@ -1,7 +1,9 @@
 <El Name="Выключатель автоматический FAZ C2/1">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>FAZ C2/1</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>FAZ C2/1</ALIAS>
 
 <svg tip="SP" viewBox="-10 -20 35 25" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>

@@ -1,7 +1,10 @@
 <El Name="Модуль дискретного ввода/вывода MK110-220.4ДН.4Р">
 
-<Elem>
-</Elem>
+ <TYPE>электроаппарат</TYPE>
+ <MARK>МК110-220.4ДН.4Р</MARK>
+ <UNIT>шт</UNIT>
+ <ALIAS>МК110-220.4ДН.4Р</ALIAS>
+ <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN> <PIN>7</PIN> <PIN>8</PIN> <PIN>9</PIN> <PIN>10</PIN> <PIN>11</PIN> <PIN>12</PIN> <PIN>15</PIN> <PIN>16</PIN> <PIN>18</PIN> <PIN>19</PIN> <PIN>23</PIN> <PIN>24</PIN>
 
 <svg tip="SP" viewBox="-6 -8 46 30" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
