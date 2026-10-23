@@ -1,6 +1,6 @@
-<blok name="corner specification 6 rows">
+<Bl Name="Угловая спецификация, 6 строк">
     <svg viewBox="0 0 185 40" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <Bl name="Font"></Bl>
+        <Bl0 Name="Font"></Bl0>
         <g id="main" transform="translate(0, 0)" fill="none" stroke="black" stroke-width="0.2">
                     <rect x="0" y="0" width="185" height="40" />
 
@@ -57,4 +57,4 @@
 
                 </g>
     </svg>
-</blok>
+</Bl>

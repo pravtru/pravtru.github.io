@@ -3,24 +3,19 @@
 <Elem>
 </Elem>
 
-<svg tip="SA" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SA" viewBox="-4 -10 22 37" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
- <g transform="translate(0 0) rotate(0 0 0)"></g>
+ <Bl Name="NasosSA"><Pr bid="1">Н1</Pr></Bl>
 </svg>
 
-<svg tip="SP" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SP" viewBox="-4 -8 24 16" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
- <g transform="translate(0 0) rotate(0 0 0)"></g>
+ <Bl Name="M2"></Bl>
 </svg>
 
-<svg tip="SV" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SV" viewBox="-3 -43 26 103" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
- <g transform="translate(0 0) rotate(0 0 0)"></g>
-</svg>
-
-<svg tip="PL" viewBox="-10 -10 35 40" xmlns="http://www.w3.org/2000/svg">
- <Bl0 Name="Font"></Bl0>
- <g transform="translate(0 0) rotate(0 0 0)"></g>
+ <Bl Name="Насос на сх. вн"><Pr bid="1">1</Pr></Bl>
 </svg>
 
 </El>
