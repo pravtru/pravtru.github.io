@@ -1,0 +1,18 @@
+<El Name="Насос скважинный погружной">
+
+ <TYPE>насос</TYPE>
+ <MED>вода холодная</MED>
+ <PIN>U</PIN> <PIN>V</PIN> <PIN>W</PIN> <PIN>PE</PIN>
+
+<svg tip="SA" viewBox="-4 -10 22 37" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <Bl Name="NasosSA"><Pr bid="1">{POS}</Pr><Pr bid="2"> </Pr></Bl>
+</svg>
+
+<svg tip="SP" viewBox="-12 -12 26 22" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <Bl Name="M2"></Bl>
+ <text font-size="3.5" x="-3" y="-5" text-anchor="end" class="text">{POS}</text>
+</svg>
+
+</El>

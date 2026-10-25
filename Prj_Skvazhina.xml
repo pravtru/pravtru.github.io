@@ -1,0 +1,94 @@
+<Prj Name="Автоматизация артезианской скважины">
+ <!-- Шаблон проекта (GOAL.md, решения 13–14): дерево объектов, документы и листы. Образец — проект 27-17-АТХ
+      «Реконструкция водозаборной скважины № П-180064/4». Листы собираются генератором pdgen обходом дерева:
+      каждый объект даёт своё изображение для вида листа (SA, SP, SV). -->
+ <var id="vfd" name="Управление насосом через преобразователь частоты" type="b" default="1"/>
+ <var id="pressure" name="Датчик давления на выходе скважины" type="b" default="1"/>
+ <var id="level" name="Погружной датчик уровня" type="b" default="1"/>
+ <var id="levels" name="Число сигнализаторов уровня (сухой ход, рабочий, максимальный, затопление)" type="i" default="4" min="0" max="4"/>
+ <var id="flow" name="Расходомер" type="b" default="1"/>
+ <var id="arm" name="Передача данных на АРМ диспетчера" type="b" default="1"/>
+ <var id="cable" name="Длина кабеля МКЭШ 5х0,5, м" type="i" default="15" min="0" max="1000"/>
+ <var id="wire" name="Длина провода ПВ2 1х1, м" type="i" default="130" min="0" max="5000"/>
+
+ <OBJS>
+  <OBJ><SNAME>Скважина артезианская</SNAME><POS>Скв.1</POS>
+    <OBJS>
+     <OBJ><SNAME>Насос скважинный погружной</SNAME><POS>Н1</POS><TPL>Nasos_pogr</TPL></OBJ>
+     <OBJ IF="level=1"><SNAME>Погружной преобразователь уровня</SNAME><POS>ДУ2</POS><TPL>PD100_DG</TPL></OBJ>
+     <OBJ IF="levels>=1"><SNAME>Датчик уровня минимальный</SNAME><POS>ДУ1а</POS><TPL>DS1</TPL></OBJ>
+     <OBJ IF="levels>=2"><SNAME>Датчик уровня рабочий</SNAME><POS>ДУ1б</POS><TPL>DS1</TPL></OBJ>
+     <OBJ IF="levels>=3"><SNAME>Датчик уровня максимальный</SNAME><POS>ДУ1в</POS><TPL>DS1</TPL></OBJ>
+     <OBJ IF="levels>=4"><SNAME>Датчик затопления</SNAME><POS>ДУ1г</POS><TPL>DS1</TPL></OBJ>
+     <OBJ IF="pressure=1"><SNAME>Датчик давления на выходе скважины</SNAME><POS>PE1</POS><TPL>PD100_DI</TPL></OBJ>
+     <OBJ IF="flow=1"><SNAME>Расходомер</SNAME><POS>FE1</POS><TPL>TER</TPL></OBJ>
+    </OBJS>
+  </OBJ>
+
+  <OBJ><SNAME>Щит управления насосом</SNAME><POS>ЩУ</POS><TPL>Shchit_ShU</TPL>
+    <OBJS>
+     <OBJ><SNAME>Программируемый логический контроллер</SNAME><POS>A1</POS><TPL>PLC150_220</TPL></OBJ>
+     <OBJ IF="levels>=1"><SNAME>Блок согласования кондуктометрических датчиков</SNAME><POS>A2</POS><TPL>BKK1_220</TPL></OBJ>
+     <OBJ IF="vfd=1"><SNAME>Преобразователь частоты</SNAME><POS>1-P1</POS><TPL>FR_F840</TPL></OBJ>
+     <OBJ><SNAME>Переключатель режима</SNAME><POS>1-SA1</POS><TPL>M22_WRK3</TPL></OBJ>
+     <OBJ><SNAME>Выключатель автоматический ввода</SNAME><POS>QF1</POS><TPL>QF_FAZ_C6</TPL></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF2</POS><TPL>QF_FAZ_C2</TPL></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF4</POS><TPL>QF_FAZ_C2</TPL></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF5</POS><TPL>QF_FAZ_C2</TPL></OBJ>
+     <OBJ><SNAME>Источник бесперебойного питания</SNAME><POS>G1</POS><TPL>UPS_BC500</TPL></OBJ>
+     <OBJ><SNAME>Блок питания</SNAME><POS>G2</POS><TPL>ZI_60_24</TPL></OBJ>
+     <OBJ><SNAME>Клемма наборная</SNAME><MARK>STTB 2.5 3031270</MARK><QTY>20</QTY><UNIT>шт</UNIT></OBJ>
+    </OBJS>
+  </OBJ>
+
+  <OBJ><SNAME>Кабельные изделия и материалы</SNAME>
+    <OBJS>
+     <OBJ><SNAME>Кабель контрольный экранированный</SNAME><MARK>МКЭШ 5х0,5</MARK><QTY>{cable}</QTY><UNIT>м</UNIT></OBJ>
+     <OBJ><SNAME>Провод</SNAME><MARK>ПВ2 1х1</MARK><QTY>{wire}</QTY><UNIT>м</UNIT></OBJ>
+     <OBJ><SNAME>Металлорукав, Ду = 8 мм</SNAME><MARK>РЗ-Ц-Х-Ш-8</MARK><QTY>20</QTY><UNIT>м</UNIT></OBJ>
+     <OBJ IF="arm=1"><SNAME>Вилка RJ45</SNAME><QTY>2</QTY><UNIT>шт</UNIT></OBJ>
+     <OBJ IF="pressure=1"><SNAME>Отборное устройство давления</SNAME><MARK>1,6-70У</MARK><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+     <OBJ><SNAME>Среда программирования (русифицированная версия)</SNAME><MARK>CoDeSys 2.3.9.9</MARK><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+     <OBJ><SNAME>Разработка программного обеспечения для контроллера</SNAME><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    </OBJS>
+  </OBJ>
+
+ </OBJS>
+
+ <DOCS>
+  <DOC>
+   <CODE>{CODE}-АТХ</CODE>
+   <SNAME>{FNAME}</SNAME>
+   <TYPE>комплект рабочих чертежей</TYPE>
+   <SHTS>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A4</FMT>
+     <svg viewBox="0 0 210 297">
+      <text x="115" y="120" font-size="5" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+      <text x="25" y="127" font-size="3.5" class="text">Проектная документация разработана в соответствии с заданием на проектирование,</text>
+      <text x="25" y="133" font-size="3.5" class="text">техническими регламентами и с соблюдением технических условий.</text>
+      <text x="25" y="139" font-size="3.5" class="text">Автоматизацией артезианской скважины предусматривается:</text>
+      <text IF="level=1" x="25" y="145" font-size="3.5" class="text">- контроль текущего уровня в скважине;</text>
+      <text IF="pressure=1" x="25" y="151" font-size="3.5" class="text">- поддержание давления в напорном трубопроводе;</text>
+      <text IF="levels>=1" x="25" y="157" font-size="3.5" class="text">- защита насоса от сухого хода;</text>
+      <text IF="flow=1" x="25" y="163" font-size="3.5" class="text">- контроль расхода на подаче;</text>
+      <text IF="levels>=4" x="25" y="169" font-size="3.5" class="text">- контроль затопления технического помещения;</text>
+      <text IF="arm=1" x="25" y="175" font-size="3.5" class="text">- передача данных на АРМ диспетчера по протоколу ModBus/TCP.</text>
+      <text x="25" y="181" font-size="3.5" class="text">Система автоматизации построена на базе контроллера ПЛК150 фирмы «ОВЕН».</text>
+      <text IF="vfd=1" x="25" y="187" font-size="3.5" class="text">Насос управляется преобразователем частоты по шине RS-485, протокол ModBus.</text>
+      <text x="25" y="193" font-size="3.5" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить</text>
+      <text x="25" y="199" font-size="3.5" class="text">согласно СП 77.13330.2016 «Системы автоматизации».</text>
+     </svg>
+    </SHT>
+    <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>Схема электрическая принципиальная</SNAME><TYPE>схема принципиальная</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>Схема внешних соединений</SNAME><TYPE>схема внешних соединений</TYPE><FMT>A3</FMT></SHT>
+   </SHTS>
+  </DOC>
+  <DOC>
+   <CODE>{CODE}-АТХ.С</CODE>
+   <SNAME>Спецификация оборудования, изделий и материалов</SNAME>
+   <TYPE>спецификация оборудования</TYPE>
+  </DOC>
+ </DOCS>
+</Prj>

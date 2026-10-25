@@ -13,4 +13,9 @@
         	<var id="TEchannel" name="Датчик температуры канальный" type="b" default="0" />
         	<var id="TEinner" name="Датчик температуры в помещении" type="b" default="0" />
 	</project>
+	<project id="1">
+		<name>Артезианская скважина</name>
+		<description>Автоматизация артезианской скважины с погружным насосом: контроль уровня, давления и расхода, защита от сухого хода, передача данных на АРМ. Образец — проект 27-17-АТХ.</description>
+		<TPL>Prj_Skvazhina</TPL>
+	</project>
 </projects>

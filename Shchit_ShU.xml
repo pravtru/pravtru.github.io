@@ -1,0 +1,11 @@
+<El Name="Щит управления насосом">
+
+ <TYPE>щит</TYPE>
+
+<svg tip="SV" viewBox="-2 -2 124 24" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <rect x="0" y="0" width="120" height="20" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="5" x="60" y="12" text-anchor="middle" class="text">Щит автоматизации {POS}</text>
+</svg>
+
+</El>

@@ -1,0 +1,44 @@
+<El Name="Датчик (преобразователь) давления ОВЕН ПД100-ДИ">
+
+ <TYPE>прибор</TYPE>
+ <MARK>ПД100-ДИ0,6-311-1,0</MARK>
+ <MAKER>ОВЕН</MAKER>
+ <UNIT>шт</UNIT>
+ <FUNC>PT</FUNC>
+ <MED>вода холодная</MED>
+ <PRM>0...0,6 МПа, 4...20 мА</PRM>
+ <ALIAS>ПД100-ДИ</ALIAS>
+ <PIN>+</PIN> <PIN>-</PIN>
+
+<svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <Bl Name="PriborSA"><Pr bid="2">PT</Pr><Pr bid="3">{POS}</Pr></Bl>
+</svg>
+
+<svg tip="SP" viewBox="-9 -7 38 30" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <text font-size="3.5" x="10.0" y="-2" text-anchor="middle" class="text">{POS}</text>
+ <rect x="0" y="0" width="20" height="16" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="2.5" x="10.0" y="20" text-anchor="middle" class="text">ПД100-ДИ</text>
+ <line x1="-6" y1="5" x2="0" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="5.9" class="text">+</text>
+ <line x1="-6" y1="10" x2="0" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="10.9" class="text">-</text>
+</svg>
+
+<svg tip="SV" viewBox="-9 -7 38 30" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <text font-size="3.5" x="10.0" y="-2" text-anchor="middle" class="text">{POS}</text>
+ <rect x="0" y="0" width="20" height="16" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="2.5" x="10.0" y="20" text-anchor="middle" class="text">ПД100-ДИ</text>
+ <line x1="20" y1="5" x2="26" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="26" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="18.5" y="5.9" text-anchor="end" class="text">+</text>
+ <line x1="20" y1="10" x2="26" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="26" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="18.5" y="10.9" text-anchor="end" class="text">-</text>
+</svg>
+
+</El>

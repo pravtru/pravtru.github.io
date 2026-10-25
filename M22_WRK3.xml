@@ -1,0 +1,29 @@
+<El Name="Переключатель поворотный Moeller M22-WRK3/K20">
+
+ <TYPE>электроаппарат</TYPE>
+ <MARK>M22-WRK3/K20</MARK>
+ <MAKER>Moeller</MAKER>
+ <UNIT>шт</UNIT>
+ <ALIAS>M22-WRK3</ALIAS>
+ <PIN>13</PIN> <PIN>14</PIN> <PIN>23</PIN> <PIN>24</PIN>
+
+<svg tip="SP" viewBox="-9 -7 46 30" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <text font-size="3.5" x="14.0" y="-2" text-anchor="middle" class="text">{POS}</text>
+ <rect x="0" y="0" width="28" height="16" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="2.5" x="14.0" y="20" text-anchor="middle" class="text">Пуск / Стоп / Автом.</text>
+ <line x1="-6" y1="5" x2="0" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="5.9" class="text">13</text>
+ <line x1="-6" y1="10" x2="0" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="10.9" class="text">23</text>
+ <line x1="28" y1="5" x2="34" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="34" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="26.5" y="5.9" text-anchor="end" class="text">14</text>
+ <line x1="28" y1="10" x2="34" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="34" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="26.5" y="10.9" text-anchor="end" class="text">24</text>
+</svg>
+
+</El>

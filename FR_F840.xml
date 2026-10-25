@@ -1,0 +1,61 @@
+<El Name="Преобразователь частоты Mitsubishi FR-F840 с выносной панелью управления">
+
+ <TYPE>электроаппарат</TYPE>
+ <MARK>FR-F840-30K-1</MARK>
+ <MAKER>Mitsubishi Electric</MAKER>
+ <UNIT>шт</UNIT>
+ <ALIAS>FR-F840</ALIAS>
+ <PIN>L1</PIN> <PIN>L2</PIN> <PIN>L3</PIN> <PIN>PE</PIN> <PIN>U</PIN> <PIN>V</PIN> <PIN>W</PIN> <PIN>STF</PIN> <PIN>PC</PIN> <PIN>RXD+</PIN> <PIN>RXD-</PIN> <PIN>TXD+</PIN> <PIN>TXD-</PIN>
+
+<svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <Bl Name="PriborSA"><Pr bid="2">SY</Pr><Pr bid="3">{POS}</Pr></Bl>
+</svg>
+
+<svg tip="SP" viewBox="-9 -7 52 55" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <text font-size="3.5" x="17.0" y="-2" text-anchor="middle" class="text">{POS}</text>
+ <rect x="0" y="0" width="34" height="41" fill="none" stroke="#000000" stroke-width="0.3"/>
+ <text font-size="2.5" x="17.0" y="45" text-anchor="middle" class="text">FR-F840</text>
+ <line x1="-6" y1="5" x2="0" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="5.9" class="text">STF</text>
+ <line x1="-6" y1="10" x2="0" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="10.9" class="text">PC</text>
+ <line x1="-6" y1="15" x2="0" y2="15" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="15" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="15.9" class="text">RXD+</text>
+ <line x1="-6" y1="20" x2="0" y2="20" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="20" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="20.9" class="text">RXD-</text>
+ <line x1="-6" y1="25" x2="0" y2="25" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="25" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="25.9" class="text">TXD+</text>
+ <line x1="-6" y1="30" x2="0" y2="30" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="30" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="1.5" y="30.9" class="text">TXD-</text>
+ <line x1="34" y1="5" x2="40" y2="5" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="5.9" text-anchor="end" class="text">L1</text>
+ <line x1="34" y1="10" x2="40" y2="10" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="10.9" text-anchor="end" class="text">L2</text>
+ <line x1="34" y1="15" x2="40" y2="15" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="15" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="15.9" text-anchor="end" class="text">L3</text>
+ <line x1="34" y1="20" x2="40" y2="20" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="20" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="20.9" text-anchor="end" class="text">PE</text>
+ <line x1="34" y1="25" x2="40" y2="25" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="25" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="25.9" text-anchor="end" class="text">U</text>
+ <line x1="34" y1="30" x2="40" y2="30" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="30" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="30.9" text-anchor="end" class="text">V</text>
+ <line x1="34" y1="35" x2="40" y2="35" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="35" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <text font-size="2.5" x="32.5" y="35.9" text-anchor="end" class="text">W</text>
+</svg>
+
+</El>
