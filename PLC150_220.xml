@@ -15,55 +15,55 @@
  <rect x="0" y="0" width="34" height="66" fill="none" stroke="#000000" stroke-width="0.3"/>
  <text font-size="2.5" x="17.0" y="70" text-anchor="middle" class="text">ПЛК150-220.У-М</text>
  <line x1="-6" y1="5" x2="0" y2="5" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="5" r="0.8" PIN="1" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="5.9" class="text">1</text>
  <line x1="-6" y1="10" x2="0" y2="10" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="10" r="0.8" PIN="2" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="10.9" class="text">2</text>
  <line x1="-6" y1="15" x2="0" y2="15" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="15" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="15" r="0.8" PIN="3" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="15.9" class="text">3</text>
  <line x1="-6" y1="20" x2="0" y2="20" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="20" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="20" r="0.8" PIN="4" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="20.9" class="text">4</text>
  <line x1="-6" y1="25" x2="0" y2="25" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="25" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="25" r="0.8" PIN="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="25.9" class="text">5</text>
  <line x1="-6" y1="30" x2="0" y2="30" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="30" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="30" r="0.8" PIN="6" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="30.9" class="text">6</text>
  <line x1="-6" y1="35" x2="0" y2="35" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="35" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="35" r="0.8" PIN="25" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="35.9" class="text">25</text>
  <line x1="-6" y1="40" x2="0" y2="40" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="40" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="40" r="0.8" PIN="26" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="40.9" class="text">26</text>
  <line x1="-6" y1="45" x2="0" y2="45" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="45" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="45" r="0.8" PIN="27" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="45.9" class="text">27</text>
  <line x1="-6" y1="50" x2="0" y2="50" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="50" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="50" r="0.8" PIN="28" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="50.9" class="text">28</text>
  <line x1="-6" y1="55" x2="0" y2="55" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="55" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="55" r="0.8" PIN="29" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="55.9" class="text">29</text>
  <line x1="-6" y1="60" x2="0" y2="60" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="60" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="60" r="0.8" PIN="30" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="60.9" class="text">30</text>
  <line x1="34" y1="5" x2="40" y2="5" stroke="#000000" stroke-width="0.2"/>
- <circle cx="40" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="5" r="0.8" PIN="23" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="32.5" y="5.9" text-anchor="end" class="text">23</text>
  <line x1="34" y1="10" x2="40" y2="10" stroke="#000000" stroke-width="0.2"/>
- <circle cx="40" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="10" r="0.8" PIN="24" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="32.5" y="10.9" text-anchor="end" class="text">24</text>
  <line x1="34" y1="15" x2="40" y2="15" stroke="#000000" stroke-width="0.2"/>
- <circle cx="40" cy="15" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="15" r="0.8" PIN="A" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="32.5" y="15.9" text-anchor="end" class="text">A</text>
  <line x1="34" y1="20" x2="40" y2="20" stroke="#000000" stroke-width="0.2"/>
- <circle cx="40" cy="20" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="20" r="0.8" PIN="B" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="32.5" y="20.9" text-anchor="end" class="text">B</text>
  <line x1="34" y1="25" x2="40" y2="25" stroke="#000000" stroke-width="0.2"/>
- <circle cx="40" cy="25" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="40" cy="25" r="0.8" PIN="Ethernet" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="32.5" y="25.9" text-anchor="end" class="text">Ethernet</text>
 </svg>
 

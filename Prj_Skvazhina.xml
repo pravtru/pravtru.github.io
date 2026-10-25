@@ -12,32 +12,32 @@
  <var id="wire" name="Длина провода ПВ2 1х1, м" type="i" default="130" min="0" max="5000"/>
 
  <OBJS>
-  <OBJ><SNAME>Скважина артезианская</SNAME><POS>Скв.1</POS>
+  <OBJ><SNAME>Скважина артезианская</SNAME><POS>Скв.1</POS><TPL>Skvazhina</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>80 40</XY></VIEW>
     <OBJS>
-     <OBJ><SNAME>Насос скважинный погружной</SNAME><POS>Н1</POS><TPL>Nasos_pogr</TPL></OBJ>
-     <OBJ IF="level=1"><SNAME>Погружной преобразователь уровня</SNAME><POS>ДУ2</POS><TPL>PD100_DG</TPL></OBJ>
-     <OBJ IF="levels>=1"><SNAME>Датчик уровня минимальный</SNAME><POS>ДУ1а</POS><TPL>DS1</TPL></OBJ>
-     <OBJ IF="levels>=2"><SNAME>Датчик уровня рабочий</SNAME><POS>ДУ1б</POS><TPL>DS1</TPL></OBJ>
-     <OBJ IF="levels>=3"><SNAME>Датчик уровня максимальный</SNAME><POS>ДУ1в</POS><TPL>DS1</TPL></OBJ>
-     <OBJ IF="levels>=4"><SNAME>Датчик затопления</SNAME><POS>ДУ1г</POS><TPL>DS1</TPL></OBJ>
-     <OBJ IF="pressure=1"><SNAME>Датчик давления на выходе скважины</SNAME><POS>PE1</POS><TPL>PD100_DI</TPL></OBJ>
-     <OBJ IF="flow=1"><SNAME>Расходомер</SNAME><POS>FE1</POS><TPL>TER</TPL></OBJ>
+     <OBJ><SNAME>Насос скважинный погружной</SNAME><POS>Н1</POS><TPL>Nasos_pogr</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>85 100</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>340 70</XY></VIEW></OBJ>
+     <OBJ IF="level=1"><SNAME>Погружной преобразователь уровня</SNAME><POS>ДУ2</POS><TPL>PD100_DG</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>60 100</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>45 110</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>40 40</XY></VIEW></OBJ>
+     <OBJ IF="levels>=1"><SNAME>Датчик уровня минимальный</SNAME><POS>ДУ1а</POS><TPL>DS1</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>45 50</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>85 40</XY></VIEW></OBJ>
+     <OBJ IF="levels>=2"><SNAME>Датчик уровня рабочий</SNAME><POS>ДУ1б</POS><TPL>DS1</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>45 64</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>115 40</XY></VIEW></OBJ>
+     <OBJ IF="levels>=3"><SNAME>Датчик уровня максимальный</SNAME><POS>ДУ1в</POS><TPL>DS1</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>45 78</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>145 40</XY></VIEW></OBJ>
+     <OBJ IF="levels>=4"><SNAME>Датчик затопления</SNAME><POS>ДУ1г</POS><TPL>DS1</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>45 120</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>175 40</XY></VIEW></OBJ>
+     <OBJ IF="pressure=1"><SNAME>Датчик давления на выходе скважины</SNAME><POS>PE1</POS><TPL>PD100_DI</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>120 18</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>45 140</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>205 40</XY></VIEW></OBJ>
+     <OBJ IF="flow=1"><SNAME>Расходомер</SNAME><POS>FE1</POS><TPL>TER</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>145 18</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>45 170</XY></VIEW><VIEW><TYPE>схема внешних соединений</TYPE><XY>245 40</XY></VIEW></OBJ>
     </OBJS>
   </OBJ>
 
-  <OBJ><SNAME>Щит управления насосом</SNAME><POS>ЩУ</POS><TPL>Shchit_ShU</TPL>
+  <OBJ><SNAME>Щит управления насосом</SNAME><POS>ЩУ</POS><TPL>Shchit_ShU</TPL><VIEW><TYPE>схема внешних соединений</TYPE><XY>40 120</XY></VIEW>
     <OBJS>
-     <OBJ><SNAME>Программируемый логический контроллер</SNAME><POS>A1</POS><TPL>PLC150_220</TPL></OBJ>
-     <OBJ IF="levels>=1"><SNAME>Блок согласования кондуктометрических датчиков</SNAME><POS>A2</POS><TPL>BKK1_220</TPL></OBJ>
-     <OBJ IF="vfd=1"><SNAME>Преобразователь частоты</SNAME><POS>1-P1</POS><TPL>FR_F840</TPL></OBJ>
-     <OBJ><SNAME>Переключатель режима</SNAME><POS>1-SA1</POS><TPL>M22_WRK3</TPL></OBJ>
-     <OBJ><SNAME>Выключатель автоматический ввода</SNAME><POS>QF1</POS><TPL>QF_FAZ_C6</TPL></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF2</POS><TPL>QF_FAZ_C2</TPL></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF4</POS><TPL>QF_FAZ_C2</TPL></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF5</POS><TPL>QF_FAZ_C2</TPL></OBJ>
-     <OBJ><SNAME>Источник бесперебойного питания</SNAME><POS>G1</POS><TPL>UPS_BC500</TPL></OBJ>
-     <OBJ><SNAME>Блок питания</SNAME><POS>G2</POS><TPL>ZI_60_24</TPL></OBJ>
+     <OBJ><SNAME>Программируемый логический контроллер</SNAME><POS>A1</POS><TPL>PLC150_220</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>150 30</XY></VIEW></OBJ>
+     <OBJ IF="levels>=1"><SNAME>Блок согласования кондуктометрических датчиков</SNAME><POS>A2</POS><TPL>BKK1_220</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>70 30</XY></VIEW></OBJ>
+     <OBJ IF="vfd=1"><SNAME>Преобразователь частоты</SNAME><POS>1-P1</POS><TPL>FR_F840</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>240 60</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>250 30</XY></VIEW></OBJ>
+     <OBJ><SNAME>Переключатель режима</SNAME><POS>1-SA1</POS><TPL>M22_WRK3</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>250 120</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический ввода</SNAME><POS>QF1</POS><TPL>QF_FAZ_C6</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>135 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF2</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>170 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>205 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF4</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>240 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF5</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>275 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Источник бесперебойного питания</SNAME><POS>G1</POS><TPL>UPS_BC500</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>45 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Блок питания</SNAME><POS>G2</POS><TPL>ZI_60_24</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>95 200</XY></VIEW></OBJ>
      <OBJ><SNAME>Клемма наборная</SNAME><MARK>STTB 2.5 3031270</MARK><QTY>20</QTY><UNIT>шт</UNIT></OBJ>
     </OBJS>
   </OBJ>
@@ -55,6 +55,33 @@
   </OBJ>
 
  </OBJS>
+
+ <!-- Цепи между объектами (по листам 4–6 проекта 27-17-АТХ); выводы — PIN элементов -->
+ <LNKS>
+  <LNK IF="levels>=1"><TYPE>цепь</TYPE><POS>1-18</POS><FROM><SNAME>A2</SNAME><PIN>ОБЩ</PIN></FROM><TO><SNAME>A1</SNAME><PIN>2</PIN></TO></LNK>
+  <LNK IF="levels>=1"><TYPE>цепь</TYPE><POS>1-19</POS><FROM><SNAME>A2</SNAME><PIN>1</PIN></FROM><TO><SNAME>A1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK IF="levels>=2"><TYPE>цепь</TYPE><POS>1-23</POS><FROM><SNAME>A2</SNAME><PIN>2</PIN></FROM><TO><SNAME>A1</SNAME><PIN>4</PIN></TO></LNK>
+  <LNK IF="levels>=3"><TYPE>цепь</TYPE><POS>1-24</POS><FROM><SNAME>A2</SNAME><PIN>3</PIN></FROM><TO><SNAME>A1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK IF="levels>=4"><TYPE>цепь</TYPE><POS>1-25</POS><FROM><SNAME>A2</SNAME><PIN>4</PIN></FROM><TO><SNAME>A1</SNAME><PIN>6</PIN></TO></LNK>
+  <LNK IF="flow=1"><TYPE>цепь</TYPE><POS>1-20</POS><FROM><SNAME>FE1</SNAME><PIN>-</PIN></FROM><TO><SNAME>A1</SNAME><PIN>25</PIN></TO></LNK>
+  <LNK IF="level=1"><TYPE>цепь</TYPE><POS>1-21</POS><FROM><SNAME>ДУ2</SNAME><PIN>-</PIN></FROM><TO><SNAME>A1</SNAME><PIN>27</PIN></TO></LNK>
+  <LNK IF="pressure=1"><TYPE>цепь</TYPE><POS>1-22</POS><FROM><SNAME>PE1</SNAME><PIN>-</PIN></FROM><TO><SNAME>A1</SNAME><PIN>29</PIN></TO></LNK>
+  <LNK IF="flow=1"><TYPE>цепь</TYPE><POS>803</POS><FROM><SNAME>G2</SNAME><PIN>+24V</PIN></FROM><TO><SNAME>FE1</SNAME><PIN>+</PIN></TO></LNK>
+  <LNK IF="level=1"><TYPE>цепь</TYPE><POS>803</POS><FROM><SNAME>G2</SNAME><PIN>+24V</PIN></FROM><TO><SNAME>ДУ2</SNAME><PIN>+</PIN></TO></LNK>
+  <LNK IF="pressure=1"><TYPE>цепь</TYPE><POS>803</POS><FROM><SNAME>G2</SNAME><PIN>+24V</PIN></FROM><TO><SNAME>PE1</SNAME><PIN>+</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1-10</POS><FROM><SNAME>A1</SNAME><PIN>23</PIN></FROM><TO><SNAME>1-SA1</SNAME><PIN>23</PIN></TO></LNK>
+  <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-11</POS><FROM><SNAME>1-SA1</SNAME><PIN>14</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>STF</PIN></TO></LNK>
+  <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-1</POS><FROM><SNAME>1-SA1</SNAME><PIN>13</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>PC</PIN></TO></LNK>
+  <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-15</POS><FROM><SNAME>A1</SNAME><PIN>A</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>RXD+</PIN></TO></LNK>
+  <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-16</POS><FROM><SNAME>A1</SNAME><PIN>B</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>RXD-</PIN></TO></LNK>
+  <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-7</POS><FROM><SNAME>1-P1</SNAME><PIN>U</PIN></FROM><TO><SNAME>Н1</SNAME><PIN>U</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>G1</SNAME><PIN>L</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF2</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF3</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF4</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF5</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>QF2</SNAME><PIN>2</PIN></FROM><TO><SNAME>G2</SNAME><PIN>L</PIN></TO></LNK>
+ </LNKS>
 
  <DOCS>
   <DOC>

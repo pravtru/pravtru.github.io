@@ -21,10 +21,10 @@
  <rect x="0" y="0" width="20" height="16" fill="none" stroke="#000000" stroke-width="0.3"/>
  <text font-size="2.5" x="10.0" y="20" text-anchor="middle" class="text">ПД100-ДГ</text>
  <line x1="-6" y1="5" x2="0" y2="5" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="5" r="0.8" PIN="+" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="5.9" class="text">+</text>
  <line x1="-6" y1="10" x2="0" y2="10" stroke="#000000" stroke-width="0.2"/>
- <circle cx="-6" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="-6" cy="10" r="0.8" PIN="-" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="1.5" y="10.9" class="text">-</text>
 </svg>
 
@@ -34,10 +34,10 @@
  <rect x="0" y="0" width="20" height="16" fill="none" stroke="#000000" stroke-width="0.3"/>
  <text font-size="2.5" x="10.0" y="20" text-anchor="middle" class="text">ПД100-ДГ</text>
  <line x1="20" y1="5" x2="26" y2="5" stroke="#000000" stroke-width="0.2"/>
- <circle cx="26" cy="5" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="26" cy="5" r="0.8" PIN="+" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="18.5" y="5.9" text-anchor="end" class="text">+</text>
  <line x1="20" y1="10" x2="26" y2="10" stroke="#000000" stroke-width="0.2"/>
- <circle cx="26" cy="10" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="26" cy="10" r="0.8" PIN="-" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
  <text font-size="2.5" x="18.5" y="10.9" text-anchor="end" class="text">-</text>
 </svg>
 
