@@ -4,10 +4,40 @@
  <MARK>PKZM0-1,6</MARK>
  <UNIT>шт</UNIT>
  <ALIAS>PKZM0-1,6</ALIAS>
+ <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN>
 
-<svg tip="SP" viewBox="-15 -20 55 25" xmlns="http://www.w3.org/2000/svg">
+<!-- Схема принципиальная: блок QF3 библиотеки, в каждом полюсе токовый расцепитель (блок Rascep_I):
+     изгиб через 1 мм под контактом, нижние выводы на 5 мм выше, чем в QF3. Позиция — id="2".
+     Выводы: 1, 3, 5 сверху (y = -25), 2, 4, 6 снизу (y = -5), полюса x = 0, 10, 20. -->
+<svg tip="SP" viewBox="-15 -30 45 36" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
- <Bl Name="QF3"></Bl>
+ <g id="1" transform="translate(0 0) rotate(270 0 0)">
+  <text id="2" font-size="5.11" x="17.5" y="-5" stroke-width="0" text-anchor="middle" class="text" font-family="gost">{POS}</text>
+  <polyline points="14 0 20 -3.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="16.14 -1.25 15.63 -2.2 17.36 -3.12 17.86 -2.25" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="20" y1="0" x2="25" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(5 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">2</Pr></Bl>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(25 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">1</Pr></Bl>
+  <polyline points="14 10 20 6.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="20" y1="10" x2="25" y2="10" stroke="#000000" stroke-width="0.2"/>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(5 10) rotate(0 0 0)"></Pr><Pr bid="2" id="6">4</Pr></Bl>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(25 10) rotate(0 0 0)"></Pr><Pr bid="2" id="5">3</Pr></Bl>
+  <polyline points="14 20 20 16.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="20" y1="20" x2="25" y2="20" stroke="#000000" stroke-width="0.2"/>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(5 20) rotate(0 0 0)"></Pr><Pr bid="2" id="8">6</Pr></Bl>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(25 20) rotate(0 0 0)"></Pr><Pr bid="2" id="7">5</Pr></Bl>
+  <line x1="16.57" y1="-1.5" x2="16.57" y2="18.5" stroke="#000000" stroke-width="0.2"/>
+  <line x1="17.43" y1="-2" x2="17.43" y2="18" stroke="#000000" stroke-width="0.2"/>
+ </g>
+ <g transform="translate(0 -14)"><Bl Name="Rascep_I"></Bl></g>
+ <line x1="0" y1="-9" x2="0" y2="-6" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(10 -14)"><Bl Name="Rascep_I"></Bl></g>
+ <line x1="10" y1="-9" x2="10" y2="-6" stroke="#000000" stroke-width="0.2"/>
+ <g transform="translate(20 -14)"><Bl Name="Rascep_I"></Bl></g>
+ <line x1="20" y1="-9" x2="20" y2="-6" stroke="#000000" stroke-width="0.2"/>
+ <circle cx="0" cy="-25" r="0" PIN="1"/><circle cx="0" cy="-5" r="0" PIN="2"/>
+ <circle cx="10" cy="-25" r="0" PIN="3"/><circle cx="10" cy="-5" r="0" PIN="4"/>
+ <circle cx="20" cy="-25" r="0" PIN="5"/><circle cx="20" cy="-5" r="0" PIN="6"/>
 </svg>
 
 </El>

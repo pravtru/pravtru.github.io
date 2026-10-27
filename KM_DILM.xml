@@ -1,0 +1,20 @@
+<El Name="Пускатель (контактор) DILM…-10">
+
+ <TYPE>электроаппарат</TYPE>
+ <UNIT>шт</UNIT>
+ <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN> <PIN>A1</PIN> <PIN>A2</PIN> <PIN>13</PIN> <PIN>14</PIN>
+
+<svg tip="SP" viewBox="-15 -24 68 50" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <!-- изображение — блок KM1 библиотеки (как у элемента KM_DILM7): главные контакты, катушка KT, блок-контакт NO 13-14;
+      размыкающий 21-22 у пускателей DILM…-10 нет, поэтому скрыт -->
+ <Bl Name="KM1"><Pr bid="pz">{POS}</Pr><Pr bid="4" display="none"></Pr></Bl>
+ <!-- точки выводов -->
+ <circle cx="0" cy="-15" r="0" PIN="1"/><circle cx="0" cy="0" r="0" PIN="2"/>
+ <circle cx="10" cy="-15" r="0" PIN="3"/><circle cx="10" cy="0" r="0" PIN="4"/>
+ <circle cx="20" cy="-15" r="0" PIN="5"/><circle cx="20" cy="0" r="0" PIN="6"/>
+ <circle cx="30" cy="0" r="0" PIN="A1"/><circle cx="45" cy="0" r="0" PIN="A2"/>
+ <circle cx="30" cy="20" r="0" PIN="13"/><circle cx="45" cy="20" r="0" PIN="14"/>
+</svg>
+
+</El>

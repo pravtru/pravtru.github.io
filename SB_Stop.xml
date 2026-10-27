@@ -1,0 +1,15 @@
+<El Name="Кнопка «Стоп» MTB2-EA41582, 1NC">
+
+ <TYPE>электроаппарат</TYPE>
+ <MARK>MTB2-EA41582</MARK>
+ <UNIT>шт</UNIT>
+ <PIN>21</PIN> <PIN>22</PIN>
+
+<svg tip="SP" viewBox="-4 -12 23 20" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <!-- блок SB2 библиотеки: кнопка с размыкающим контактом -->
+ <Bl Name="SB2"><Pr bid="2">{POS}</Pr><Pr bid="3">21</Pr><Pr bid="4">22</Pr></Bl>
+ <circle cx="0" cy="0" r="0" PIN="21"/><circle cx="15" cy="0" r="0" PIN="22"/>
+</svg>
+
+</El>

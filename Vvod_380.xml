@@ -1,0 +1,27 @@
+<El Name="Ввод питания ~380 В (L1, L2, L3, N, PE)">
+
+ <TYPE>ввод</TYPE>
+ <PIN>L1</PIN> <PIN>L2</PIN> <PIN>L3</PIN> <PIN>N</PIN> <PIN>PE</PIN>
+
+<!-- Схема принципиальная: подписи фаз над линиями с шагом 10 мм, как в шапке блока «Ввод силовой»; название — id="1".
+     Выводы: L1 (0,19), L2 (10,19), L3 (20,19), N (30,19), PE (40,19). -->
+<svg tip="SP" viewBox="-6 -4 52 26" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+ <text id="1" font-size="5.11" x="15" y="0" text-anchor="middle" class="text">{SNAME}</text>
+ <text font-size="5.11" x="0" y="8" text-anchor="middle" class="text">L1</text>
+ <text font-size="5.11" x="10" y="8" text-anchor="middle" class="text">L2</text>
+ <text font-size="5.11" x="20" y="8" text-anchor="middle" class="text">L3</text>
+ <text font-size="5.11" x="30" y="8" text-anchor="middle" class="text">N</text>
+ <text font-size="5.11" x="40" y="8" text-anchor="middle" class="text">PE</text>
+ <polyline points="0,10 0,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="10,10 10,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="20,10 20,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="30,10 30,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+ <polyline points="40,10 40,19" fill="none" stroke="#000000" stroke-width="0.2"/>
+ </g>
+ <circle cx="0" cy="19" r="0" PIN="L1"/><circle cx="10" cy="19" r="0" PIN="L2"/><circle cx="20" cy="19" r="0" PIN="L3"/>
+ <circle cx="30" cy="19" r="0" PIN="N"/><circle cx="40" cy="19" r="0" PIN="PE"/>
+</svg>
+
+</El>

@@ -1,0 +1,15 @@
+<El Name="Кнопка «Пуск» MTB2-EA31521, 1NO">
+
+ <TYPE>электроаппарат</TYPE>
+ <MARK>MTB2-EA31521</MARK>
+ <UNIT>шт</UNIT>
+ <PIN>13</PIN> <PIN>14</PIN>
+
+<svg tip="SP" viewBox="-4 -16 23 24" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <!-- блок SB1 библиотеки: кнопка с замыкающим контактом -->
+ <Bl Name="SB1"><Pr bid="2">{POS}</Pr><Pr bid="3">13</Pr><Pr bid="4">14</Pr></Bl>
+ <circle cx="0" cy="0" r="0" PIN="13"/><circle cx="15" cy="0" r="0" PIN="14"/>
+</svg>
+
+</El>
