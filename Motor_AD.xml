@@ -1,6 +1,6 @@
 <El Name="Электродвигатель асинхронный трёхфазный">
 
- <TYPE>электродвигатель</TYPE>
+ <TYPE>агрегат</TYPE>
  <UNIT>шт</UNIT>
  <PIN>U</PIN> <PIN>V</PIN> <PIN>W</PIN> <PIN>PE</PIN>
 
@@ -54,7 +54,7 @@
 
 <!-- Схема внешних соединений, по образцу вентиляции Промпроекта (Соя, «П3...5,В1,У, откл. вент, внешн.»):
      окружности R10 и R5 с буквой M, позиция слева (id="1"); под двигателем клеммы 5 × 5 мм PE, U, V, W;
-     от клемм вниз жилы 12 мм, номера цепей вертикально слева от жил (id 11–14).
+     от клемм вниз жилы 12 мм, номера цепей вертикально слева от жил (id 11–14, подстановки {LNK_вывод}).
      Выводы жил: PE (2.5,37), U (7.5,37), V (12.5,37), W (17.5,37). -->
 <svg tip="SV" viewBox="-14 -2 36 41" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
@@ -75,10 +75,10 @@
   <line x1="7.5" y1="25" x2="7.5" y2="37" stroke="#000000" stroke-width="0.2"/>
   <line x1="12.5" y1="25" x2="12.5" y2="37" stroke="#000000" stroke-width="0.2"/>
   <line x1="17.5" y1="25" x2="17.5" y2="37" stroke="#000000" stroke-width="0.2"/>
-  <text id="11" font-size="3.65" x="1.9" y="34" class="text" transform="rotate(-90 1.9 34)">PE</text>
-  <text id="12" font-size="3.65" x="6.9" y="34" class="text" transform="rotate(-90 6.9 34)">C1</text>
-  <text id="13" font-size="3.65" x="11.9" y="34" class="text" transform="rotate(-90 11.9 34)">C2</text>
-  <text id="14" font-size="3.65" x="16.9" y="34" class="text" transform="rotate(-90 16.9 34)">C3</text>
+  <text id="11" font-size="3.65" x="1.9" y="34" class="text" transform="rotate(-90 1.9 34)">{LNK_PE}</text>
+  <text id="12" font-size="3.65" x="6.9" y="34" class="text" transform="rotate(-90 6.9 34)">{LNK_U}</text>
+  <text id="13" font-size="3.65" x="11.9" y="34" class="text" transform="rotate(-90 11.9 34)">{LNK_V}</text>
+  <text id="14" font-size="3.65" x="16.9" y="34" class="text" transform="rotate(-90 16.9 34)">{LNK_W}</text>
  </g>
  <circle cx="2.5" cy="37" r="0" PIN="PE"/><circle cx="7.5" cy="37" r="0" PIN="U"/><circle cx="12.5" cy="37" r="0" PIN="V"/><circle cx="17.5" cy="37" r="0" PIN="W"/>
 </svg>

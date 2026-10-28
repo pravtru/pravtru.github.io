@@ -25,10 +25,10 @@
  <g>
   <line x1="0" y1="-20" x2="0" y2="20" stroke="#000000" stroke-width="0.4"/>
   <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.4"/>
-  <text id="1" font-size="5.11" x="0" y="1.75" text-anchor="middle" class="text">1</text>
+  <text id="1" font-size="5.11" x="0" y="1.75" text-anchor="middle" class="text">{POS}</text>
   <polyline points="0,-11 -3,-14 -34,-14" fill="none" stroke="#000000" stroke-width="0.2"/>
-  <text id="2" font-size="5.11" x="-34" y="-15" class="text">КВВГнг-LS 4х1,5</text>
-  <text id="3" font-size="3.65" x="-0.6" y="16" class="text" transform="rotate(-90 -0.6 16)">10 м</text>
+  <text id="2" font-size="5.11" x="-34" y="-15" class="text">{MARK}</text>
+  <text id="3" font-size="3.65" x="-0.6" y="16" class="text" transform="rotate(-90 -0.6 16)">{QTY} {UNIT}</text>
  </g>
  <circle cx="0" cy="-20" r="0" PIN="1"/><circle cx="0" cy="20" r="0" PIN="2"/>
 </svg>

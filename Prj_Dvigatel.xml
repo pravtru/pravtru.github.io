@@ -66,24 +66,26 @@
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
  </OBJS>
 
- <!-- Цепи: силовая L1, L2, L3 → QF1 → KM1 → кабель 1 → M1; управления: фаза после QF1 → SB2 «Стоп» → SB1 «Пуск» → катушка KM1,
-      блок-контакт KM1 13-14 параллельно SB1 (самоподхват). VIA — кабель и жила. -->
+ <!-- Цепи нумеруются цифрами по ходу схемы, у цепи один номер; PE и N — обозначения проводников.
+      Силовые: 1, 2, 3 — ввод → QF1; 4, 5, 6 — QF1 → KM1; 7, 8, 9 — KM1 → кабель 1 → M1.
+      Управления: 4 — фаза после QF1 (тот же узел) → SB2 «Стоп»; 10 — SB2 → SB1 «Пуск» и блок-контакт KM1 13;
+      11 — SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
  <LNKS>
-  <LNK><TYPE>цепь</TYPE><POS>L1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>L2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>L3</POS><FROM><SNAME>Ввод</SNAME><PIN>L3</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>5</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>A1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>B1</POS><FROM><SNAME>QF1</SNAME><PIN>4</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>3</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>C1</POS><FROM><SNAME>QF1</SNAME><PIN>6</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>5</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>C1</POS><FROM><SNAME>KM1</SNAME><PIN>2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>U</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>C2</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>C3</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>Ввод</SNAME><PIN>L3</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>4</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>5</POS><FROM><SNAME>QF1</SNAME><PIN>4</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>6</POS><FROM><SNAME>QF1</SNAME><PIN>6</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>KM1</SNAME><PIN>2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>U</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>9</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>PE</POS><FROM><SNAME>Ввод</SNAME><PIN>PE</PIN></FROM><TO><SNAME>M1</SNAME><PIN>PE</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>4</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>10</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>10</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>11</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>11</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
   <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>Ввод</SNAME><PIN>N</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
   <!-- функциональные связи схемы автоматизации -->
   <LNK><TYPE>управление</TYPE><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA1</PIN></TO></LNK>
@@ -96,23 +98,30 @@
    <SNAME>{FNAME}</SNAME>
    <TYPE>комплект рабочих чертежей</TYPE>
    <SHTS>
-    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A3</FMT>
-     <svg viewBox="0 0 420 297">
-      <text x="300" y="20" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
-      <text x="215" y="30" font-size="5.11" class="text">Проект автоматизации асинхронного двигателя разработан в соответствии</text>
-      <text x="215" y="37" font-size="5.11" class="text">с заданием на проектирование и техническими регламентами.</text>
-      <text x="215" y="44" font-size="5.11" class="text">Предусматривается пуск и останов двигателя М1 с кнопочного поста S1 по месту.</text>
-      <text x="215" y="51" font-size="5.11" class="text">Пускатель KM1 и автоматический выключатель защиты двигателя QF1</text>
-      <text x="215" y="58" font-size="5.11" class="text">установлены в щите автоматизации ЩА. Цепь управления ~220 В питается</text>
-      <text x="215" y="65" font-size="5.11" class="text">от фазы после QF1.</text>
-      <text x="215" y="72" font-size="5.11" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить</text>
-      <text x="215" y="79" font-size="5.11" class="text">согласно СП 77.13330.2016 «Системы автоматизации».</text>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A4</FMT></SHT>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>текст</TYPE><FMT>A4</FMT>
+     <svg viewBox="0 0 210 297">
+      <text x="112.5" y="15" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+      <text x="37.5" y="25" font-size="5.11" class="text">Проект автоматизации асинхронного двигателя разработан в соответствии с заданием</text>
+      <text x="25" y="32" font-size="5.11" class="text">на проектирование и техническими регламентами.</text>
+      <text x="37.5" y="39" font-size="5.11" class="text">Предусматривается пуск и останов двигателя М1 с кнопочного поста S1 по месту.</text>
+      <text x="37.5" y="46" font-size="5.11" class="text">Пускатель KM1 и автоматический выключатель защиты двигателя QF1 установлены</text>
+      <text x="25" y="53" font-size="5.11" class="text">в щите автоматизации ЩА. Цепь управления ~220 В питается от фазы после QF1.</text>
+      <text x="37.5" y="60" font-size="5.11" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить согласно</text>
+      <text x="25" y="67" font-size="5.11" class="text">СП 77.13330.2016 «Системы автоматизации».</text>
      </svg>
     </SHT>
     <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A3</FMT></SHT>
     <SHT><SNAME>Схема электрическая принципиальная</SNAME><TYPE>схема принципиальная</TYPE><FMT>A3</FMT></SHT>
     <SHT><SNAME>Схема внешних соединений</SNAME><TYPE>схема внешних соединений</TYPE><FMT>A3</FMT></SHT>
-    <SHT><SNAME>План цепей управления</SNAME><TYPE>план</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>План цепей управления</SNAME><TYPE>план</TYPE><FMT>A3</FMT>
+     <!-- помещение в М 1:100: размеры в метрах × 10 = миллиметры на листе; оборудование и кабели расставляет генератор -->
+     <svg viewBox="0 0 420 297">
+      <g transform="translate(60 60)">
+       <Bl Name="PL_Pomeshchenie"><Pr bid="1" width="{room_l*10}" height="{room_w*10}"></Pr><Pr bid="2" width="{room_l*10-4}" height="{room_w*10-4}"></Pr><Pr bid="11" x="{room_l*5}"></Pr></Bl>
+      </g>
+     </svg>
+    </SHT>
    </SHTS>
   </DOC>
   <DOC>

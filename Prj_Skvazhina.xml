@@ -75,11 +75,11 @@
   <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-15</POS><FROM><SNAME>A1</SNAME><PIN>A</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>RXD+</PIN></TO></LNK>
   <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-16</POS><FROM><SNAME>A1</SNAME><PIN>B</PIN></FROM><TO><SNAME>1-P1</SNAME><PIN>RXD-</PIN></TO></LNK>
   <LNK IF="vfd=1"><TYPE>цепь</TYPE><POS>1-7</POS><FROM><SNAME>1-P1</SNAME><PIN>U</PIN></FROM><TO><SNAME>Н1</SNAME><PIN>U</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>G1</SNAME><PIN>L</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF2</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF3</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF4</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF5</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>800</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>G1</SNAME><PIN>L</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF2</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF3</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF4</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>801</POS><FROM><SNAME>G1</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF5</SNAME><PIN>1</PIN></TO></LNK>
   <LNK><TYPE>цепь</TYPE><POS>802</POS><FROM><SNAME>QF2</SNAME><PIN>2</PIN></FROM><TO><SNAME>G2</SNAME><PIN>L</PIN></TO></LNK>
  </LNKS>
 
@@ -89,22 +89,23 @@
    <SNAME>{FNAME}</SNAME>
    <TYPE>комплект рабочих чертежей</TYPE>
    <SHTS>
-    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A4</FMT>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A4</FMT></SHT>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>текст</TYPE><FMT>A4</FMT>
      <svg viewBox="0 0 210 297">
-      <text x="115" y="120" font-size="5" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
-      <text x="25" y="127" font-size="3.5" class="text">Проектная документация разработана в соответствии с заданием на проектирование,</text>
-      <text x="25" y="133" font-size="3.5" class="text">техническими регламентами и с соблюдением технических условий.</text>
-      <text x="25" y="139" font-size="3.5" class="text">Автоматизацией артезианской скважины предусматривается:</text>
-      <text IF="level=1" x="25" y="145" font-size="3.5" class="text">- контроль текущего уровня в скважине;</text>
-      <text IF="pressure=1" x="25" y="151" font-size="3.5" class="text">- поддержание давления в напорном трубопроводе;</text>
-      <text IF="levels>=1" x="25" y="157" font-size="3.5" class="text">- защита насоса от сухого хода;</text>
-      <text IF="flow=1" x="25" y="163" font-size="3.5" class="text">- контроль расхода на подаче;</text>
-      <text IF="levels>=4" x="25" y="169" font-size="3.5" class="text">- контроль затопления технического помещения;</text>
-      <text IF="arm=1" x="25" y="175" font-size="3.5" class="text">- передача данных на АРМ диспетчера по протоколу ModBus/TCP.</text>
-      <text x="25" y="181" font-size="3.5" class="text">Система автоматизации построена на базе контроллера ПЛК150 фирмы «ОВЕН».</text>
-      <text IF="vfd=1" x="25" y="187" font-size="3.5" class="text">Насос управляется преобразователем частоты по шине RS-485, протокол ModBus.</text>
-      <text x="25" y="193" font-size="3.5" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить</text>
-      <text x="25" y="199" font-size="3.5" class="text">согласно СП 77.13330.2016 «Системы автоматизации».</text>
+      <text x="115" y="15" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+      <text x="25" y="22" font-size="5.11" class="text">Проектная документация разработана в соответствии с заданием на проектирование,</text>
+      <text x="25" y="28" font-size="5.11" class="text">техническими регламентами и с соблюдением технических условий.</text>
+      <text x="25" y="34" font-size="5.11" class="text">Автоматизацией артезианской скважины предусматривается:</text>
+      <text IF="level=1" x="25" y="40" font-size="5.11" class="text">- контроль текущего уровня в скважине;</text>
+      <text IF="pressure=1" x="25" y="46" font-size="5.11" class="text">- поддержание давления в напорном трубопроводе;</text>
+      <text IF="levels>=1" x="25" y="52" font-size="5.11" class="text">- защита насоса от сухого хода;</text>
+      <text IF="flow=1" x="25" y="58" font-size="5.11" class="text">- контроль расхода на подаче;</text>
+      <text IF="levels>=4" x="25" y="64" font-size="5.11" class="text">- контроль затопления технического помещения;</text>
+      <text IF="arm=1" x="25" y="70" font-size="5.11" class="text">- передача данных на АРМ диспетчера по протоколу ModBus/TCP.</text>
+      <text x="25" y="76" font-size="5.11" class="text">Система автоматизации построена на базе контроллера ПЛК150 фирмы «ОВЕН».</text>
+      <text IF="vfd=1" x="25" y="82" font-size="5.11" class="text">Насос управляется преобразователем частоты по шине RS-485, протокол ModBus.</text>
+      <text x="25" y="88" font-size="5.11" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить</text>
+      <text x="25" y="94" font-size="5.11" class="text">согласно СП 77.13330.2016 «Системы автоматизации».</text>
      </svg>
     </SHT>
     <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A3</FMT></SHT>
