@@ -66,26 +66,26 @@
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
  </OBJS>
 
- <!-- Цепи нумеруются цифрами по ходу схемы, у цепи один номер; PE и N — обозначения проводников.
-      Силовые: 1, 2, 3 — ввод → QF1; 4, 5, 6 — QF1 → KM1; 7, 8, 9 — KM1 → кабель 1 → M1.
-      Управления: 4 — фаза после QF1 (тот же узел) → SB2 «Стоп»; 10 — SB2 → SB1 «Пуск» и блок-контакт KM1 13;
-      11 — SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
+ <!-- Цепи нумеруются цифрами по ходу схемы, у цепи один номер. Провода ввода обозначены, как на вводе: L1, L2, L3, PE, N
+      (на проводах не повторяются). Силовые: 1, 2, 3 — QF1 → KM1; 4, 5, 6 — KM1 → кабель 1 → M1.
+      Управления: 1 — фаза после QF1 (тот же узел) → SB2 «Стоп»; 7 — SB2 → SB1 «Пуск» и блок-контакт KM1 13;
+      8 — SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
  <LNKS>
-  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>Ввод</SNAME><PIN>L3</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>5</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>4</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>1</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>5</POS><FROM><SNAME>QF1</SNAME><PIN>4</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>3</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>6</POS><FROM><SNAME>QF1</SNAME><PIN>6</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>5</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>KM1</SNAME><PIN>2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>U</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>9</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>L1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>L2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>L3</POS><FROM><SNAME>Ввод</SNAME><PIN>L3</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>QF1</SNAME><PIN>4</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>QF1</SNAME><PIN>6</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>4</POS><FROM><SNAME>KM1</SNAME><PIN>2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>U</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>5</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>6</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>PE</POS><FROM><SNAME>Ввод</SNAME><PIN>PE</PIN></FROM><TO><SNAME>M1</SNAME><PIN>PE</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>4</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>10</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>10</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>11</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>11</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
   <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>Ввод</SNAME><PIN>N</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
   <!-- функциональные связи схемы автоматизации -->
   <LNK><TYPE>управление</TYPE><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA1</PIN></TO></LNK>
