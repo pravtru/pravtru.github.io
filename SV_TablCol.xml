@@ -1,0 +1,21 @@
+<Bl Name="Таблица схемы внешних соединений — графа оборудования">
+
+<!-- Графа одного изделия к блоку SV_Tabl: ширина по ширине изображения изделия (id 1–3 — прямоугольники строк, атрибут width;
+     id 4 — середина графы для надписей, атрибут transform). Строки: наименование 19 мм (две строки 3,5 мм, id 11, 12),
+     установочный чертёж 5 мм (2,5 мм, id 13), позиция 6 мм (3,5 мм, id 14). Начало (0,0) — левый верхний угол графы. -->
+<svg viewBox="-2 -2 44 34" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+  <rect id="1" x="0" y="0" width="40" height="19" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <rect id="2" x="0" y="19" width="40" height="5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <rect id="3" x="0" y="24" width="40" height="6" fill="none" stroke="#000000" stroke-width="0.4"/>
+  <g id="4" transform="translate(20 0)">
+   <text id="11" font-size="5.11" x="0" y="8.5" text-anchor="middle" class="text">Наименование</text>
+   <text id="12" font-size="5.11" x="0" y="14" text-anchor="middle" class="text"></text>
+   <text id="13" font-size="3.65" x="0" y="22.75" text-anchor="middle" class="text"></text>
+   <text id="14" font-size="5.11" x="0" y="28.75" text-anchor="middle" class="text">{POS}</text>
+  </g>
+ </g>
+</svg>
+
+</Bl>

@@ -4,6 +4,21 @@
  <UNIT>шт</UNIT>
  <PIN>1</PIN> <PIN>2</PIN> <PIN>3</PIN> <PIN>4</PIN> <PIN>5</PIN> <PIN>6</PIN> <PIN>A1</PIN> <PIN>A2</PIN> <PIN>13</PIN> <PIN>14</PIN>
 
+<!-- Схема автоматизации, по образцу пускателей на схеме автоматизации насосной станции Промпроекта
+     (БалтТехПром, «Насосная станция противопожарного и технического водоснабжения 409», СА.dwg):
+     прибор на щите — окружность R5 с горизонтальной чертой через центр; сверху буквенный код NS
+     (пускатель, ГОСТ 21.208) 2,5 мм, снизу позиция 2,5 мм (id="1"). Линии связи подходят сверху (0,-5) и снизу (0,5). -->
+<svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+  <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-5" y1="0" x2="5" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.65" x="0" y="-1.25" text-anchor="middle" class="text">NS</text>
+  <text id="1" font-size="3.65" x="0" y="3.65" text-anchor="middle" class="text">{POS}</text>
+ </g>
+ <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="0" cy="5" r="0" PIN="SA2"/>
+</svg>
+
 <svg tip="SP" viewBox="-15 -24 68 50" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <!-- изображение — блок KM1 библиотеки (как у элемента KM_DILM7): главные контакты, катушка KT, блок-контакт NO 13-14;
