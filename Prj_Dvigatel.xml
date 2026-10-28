@@ -1,0 +1,128 @@
+<Prj Name="Автоматизация асинхронного двигателя">
+ <!-- Шаблон проекта (GOAL.md, решения 13–14): пуск и останов асинхронного двигателя с кнопочного поста по месту,
+      пускатель и автомат защиты двигателя в щите автоматизации ЩА, питание цепи управления после QF1, без сигнализации.
+      Листы собираются генератором pdgen обходом дерева: каждый объект даёт своё изображение для вида листа
+      (SA — схема автоматизации, SP — принципиальная, SV — внешних соединений, PL — план цепей управления). -->
+ <var id="power" name="Мощность двигателя (ток при 400 В)" type="e" default="0.75">
+  <opt value="0.37" name="0,37 кВт (1,1 А)"/>
+  <opt value="0.55" name="0,55 кВт (1,5 А)"/>
+  <opt value="0.75" name="0,75 кВт (1,9 А)"/>
+  <opt value="1.1" name="1,1 кВт (2,6 А)"/>
+  <opt value="1.5" name="1,5 кВт (3,5 А)"/>
+  <opt value="2.2" name="2,2 кВт (5,0 А)"/>
+  <opt value="3" name="3,0 кВт (6,5 А)"/>
+  <opt value="4" name="4,0 кВт (8,5 А)"/>
+  <opt value="5.5" name="5,5 кВт (11,5 А)"/>
+  <opt value="7.5" name="7,5 кВт (15,5 А)"/>
+ </var>
+ <var id="len1" name="Длина кабеля 1 (ЩА – М1), м" type="i" default="20" min="1" max="500"/>
+ <var id="len2" name="Длина кабеля 2 (ЩА – S1), м" type="i" default="15" min="1" max="500"/>
+ <var id="room_l" name="Длина помещения, м" type="i" default="6" min="2" max="60"/>
+ <var id="room_w" name="Ширина помещения, м" type="i" default="4" min="2" max="60"/>
+
+ <OBJS>
+  <OBJ><SNAME>Электродвигатель асинхронный</SNAME><POS>M1</POS><TPL>Motor_AD</TPL>
+   <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+
+  <OBJ><SNAME>Пост кнопочный</SNAME><POS>S1</POS><TPL>Post_SB2</TPL>
+   <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS>
+    <OBJ><SNAME>Кнопка «Пуск»</SNAME><POS>SB1</POS><TPL>SB_Pusk</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ><SNAME>Кнопка «Стоп»</SNAME><POS>SB2</POS><TPL>SB_Stop</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+   </OBJS>
+  </OBJ>
+
+  <OBJ><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS>
+    <OBJ><SNAME>Ввод питания ~380 В</SNAME><POS>Ввод</POS><TPL>Vvod_380</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <!-- автомат защиты двигателя: уставка по току двигателя -->
+    <OBJ IF="power&lt;=0.55"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-1,6</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=0.75"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-2,5</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power&gt;=1.1 power&lt;=1.5"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-4</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=2.2"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-6,3</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power&gt;=3 power&lt;=4"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-10</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=5.5"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-12</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=7.5"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-16</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <!-- пускатель: по мощности двигателя в категории AC-3, с замыкающим блок-контактом 13-14 (…-10) -->
+    <OBJ IF="power&lt;=3"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM7-10</MARK><VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=4"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM9-10</MARK><VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=5.5"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM12-10</MARK><VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=7.5"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM17-10</MARK><VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ><SNAME>Клемма наборная</SNAME><POS>XT1</POS><MARK>STTB 2.5 3031270</MARK><QTY>8</QTY><UNIT>шт</UNIT></OBJ>
+   </OBJS>
+  </OBJ>
+
+  <!-- соединительные элементы (решение 10): кабели с концами FROM/TO -->
+  <OBJ IF="power&lt;=5.5"><SNAME>Кабель силовой</SNAME><POS>1</POS><TPL>Kabel</TPL><MARK>ВВГнг-LS 4х1,5</MARK><QTY>{len1}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>M1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+  <OBJ IF="power=7.5"><SNAME>Кабель силовой</SNAME><POS>1</POS><TPL>Kabel</TPL><MARK>ВВГнг-LS 4х2,5</MARK><QTY>{len1}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>M1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+  <OBJ><SNAME>Кабель контрольный</SNAME><POS>2</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 4х1,5</MARK><QTY>{len2}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>S1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+ </OBJS>
+
+ <!-- Цепи: силовая L1, L2, L3 → QF1 → KM1 → кабель 1 → M1; управления: фаза после QF1 → SB2 «Стоп» → SB1 «Пуск» → катушка KM1,
+      блок-контакт KM1 13-14 параллельно SB1 (самоподхват). VIA — кабель и жила. -->
+ <LNKS>
+  <LNK><TYPE>цепь</TYPE><POS>L1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>L2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>L3</POS><FROM><SNAME>Ввод</SNAME><PIN>L3</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>A1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>B1</POS><FROM><SNAME>QF1</SNAME><PIN>4</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>3</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>C1</POS><FROM><SNAME>QF1</SNAME><PIN>6</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>5</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>C1</POS><FROM><SNAME>KM1</SNAME><PIN>2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>U</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>C2</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>C3</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>PE</POS><FROM><SNAME>Ввод</SNAME><PIN>PE</PIN></FROM><TO><SNAME>M1</SNAME><PIN>PE</PIN></TO><VIA>1</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>2</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>3</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>Ввод</SNAME><PIN>N</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
+  <!-- функциональные связи схемы автоматизации -->
+  <LNK><TYPE>управление</TYPE><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA1</PIN></TO></LNK>
+  <LNK><TYPE>управление</TYPE><FROM><SNAME>KM1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>M1</SNAME><PIN>SA</PIN></TO></LNK>
+ </LNKS>
+
+ <DOCS>
+  <DOC>
+   <CODE>{CODE}-АТХ</CODE>
+   <SNAME>{FNAME}</SNAME>
+   <TYPE>комплект рабочих чертежей</TYPE>
+   <SHTS>
+    <SHT><SNAME>Общие данные</SNAME><TYPE>ведомость</TYPE><FMT>A3</FMT>
+     <svg viewBox="0 0 420 297">
+      <text x="300" y="20" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+      <text x="215" y="30" font-size="5.11" class="text">Проект автоматизации асинхронного двигателя разработан в соответствии</text>
+      <text x="215" y="37" font-size="5.11" class="text">с заданием на проектирование и техническими регламентами.</text>
+      <text x="215" y="44" font-size="5.11" class="text">Предусматривается пуск и останов двигателя М1 с кнопочного поста S1 по месту.</text>
+      <text x="215" y="51" font-size="5.11" class="text">Пускатель KM1 и автоматический выключатель защиты двигателя QF1</text>
+      <text x="215" y="58" font-size="5.11" class="text">установлены в щите автоматизации ЩА. Цепь управления ~220 В питается</text>
+      <text x="215" y="65" font-size="5.11" class="text">от фазы после QF1.</text>
+      <text x="215" y="72" font-size="5.11" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить</text>
+      <text x="215" y="79" font-size="5.11" class="text">согласно СП 77.13330.2016 «Системы автоматизации».</text>
+     </svg>
+    </SHT>
+    <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>Схема электрическая принципиальная</SNAME><TYPE>схема принципиальная</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>Схема внешних соединений</SNAME><TYPE>схема внешних соединений</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>План цепей управления</SNAME><TYPE>план</TYPE><FMT>A3</FMT></SHT>
+   </SHTS>
+  </DOC>
+  <DOC>
+   <CODE>{CODE}-АТХ.С</CODE>
+   <SNAME>Спецификация оборудования, изделий и материалов</SNAME>
+   <TYPE>спецификация оборудования</TYPE>
+  </DOC>
+  <!-- ссылочные документы: в ведомость ссылочных и прилагаемых документов на листе «Общие данные» -->
+  <DOC><CODE>ГОСТ 21.208-2013</CODE><SNAME>СПДС. Автоматизация технологических процессов. Обозначения условные приборов и средств автоматизации в схемах</SNAME><TYPE>ссылочный документ</TYPE></DOC>
+  <DOC><CODE>ГОСТ 21.408-2013</CODE><SNAME>СПДС. Правила выполнения рабочей документации автоматизации технологических процессов</SNAME><TYPE>ссылочный документ</TYPE></DOC>
+  <DOC><CODE>СП 77.13330.2016</CODE><SNAME>Системы автоматизации</SNAME><TYPE>ссылочный документ</TYPE></DOC>
+ </DOCS>
+</Prj>
