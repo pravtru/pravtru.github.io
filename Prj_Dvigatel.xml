@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Prj Name="Автоматизация асинхронного двигателя">
+<?xml version="1.0" encoding="utf-8"?><Prj Name="Автоматизация асинхронного двигателя">
  <!-- Шаблон проекта (GOAL.md, решения 13–14): пуск и останов асинхронного двигателя с кнопочного поста по месту,
       пускатель и автомат защиты двигателя в щите автоматизации ЩА, питание цепи управления после QF1, без сигнализации.
       Листы собираются генератором pdgen обходом дерева: каждый объект даёт своё изображение для вида листа
@@ -39,8 +39,9 @@
   <OBJ id="spec-2"><SNAME>Пост кнопочный</SNAME><POS>S1</POS><TPL>Post_SB2</TPL>
    <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
    <OBJS>
-    <OBJ id="spec-3"><SNAME>Кнопка «Пуск»</SNAME><POS>SB1</POS><TPL>SB_Pusk</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
-    <OBJ id="spec-4"><SNAME>Кнопка «Стоп»</SNAME><POS>SB2</POS><TPL>SB_Stop</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ id="spec-22"><SNAME>Корпус кнопочного поста на два места, серый, IP65</SNAME><TYPE>материал</TYPE><MARK>MTB2-XB2W</MARK><MAKER>MEYERTEC</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ id="spec-3"><SNAME>Кнопка «Пуск»</SNAME><POS>S1-SB1</POS><TPL>SB_Pusk</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ id="spec-4"><SNAME>Кнопка «Стоп»</SNAME><POS>S1-SB2</POS><TPL>SB_Stop</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
    </OBJS>
   </OBJ>
 
@@ -79,8 +80,8 @@
 
  <!-- Цепи нумеруются цифрами по ходу схемы, у цепи один номер. Провода ввода обозначены, как на вводе: L1, L2, L3, PE, N
       (на проводах не повторяются). Силовые: 1, 2, 3 — QF1 → KM1; 4, 5, 6 — KM1 → кабель 1 → M1.
-      Управления: 1 — фаза после QF1 (тот же узел) → SB2 «Стоп»; 7 — SB2 → SB1 «Пуск» и блок-контакт KM1 13;
-      8 — SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
+      Управления: 1 — фаза после QF1 (тот же узел) → S1-SB2 «Стоп»; 7 — SB2 → S1-SB1 «Пуск» и блок-контакт KM1 13;
+      8 — S1-SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
  <LNKS>
   <LNK><TYPE>цепь</TYPE><POS>L1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
   <LNK><TYPE>цепь</TYPE><POS>L2</POS><FROM><SNAME>Ввод</SNAME><PIN>L2</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>3</PIN></TO></LNK>
@@ -92,10 +93,10 @@
   <LNK><TYPE>цепь</TYPE><POS>5</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>6</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>PE</POS><FROM><SNAME>Ввод</SNAME><PIN>PE</PIN></FROM><TO><SNAME>M1</SNAME><PIN>PE</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>SB1</SNAME><PIN>13</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>S1-SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>S1-SB1</SNAME><PIN>13</PIN></TO></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>S1-SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
   <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>Ввод</SNAME><PIN>N</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
   <!-- функциональные связи схемы автоматизации -->
@@ -148,10 +149,12 @@
            <REF>spec-1</REF>
          </OBJ>
          <OBJ>
-           <REF>spec-3</REF>
-         </OBJ>
-         <OBJ>
-           <REF>spec-4</REF>
+           <REF>spec-2</REF><SNAME>Пост кнопочный, в составе:</SNAME>
+           <OBJS>
+             <OBJ><REF>spec-22</REF></OBJ>
+             <OBJ><REF>spec-3</REF></OBJ>
+             <OBJ><REF>spec-4</REF></OBJ>
+           </OBJS>
          </OBJ>
        </OBJS>
      </OBJ>
