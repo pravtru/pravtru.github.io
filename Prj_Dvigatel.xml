@@ -111,7 +111,7 @@
       <text x="25" y="67" font-size="5.11" class="text">СП 77.13330.2016 «Системы автоматизации».</text>
      </svg>
     </SHT>
-    <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A3</FMT></SHT>
+    <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A4</FMT></SHT>
     <SHT><SNAME>Схема электрическая принципиальная</SNAME><TYPE>схема принципиальная</TYPE><FMT>A3</FMT></SHT>
     <SHT><SNAME>Схема внешних соединений</SNAME><TYPE>схема внешних соединений</TYPE><FMT>A3</FMT></SHT>
     <SHT><SNAME>План цепей управления</SNAME><TYPE>план</TYPE><FMT>A3</FMT>
