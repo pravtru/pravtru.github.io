@@ -1,0 +1,10 @@
+<El Name="Переключатель MEYERTEC MTB2-EDZ112, два положения с фиксацией, 1NO">
+ <TYPE>электроаппарат</TYPE><MARK>MTB2-EDZ112</MARK><MAKER>MEYERTEC</MAKER><UNIT>шт</UNIT>
+ <PIN>13</PIN><PIN>14</PIN>
+ <svg tip="SP" viewBox="-19 -4 38 30" xmlns="http://www.w3.org/2000/svg">
+  <Bl0 Name="Font"/>
+  <!-- Исходное изображение Perekl2; используемая пара выводов 13–14 — верхняя строка. -->
+  <Bl Name="Perekl2" transform="rotate(90)"><Pr bid="1" transform="rotate(-90 5 -4)">{POS}</Pr><Pr bid="2_0" x="0" y="-4" transform="rotate(-90 0 -4)">13</Pr><Pr bid="3_0" x="10" y="4" transform="rotate(-90 10 4)">14</Pr><Pr bid="pin_2_1" display="none"/><Pr bid="pin_3_1" display="none"/><Pr bid="2_1" display="none"/><Pr bid="3_1" display="none"/></Bl>
+  <line x1="0" y1="0" x2="0.5" y2="0" PIN="13"/><line x1="0" y1="10" x2="-0.5" y2="10" PIN="14"/>
+ </svg>
+</El>

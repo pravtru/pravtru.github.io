@@ -3,6 +3,10 @@
       пускатель и автомат защиты двигателя в щите автоматизации ЩА, питание цепи управления после QF1, без сигнализации.
       Листы собираются генератором pdgen обходом дерева: каждый объект даёт своё изображение для вида листа
       (SA — схема автоматизации, SP — принципиальная, SV — внешних соединений, PL — план цепей управления). -->
+ <var id="control" name="Управление двигателем" type="e" default="buttons">
+  <opt value="buttons" name="Кнопки «Пуск» и «Стоп»" />
+  <opt value="selector" name="Переключатель «0–1» с фиксацией" />
+ </var>
  <var id="power" name="Мощность двигателя (ток при 400 В)" type="e" default="0.75">
   <opt value="0.37" name="0,37 кВт (1,1 А)" />
   <opt value="0.55" name="0,55 кВт (1,5 А)" />
@@ -36,12 +40,20 @@
    <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
 
-  <OBJ id="spec-2"><SNAME>Пост кнопочный</SNAME><POS>S1</POS><TPL>Post_SB2</TPL>
+  <OBJ IF="control=buttons" id="spec-2"><SNAME>Пост кнопочный</SNAME><POS>S1</POS><TPL>Post_SB2</TPL>
    <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
    <OBJS>
     <OBJ id="spec-22"><SNAME>Корпус кнопочного поста на два места, серый, IP65</SNAME><TYPE>материал</TYPE><MARK>MTB2-XB2W</MARK><MAKER>MEYERTEC</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
     <OBJ id="spec-3"><SNAME>Кнопка «Пуск»</SNAME><POS>S1-SB1</POS><TPL>SB_Pusk</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
     <OBJ id="spec-4"><SNAME>Кнопка «Стоп»</SNAME><POS>S1-SB2</POS><TPL>SB_Stop</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+   </OBJS>
+  </OBJ>
+
+  <OBJ IF="control=selector" id="spec-23"><SNAME>Пост управления переключателем «0–1»</SNAME><POS>S1</POS><TPL>Post_SA2</TPL>
+   <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS>
+    <OBJ id="spec-24"><SNAME>Корпус поста на одно место, серый, IP65</SNAME><TYPE>материал</TYPE><MARK>MTB2-XB1W</MARK><MAKER>MEYERTEC</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ id="spec-25"><SNAME>Переключатель «0–1», два положения с фиксацией, 1NO, IP54</SNAME><POS>S1-SA1</POS><TPL>SA_MTB2EDZ112</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
    </OBJS>
   </OBJ>
 
@@ -73,14 +85,14 @@
   <OBJ IF="power=7.5" id="spec-20"><SNAME>Кабель силовой</SNAME><POS>1</POS><TPL>Kabel</TPL><MARK>ВВГнг-LS 4х2,5</MARK><QTY>{len1}</QTY><UNIT>м</UNIT>
    <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>M1</SNAME></TO>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
-  <OBJ id="spec-21"><SNAME>Кабель контрольный</SNAME><POS>2</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 4х1,5</MARK><QTY>{len2}</QTY><UNIT>м</UNIT>
+  <OBJ id="spec-21"><SNAME>Кабель контрольный</SNAME><POS>2</POS><TPL>Kabel</TPL><MARK IF="control=buttons">КВВГнг-LS 4х1,5</MARK><MARK IF="control=selector">КВВГнг-LS 2х1,5</MARK><QTY>{len2}</QTY><UNIT>м</UNIT>
    <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>S1</SNAME></TO>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
  </OBJS>
 
  <!-- Цепи нумеруются цифрами по ходу схемы, у цепи один номер. Провода ввода обозначены, как на вводе: L1, L2, L3, PE, N
       (на проводах не повторяются). Силовые: 1, 2, 3 — QF1 → KM1; 4, 5, 6 — KM1 → кабель 1 → M1.
-      Управления: 1 — фаза после QF1 (тот же узел) → S1-SB2 «Стоп»; 7 — SB2 → S1-SB1 «Пуск» и блок-контакт KM1 13;
+      Управления: 1 — фаза после QF1 (тот же узел) → S1-SB2 «Стоп»; 7 — S1-SB2 → S1-SB1 «Пуск» и блок-контакт KM1 13;
       8 — S1-SB1 и блок-контакт KM1 14 → катушка KM1 A1; N — A2 → нейтраль. VIA — кабель. -->
  <LNKS>
   <LNK><TYPE>цепь</TYPE><POS>L1</POS><FROM><SNAME>Ввод</SNAME><PIN>L1</PIN></FROM><TO><SNAME>QF1</SNAME><PIN>1</PIN></TO></LNK>
@@ -93,11 +105,13 @@
   <LNK><TYPE>цепь</TYPE><POS>5</POS><FROM><SNAME>KM1</SNAME><PIN>4</PIN></FROM><TO><SNAME>M1</SNAME><PIN>V</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>6</POS><FROM><SNAME>KM1</SNAME><PIN>6</PIN></FROM><TO><SNAME>M1</SNAME><PIN>W</PIN></TO><VIA>1</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>PE</POS><FROM><SNAME>Ввод</SNAME><PIN>PE</PIN></FROM><TO><SNAME>M1</SNAME><PIN>PE</PIN></TO><VIA>1</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>S1-SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>S1-SB1</SNAME><PIN>13</PIN></TO></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>S1-SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
-  <LNK><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+  <LNK IF="control=buttons"><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>S1-SB2</SNAME><PIN>21</PIN></TO><VIA>2</VIA></LNK>
+  <LNK IF="control=buttons"><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>S1-SB1</SNAME><PIN>13</PIN></TO></LNK>
+  <LNK IF="control=buttons"><TYPE>цепь</TYPE><POS>7</POS><FROM><SNAME>S1-SB2</SNAME><PIN>22</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK IF="control=buttons"><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>S1-SB1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
+  <LNK IF="control=buttons"><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>KM1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO></LNK>
+  <LNK IF="control=selector"><TYPE>цепь</TYPE><POS>1</POS><FROM><SNAME>QF1</SNAME><PIN>2</PIN></FROM><TO><SNAME>S1-SA1</SNAME><PIN>13</PIN></TO><VIA>2</VIA></LNK>
+  <LNK IF="control=selector"><TYPE>цепь</TYPE><POS>8</POS><FROM><SNAME>S1-SA1</SNAME><PIN>14</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A1</PIN></TO><VIA>2</VIA></LNK>
   <LNK><TYPE>цепь</TYPE><POS>N</POS><FROM><SNAME>Ввод</SNAME><PIN>N</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>A2</PIN></TO></LNK>
   <!-- функциональные связи схемы автоматизации -->
   <LNK><TYPE>управление</TYPE><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA1</PIN></TO></LNK>
@@ -116,7 +130,9 @@
       <text x="112.5" y="15" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
       <text x="37.5" y="25" font-size="5.11" class="text">Проект автоматизации асинхронного двигателя разработан в соответствии с заданием</text>
       <text x="25" y="32" font-size="5.11" class="text">на проектирование и техническими регламентами.</text>
-      <text x="37.5" y="39" font-size="5.11" class="text">Предусматривается пуск и останов двигателя М1 с кнопочного поста S1 по месту.</text>
+      <text IF="control=buttons" x="37.5" y="39" font-size="5.11" class="text">Предусматривается пуск и останов двигателя М1 с кнопочного поста S1 по месту.</text>
+      <text IF="control=selector" x="37.5" y="39" font-size="5.11" class="text">Управление двигателем М1: переключатель S1-SA1 «0–1» с фиксацией по месту.</text>
+      <text IF="control=selector" x="37.5" y="80" font-size="3.65" class="text">При восстановлении питания двигатель запускается, если переключатель оставлен в положении «1».</text>
       <text x="37.5" y="46" font-size="5.11" class="text">Пускатель KM1 и автоматический выключатель защиты двигателя QF1 установлены</text>
       <text x="25" y="53" font-size="5.11" class="text">в щите автоматизации ЩА. Цепь управления ~220 В питается от фазы после QF1.</text>
       <text x="37.5" y="60" font-size="5.11" class="text">Производство и приёмку работ по монтажу средств автоматизации выполнить согласно</text>
@@ -148,12 +164,19 @@
          <OBJ>
            <REF>spec-1</REF>
          </OBJ>
-         <OBJ>
+         <OBJ IF="control=buttons">
            <REF>spec-2</REF><SNAME>Пост кнопочный, в составе:</SNAME>
            <OBJS>
              <OBJ><REF>spec-22</REF></OBJ>
              <OBJ><REF>spec-3</REF></OBJ>
              <OBJ><REF>spec-4</REF></OBJ>
+           </OBJS>
+         </OBJ>
+         <OBJ IF="control=selector">
+           <REF>spec-23</REF><SNAME>Пост управления, в составе:</SNAME>
+           <OBJS>
+             <OBJ><REF>spec-24</REF></OBJ>
+             <OBJ><REF>spec-25</REF></OBJ>
            </OBJS>
          </OBJ>
        </OBJS>

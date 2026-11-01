@@ -6,9 +6,9 @@
  <ALIAS>MTB2-ED3</ALIAS>
  <PIN>13</PIN> <PIN>14</PIN> <PIN>23</PIN> <PIN>24</PIN> <PIN>33</PIN> <PIN>34</PIN>
 
-<svg tip="SP" viewBox="-2 -10 24 22" xmlns="http://www.w3.org/2000/svg">
+<svg tip="SP" viewBox="-2 -27 32 54" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
- <Bl Name="SA_2P3N"></Bl>
+ <Bl Name="Perekl3"><Pr bid="1">{POS}</Pr><Pr bid="2_0">13</Pr><Pr bid="3_0">14</Pr><Pr bid="2_1">23</Pr><Pr bid="3_1">24</Pr></Bl>
 </svg>
 
 </El>

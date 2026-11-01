@@ -1,0 +1,30 @@
+<El Name="Пост управления с двухпозиционным переключателем MEYERTEC">
+ <TYPE>электроаппарат</TYPE><PIN>13</PIN><PIN>14</PIN>
+<svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+  <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.65" x="0" y="-1.25" text-anchor="middle" class="text">HS</text>
+  <text id="1" font-size="3.65" x="0" y="3.15" text-anchor="middle" class="text">{POS}</text>
+ </g>
+ <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="0" cy="5" r="0" PIN="SA2"/>
+</svg>
+<svg tip="PL" viewBox="-3 -3 6 7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="-1.25" y="-1.25" width="2.5" height="2.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="0" r="0.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ </g>
+ <circle cx="0" cy="1.25" r="0" PIN="PL"/>
+</svg>
+ <svg tip="SV" viewBox="-8 -8 55 65" xmlns="http://www.w3.org/2000/svg">
+  <Bl0 Name="Font"/>
+  <text x="18" y="-2" font-size="5.11" text-anchor="middle" class="text">{POS}</text>
+  <rect x="0" y="0" width="36" height="44" fill="none" stroke="#000000" stroke-width="0.3" stroke-dasharray="2 1"/>
+  <polyline points="18,8 -3,8 -3,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <polyline points="18,18 41,18 41,55" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <g transform="translate(18 8) rotate(90)"><Bl Name="Perekl2"><Pr bid="1" display="none"/><Pr bid="2_0" x="0" y="-4" transform="rotate(-90 0 -4)">13</Pr><Pr bid="3_0" x="10" y="4" transform="rotate(-90 10 4)">14</Pr><Pr bid="pin_2_1" display="none"/><Pr bid="pin_3_1" display="none"/><Pr bid="2_1" display="none"/><Pr bid="3_1" display="none"/></Bl></g>
+  <text x="-3.6" y="53" font-size="3.65" class="text" transform="rotate(-90 -3.6 53)">{LNK_13}</text>
+  <text x="40.4" y="53" font-size="3.65" class="text" transform="rotate(-90 40.4 53)">{LNK_14}</text>
+  <circle cx="-3" cy="55" r="0" PIN="13"/><circle cx="41" cy="55" r="0" PIN="14"/>
+ </svg>
+</El>
