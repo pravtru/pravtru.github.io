@@ -22,6 +22,17 @@
 
  <OBJS>
   <OBJ><SNAME>Электродвигатель асинхронный</SNAME><POS>M1</POS><TPL>Motor_AD</TPL>
+   <PRM>Мощность {power} кВт</PRM>
+   <PRM IF="power=0.37">Ток при 400 В: 1,1 А</PRM>
+   <PRM IF="power=0.55">Ток при 400 В: 1,5 А</PRM>
+   <PRM IF="power=0.75">Ток при 400 В: 1,9 А</PRM>
+   <PRM IF="power=1.1">Ток при 400 В: 2,6 А</PRM>
+   <PRM IF="power=1.5">Ток при 400 В: 3,5 А</PRM>
+   <PRM IF="power=2.2">Ток при 400 В: 5,0 А</PRM>
+   <PRM IF="power=3">Ток при 400 В: 6,5 А</PRM>
+   <PRM IF="power=4">Ток при 400 В: 8,5 А</PRM>
+   <PRM IF="power=5.5">Ток при 400 В: 11,5 А</PRM>
+   <PRM IF="power=7.5">Ток при 400 В: 15,5 А</PRM>
    <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
 

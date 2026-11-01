@@ -32,12 +32,12 @@
      <OBJ IF="vfd=1"><SNAME>Преобразователь частоты</SNAME><POS>1-P1</POS><TPL>FR_F840</TPL><VIEW><TYPE>схема автоматизации</TYPE><XY>240 60</XY></VIEW><VIEW><TYPE>схема принципиальная</TYPE><XY>250 30</XY></VIEW></OBJ>
      <OBJ><SNAME>Переключатель режима</SNAME><POS>1-SA1</POS><TPL>M22_WRK3</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>250 120</XY></VIEW></OBJ>
      <OBJ><SNAME>Выключатель автоматический ввода</SNAME><POS>QF1</POS><TPL>QF_FAZ_C6</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>135 200</XY></VIEW></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF2</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>170 200</XY></VIEW></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>205 200</XY></VIEW></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF4</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>240 200</XY></VIEW></OBJ>
-     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF5</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>275 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF2</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>175 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>215 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF4</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>255 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Выключатель автоматический</SNAME><POS>QF5</POS><TPL>QF_FAZ_C2</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>295 200</XY></VIEW></OBJ>
      <OBJ><SNAME>Источник бесперебойного питания</SNAME><POS>G1</POS><TPL>UPS_BC500</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>45 200</XY></VIEW></OBJ>
-     <OBJ><SNAME>Блок питания</SNAME><POS>G2</POS><TPL>ZI_60_24</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>95 200</XY></VIEW></OBJ>
+     <OBJ><SNAME>Блок питания</SNAME><POS>G2</POS><TPL>ZI_60_24</TPL><VIEW><TYPE>схема принципиальная</TYPE><XY>95 170</XY></VIEW></OBJ>
      <OBJ><SNAME>Клемма наборная</SNAME><MARK>STTB 2.5 3031270</MARK><QTY>20</QTY><UNIT>шт</UNIT></OBJ>
     </OBJS>
   </OBJ>
