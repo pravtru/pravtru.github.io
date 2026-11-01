@@ -19,7 +19,7 @@
 <svg tip="SV" viewBox="-2 -2 64 24" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g>
-  <rect id="10" x="0" y="0" width="60" height="20" fill="none" stroke="#000000" stroke-width="0.3"/>
+  <rect id="10" x="0" y="0" width="60" height="20" fill="none" stroke="#000000" stroke-width="0.2"/>
   <text id="1" font-size="5.11" x="30" y="11.2" text-anchor="middle" class="text">Щит автоматизации {POS}</text>
  </g>
 </svg>
