@@ -1,14 +1,16 @@
 <Bl Name="Лампа накаливания осветительная и сигнальная">
 
-<svg viewBox="-2 -8 24 16" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-3 -11 21 19" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
  <g transform="translate(0 0) rotate(0 0 0)">
-  <text id="2" font-size="3.65" x="10" y="-6" text-anchor="middle" class="text" font-family="gost">EL1</text>
-  <circle cx="10" cy="0" r="4" fill="none" stroke="#000000" stroke-width="0.2"/>
-  <line x1="7" y1="-3" x2="13" y2="3" stroke="#000000" stroke-width="0.2"/>
-  <line x1="7" y1="3" x2="13" y2="-3" stroke="#000000" stroke-width="0.2"/>
-  <line x1="0" y1="0" x2="6" y2="0" stroke="#000000" stroke-width="0.2"/>
-  <line x1="14" y1="0" x2="20" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" font-size="3.65" x="7.5" y="-5" text-anchor="middle" class="text" font-family="gost">EL1</text>
+  <circle cx="7.5" cy="0" r="3" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <line x1="5.378680" y1="-2.121320" x2="9.621320" y2="2.121320" stroke="#000000" stroke-width="0.2"/>
+  <line x1="5.378680" y1="2.121320" x2="9.621320" y2="-2.121320" stroke="#000000" stroke-width="0.2"/>
+  <line x1="0" y1="0" x2="4.5" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <line x1="10.5" y1="0" x2="15" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(0 0) rotate(0 0 0)"></Pr><Pr bid="2" id="3">1</Pr></Bl>
+  <Bl Name="XT1"><Pr bid="1" transform="translate(15 0) rotate(0 0 0)"></Pr><Pr bid="2" id="4">2</Pr></Bl>
  </g>
 </svg>
 

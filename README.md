@@ -53,7 +53,7 @@
 
 **Клеммы, кабели и автоматика**: `XT1.xml`, `Kbl.xml` (кабель горизонтальный), `Kl1.xml`, `Kl2.xml`, `QF1.xml`, `QF3.xml`, `QFVertical.xml`, `Fuse.xml` (предохранитель плавкий), `Klemma.xml`, `KlemmaWide.xml` (клеммы), `ChainNumber.xml` (маркировка номера цепи), `Rele_Time.xml` (контакт реле времени), `Perekl2.xml`, `Perekl3.xml` (переключатели с диаграммой положений)
 
-**Символы схем автоматизации (SA)**: `PriborSA.xml` (прибор), `NasosSA.xml` (насос), `TreugolnikSA.xml`, `VozvratnikSA.xml`, `AI_SA.xml`, `DI_SA.xml`, `Ethernet_SA.xml` (подвал СА — сигнальные линии)
+**Символы схем автоматизации (SA)**: `PriborSA.xml` (прибор), `NasosSA.xml` (насос), `TreugolnikSA.xml`, `VozvratnikSA.xml`, `AI_SA.xml`, `Ethernet_SA.xml` (подвал СА — сигнальные линии)
 
 **КИПиА (технологические приборы)**: `PT.xml` (преобразователь давления), `WE.xml` (преобразователь расхода), `TSP.xml`, `TSP4V.xml`, `WT.xml` (термометры сопротивления), `TV7.xml`, `ShPitTV7.xml`, `ShPodTV7.xml`, `PowerSupply.xml`, `Блок питания 12 В горизонтальный.xml`, `Cp.xml`, `CpV.xml`, `Zadvizhka.xml` (задвижка принципиальная), `UPS.xml` (источник бесперебойного питания), `PLC_Rele.xml` (программируемое реле)
 
@@ -61,21 +61,21 @@
 
 **Разъёмы и соединители**: `XP_XS_Tel.xml` (штепсель/гнездо телефонные), `XTsoed.xml` (контакты разборного/неразборного соединений), `XW1.xml` (штырь/гнездо коаксиальный), `XP_XS_Plug.xml` (вилка/розетка)
 
-**Электроакустика**: `BM1.xml` (микрофон), `BF1.xml` (телефон), `BA1.xml` (громкоговоритель), `BS1.xml` (магнитная головка), `BS_Hydrophone.xml`, `ZQ1.xml` (кварцевый резонатор)
+**Электроакустика**: `BM1.xml` (микрофон), `BF1.xml` (телефон), `BA1.xml` (громкоговоритель), `BS1.xml` (магнитная головка), `ZQ1.xml` (кварцевый резонатор)
 
-**Пассивные компоненты**: `R1.xml`, `R_Variable.xml`, `R_VariableDual.xml`, `R_VariableSwitch.xml`, `R_Trimmer.xml`, `RK_Thermistor.xml`, `RU_Varistor.xml` (резисторы), `C1.xml`, `C_Electrolytic.xml`, `C_Trimmer.xml`, `C_Variable.xml`, `C_VariableDual.xml`, `C_Feedthrough.xml` (конденсаторы), `L1.xml`, `L_Core.xml` (катушки/дроссели), `T1.xml` (трансформатор)
+**Пассивные компоненты**: `R1.xml`, `R_Variable.xml`, `R_VariableDual.xml`, `R_VariableSwitch.xml`, `R_Trimmer.xml`, `RK_Thermistor.xml`, `RU_Varistor.xml` (резисторы), `C1.xml`, `C_Electrolytic.xml`, `C_Trimmer.xml`, `C_Variable.xml`, `C_Feedthrough.xml` (конденсаторы), `L1.xml`, `L_Core.xml` (катушки/дроссели), `T1.xml` (трансформатор)
 
 **Полупроводники**: `VD1.xml`, `VD_Bridge.xml`, `VD_Zener.xml`, `VD_Schottky.xml`, `VD_Varicap.xml`, `VD_VaricapMatrix.xml` (диоды), `VS_Dinistor.xml`, `VS_Thyristor.xml`, `VS_Triac.xml` (тиристоры), `VT_PNP.xml`, `VT_NPN.xml`, `VT_Unijunction.xml`, `VT_FET_P.xml`, `VT_MOSFET_P.xml`, `VT_MOSFET_DualGate.xml` (транзисторы), `R_Photo.xml`, `VD_Photo_LED.xml`, `VT_Photo.xml` (фотоприборы), `Opto_R.xml`, `Opto_Diode.xml`, `Opto_Thyristor.xml`, `Opto_Transistor.xml` (оптроны)
 
 **Электронные лампы**: `VL_Triode.xml`, `VL_DoubleTriode.xml`, `VL_Pentode.xml`
 
-**Электрические машины, источники и индикация**: `M1.xml`, `M2.xml` (электродвигатели), `GB1.xml` (батарея), `EL1.xml`, `HL_Gas.xml` (лампы), `B1.xml` (датчик Холла), `WA1.xml`, `WA2.xml` (антенны)
+**Электрические машины, источники и индикация**: `M1.xml`, `M2.xml` (электродвигатели), `GB1.xml` (батарея), `EL1.xml`, `HL_Gas.xml` (лампы), `WA1.xml`, `WA2.xml` (антенны)
 
-**Измерение и датчики**: `PA1.xml` (электроизмерительный прибор), `BK1.xml` (датчик температуры), `BP1.xml` (датчик давления)
+**Измерение и датчики**: `PA1.xml` (электроизмерительный прибор)
 
-**Линии связи и соединения**: `Ground.xml`, `Chassis.xml`, `LineBranch.xml`, `ShieldedLine.xml`, `ShieldGroup.xml`, `CoaxCable.xml`, `TwistedPair.xml`, `FlexWire.xml`, `GroupLine.xml`, `SignalArrow.xml`, `DataFlow.xml`, `MechLink.xml`
+**Линии связи и соединения**: `Ground.xml`, `Chassis.xml`, `LineBranch.xml`, `ShieldedLine.xml`, `ShieldGroup.xml`, `TwistedPair.xml`, `FlexWire.xml`, `GroupLine.xml`, `SignalArrow.xml`, `DataFlow.xml`, `MechLink.xml`
 
-**Аналоговые и цифровые ИС, функциональные блоки**: `DA_OpAmp.xml`, `DA_Comparator.xml`, `DA_Timer.xml`, `DD_AND.xml`, `DD_OR.xml`, `DD_NOT.xml`, `DD_Trigger.xml`, `HG1.xml`, `DR1.xml`, `DA_Stabilizer.xml`, `S_Commutator.xml`, `A1.xml`, `A_Attenuator.xml`, `G_Generator.xml`, `U_Converter.xml`, `Z_Filter.xml`, `DT_Delay.xml`
+**Аналоговые и цифровые ИС, функциональные блоки**: `DA_OpAmp.xml`, `DA_Comparator.xml`, `DD_AND.xml`, `DD_OR.xml`, `DD_NOT.xml`, `DD_Trigger.xml`, `HG1.xml`, `S_Commutator.xml`, `G_Generator.xml`, `U_Converter.xml`, `Z_Filter.xml`
 
 Каждый файл можно открыть в `View.html?name=ИмяФайла`; те же ссылки продублированы (с группировкой) в `Blok.htm`.
 
@@ -93,7 +93,7 @@
 166 строк делятся на 3 категории: ~120 простых графических блоков, ~22 блока со встроенным `<Script>` (JS, динамически строит форму параметров и генерирует схему — прямого аналога в текущей статической системе нет, не переносились), ~20 блоков с именами-числами (`"5"`…`"23"`) — сохранённые листы конкретного проекта, а не переиспользуемые шаблоны.
 
 Перенос простых блоков и блоков-чисел завершён (94 файла, все без `<Script>`):
-- **Первая партия (16 файлов)**: `Klemma.xml`, `KlemmaWide.xml`, `ChainNumber.xml`, `Rele_Time.xml`, `Perekl2.xml`, `Perekl3.xml`, `PriborSA.xml`, `NasosSA.xml`, `TreugolnikSA.xml`, `VozvratnikSA.xml`, `AI_SA.xml`, `DI_SA.xml`, `Ethernet_SA.xml`, `Zadvizhka.xml`, `UPS.xml`, `PLC_Rele.xml`.
+- **Первая партия (15 файлов)**: `Klemma.xml`, `KlemmaWide.xml`, `ChainNumber.xml`, `Rele_Time.xml`, `Perekl2.xml`, `Perekl3.xml`, `PriborSA.xml`, `NasosSA.xml`, `TreugolnikSA.xml`, `VozvratnikSA.xml`, `AI_SA.xml`, `Ethernet_SA.xml`, `Zadvizhka.xml`, `UPS.xml`, `PLC_Rele.xml`.
 - **Вторая партия (78 файлов)** — перенесена автоматическим конвертером (PowerShell-скрипт, читает `Bloki` через `SqlClient`, пересчитывает координаты/повороты по правилам выше, разрешает вложенные `<Blok ID=N>` через таблицу соответствия ID→имя файла): приводы и реверсивный привод (`Привод.xml`, `Реверсивный привод.xml`, `Силовая часть реверсивного привода.xml`, `Концевые выключатели Auma.xml`, `Диаграмма Auma.xml`, `Привод с переключателем.xml`, `Переключатель 1 контакт.xml`, `КМ горизонтально.xml`), управление задвижкой (10 файлов), схемы автоматизации насосной/камеры/тепловой камеры (14 файлов), АВР (5 файлов), штампы/спецификации/ведомости (11 файлов), схемы внешних связей (4 файла), прочие схемы (6 файлов: `Цепь кабеля.xml`, тепловычислители, `С2000-КПБ.xml`, `Меркор. Принципиалка.xml`, `Независимый расцепитель.xml`). Полный список — в `Blok.htm`.
 - **Убраны как проектные, а не типовые** (остались в истории git): 19 листов-снимков конкретного проекта (`5.xml`…`23.xml`), `СА. Склад масла.xml`, `План.xml`, `Текст2.xml`, `Щит насосов 2.xml`, `Тепловая камера.xml`, а также `1.xml` и `2 pages.xml` в старом формате, который `View.html` не отображает.
 - Дубликаты с одинаковым `Name` в БД (например, несколько версий «Ведомость чертежей» или «Схема внешних») схлопнуты в один файл — оставлен вариант с наибольшим объёмом XML.
@@ -190,3 +190,5 @@
 Этот README дополняется по мере развития проекта — при добавлении новых типов блоков/элементов или изменении механизма рендеринга следует обновлять соответствующие разделы выше.
 
 Двигатель: в Prj_Dvigatel параметр control выбирает buttons (две кнопки с самоподхватом, по умолчанию) или selector (переключатель 0–1 с фиксацией без самоподхвата). Типовой переключатель — SA_MTB2EDZ112.xml, пост — Post_SA2.xml. Данные вариантов, кабели и состав спецификации заданы в XML через IF.
+
+Страница View.html группирует объект по шести разделам: общие данные (тексты, параметры и пояснения по вставке из XML), автоматизация, принципиальные схемы (все PART и угловая спецификация), внешние соединения (графика и угловая спецификация кабелей/труб), план цепей управления и полная спецификация. Просмотр object-view.js читает существующий XML, раскрывает вложенные блоки и Pr, учитывает IF и выбранные параметры, поддерживает UTF-8/UTF-16. Новые инженерные теги не добавляются. Отсутствующие сведения помечаются явно; исходный XML и SVG доступны в сворачиваемых блоках.

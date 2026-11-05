@@ -1,9 +1,8 @@
-﻿<Bl Name="Малый штамп">
+<Bl Name="Малый штамп">
     <svg viewBox="0 0 185 15" xmlns="http://www.w3.org/2000/svg" fill="none">
 	<Bl Name="Font"></Bl>
         <g id="main" transform="translate(0, 0)">
 	        <polyline fill="none" stroke="#000000" stroke-width="0.4" points="0,15 0,0 185,0"/>
-	        <polyline points="0,0 185,0" stroke-width="0.4" stroke="black" fill="none" />
 	        <polyline fill="none" stroke="#000000" stroke-width="0.4" points="0,15 185,15"/>
 	        <polyline fill="none" stroke="#000000" stroke-width="0.4" points="185,0 185,15"/>
 	        <polyline fill="none" stroke="#000000" stroke-width="0.4" points="10,0 10,15"/>

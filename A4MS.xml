@@ -7,5 +7,6 @@
                 <Bl Name="IS"><Pr bid="main" transform="translate(8, 207)"></Pr></Bl>
             </g>
         </g>
+        <text x="187" y="295.75" font-size="3.65" text-anchor="middle" fill="#000000" class="text">Формат A4</text>
     </svg>
 </Bl>

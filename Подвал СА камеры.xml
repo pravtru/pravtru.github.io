@@ -1,4 +1,4 @@
-﻿<Bl Name="Подвал">
+<Bl Name="Подвал">
 
 <svg viewBox="-3 -43 171 46" xmlns="http://www.w3.org/2000/svg">
  <Bl0 Name="Font"></Bl0>
@@ -19,17 +19,53 @@
   <text font-size="2.5" x="17.5" y="-12.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">DO</text>
   <text font-size="2.5" x="17.5" y="-17.5" text-anchor="middle" dominant-baseline="middle" class="text" font-family="gost">DI</text>
   <g transform="translate(30 0)"><Bl Name="AI_SA"><Pr bid="1">1</Pr><Pr bid="2">0-1 м</Pr></Bl></g>
-  <g transform="translate(35 0)"><Bl Name="DI_SA"><Pr bid="1">2</Pr><Pr bid="2">0,2; 0,5; 1 м</Pr></Bl></g>
+  <g transform="translate(35 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">2</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">0,2; 0,5; 1 м</text>
+ </g>
+</g>
   <g transform="translate(40 0)"><Bl Name="AI_SA"><Pr bid="1">3</Pr><Pr bid="2">5-100 C</Pr></Bl></g>
   <g transform="translate(60 0)"><Bl Name="Насос СА подвал"><Pr bid="1">4</Pr><Pr bid="2">1</Pr></Bl></g>
   <g transform="translate(100 0)"><Bl Name="Насос СА подвал"><Pr bid="1">5</Pr><Pr bid="2">2</Pr></Bl></g>
-  <g transform="translate(125 0)"><Bl Name="DI_SA"><Pr bid="1">6</Pr><Pr bid="2">5 МОм</Pr></Bl></g>
-  <g transform="translate(130 0)"><Bl Name="DI_SA"><Pr bid="1">7</Pr><Pr bid="2">5 МОм</Pr></Bl></g>
-  <g transform="translate(135 0)"><Bl Name="DI_SA"><Pr bid="1">8</Pr><Pr bid="2">5 МОм</Pr></Bl></g>
-  <g transform="translate(140 0)"><Bl Name="DI_SA"><Pr bid="1">9</Pr><Pr bid="2">5 МОм</Pr></Bl></g>
-  <g transform="translate(145 0)"><Bl Name="DI_SA"><Pr bid="1">10</Pr><Pr bid="2">5 МОм</Pr></Bl></g>
+  <g transform="translate(125 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">6</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">5 МОм</text>
+ </g>
+</g>
+  <g transform="translate(130 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">7</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">5 МОм</text>
+ </g>
+</g>
+  <g transform="translate(135 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">8</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">5 МОм</text>
+ </g>
+</g>
+  <g transform="translate(140 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">9</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">5 МОм</text>
+ </g>
+</g>
+  <g transform="translate(145 0)"><g transform="translate(0 0) rotate(0 0 0)">
+  <circle cx="0" cy="-17.5" r="1" fill="none" stroke="#000000" stroke-width="0.2" />
+  <line x1="0" y1="-18.5" x2="0" y2="-60" stroke="#000000" stroke-width="0.2" />
+  <text id="1" font-size="2.5" x="0" y="-63" text-anchor="middle" class="text" font-family="gost">10</text>
+  <text id="2" font-size="2.5" x="-2" y="-50" text-anchor="middle" class="text" font-family="gost" transform="rotate(-90 -2 -50)">5 МОм</text>
+ </g>
+</g>
   <g transform="translate(150 0)"><Bl Name="AI_SA"><Pr bid="1">11</Pr><Pr bid="2">20 C</Pr></Bl></g>
-  <g transform="translate(160 0)"><Bl Name="Ethernet_SA"><Pr bid="1"></Pr><Pr bid="2">Диспетчер.</Pr></Bl></g>
+  <g transform="translate(160 -60)"><Bl Name="Ethernet_SA"><Pr bid="1"></Pr><Pr bid="2">Диспетчер.</Pr></Bl></g>
 </g>
 </svg>
 
