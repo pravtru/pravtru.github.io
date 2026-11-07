@@ -1,0 +1,9 @@
+<El Name="Замыкающий контакт">
+ <svg tip="SP" viewBox="-3 -10 37 26" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-2.5" y="-9" width="20" height="15" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="2 1"/>
+  <path d="M 7.5 6 L 11 12 H 30" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text x="12" y="11" font-size="3.65" class="text">см. лист {REF_SHEET}</text>
+  <Bl Name="NO"><Pr bid="2">{POS}</Pr></Bl>
+  <circle cx="0" cy="0" r="0" PIN="13"/><circle cx="15" cy="0" r="0" PIN="14"/>
+ </svg>
+</El>

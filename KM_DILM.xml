@@ -16,7 +16,7 @@
   <text font-size="3.65" x="0" y="-1.25" text-anchor="middle" class="text">NS</text>
   <text id="1" font-size="3.65" x="0" y="3.65" text-anchor="middle" class="text">{POS}</text>
  </g>
- <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="0" cy="5" r="0" PIN="SA2"/>
+ <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="0" cy="5" r="0" PIN="SA2"/><circle cx="5" cy="0" r="0" PIN="SA3"/><circle cx="-5" cy="0" r="0" PIN="SA4"/>
 </svg>
 
 <!-- Схема принципиальная, разнесённый способ (ГОСТ 2.702): три части с позицией KM1, атрибут PART.

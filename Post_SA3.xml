@@ -1,0 +1,40 @@
+<El Name="Пост управления с трёхпозиционным переключателем">
+ <TYPE>электроаппарат</TYPE>
+ <svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+  <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.65" x="0" y="-1.25" text-anchor="middle" class="text">HS</text>
+  <text id="1" font-size="3.65" x="0" y="3.15" text-anchor="middle" class="text">{POS}</text>
+ </g>
+ <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="0" cy="5" r="0" PIN="SA2"/>
+</svg>
+ <svg tip="PL" viewBox="-3 -3 6 7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="-1.25" y="-1.25" width="2.5" height="2.5" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="0" cy="0" r="0.3" fill="none" stroke="#000000" stroke-width="0.2"/>
+ </g>
+ <circle cx="0" cy="1.25" r="0" PIN="PL"/>
+</svg>
+ <svg tip="SV" viewBox="-4 -8 60 65" xmlns="http://www.w3.org/2000/svg">
+  <text x="26" y="-2" font-size="5.11" text-anchor="middle" class="text">{POS}</text>
+  <rect x="0" y="0" width="52" height="44" fill="none" stroke="#000000" stroke-width="0.3" stroke-dasharray="2 1"/>
+  <text x="26" y="12" font-size="3.65" text-anchor="middle" class="text">SA1 / SA1-HL</text>
+  <g transform="translate(5 33)"><Bl Name="XT1"><Pr bid="2" y="-2">13</Pr></Bl></g>
+  <line x1="5" y1="34" x2="5" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="4.4" y="53" font-size="3.65" class="text" transform="rotate(-90 4.4 53)">{LNK_13}</text>
+  <circle cx="5" cy="55" r="0" PIN="13"/>
+  <g transform="translate(19 33)"><Bl Name="XT1"><Pr bid="2" y="-2">14</Pr></Bl></g>
+  <line x1="19" y1="34" x2="19" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="18.4" y="53" font-size="3.65" class="text" transform="rotate(-90 18.4 53)">{LNK_14}</text>
+  <circle cx="19" cy="55" r="0" PIN="14"/>
+  <g transform="translate(33 33)"><Bl Name="XT1"><Pr bid="2" y="-2">24</Pr></Bl></g>
+  <line x1="33" y1="34" x2="33" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="32.4" y="53" font-size="3.65" class="text" transform="rotate(-90 32.4 53)">{LNK_24}</text>
+  <circle cx="33" cy="55" r="0" PIN="24"/>
+  <g transform="translate(47 33)"><Bl Name="XT1"><Pr bid="2" y="-2">X2</Pr></Bl></g>
+  <line x1="47" y1="34" x2="47" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="46.4" y="53" font-size="3.65" class="text" transform="rotate(-90 46.4 53)">{LNK_X2}</text>
+  <circle cx="47" cy="55" r="0" PIN="X2"/>
+ </svg>
+</El>

@@ -1,0 +1,18 @@
+<El Name="Переключатель с подсветкой M22-WRLK3-G">
+ <TYPE>электроаппарат</TYPE><MARK>M22-WRLK3-G</MARK><MAKER>Eaton</MAKER><UNIT>шт</UNIT>
+ <PIN>13</PIN><PIN>14</PIN><PIN>23</PIN><PIN>24</PIN>
+ <svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+ <Bl0 Name="Font"></Bl0>
+ <g>
+  <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <line x1="-5" y1="0" x2="5" y2="0" stroke="#000000" stroke-width="0.2"/>
+  <text font-size="3.65" x="0" y="-1.25" text-anchor="middle" class="text">HS</text>
+  <text id="1" font-size="3.65" x="0" y="3.15" text-anchor="middle" class="text">{POS}</text>
+ </g>
+ <circle cx="0" cy="-5" r="0" PIN="SA1"/><circle cx="-5" cy="0" r="0" PIN="SA2"/>
+</svg>
+ <svg tip="SP" viewBox="-3 -15 32 43" xmlns="http://www.w3.org/2000/svg">
+  <Bl Name="Perekl3"><Pr bid="1">{POS}</Pr><Pr bid="2_0" font-size="3.65">13</Pr><Pr bid="3_0" font-size="3.65">14</Pr><Pr bid="2_1" font-size="3.65">23</Pr><Pr bid="3_1" font-size="3.65">24</Pr><Pr bid="4_0" font-size="3.65" text-anchor="start"/><Pr bid="4_1" font-size="3.65" text-anchor="start"/><Pr bid="4_2" font-size="3.65" text-anchor="start"/><Pr bid="dash_on" transform="translate(-1 0)"/><Pr bid="dash_off" transform="translate(-2.5 0)"/><Pr bid="dash_auto" transform="translate(-4 0)"/><Pr bid="terminal_0" fill="#FFFFFF"/><Pr bid="terminal_1" fill="#FFFFFF"/><Pr bid="terminal_2" fill="#FFFFFF"/><Pr bid="terminal_3" fill="#FFFFFF"/></Bl>
+  <circle cx="0" cy="0" r="0" PIN="13"/><circle cx="10" cy="0" r="0" PIN="14"/><circle cx="0" cy="20" r="0" PIN="23"/><circle cx="10" cy="20" r="0" PIN="24"/>
+ </svg>
+</El>
