@@ -4,7 +4,7 @@
  <svg tip="SP" viewBox="-4 -19 30 38" xmlns="http://www.w3.org/2000/svg">
   <Bl0 Name="Font"/>
   <!-- Исходное изображение Perekl2; используемая пара выводов 13–14 — верхняя строка. -->
-  <Bl Name="Perekl2"><Pr bid="1">{POS}</Pr><Pr bid="2_0">13</Pr><Pr bid="3_0">14</Pr><Pr bid="pin_2_1" display="none"/><Pr bid="pin_3_1" display="none"/><Pr bid="2_1" display="none"/><Pr bid="3_1" display="none"/></Bl>
+  <Bl Name="Perekl2"><Pr bid="1">{POS}</Pr><Pr bid="2_0" font-size="3.65">13</Pr><Pr bid="3_0" font-size="3.65">14</Pr><Pr bid="pin_2_1" display="none"/><Pr bid="pin_3_1" display="none"/><Pr bid="2_1" display="none"/><Pr bid="3_1" display="none"/><Pr bid="lower_left" display="none"/><Pr bid="lower_right" display="none"/></Bl>
   <line x1="0" y1="0" x2="0.5" y2="0" PIN="13"/><line x1="10" y1="0" x2="9.5" y2="0" PIN="14"/>
  </svg>
 </El>
