@@ -1,0 +1,47 @@
+<El Name="Общий пост управления двумя двигателями">
+ <TYPE>электроаппарат</TYPE><PIN>SA2</PIN>
+ <svg tip="SA" viewBox="-7 -7 14 14" xmlns="http://www.w3.org/2000/svg">
+  <El Name="Post_SA3"/>
+ </svg>
+ <svg tip="PL" viewBox="-3 -3 6 7" xmlns="http://www.w3.org/2000/svg">
+  <El Name="Post_SA3"/>
+ </svg>
+ <svg tip="SV" viewBox="0 -8 60 65" xmlns="http://www.w3.org/2000/svg">
+  <text x="30" y="-2" font-size="5.11" text-anchor="middle" class="text">{POS}</text>
+  <rect x="0" y="0" width="60" height="44" fill="none" stroke="#000000" stroke-width="0.3" stroke-dasharray="2 1"/>
+  <text x="15" y="12" font-size="3.65" text-anchor="middle" class="text">SA1 / SA1-HL</text>
+  <text x="45" y="12" font-size="3.65" text-anchor="middle" class="text">SA2 / SA2-HL</text>
+  <g transform="translate(4 33)"><Bl Name="XT1"><Pr bid="2" y="-2">13</Pr></Bl></g>
+  <line x1="4" y1="34" x2="4" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="3.4" y="53" font-size="3.65" class="text" transform="rotate(-90 3.4 53)">{LNK_SA1_13}</text>
+  <circle cx="4" cy="55" r="0" PIN="1_13"/>
+  <g transform="translate(11 33)"><Bl Name="XT1"><Pr bid="2" y="-2">14</Pr></Bl></g>
+  <line x1="11" y1="34" x2="11" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="10.4" y="53" font-size="3.65" class="text" transform="rotate(-90 10.4 53)">{LNK_SA1_14}</text>
+  <circle cx="11" cy="55" r="0" PIN="1_14"/>
+  <g transform="translate(18 33)"><Bl Name="XT1"><Pr bid="2" y="-2">24</Pr></Bl></g>
+  <line x1="18" y1="34" x2="18" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="17.4" y="53" font-size="3.65" class="text" transform="rotate(-90 17.4 53)">{LNK_SA1_24}</text>
+  <circle cx="18" cy="55" r="0" PIN="1_24"/>
+  <g transform="translate(25 33)"><Bl Name="XT1"><Pr bid="2" y="-2">X2</Pr></Bl></g>
+  <line x1="25" y1="34" x2="25" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="24.4" y="53" font-size="3.65" class="text" transform="rotate(-90 24.4 53)">{LNK_SA1_HL_X2}</text>
+  <circle cx="25" cy="55" r="0" PIN="1_X2"/>
+  <g transform="translate(35 33)"><Bl Name="XT1"><Pr bid="2" y="-2">13</Pr></Bl></g>
+  <line x1="35" y1="34" x2="35" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="34.4" y="53" font-size="3.65" class="text" transform="rotate(-90 34.4 53)">{LNK_SA2_13}</text>
+  <circle cx="35" cy="55" r="0" PIN="2_13"/>
+  <g transform="translate(42 33)"><Bl Name="XT1"><Pr bid="2" y="-2">14</Pr></Bl></g>
+  <line x1="42" y1="34" x2="42" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="41.4" y="53" font-size="3.65" class="text" transform="rotate(-90 41.4 53)">{LNK_SA2_14}</text>
+  <circle cx="42" cy="55" r="0" PIN="2_14"/>
+  <g transform="translate(49 33)"><Bl Name="XT1"><Pr bid="2" y="-2">24</Pr></Bl></g>
+  <line x1="49" y1="34" x2="49" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="48.4" y="53" font-size="3.65" class="text" transform="rotate(-90 48.4 53)">{LNK_SA2_24}</text>
+  <circle cx="49" cy="55" r="0" PIN="2_24"/>
+  <g transform="translate(56 33)"><Bl Name="XT1"><Pr bid="2" y="-2">X2</Pr></Bl></g>
+  <line x1="56" y1="34" x2="56" y2="55" stroke="#000000" stroke-width="0.2"/>
+  <text x="55.4" y="53" font-size="3.65" class="text" transform="rotate(-90 55.4 53)">{LNK_SA2_HL_X2}</text>
+  <circle cx="56" cy="55" r="0" PIN="2_X2"/>
+ </svg>
+</El>

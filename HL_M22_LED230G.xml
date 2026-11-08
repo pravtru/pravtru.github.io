@@ -1,6 +1,10 @@
 <El Name="Светодиодный модуль подсветки переключателя M22-LED230-G">
  <TYPE>электроаппарат</TYPE><MARK>M22-LED230-G</MARK><MAKER>Eaton</MAKER><UNIT>шт</UNIT>
  <PIN>X1</PIN><PIN>X2</PIN>
+ <svg tip="SA" viewBox="-8 -10 16 16" xmlns="http://www.w3.org/2000/svg">
+  <Bl Name="SA_Lampa"/>
+  <circle cx="-3" cy="0" r="0" PIN="SA1"/>
+ </svg>
  <svg tip="SP" viewBox="-3 -10 21 17" xmlns="http://www.w3.org/2000/svg">
   <Bl Name="EL1"><Pr bid="2">{POS}</Pr><Pr bid="3">X1</Pr><Pr bid="4">X2</Pr></Bl>
   <circle cx="0" cy="0" r="0" PIN="X1"/><circle cx="15" cy="0" r="0" PIN="X2"/>

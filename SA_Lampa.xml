@@ -1,0 +1,8 @@
+<Bl Name="Сигнальная лампа на схеме автоматизации">
+ <svg viewBox="-8 -10 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- УГО по образцу «Насос СА подвал». -->
+  <circle cx="0" cy="0" r="3" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  <path d="M -2.12 -2.12 L 2.12 2.12 M -2.12 2.12 L 2.12 -2.12" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="1" x="0" y="-5" font-size="3.65" text-anchor="middle" class="text">{POS}</text>
+ </svg>
+</Bl>

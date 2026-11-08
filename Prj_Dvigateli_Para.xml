@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Prj Name="Автоматизация пары асинхронных двигателей">
+ <var id="len1" name="Длина силового кабеля ЩА — M1, м" type="i" default="20" min="1" max="500"/>
+ <var id="len2" name="Длина силового кабеля ЩА — M2, м" type="i" default="20" min="1" max="500"/>
+ <var id="post_len" name="Длина общего кабеля ЩА — S1, м (при выносном посте)" type="i" default="15" min="1" max="500"/>
+ <var id="k1_sheet" name="Лист команды «Авт.» для M1" type="i" default="0" min="0"/>
+ <var id="k2_sheet" name="Лист команды «Авт.» для M2" type="i" default="0" min="0"/>
+ <var id="feedback1_sheet" name="Лист обратной связи KM1" type="i" default="0" min="0"/>
+ <var id="feedback2_sheet" name="Лист обратной связи KM2" type="i" default="0" min="0"/>
+ <var id="room_l" name="Длина помещения, м" type="i" default="14" min="12" max="30"/>
+ <var id="room_w" name="Ширина помещения, м" type="i" default="6" min="3" max="14"/>
+
+ <!-- Общий щит, общий корпус поста и общий контрольный кабель задаются один раз. -->
+ <OBJS>
+  <OBJ><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW><OBJS/></OBJ>
+  <OBJ IF="control=auto_post" id="pair-post"><SNAME>Пост управления двумя двигателями</SNAME><POS>S1</POS><TPL>Post_SA3_Pair</TPL><VIEW><TYPE>схема автоматизации</TYPE><BETWEEN>M1 M2</BETWEEN></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS><OBJ id="pair-case"><SNAME>Корпус поста на два места</SNAME><MARK>M22-I2</MARK><MAKER>Eaton</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ></OBJS>
+  </OBJ>
+  <OBJ IF="control=auto_post" id="pair-cable"><SNAME>Кабель контрольный, две жилы резервные</SNAME><POS>3</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 10х1,5</MARK><QTY>{post_len}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>S1</SNAME></TO><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+  </OBJ>
+ </OBJS>
+
+ <NOTES>
+  <svg viewBox="0 0 210 297">
+   <text x="112.5" y="15" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+   <text x="25" y="28" font-size="5.11" class="text">Проект автоматизации двух асинхронных двигателей M1 и M2.</text>
+   <text x="25" y="36" font-size="5.11" class="text">Оба двигателя имеют одинаковую мощность {power} кВт.</text>
+   <text x="25" y="44" font-size="5.11" class="text">Для каждого двигателя предусмотрен свой переключатель</text>
+   <text IF="control=auto_panel" x="25" y="52" font-size="5.11" class="text">«Вкл. — Выкл. — Авт.» с подсветкой на общем щите ЩА.</text>
+   <text IF="control=auto_post" x="25" y="52" font-size="5.11" class="text">«Вкл. — Выкл. — Авт.» с подсветкой в общем посту S1.</text>
+   <text x="25" y="60" font-size="5.11" class="text">Аппараты защиты и пускатели установлены в общем щите ЩА.</text>
+   <text x="25" y="68" font-size="5.11" class="text">Цепи управления питаются от соответствующей фазы после QF.</text>
+   <text x="25" y="76" font-size="5.11" class="text">В режиме «Авт.» команды подаются контактами K1 и K2.</text>
+  </svg>
+ </NOTES>
+
+ <SPEC><OBJS>
+  <OBJ><SNAME>1. Электрооборудование по месту</SNAME><OBJS>
+   <OBJ IF="control=auto_post"><REF>pair-post</REF><SNAME>Пост управления, в составе:</SNAME><OBJS><OBJ><REF>pair-case</REF></OBJ></OBJS></OBJ>
+  </OBJS></OBJ>
+  <OBJ><SNAME>2. Электроаппаратура, устанавливаемая в щит</SNAME><OBJS/></OBJ>
+  <OBJ><SNAME>3. Кабельные изделия</SNAME><OBJS>
+   <OBJ IF="control=auto_post"><REF>pair-cable</REF></OBJ>
+  </OBJS></OBJ>
+ </OBJS></SPEC>
+
+ <SHEET_LAYOUT IF="control=auto_post" TYPE="схема принципиальная">
+  <svg viewBox="0 0 420 297">
+   <text x="230" y="143" font-size="5.11" class="text">SA1 и SA2 установлены в общем посту S1.</text>
+  </svg>
+ </SHEET_LAYOUT>
+ <SHEET_LAYOUT TYPE="схема автоматизации" COLUMN_WIDTH="48"/>
+ <SHEET_LAYOUT TYPE="схема внешних соединений" TABLE_Y="48"/>
+ <!-- Два экземпляра одного привода: общие параметры берутся из проекта пары. -->
+ <MODULES TPL="Prj_Dvigatel_Avt" VARS="control power">
+  <MODULE ID="1" Y="0">
+   <PARAM NAME="k1_sheet">{k1_sheet}</PARAM><PARAM NAME="feedback_sheet">{feedback1_sheet}</PARAM>
+   <MAP FROM="2" TO="3"/>
+   <ATTACH FROM="ЩА" TO="ЩА"/><ATTACH FROM="S1" TO="S1" SPEC_FROM="spec-post-auto" SPEC_TO="pair-post" REPLACE_LINKS="true"/>
+   <OMIT>spec-post-case</OMIT><OMIT>spec-21</OMIT>
+   <SHOW IF="control=auto_panel" POS="SA1-HL" TYPE="схема автоматизации"/>
+   <LNK IF="control=auto_panel"><TYPE>сигнализация</TYPE><FROM><SNAME>SA1</SNAME><PIN>SA3</PIN></FROM><TO><SNAME>SA1-HL</SNAME><PIN>SA1</PIN></TO></LNK>
+   <LNK IF="control=auto_post"><TYPE>управление</TYPE><POS>S1</POS><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA3</PIN></TO></LNK>
+  </MODULE>
+  <MODULE ID="2" Y="142" CHAIN_OFFSET="8" FEEDBACK_OFFSET="2">
+   <PARAM NAME="len1">{len2}</PARAM><PARAM NAME="k1_sheet">{k2_sheet}</PARAM><PARAM NAME="feedback_sheet">{feedback2_sheet}</PARAM>
+   <MAP FROM="M1" TO="M2"/><MAP FROM="Ввод" TO="Ввод 2"/><MAP FROM="QF1" TO="QF2"/><MAP FROM="KM1" TO="KM2"/>
+   <MAP FROM="SA1" TO="SA2"/><MAP FROM="SA1-HL" TO="SA2-HL"/><MAP FROM="K1" TO="K2"/><MAP FROM="XT1" TO="XT2"/>
+   <MAP FROM="1" TO="2"/><MAP FROM="2" TO="3"/>
+   <ATTACH FROM="ЩА" TO="ЩА"/><ATTACH FROM="S1" TO="S1" SPEC_FROM="spec-post-auto" SPEC_TO="pair-post" REPLACE_LINKS="true"/>
+   <OMIT>spec-post-case</OMIT><OMIT>spec-21</OMIT>
+   <SHOW IF="control=auto_panel" POS="SA1-HL" TYPE="схема автоматизации"/>
+   <LNK IF="control=auto_panel"><TYPE>сигнализация</TYPE><FROM><SNAME>SA2</SNAME><PIN>SA3</PIN></FROM><TO><SNAME>SA2-HL</SNAME><PIN>SA1</PIN></TO></LNK>
+   <LNK IF="control=auto_post"><TYPE>управление</TYPE><POS>S1</POS><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM2</SNAME><PIN>SA4</PIN></TO></LNK>
+  </MODULE>
+ </MODULES>
+</Prj>

@@ -28,4 +28,9 @@
 		<description>Управление «Вкл. — Выкл. — Авт.» с подсветкой. Переключатель на щите или в посту.</description>
 		<TPL>Prj_Dvigatel_Avt</TPL>
 	</project>
+	<project id="4">
+		<name>Два асинхронных двигателя с режимом «Авт.»</name>
+		<description>Два двигателя одинаковой мощности. Общий щит и два отдельных переключателя на щите или в одном посту.</description>
+		<TPL>Prj_Dvigateli_Para</TPL>
+	</project>
 </projects>

@@ -148,12 +148,12 @@
     </SHT>
     <SHT><SNAME>Схема автоматизации</SNAME><TYPE>схема автоматизации</TYPE><FMT>A4</FMT></SHT>
     <SHT><SNAME>Схема электрическая принципиальная</SNAME><TYPE>схема принципиальная</TYPE><FMT>A3</FMT>
-     <CAPTION Y="164" NOTE="см. лист {feedback_sheet}">Обратная связь «Пускатель включён»</CAPTION>
+     <CAPTION Y="159" NOTE="см. лист {feedback_sheet}">Обратная связь «Пускатель включён»</CAPTION>
      <svg viewBox="0 0 420 297">
-      <path d="M 120 164 H 135 M 150 164 H 165" fill="none" stroke="#000000" stroke-width="0.2"/>
-      <text x="127.5" y="163.2" font-size="3.65" text-anchor="middle" class="text">501</text>
-      <text x="157.5" y="163.2" font-size="3.65" text-anchor="middle" class="text">502</text>
-      <g transform="translate(135 164)"><Bl Name="NO"><Pr bid="2">KM1</Pr></Bl></g>
+      <path d="M 120 159 H 135 M 150 159 H 165" fill="none" stroke="#000000" stroke-width="0.2"/>
+      <text x="127.5" y="158.2" font-size="3.65" text-anchor="middle" class="text">501</text>
+      <text x="157.5" y="158.2" font-size="3.65" text-anchor="middle" class="text">502</text>
+      <g transform="translate(135 159)"><Bl Name="NO"><Pr bid="2">KM1</Pr></Bl></g>
      </svg>
     </SHT>
     <SHT><SNAME>Схема внешних соединений</SNAME><TYPE>схема внешних соединений</TYPE><FMT>A3</FMT></SHT>
