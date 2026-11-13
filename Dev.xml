@@ -1,0 +1,7 @@
+<Bl Name="Корпус цифрового устройства">
+ <svg viewBox="-1 -7 107 28" xmlns="http://www.w3.org/2000/svg">
+  <rect id="1" x="0" y="0" width="105" height="20" fill="none" stroke="#000000" stroke-width="0.2"/>
+  <text id="2" x="52.5" y="-2" font-size="5.11" class="text" text-anchor="middle">A1</text>
+  <text id="3" x="52.5" y="5" font-size="3.65" class="text" text-anchor="middle"/>
+ </svg>
+</Bl>

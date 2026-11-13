@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Prj Name="АВР двух насосов">
+ <var id="len1" name="Длина силового кабеля ЩА — M1, м" type="i" default="20" min="1" max="500"/>
+ <var id="len2" name="Длина силового кабеля ЩА — M2, м" type="i" default="20" min="1" max="500"/>
+ <var id="pds_len" name="Длина кабеля реле перепада, м" type="i" default="15" min="1" max="500"/>
+ <var id="room_l" name="Длина помещения, м" type="i" default="14" min="12" max="30"/>
+ <var id="room_w" name="Ширина помещения, м" type="i" default="6" min="3" max="14"/>
+
+ <!-- Общий щит, общий корпус поста и общий контрольный кабель задаются один раз. -->
+ <OBJS>
+  <OBJ><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW><OBJS/></OBJ>
+  <OBJ id="pds"><SNAME>Реле перепада давления</SNAME><POS>PDS1</POS><TPL>RD55</TPL>
+   <PRM>Исполнение и уставка по расчётному перепаду</PRM><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+  </OBJ>
+  <OBJ id="plc"><SNAME>Программируемое реле</SNAME><POS>A1</POS><TPL>PR200</TPL><MARK>ПР200-24.1.2.0</MARK><MAKER>ОВЕН</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+  <OBJ id="plc-breaker"><SNAME>Автоматический выключатель</SNAME><POS>QF3</POS><PRM>1P, для цепи 24 В DC</PRM><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+  <OBJ id="pump1"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н1</POS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+  <OBJ id="pump2"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н2</POS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+  <OBJ id="pds-cable"><SNAME>Кабель контрольный реле перепада</SNAME><POS>3</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 4х1,5</MARK><QTY>{pds_len}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>PDS1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+  </OBJ>
+ </OBJS>
+
+ <NOTES>
+  <svg viewBox="0 0 210 297">
+   <text x="112.5" y="15" font-size="7.3" text-anchor="middle" class="text">ОБЩИЕ УКАЗАНИЯ</text>
+   <text x="35" y="26" font-size="3.65" class="text">Проектом предусмотрен АВР двух параллельных насосов Н1 и Н2. Двигатели M1 и M2 имеют одинаковую мощность</text>
+   <text x="25" y="31" font-size="3.65" class="text">{power} кВт. Насосы заказаны в технологической части проекта.</text>
+   <text x="35" y="39" font-size="3.65" class="text">Управление выполняется с общего щита ЩА переключателями SA1 и SA2. В режиме «Авт.» запрос работы поступает по</text>
+   <text x="25" y="44" font-size="3.65" class="text">Modbus RTU. После завершения рабочего цикла насосы чередуются.</text>
+   <text x="35" y="52" font-size="3.65" class="text">При отказе рабочего насоса ПР200 снимает команду и после отключения его пускателя включает резервный насос.</text>
+   <text x="25" y="57" font-size="3.65" class="text">Пуск проверяется по обратной связи от пускателя и перепаду давления. Уставку перепада и задержки задают при наладке.</text>
+  </svg>
+ </NOTES>
+
+ <SPEC><OBJS>
+  <OBJ><SNAME>1. Электрооборудование по месту</SNAME><OBJS>
+   <OBJ><REF>pds</REF></OBJ>
+  </OBJS></OBJ>
+  <OBJ><SNAME>2. Электроаппаратура, устанавливаемая в щит</SNAME><OBJS><OBJ><REF>plc-breaker</REF></OBJ><OBJ><REF>plc</REF></OBJ></OBJS></OBJ>
+  <OBJ><SNAME>3. Кабельные изделия</SNAME><OBJS>
+   <OBJ><REF>pds-cable</REF></OBJ>
+  </OBJS></OBJ>
+ </OBJS></SPEC>
+
+ <SHEET_LAYOUT TYPE="схема автоматизации" COLUMN_WIDTH="48" CUSTOM_TABLE="true" INSTRUMENT_OFFSET_X="2.5" INSTRUMENT_OFFSET_Y="40" ADDRESS_CONTROL="true">
+  <svg viewBox="0 0 210 297"><Bl Name="AvrSA"/></svg>
+ </SHEET_LAYOUT>
+ <SHEET_LAYOUT TYPE="схема внешних соединений" TABLE_Y="48"/>
+ <EXTRA_SHEET BEFORE="схема принципиальная">
+  <SNAME>Схема электрическая принципиальная управления АВР</SNAME><TYPE>текст</TYPE><FMT>A3</FMT>
+  <svg viewBox="0 0 420 297"><Bl Name="AvrSP"/></svg>
+ </EXTRA_SHEET>
+ <!-- Два экземпляра одного привода: общие параметры берутся из проекта пары. -->
+ <MODULES TPL="Prj_Dvigatel_Avt" VARS="power">
+  <MODULE ID="1" Y="0">
+   <PARAM NAME="control">auto_panel</PARAM><PARAM NAME="k1_sheet">4</PARAM><PARAM NAME="feedback_sheet">4</PARAM>
+
+   <MAP FROM="K1" TO="A1-Q1"/>
+   <SET POS="K1"><TPL>PrQ</TPL><CONTACT_IN>16</CONTACT_IN><CONTACT_OUT>15</CONTACT_OUT></SET>
+   <ATTACH FROM="ЩА" TO="ЩА"/>
+   <OMIT>spec-post-case</OMIT><OMIT>spec-21</OMIT>
+   <SHOW POS="M1" TYPE="схема автоматизации" OFFSET="-7.5 -33"/>
+   <SHOW POS="SA1-HL" TYPE="схема автоматизации"/>
+   <LNK><TYPE>сигнализация</TYPE><FROM><SNAME>SA1</SNAME><PIN>SA3</PIN></FROM><TO><SNAME>SA1-HL</SNAME><PIN>SA1</PIN></TO></LNK>
+  </MODULE>
+  <MODULE ID="2" Y="142" CHAIN_OFFSET="8" FEEDBACK_OFFSET="2">
+   <PARAM NAME="len1">{len2}</PARAM><PARAM NAME="control">auto_panel</PARAM><PARAM NAME="k1_sheet">4</PARAM><PARAM NAME="feedback_sheet">4</PARAM>
+   <MAP FROM="M1" TO="M2"/><MAP FROM="Ввод" TO="Ввод 2"/><MAP FROM="QF1" TO="QF2"/><MAP FROM="KM1" TO="KM2"/>
+   <MAP FROM="SA1" TO="SA2"/><MAP FROM="SA1-HL" TO="SA2-HL"/><MAP FROM="K1" TO="A1-Q3"/><MAP FROM="XT1" TO="XT2"/>
+   <MAP FROM="1" TO="2"/>
+   <SET POS="K1"><TPL>PrQ</TPL><CONTACT_IN>19</CONTACT_IN><CONTACT_OUT>18</CONTACT_OUT></SET>
+   <ATTACH FROM="ЩА" TO="ЩА"/>
+   <OMIT>spec-post-case</OMIT><OMIT>spec-21</OMIT>
+   <SHOW POS="M1" TYPE="схема автоматизации" OFFSET="-55.5 -7"/>
+   <SHOW POS="SA1-HL" TYPE="схема автоматизации"/>
+   <LNK><TYPE>сигнализация</TYPE><FROM><SNAME>SA2</SNAME><PIN>SA3</PIN></FROM><TO><SNAME>SA2-HL</SNAME><PIN>SA1</PIN></TO></LNK>
+  </MODULE>
+ </MODULES>
+</Prj>

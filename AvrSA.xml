@@ -1,0 +1,41 @@
+<Bl Name="Два насоса на параллельных ветвях с контролем перепада">
+ <svg viewBox="20 8 170 217" xmlns="http://www.w3.org/2000/svg">
+  <Bl Name="Pmp2"/>
+  <!-- Парные номера на концах связей по листу 11 КГД-ФТС5-Р-АК. -->
+  <Bl Name="Tap" transform="translate(56 45)"><Pr bid="1">1</Pr></Bl>
+  <Bl Name="Tap" transform="translate(155 45)"><Pr bid="1">2</Pr></Bl>
+  <g transform="translate(-11.5 40)">
+   <path d="M 48 97.5 H 185 V 185 H 48 Z M 48 122.5 H 185 M 48 153 H 185
+            M 68 97.5 V 185 M 54 153 V 185 M 54 161 H 185 M 54 169 H 185 M 54 177 H 185"
+         fill="none" stroke="#000000" stroke-width="0.4"/>
+   <text x="0" y="0" transform="translate(59 110) rotate(-90)" font-size="5.11" class="text" text-anchor="middle">По месту</text>
+   <text x="0" y="0" transform="translate(56 137.75) rotate(-90)" font-size="5.11" class="text" text-anchor="middle">Щит</text>
+   <text x="0" y="0" transform="translate(63 137.75) rotate(-90)" font-size="5.11" class="text" text-anchor="middle">ЩА</text>
+   <text x="0" y="0" transform="translate(52 169) rotate(-90)" font-size="3.65" class="text" text-anchor="middle">ПР200</text>
+   <text x="61" y="158.5" font-size="3.65" class="text" text-anchor="middle">AI</text>
+   <text x="61" y="166.5" font-size="3.65" class="text" text-anchor="middle">DI</text>
+   <text x="61" y="174.5" font-size="3.65" class="text" text-anchor="middle">DO</text>
+   <text x="61" y="182.5" font-size="3.65" class="text" text-anchor="middle">RS-485</text>
+   <circle cx="81" cy="110" r="6" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+   <path d="M 76.2 106.4 L 74 104.75 V 75.5 M 85.8 106.4 L 88 104.75 V 75.5
+            M 99 137.5 V 75.5 M 147 137.5 V 75.5"
+         fill="none" stroke="#000000" stroke-width="0.2"/>
+   <path d="M 81 116 V 165 M 99 147.5 V 173 M 147 147.5 V 173" fill="none" stroke="#000000" stroke-width="0.2" stroke-dasharray="2 1"/>
+   <text x="81" y="109" font-size="3.65" class="text" text-anchor="middle">PDS</text>
+   <text x="81" y="113.5" font-size="3.65" class="text" text-anchor="middle">PDS1</text>
+   <text x="74" y="74.5" font-size="3.65" class="text" text-anchor="middle">1</text>
+   <text x="0" y="0" transform="translate(72 95.5) rotate(-90)" font-size="3.65" class="text">Всасывание</text>
+   <text x="88" y="74.5" font-size="3.65" class="text" text-anchor="middle">2</text>
+   <text x="0" y="0" transform="translate(86 95.5) rotate(-90)" font-size="3.65" class="text">Напор</text>
+   <text x="99" y="74.5" font-size="3.65" class="text" text-anchor="middle">3</text>
+   <text x="0" y="0" transform="translate(97 95.5) rotate(-90)" font-size="3.65" class="text">Управление</text>
+   <text x="147" y="74.5" font-size="3.65" class="text" text-anchor="middle">4</text>
+   <text x="0" y="0" transform="translate(145 95.5) rotate(-90)" font-size="3.65" class="text">Управление</text>
+   <circle cx="81" cy="165" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+   <circle cx="99" cy="165" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+   <circle cx="99" cy="173" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+   <circle cx="147" cy="165" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+   <circle cx="147" cy="173" r="0.8" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
+  </g>
+ </svg>
+</Bl>

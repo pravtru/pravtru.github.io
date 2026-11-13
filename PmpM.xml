@@ -1,0 +1,11 @@
+<Bl Name="Насос с двигателем и адресным выводом">
+ <var id="PUMP" default="Н1"/>
+ <svg viewBox="-15 -12 21 34" xmlns="http://www.w3.org/2000/svg">
+  <Bl Name="Pmp"><Pr bid="1">{PUMP}</Pr></Bl>
+  <path d="M -3.87 3.166 L -8.678 7.1 M -11 12 V 17"
+        fill="none" stroke="#000000" stroke-width="0.2"/>
+  <circle cx="-11" cy="9" r="3" fill="#FFFFFF" stroke="#000000" stroke-width="0.3"/>
+  <text x="-11" y="10.25" font-size="3.65" class="text" text-anchor="middle">M</text>
+  <text id="3" x="-11" y="21" font-size="3.65" class="text" text-anchor="middle">3</text>
+ </svg>
+</Bl>

@@ -46,14 +46,99 @@ function apply(root, values) {
   for(const t of Array.from(n.childNodes))if(t.nodeType===3)t.nodeValue=replace(t.nodeValue);
  }
 }
+function layoutDevices(svg) {
+ const node=(tag,attrs={},value='')=>{
+  const n=svg.ownerDocument.createElementNS('http://www.w3.org/2000/svg',tag);
+  for(const [key,v] of Object.entries(attrs))n.setAttribute(key,v);
+  if(value)n.textContent=value;
+  return n;
+ };
+ const pr=(bid,value,attrs={})=>node('Pr',{bid,...attrs},value);
+ const words=value=>value.trim().split(/\s+/).filter(Boolean);
+ for(const device of Array.from(svg.querySelectorAll('Device'))){
+  const groups=children(device,'Group'),pins=groups.flatMap(g=>children(g,'Pin'));
+  const byNumber=new Map(pins.map(p=>[p.getAttribute('n'),p]));
+  const selection=device.getAttribute('pins')||'auto';
+  const visible=new Set(selection==='*'?byNumber.keys():
+   selection==='auto'||selection==='{pins}'?pins.filter(p=>p.parentElement.getAttribute('block')!=='Eth').map(p=>p.getAttribute('n')):words(selection));
+  for(const number of visible){
+   const pin=byNumber.get(number);
+   if(!pin)throw Error('Неизвестная клемма цифрового устройства: '+number);
+   for(const required of words(pin.getAttribute('requires')||''))visible.add(required);
+  }
+  const compact=device.getAttribute('layout')==='compact';
+  const width=compact?24:105,pitch=5,groupSpace=compact?3:8;
+  const layout=node('g'),body=node('Bl',{Name:'Dev'});
+  layout.append(body);
+  let height=20;
+  let leftMargin=1,rightMargin=1;
+  for(const side of ['L','R']){
+   const right=side==='R';
+   let y=compact?2:12;
+   for(const group of groups.filter(g=>g.getAttribute('side')===side)){
+    const rows=children(group,'Pin').filter(p=>visible.has(p.getAttribute('n')));
+    if(!rows.length)continue;
+    const ref=node('Bl',{Name:group.getAttribute('block'),transform:'translate(0 '+y+')'});
+    const contents=pr('2','');
+    const heading=pr('1',group.getAttribute('title'),right?{x:width-1,'text-anchor':'end'}:{});
+    if(compact)heading.setAttribute('display','none');
+    ref.append(heading,contents);
+    let rowY=0;
+    rows.forEach(pin=>{
+     const gap=pin.getAttribute('gap')||'';
+     rowY+=pitch+(/^\d+$/.test(gap)?Number(gap):0);
+     const number=pin.getAttribute('n');
+     const ethernet=group.getAttribute('block')==='Eth';
+     const terminalWidth=ethernet||number.length<=2?pitch:9;
+     let x=right?width-terminalWidth:0;
+     if(ethernet){
+      x=right?width:-terminalWidth;
+      if(right)rightMargin=terminalWidth+1;
+      else leftMargin=terminalWidth+1;
+     }
+     const row=node('Bl',{Name:ethernet?'EthP':'Trm',transform:'translate('+x+' '+rowY+')'});
+     const caption=pr('3',pin.getAttribute('label'),right?{x:-2,'text-anchor':'end'}:{x:terminalWidth+2,'text-anchor':'start'});
+     if(compact&&!ethernet)caption.setAttribute('display','none');
+     row.append(pr('1','',{width:terminalWidth}),pr('2',number,{x:terminalWidth/2}),caption,
+      pr('4','',{PIN:number,cx:right?terminalWidth:0}));
+     if(ethernet&&!right)row.append(pr('5','',{transform:'translate(5 0) scale(-1 1)'}));
+     contents.append(row);
+    });
+    layout.append(ref);
+    y+=groupSpace+rowY;
+   }
+   height=Math.max(height,y);
+  }
+  const pos=device.getAttribute('pos');
+  body.append(pr('1','',{height,width}),pr('2',!pos||pos==='{POS}'?'A1':pos,{x:width/2}),
+   pr('3',device.getAttribute('mark'),compact?{x:width/2,display:'none'}:{x:width/2}));
+  if(svg.localName==='svg')svg.setAttribute('viewBox',`${-leftMargin} -7 ${width+leftMargin+rightMargin} ${height+8}`);
+  device.replaceWith(layout);
+ }
+}
+function deviceOptions(typical,scope) {
+ const result={...scope};
+ for(const parameter of children(typical,'var').filter(v=>v.getAttribute('device')==='true')){
+  const id=parameter.getAttribute('id'),value=result[id]||parameter.getAttribute('default');
+  const option=children(parameter,'opt').find(o=>o.getAttribute('value')===value);
+  if(!option)throw Error('Неизвестное исполнение цифрового устройства: '+value);
+  result[id]=value;
+  for(const attr of Array.from(option.attributes)){
+   if(attr.name.startsWith('data-'))result[attr.name.slice(5)]=attr.value;
+  }
+ }
+ return result;
+}
 async function expand(svg, tip, depth=0) {
  if(depth>25)throw Error('Слишком глубокая вложенность изображений');
+ layoutDevices(svg);
  for(const ref of Array.from(svg.querySelectorAll('Bl,Bl0,El,Mdl'))){
   if(!svg.contains(ref))continue;
   const name=ref.getAttribute('Name');
   if(ref.localName==='Bl0'||name==='Font'){ref.remove();continue;}
   const obj=await load(name),views=children(obj,'svg');
-  const view=obj.localName==='Bl'?views[0]:views.find(v=>v.getAttribute('tip')===tip)||views[0];
+  const viewTip=ref.getAttribute('tip')||tip;
+  const view=obj.localName==='Bl'?views[0]:views.find(v=>v.getAttribute('tip')===viewTip)||views[0];
   if(!view)throw Error('Нет изображения: '+name);
   const g=document.createElementNS('http://www.w3.org/2000/svg','g');
   if(ref.hasAttribute('transform'))g.setAttribute('transform',ref.getAttribute('transform'));
@@ -71,7 +156,7 @@ async function expand(svg, tip, depth=0) {
    const id=v.getAttribute('id'),override=params.filter(p=>p.getAttribute('bid')===id).at(-1);
    local[id]=override?override.textContent:v.getAttribute('default')||'';
   }
-  if(Object.keys(local).length)apply(g,local);
+  if(Object.keys(local).length)apply(g,deviceOptions(obj,local));
   await expand(g,tip,depth+1);ref.replaceWith(g);
  }
 }
@@ -94,7 +179,9 @@ async function drawing(view, parent, label, tip, scope={}) {
  const card=el('article',null,parent,'view');el('h3',label,card);
  const area=el('div',null,card,'drawing');
  try{
-  const svg=view.cloneNode(true);await expand(svg,tip);apply(svg,scope);
+  const svg=view.cloneNode(true);
+  for(const device of svg.querySelectorAll('Device'))apply(device,scope);
+  await expand(svg,tip);apply(svg,scope);
 
   const markup=xml(svg);area.innerHTML=markup;
   const details=el('details',null,card);el('summary','SVG',details);el('pre',markup,details);
@@ -102,7 +189,7 @@ async function drawing(view, parent, label, tip, scope={}) {
 }
 let original, values={};
 async function render() {
- const root=original.cloneNode(true);apply(root,values);
+ const root=original.cloneNode(true);apply(root,deviceOptions(original,values));
  const content=document.getElementById('content');content.replaceChildren();
  const sections={};for(const [id,title] of groups){const section=el('section',null,content);section.id=id;el('h2',title,section);sections[id]=section;}
  const general=sections.general;
@@ -112,6 +199,18 @@ async function render() {
   else {input.type=v.getAttribute('type')==='i'?'number':'text';for(const a of ['min','max'])if(v.hasAttribute(a))input.setAttribute(a,v.getAttribute(a));}
   input.setAttribute('aria-label',v.getAttribute('name'));input.value=values[v.getAttribute("id")];input.addEventListener('change',async()=>{values[v.getAttribute("id")]=input.value;await render();});
  }}
+ for(const v of vars.filter(v=>v.getAttribute('device')==='true')){
+  const id=v.getAttribute('id'),details=el('details',null,general);
+  el('summary','Все модификации',details);
+  const list=el('ul',null,details);
+  for(const option of children(v,'opt')){
+   const url=new URL(location.href);
+   url.searchParams.set(id,option.getAttribute('value'));
+   url.searchParams.set('device_layout',values.device_layout);
+   url.hash='SP';
+   el('a',option.getAttribute('name'),el('li',null,list)).href=url.href;
+  }
+ }
  el('h3','Тексты и требования по вставке',general);
  const skip=new Set(['svg','var','DOCS','OBJS','LNKS','Elements','MARK','MAKER','UNIT','QTY']);
  const notes=Array.from(root.children).filter(n=>!skip.has(n.localName));
@@ -130,12 +229,22 @@ async function render() {
    if(!children(o,'VIEW').some(v=>text(v,'TYPE')===type)||!text(o,'TPL'))continue;
    const typical=await load(text(o,'TPL')),m=await material(o);
    const scope={...values,POS:text(o,'POS'),SNAME:text(m,'SNAME'),MARK:text(m,'MARK'),QTY:text(m,'QTY'),UNIT:text(m,'UNIT')};
+   if(text(o,'PINS'))scope.pins=text(o,'PINS');
+   if(text(o,'LAYOUT'))scope.device_layout=text(o,'LAYOUT');
    const positions=new Set([o,...o.querySelectorAll('OBJ')].map(n=>text(n,'POS')).filter(Boolean));
    for(const link of root.querySelectorAll('LNKS > LNK'))for(const end of ['FROM','TO']){
     const endpoint=children(link,end)[0];if(endpoint&&positions.has(text(endpoint,'SNAME')))scope['LNK_'+text(endpoint,'PIN')]=text(link,'POS');
    }
    for(const view of children(typical,'svg').filter(v=>v.getAttribute('tip')===id)){
-    await drawing(view,images,[text(o,'POS'),text(m,'SNAME'),view.getAttribute('PART')].filter(Boolean).join(' — '),id,scope);count++;
+    const viewScope=deviceOptions(typical,scope);
+    const prepared=view.cloneNode(true);
+    const device=prepared.querySelector('Device');
+    if(device)apply(device,viewScope);
+    if(device&&(!viewScope.pins||viewScope.pins==='auto')){
+     device.setAttribute('pins',children(device,'Group').flatMap(group=>children(group,'Pin')
+      .map(pin=>pin.getAttribute('n')).filter(number=>group.getAttribute('block')!=='Eth'||Object.hasOwn(scope,'LNK_'+number))).join(' '));
+    }
+    await drawing(prepared,images,[text(o,'POS'),text(m,'SNAME'),view.getAttribute('PART')].filter(Boolean).join(' — '),id,viewScope);count++;
    }
   }
   for(const doc of docs){for(const sheet of Array.from(doc.querySelectorAll('SHTS > SHT'))){
@@ -170,10 +279,15 @@ async function render() {
  if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();
 }
 (async()=>{try{
- const name=new URLSearchParams(location.search).get('name');if(!name)throw Error('Выберите объект в каталоге.');
+ const query=new URLSearchParams(location.search);
+ const name=query.get('name');if(!name)throw Error('Выберите объект в каталоге.');
  original=await load(name);document.getElementById('title').textContent=original.getAttribute('Name')||name;
  document.title=(original.getAttribute('Name')||name)+' — pravtru';document.getElementById('file').textContent=name+'.xml';document.getElementById('source').textContent=xml(original);
- for(const v of children(original,'var'))values[v.getAttribute("id")]=v.getAttribute('default')||'';
+ for(const v of children(original,'var')){
+  const id=v.getAttribute('id'),requested=query.get(id);
+  values[id]=requested!==null&&children(v,'opt').some(o=>o.getAttribute('value')===requested)
+   ?requested:v.getAttribute('default')||'';
+ }
  for(const [id,title] of groups){const a=el('a',title,document.getElementById('sections'));a.href='#'+id;}
  const font=await load('Font');
  if(!document.getElementById('gost-font')){const style=el('style',Array.from(font.querySelectorAll('style')).map(n=>n.textContent).join('\n'),document.head);style.id='gost-font';}

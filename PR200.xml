@@ -1,0 +1,133 @@
+<El Name="Программируемое реле ОВЕН ПР200">
+ <TYPE>прибор</TYPE><MARK>ПР200-24.1.2.0</MARK><MAKER>ОВЕН</MAKER><UNIT>шт</UNIT>
+ <!-- Назначение клемм и перечень исполнений: руководство ОВЕН ПР200, приложение А. -->
+ <var id="MARK" name="Модификация ПР200" default="ПР200-24.1.2.0" device="true">
+  <opt value="ПР200-220.1.0.0" name="ПР200-220.1.0.0" data-supply="220" data-input="230" data-io="1" data-slots="0"/>
+  <opt value="ПР200-220.1.1.0" name="ПР200-220.1.1.0" data-supply="220" data-input="230" data-io="1" data-slots="1"/>
+  <opt value="ПР200-220.1.2.0" name="ПР200-220.1.2.0" data-supply="220" data-input="230" data-io="1" data-slots="2"/>
+  <opt value="ПР200-220.2.0.0" name="ПР200-220.2.0.0" data-supply="220" data-input="230" data-io="2" data-slots="0"/>
+  <opt value="ПР200-220.2.1.0" name="ПР200-220.2.1.0" data-supply="220" data-input="230" data-io="2" data-slots="1"/>
+  <opt value="ПР200-220.2.2.0" name="ПР200-220.2.2.0" data-supply="220" data-input="230" data-io="2" data-slots="2"/>
+  <opt value="ПР200-220.3.0.0" name="ПР200-220.3.0.0" data-supply="220" data-input="230" data-io="3" data-slots="0"/>
+  <opt value="ПР200-220.3.1.0" name="ПР200-220.3.1.0" data-supply="220" data-input="230" data-io="3" data-slots="1"/>
+  <opt value="ПР200-220.3.2.0" name="ПР200-220.3.2.0" data-supply="220" data-input="230" data-io="3" data-slots="2"/>
+  <opt value="ПР200-220.4.0.0" name="ПР200-220.4.0.0" data-supply="220" data-input="230" data-io="4" data-slots="0"/>
+  <opt value="ПР200-220.4.1.0" name="ПР200-220.4.1.0" data-supply="220" data-input="230" data-io="4" data-slots="1"/>
+  <opt value="ПР200-220.4.2.0" name="ПР200-220.4.2.0" data-supply="220" data-input="230" data-io="4" data-slots="2"/>
+  <opt value="ПР200-220.5.0.0" name="ПР200-220.5.0.0" data-supply="220" data-input="230" data-io="5" data-slots="0"/>
+  <opt value="ПР200-220.5.1.0" name="ПР200-220.5.1.0" data-supply="220" data-input="230" data-io="5" data-slots="1"/>
+  <opt value="ПР200-220.5.2.0" name="ПР200-220.5.2.0" data-supply="220" data-input="230" data-io="5" data-slots="2"/>
+  <opt value="ПР200-220.21.0.0" name="ПР200-220.21.0.0" data-supply="220" data-input="24" data-io="1" data-slots="0"/>
+  <opt value="ПР200-220.21.1.0" name="ПР200-220.21.1.0" data-supply="220" data-input="24" data-io="1" data-slots="1"/>
+  <opt value="ПР200-220.21.2.0" name="ПР200-220.21.2.0" data-supply="220" data-input="24" data-io="1" data-slots="2"/>
+  <opt value="ПР200-220.22.0.0" name="ПР200-220.22.0.0" data-supply="220" data-input="24" data-io="2" data-slots="0"/>
+  <opt value="ПР200-220.22.1.0" name="ПР200-220.22.1.0" data-supply="220" data-input="24" data-io="2" data-slots="1"/>
+  <opt value="ПР200-220.22.2.0" name="ПР200-220.22.2.0" data-supply="220" data-input="24" data-io="2" data-slots="2"/>
+  <opt value="ПР200-220.23.0.0" name="ПР200-220.23.0.0" data-supply="220" data-input="24" data-io="3" data-slots="0"/>
+  <opt value="ПР200-220.23.1.0" name="ПР200-220.23.1.0" data-supply="220" data-input="24" data-io="3" data-slots="1"/>
+  <opt value="ПР200-220.23.2.0" name="ПР200-220.23.2.0" data-supply="220" data-input="24" data-io="3" data-slots="2"/>
+  <opt value="ПР200-220.24.0.0" name="ПР200-220.24.0.0" data-supply="220" data-input="24" data-io="4" data-slots="0"/>
+  <opt value="ПР200-220.24.1.0" name="ПР200-220.24.1.0" data-supply="220" data-input="24" data-io="4" data-slots="1"/>
+  <opt value="ПР200-220.24.2.0" name="ПР200-220.24.2.0" data-supply="220" data-input="24" data-io="4" data-slots="2"/>
+  <opt value="ПР200-220.25.0.0" name="ПР200-220.25.0.0" data-supply="220" data-input="24" data-io="5" data-slots="0"/>
+  <opt value="ПР200-220.25.1.0" name="ПР200-220.25.1.0" data-supply="220" data-input="24" data-io="5" data-slots="1"/>
+  <opt value="ПР200-220.25.2.0" name="ПР200-220.25.2.0" data-supply="220" data-input="24" data-io="5" data-slots="2"/>
+  <opt value="ПР200-24.1.0.0" name="ПР200-24.1.0.0" data-supply="24" data-input="24" data-io="1" data-slots="0"/>
+  <opt value="ПР200-24.1.1.0" name="ПР200-24.1.1.0" data-supply="24" data-input="24" data-io="1" data-slots="1"/>
+  <opt value="ПР200-24.1.2.0" name="ПР200-24.1.2.0" data-supply="24" data-input="24" data-io="1" data-slots="2"/>
+  <opt value="ПР200-24.2.0.0" name="ПР200-24.2.0.0" data-supply="24" data-input="24" data-io="2" data-slots="0"/>
+  <opt value="ПР200-24.2.1.0" name="ПР200-24.2.1.0" data-supply="24" data-input="24" data-io="2" data-slots="1"/>
+  <opt value="ПР200-24.2.2.0" name="ПР200-24.2.2.0" data-supply="24" data-input="24" data-io="2" data-slots="2"/>
+  <opt value="ПР200-24.3.0.0" name="ПР200-24.3.0.0" data-supply="24" data-input="24" data-io="3" data-slots="0"/>
+  <opt value="ПР200-24.3.1.0" name="ПР200-24.3.1.0" data-supply="24" data-input="24" data-io="3" data-slots="1"/>
+  <opt value="ПР200-24.3.2.0" name="ПР200-24.3.2.0" data-supply="24" data-input="24" data-io="3" data-slots="2"/>
+  <opt value="ПР200-24.4.0.0" name="ПР200-24.4.0.0" data-supply="24" data-input="24" data-io="4" data-slots="0"/>
+  <opt value="ПР200-24.4.1.0" name="ПР200-24.4.1.0" data-supply="24" data-input="24" data-io="4" data-slots="1"/>
+  <opt value="ПР200-24.4.2.0" name="ПР200-24.4.2.0" data-supply="24" data-input="24" data-io="4" data-slots="2"/>
+  <opt value="ПР200-24.5.0.0" name="ПР200-24.5.0.0" data-supply="24" data-input="24" data-io="5" data-slots="0"/>
+  <opt value="ПР200-24.5.1.0" name="ПР200-24.5.1.0" data-supply="24" data-input="24" data-io="5" data-slots="1"/>
+  <opt value="ПР200-24.5.2.0" name="ПР200-24.5.2.0" data-supply="24" data-input="24" data-io="5" data-slots="2"/>
+ </var>
+ <var id="pins" name="Видимые клеммы через пробел (* — все)" default="*"/>
+ <var id="device_layout" name="Компоновка корпуса" default="standard">
+  <opt value="standard" name="Обычная"/>
+  <opt value="compact" name="Компактная"/>
+ </var>
+ <svg tip="SP" viewBox="-1 -7 107 170" xmlns="http://www.w3.org/2000/svg">
+  <Device pos="{POS}" mark="{MARK}" pins="{pins}" layout="{device_layout}">
+   <Group block="P230" side="L" IF="supply=220">
+    <Pin n="1" label="~230 В" requires="2"/>
+    <Pin n="2" label="~230 В" requires="1"/>
+   </Group>
+   <Group block="P24" side="L" IF="supply=24">
+    <Pin n="1" label="0 В" requires="2"/>
+    <Pin n="2" label="+24 В" requires="1"/>
+   </Group>
+   <Group block="DI" side="L" title="Дискретные входы {input} В">
+    <Pin n="3" label="COM DI1–DI4"/>
+    <Pin id="DI1" n="4" label="DI1" requires="3"/>
+    <Pin id="DI2" n="5" label="DI2" requires="3"/>
+    <Pin id="DI3" n="6" label="DI3" requires="3"/>
+    <Pin n="7" label="DI4" requires="3"/>
+    <Pin n="8" label="COM DI5–DI8"/>
+    <Pin n="9" label="DI5" requires="8"/>
+    <Pin n="10" label="DI6" requires="8"/>
+    <Pin n="11" label="DI7" requires="8"/>
+    <Pin n="12" label="DI8" requires="8"/>
+   </Group>
+   <Group block="P24" side="L" title="Встроенный выход 24 В" IF="supply=220 io&gt;1">
+    <Pin n="13" label="+24 В" requires="14"/>
+    <Pin n="14" label="0 В" requires="13"/>
+   </Group>
+   <Group block="AI" side="L" title="Универсальные входы" IF="io&gt;1">
+    <Pin n="27" label="AI1" requires="28"/>
+    <Pin n="28" label="COM AI1–AI2"/>
+    <Pin n="29" label="AI2" requires="28"/>
+    <Pin n="30" label="AI3" requires="31"/>
+    <Pin n="31" label="COM AI3–AI4"/>
+    <Pin n="32" label="AI4" requires="31"/>
+   </Group>
+   <Group block="DR" side="R">
+    <Pin n="15" label="DO1" requires="16"/>
+    <Pin n="16" label="COM DO1–DO2"/>
+    <Pin n="17" label="DO2" requires="16"/>
+    <Pin id="DO3" n="18" label="DO3" requires="19"/>
+    <Pin n="19" label="COM DO3–DO4"/>
+    <Pin n="20" label="DO4" requires="19"/>
+    <Pin n="21" label="DO5" requires="22"/>
+    <Pin n="22" label="COM DO5–DO6"/>
+    <Pin n="23" label="DO6" requires="22"/>
+    <Pin n="24" label="DO7" requires="25" IF="io&gt;1"/>
+    <Pin n="25" label="COM DO7–DO8" IF="io&gt;1"/>
+    <Pin n="26" label="DO8" requires="25" IF="io&gt;1"/>
+   </Group>
+   <Group block="AO" side="R" title="Аналоговые выходы 4–20 мА" IF="io=2">
+    <Pin n="37" label="AO1 −" requires="38"/>
+    <Pin n="38" label="AO1 +" requires="37"/>
+    <Pin n="39" label="AO2 −" requires="40"/>
+    <Pin n="40" label="AO2 +" requires="39"/>
+   </Group>
+   <Group block="AO" side="R" title="Аналоговые выходы 0–10 В" IF="io=4">
+    <Pin n="37" label="V−" requires="38"/>
+    <Pin n="38" label="V+" requires="37"/>
+    <Pin n="39" label="AO1" requires="37 38"/>
+    <Pin n="40" label="AO2" requires="37 38"/>
+   </Group>
+   <Group block="DT" side="R" title="Выходы с оптопарой" IF="io=5">
+    <Pin n="37" label="К1" requires="39"/>
+    <Pin n="38" label="К2" requires="39"/>
+    <Pin n="39" label="COM К1–К4"/>
+    <Pin n="40" label="К3" requires="39"/>
+    <Pin n="41" label="К4" requires="39"/>
+   </Group>
+   <Group block="R485" side="R" title="RS-485 (слот 1)" IF="slots&gt;0">
+    <Pin n="33" label="B" requires="34"/>
+    <Pin n="34" label="A" requires="33"/>
+   </Group>
+   <Group block="R485" side="R" title="RS-485 (слот 2)" IF="slots&gt;1">
+    <Pin n="35" label="B" requires="36"/>
+    <Pin n="36" label="A" requires="35"/>
+   </Group>
+  </Device>
+ </svg>
+</El>

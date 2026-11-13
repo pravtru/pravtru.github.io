@@ -33,4 +33,9 @@
 		<description>Два двигателя одинаковой мощности. Общий щит и два отдельных переключателя на щите или в одном посту.</description>
 		<TPL>Prj_Dvigateli_Para</TPL>
 	</project>
+	<project id="5">
+		<name>АВР двух насосов</name>
+		<description>Два насоса с чередованием и резервированием. Один общий щит, ПР200, РД55-ДД и связь RS-485.</description>
+		<TPL>Prj_AVR_Nasosov</TPL>
+	</project>
 </projects>

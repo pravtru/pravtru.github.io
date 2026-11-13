@@ -1,0 +1,7 @@
+<Bl Name="Насос на схеме автоматизации">
+ <svg viewBox="-6 -12 12 18" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#000000" stroke-width="0.7"/>
+  <polygon points="-3,-3.8 4.5,0 -3,3.8" fill="#000000"/>
+  <text id="1" x="0" y="-7" font-size="5.11" class="text" text-anchor="middle">Н1</text>
+ </svg>
+</Bl>

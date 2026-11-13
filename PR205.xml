@@ -1,0 +1,82 @@
+<El Name="Программируемое реле ОВЕН ПР205">
+ <TYPE>прибор</TYPE><MARK>ПР205-230.1211.22.2.0</MARK><MAKER>ОВЕН</MAKER><UNIT>шт</UNIT>
+ <var id="pins" name="Видимые клеммы через пробел (auto — без Ethernet, * — все)" default="auto"/>
+ <var id="device_layout" name="Компоновка корпуса" default="standard">
+  <opt value="standard" name="Обычная"/>
+  <opt value="compact" name="Компактная"/>
+ </var>
+ <svg tip="SP" viewBox="-1 -7 107 182" xmlns="http://www.w3.org/2000/svg">
+  <Device pos="{POS}" mark="ПР205-230.1211.22.2.0" pins="{pins}" layout="{device_layout}">
+   <Group block="P230" side="L">
+    <Pin n="1" label="~230 В" requires="2"/>
+    <Pin n="2" label="~230 В" requires="1"/>
+   </Group>
+   <Group block="P24" side="L" title="Выход 24 В">
+    <Pin n="3" label="0 В" requires="4"/>
+    <Pin n="4" label="+24 В" requires="3"/>
+   </Group>
+   <Group block="AI" side="L" title="Универсальные входы">
+    <Pin n="5" label="AI1 I" requires="7"/>
+    <Pin n="6" label="AI1 U" requires="7"/>
+    <Pin n="7" label="COM AI1–AI2"/>
+    <Pin n="8" label="AI2 U" requires="7"/>
+    <Pin n="9" label="AI2 I" requires="7"/>
+    <Pin n="10" label="AI3 I" requires="12"/>
+    <Pin n="11" label="AI3 U" requires="12"/>
+    <Pin n="12" label="COM AI3–AI4"/>
+    <Pin n="13" label="AI4 U" requires="12"/>
+    <Pin n="14" label="AI4 I" requires="12"/>
+   </Group>
+   <Group block="DI" side="L">
+    <Pin n="15" label="COM DI1–DI4"/>
+    <Pin n="16" label="DI1" requires="15"/>
+    <Pin n="17" label="DI2" requires="15"/>
+    <Pin n="18" label="DI3" requires="15"/>
+    <Pin n="19" label="DI4" requires="15"/>
+    <Pin n="20" label="COM DI5–DI6"/>
+    <Pin n="21" label="DI5" requires="20"/>
+    <Pin n="22" label="DI6" requires="20"/>
+    <Pin n="23" label="COM FDI1–FDI2"/>
+    <Pin n="24" label="FDI1" requires="23"/>
+    <Pin n="25" label="FDI2" requires="23"/>
+   </Group>
+   <Group block="Eth" side="R">
+    <Pin n="ETH" label="Eth"/>
+   </Group>
+   <Group block="AO" side="R">
+    <Pin n="26" label="V+ 24 В" requires="27"/>
+    <Pin n="27" label="V− 0 В" requires="26"/>
+    <Pin n="28" label="AO1" requires="26 29"/>
+    <Pin n="29" label="V− AO1" requires="27"/>
+    <Pin n="30" label="AO2" requires="26 31"/>
+    <Pin n="31" label="V− AO2" requires="27"/>
+    <Pin n="32" label="AO3" requires="26 33"/>
+    <Pin n="33" label="V− AO3" requires="27"/>
+   </Group>
+   <Group block="R485" side="R" title="RS-485 (1)">
+    <Pin n="34" label="B" requires="35"/>
+    <Pin n="35" label="A" requires="34"/>
+   </Group>
+   <Group block="R485" side="R" title="RS-485 (2)">
+    <Pin n="36" label="B" requires="37"/>
+    <Pin n="37" label="A" requires="36"/>
+   </Group>
+   <Group block="DR" side="R">
+    <Pin n="38" label="DO1" requires="39"/>
+    <Pin n="39" label="COM DO1–DO2"/>
+    <Pin n="40" label="DO2" requires="39"/>
+    <Pin n="41" label="DO3" requires="42"/>
+    <Pin n="42" label="COM DO3–DO4"/>
+    <Pin n="43" label="DO4" requires="42"/>
+    <Pin n="44" label="DO5" requires="45"/>
+    <Pin n="45" label="COM DO5–DO6"/>
+    <Pin n="46" label="DO6" requires="45"/>
+   </Group>
+   <Group block="DT" side="R">
+    <Pin n="47" label="DO7, C" requires="48"/>
+    <Pin n="48" label="COM DO7–DO8, E"/>
+    <Pin n="49" label="DO8, C" requires="48"/>
+   </Group>
+  </Device>
+ </svg>
+</El>
