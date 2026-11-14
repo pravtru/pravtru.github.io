@@ -1,0 +1,6 @@
+<El Name="Насос, гидравлическая часть">
+ <TYPE>насос</TYPE><UNIT>шт</UNIT>
+ <svg tip="SA" viewBox="-15 -12 21 34">
+  <Bl Name="PmpM"><Pr bid="PUMP">{POS}</Pr><Pr bid="3">{ADDRESS}</Pr></Bl>
+ </svg>
+</El>

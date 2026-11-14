@@ -1,4 +1,5 @@
 <El Name="Программируемое реле ОВЕН ПР200">
+ <FAMILY>ПР200</FAMILY>
  <TYPE>прибор</TYPE><MARK>ПР200-24.1.2.0</MARK><MAKER>ОВЕН</MAKER><UNIT>шт</UNIT>
  <!-- Назначение клемм и перечень исполнений: руководство ОВЕН ПР200, приложение А. -->
  <var id="MARK" name="Модификация ПР200" default="ПР200-24.1.2.0" device="true">
@@ -121,7 +122,7 @@
     <Pin n="41" label="К4" requires="39"/>
    </Group>
    <Group block="R485" side="R" title="RS-485 (слот 1)" IF="slots&gt;0">
-    <Pin n="33" label="B" requires="34"/>
+    <Pin id="RS1B" n="33" label="B" requires="34"/>
     <Pin n="34" label="A" requires="33"/>
    </Group>
    <Group block="R485" side="R" title="RS-485 (слот 2)" IF="slots&gt;1">

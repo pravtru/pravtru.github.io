@@ -13,7 +13,7 @@
    <Bl Name="Vlv" transform="translate(75 30)"/>
    <Bl Name="Vlv" transform="translate(136 30)"/>
    <Bl Name="Chk" transform="translate(120 30)"/>
-   <Bl Name="PmpM" transform="translate(96 30)"><Pr bid="PUMP">Н1</Pr><Pr bid="3">3</Pr></Bl>
+   <ObjView Name="pump1" tip="SA" transform="translate(96 30)"/>
   </g>
   <g id="pump-branch-2">
    <path d="M 66 60 H 71 M 79 60 H 91 M 101 60 H 116 M 124 60 H 132 M 140 60 H 145"
@@ -21,7 +21,7 @@
    <Bl Name="Vlv" transform="translate(75 60)"/>
    <Bl Name="Vlv" transform="translate(136 60)"/>
    <Bl Name="Chk" transform="translate(120 60)"/>
-   <Bl Name="PmpM" transform="translate(96 60)"><Pr bid="PUMP">Н2</Pr><Pr bid="3">4</Pr></Bl>
+   <ObjView Name="pump2" tip="SA" transform="translate(96 60)"/>
   </g>
  </svg>
 </Bl>

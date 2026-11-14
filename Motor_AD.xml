@@ -75,10 +75,10 @@
   <line x1="7.5" y1="25" x2="7.5" y2="37" stroke="#000000" stroke-width="0.2"/>
   <line x1="12.5" y1="25" x2="12.5" y2="37" stroke="#000000" stroke-width="0.2"/>
   <line x1="17.5" y1="25" x2="17.5" y2="37" stroke="#000000" stroke-width="0.2"/>
-  <text id="11" font-size="3.65" x="1.9" y="34" class="text" transform="rotate(-90 1.9 34)">{LNK_PE}</text>
-  <text id="12" font-size="3.65" x="6.9" y="34" class="text" transform="rotate(-90 6.9 34)">{LNK_U}</text>
-  <text id="13" font-size="3.65" x="11.9" y="34" class="text" transform="rotate(-90 11.9 34)">{LNK_V}</text>
-  <text id="14" font-size="3.65" x="16.9" y="34" class="text" transform="rotate(-90 16.9 34)">{LNK_W}</text>
+  <text id="11" font-size="3.65" x="1.9" y="31" class="text" text-anchor="middle" transform="rotate(-90 1.9 31)">{LNK_PE}</text>
+  <text id="12" font-size="3.65" x="6.9" y="31" class="text" text-anchor="middle" transform="rotate(-90 6.9 31)">{LNK_U}</text>
+  <text id="13" font-size="3.65" x="11.9" y="31" class="text" text-anchor="middle" transform="rotate(-90 11.9 31)">{LNK_V}</text>
+  <text id="14" font-size="3.65" x="16.9" y="31" class="text" text-anchor="middle" transform="rotate(-90 16.9 31)">{LNK_W}</text>
  </g>
  <circle cx="2.5" cy="37" r="0" PIN="PE"/><circle cx="7.5" cy="37" r="0" PIN="U"/><circle cx="12.5" cy="37" r="0" PIN="V"/><circle cx="17.5" cy="37" r="0" PIN="W"/>
 </svg>

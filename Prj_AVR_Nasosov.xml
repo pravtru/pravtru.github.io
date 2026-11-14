@@ -8,19 +8,50 @@
 
  <!-- Общий щит, общий корпус поста и общий контрольный кабель задаются один раз. -->
  <OBJS>
-  <OBJ><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW><OBJS/></OBJ>
+  <OBJ id="cabinet"><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW><OBJS/></OBJ>
   <OBJ id="pds"><SNAME>Реле перепада давления</SNAME><POS>PDS1</POS><TPL>RD55</TPL>
-   <PRM>Исполнение и уставка по расчётному перепаду</PRM><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <QTY>1</QTY><PRM>Исполнение и уставка по расчётному перепаду</PRM><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
   </OBJ>
-  <OBJ id="plc"><SNAME>Программируемое реле</SNAME><POS>A1</POS><TPL>PR200</TPL><MARK>ПР200-24.1.2.0</MARK><MAKER>ОВЕН</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
-  <OBJ id="plc-breaker"><SNAME>Автоматический выключатель</SNAME><POS>QF3</POS><PRM>1P, для цепи 24 В DC</PRM><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
-  <OBJ id="pump1"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н1</POS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
-  <OBJ id="pump2"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н2</POS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+  <OBJ id="plc"><SNAME>Программируемое реле</SNAME><POS>A1</POS><TPL>PR200</TPL><MARK>ПР200-220.1.2.0</MARK><MAKER>ОВЕН</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+  <OBJ id="plc-breaker"><SNAME>Автоматический выключатель</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL><PRM>1P, для цепи ~230 В</PRM><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+  <OBJ id="pump1"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н1</POS><TPL>PmpE</TPL><ADDRESS>3</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+  <OBJ id="pump2"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н2</POS><TPL>PmpE</TPL><ADDRESS>4</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
   <OBJ id="pds-cable"><SNAME>Кабель контрольный реле перепада</SNAME><POS>3</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 4х1,5</MARK><QTY>{pds_len}</QTY><UNIT>м</UNIT>
    <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>PDS1</SNAME></TO>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
   </OBJ>
  </OBJS>
+
+ <CHAINS>
+  <CHAIN id="phase" number="L"><PIN id="Ввод.L" object="Ввод" name="L"/><PIN id="QF3.1" object="QF3" name="1"/><ROUTE d="M {QF3.1.x} 80 V {QF3.1.y}"/></CHAIN>
+  <CHAIN id="neutral" number="N"><PIN id="Ввод.N" object="Ввод" name="N"/><PIN id="A1.1" object="A1" name="1"/><PIN id="KM1.A2" object="KM1" name="A2"/><PIN id="SA1-HL.X2" object="SA1-HL" name="X2"/><PIN id="Ввод 2.N" object="Ввод 2" name="N"/><PIN id="KM2.A2" object="KM2" name="A2"/><PIN id="SA2-HL.X2" object="SA2-HL" name="X2"/><PIN id="A1.3" object="A1" name="3"/><ROUTE d="M 103 80 V {A1.3.y} H {A1.3.x} M 103 {A1.1.y} H {A1.1.x}"/></CHAIN>
+  <CHAIN id="common" number="501"><PIN id="QF3.2" object="QF3" name="2"/><PIN id="A1.2" object="A1" name="2"/><PIN id="PDS1.1" object="PDS1" name="1"/><PIN id="KM1.13" object="KM1" name="13"/><PIN id="KM2.13" object="KM2" name="13"/><ROUTE d="M {QF3.2.x} {QF3.2.y} V {KM2.13.y} M {QF3.2.x} {A1.2.y} H {A1.2.x}"/><ROUTE d="M {QF3.2.x} {PDS1.1.y} H {PDS1.1.x} M {QF3.2.x} {KM1.13.y} H {KM1.13.x} M {QF3.2.x} {KM2.13.y} H {KM2.13.x}"/></CHAIN>
+  <CHAIN id="pressure" number="502"><PIN id="PDS1.3" object="PDS1" name="3"/><PIN id="A1.4" object="A1" name="4"/><ROUTE d="M {PDS1.3.x} {PDS1.3.y} H {A1.4.x} V {A1.4.y}"/></CHAIN>
+  <CHAIN id="feedback1" number="503"><PIN id="KM1.14" object="KM1" name="14"/><PIN id="A1.5" object="A1" name="5"/><ROUTE d="M {KM1.14.x} {KM1.14.y} H {A1.5.x} V {A1.5.y}"/></CHAIN>
+  <CHAIN id="feedback2" number="504"><PIN id="KM2.14" object="KM2" name="14"/><PIN id="A1.6" object="A1" name="6"/><ROUTE d="M {KM2.14.x} {KM2.14.y} H {A1.6.x} V {A1.6.y}"/></CHAIN>
+  <CHAIN id="start1a" number="7"><PIN id="A1.15" object="A1" name="15"/><PIN id="A1-Q1.14" object="A1-Q1" name="14"/><PIN id="KM1.A1" object="KM1" name="A1"/><PIN id="SA1.14" object="SA1" name="14"/><PIN id="SA1-HL.X1" object="SA1-HL" name="X1"/><ROUTE d="M {A1.15.x} {A1.15.y} h 10"/></CHAIN>
+  <CHAIN id="start1b" number="8"><PIN id="A1.16" object="A1" name="16"/><PIN id="A1-Q1.13" object="A1-Q1" name="13"/><PIN id="SA1.24" object="SA1" name="24"/><ROUTE d="M {A1.16.x} {A1.16.y} h 10"/></CHAIN>
+  <CHAIN id="start2a" number="15"><PIN id="A1.18" object="A1" name="18"/><PIN id="A1-Q3.14" object="A1-Q3" name="14"/><PIN id="KM2.A1" object="KM2" name="A1"/><PIN id="SA2.14" object="SA2" name="14"/><PIN id="SA2-HL.X1" object="SA2-HL" name="X1"/><ROUTE d="M {A1.18.x} {A1.18.y} h 10"/></CHAIN>
+  <CHAIN id="start2b" number="16"><PIN id="A1.19" object="A1" name="19"/><PIN id="A1-Q3.13" object="A1-Q3" name="13"/><PIN id="SA2.24" object="SA2" name="24"/><ROUTE d="M {A1.19.x} {A1.19.y} h 10"/></CHAIN>
+  <CHAIN id="rsb" number="RS-485 B"><PIN id="A1.33" object="A1" name="33"/><ROUTE d="M {A1.33.x} {A1.33.y} h 15"/></CHAIN>
+  <CHAIN id="rsa" number="RS-485 A"><PIN id="A1.34" object="A1" name="34"/><ROUTE d="M {A1.34.x} {A1.34.y} h 15"/></CHAIN>
+  <CHAIN id="drive1_1" number="1"><PIN id="QF1.2" object="QF1" name="2"/><PIN id="KM1.1" object="KM1" name="1"/><PIN id="SA1.13" object="SA1" name="13"/><PIN id="SA1.23" object="SA1" name="23"/></CHAIN>
+  <CHAIN id="drive1_2" number="2"><PIN id="QF1.4" object="QF1" name="4"/><PIN id="KM1.3" object="KM1" name="3"/></CHAIN>
+  <CHAIN id="drive1_3" number="3"><PIN id="QF1.6" object="QF1" name="6"/><PIN id="KM1.5" object="KM1" name="5"/></CHAIN>
+  <CHAIN id="drive1_4" number="4"><PIN id="KM1.2" object="KM1" name="2"/><PIN id="M1.U" object="M1" name="U"/></CHAIN>
+  <CHAIN id="drive1_5" number="5"><PIN id="KM1.4" object="KM1" name="4"/><PIN id="M1.V" object="M1" name="V"/></CHAIN>
+  <CHAIN id="drive1_6" number="6"><PIN id="KM1.6" object="KM1" name="6"/><PIN id="M1.W" object="M1" name="W"/></CHAIN>
+  <CHAIN id="drive2_1" number="9"><PIN id="QF2.2" object="QF2" name="2"/><PIN id="KM2.1" object="KM2" name="1"/><PIN id="SA2.13" object="SA2" name="13"/><PIN id="SA2.23" object="SA2" name="23"/></CHAIN>
+  <CHAIN id="drive2_2" number="10"><PIN id="QF2.4" object="QF2" name="4"/><PIN id="KM2.3" object="KM2" name="3"/></CHAIN>
+  <CHAIN id="drive2_3" number="11"><PIN id="QF2.6" object="QF2" name="6"/><PIN id="KM2.5" object="KM2" name="5"/></CHAIN>
+  <CHAIN id="drive2_4" number="12"><PIN id="KM2.2" object="KM2" name="2"/><PIN id="M2.U" object="M2" name="U"/></CHAIN>
+  <CHAIN id="drive2_5" number="13"><PIN id="KM2.4" object="KM2" name="4"/><PIN id="M2.V" object="M2" name="V"/></CHAIN>
+  <CHAIN id="drive2_6" number="14"><PIN id="KM2.6" object="KM2" name="6"/><PIN id="M2.W" object="M2" name="W"/></CHAIN>
+  <CHAIN id="supply_L1" number="L1"><PIN id="Ввод.L1" object="Ввод" name="L1"/><PIN id="QF1.1" object="QF1" name="1"/><PIN id="Ввод 2.L1" object="Ввод 2" name="L1"/><PIN id="QF2.1" object="QF2" name="1"/></CHAIN>
+  <CHAIN id="supply_L2" number="L2"><PIN id="Ввод.L2" object="Ввод" name="L2"/><PIN id="QF1.3" object="QF1" name="3"/><PIN id="Ввод 2.L2" object="Ввод 2" name="L2"/><PIN id="QF2.3" object="QF2" name="3"/></CHAIN>
+  <CHAIN id="supply_L3" number="L3"><PIN id="Ввод.L3" object="Ввод" name="L3"/><PIN id="QF1.5" object="QF1" name="5"/><PIN id="Ввод 2.L3" object="Ввод 2" name="L3"/><PIN id="QF2.5" object="QF2" name="5"/></CHAIN>
+  <CHAIN id="supply_PE" number="PE"><PIN id="Ввод.PE" object="Ввод" name="PE"/><PIN id="M1.PE" object="M1" name="PE"/><PIN id="Ввод 2.PE" object="Ввод 2" name="PE"/><PIN id="M2.PE" object="M2" name="PE"/></CHAIN>
+ </CHAINS>
 
  <NOTES>
   <svg viewBox="0 0 210 297">
@@ -49,12 +80,186 @@
  </SHEET_LAYOUT>
  <SHEET_LAYOUT TYPE="схема внешних соединений" TABLE_Y="48"/>
  <EXTRA_SHEET BEFORE="схема принципиальная">
-  <SNAME>Схема электрическая принципиальная управления АВР</SNAME><TYPE>текст</TYPE><FMT>A3</FMT>
-  <svg viewBox="0 0 420 297"><Bl Name="AvrSP"/></svg>
+  <SNAME>Схема электрическая принципиальная управления АВР</SNAME><TYPE>текст</TYPE><FMT>A4</FMT>
+  <svg viewBox="0 0 210 297"><Bl Name="AvrSP"><Pr bid="phase">{chain_phase}</Pr><Pr bid="neutral">{chain_neutral}</Pr><Pr bid="common">{chain_common}</Pr><Pr bid="pressure">{chain_pressure}</Pr><Pr bid="feedback1">{chain_feedback1}</Pr><Pr bid="feedback2">{chain_feedback2}</Pr><Pr bid="start1a">{chain_start1a}</Pr><Pr bid="start1b">{chain_start1b}</Pr><Pr bid="start2a">{chain_start2a}</Pr><Pr bid="start2b">{chain_start2b}</Pr><Pr bid="rsb">{chain_rsb}</Pr><Pr bid="rsa">{chain_rsa}</Pr></Bl></svg>
  </EXTRA_SHEET>
  <!-- Два экземпляра одного привода: общие параметры берутся из проекта пары. -->
+ <DRIVE_DATA>
+<OBJS>
+  <OBJ id="spec-1"><SNAME>Электродвигатель асинхронный</SNAME><POS>M1</POS><TPL>Motor_AD</TPL>
+   <PRM>Мощность {power} кВт</PRM>
+   <PRM IF="power=0.37">Ток при 400 В: 1,1 А</PRM>
+   <PRM IF="power=0.55">Ток при 400 В: 1,5 А</PRM>
+   <PRM IF="power=0.75">Ток при 400 В: 1,9 А</PRM>
+   <PRM IF="power=1.1">Ток при 400 В: 2,6 А</PRM>
+   <PRM IF="power=1.5">Ток при 400 В: 3,5 А</PRM>
+   <PRM IF="power=2.2">Ток при 400 В: 5,0 А</PRM>
+   <PRM IF="power=3">Ток при 400 В: 6,5 А</PRM>
+   <PRM IF="power=4">Ток при 400 В: 8,5 А</PRM>
+   <PRM IF="power=5.5">Ток при 400 В: 11,5 А</PRM>
+   <PRM IF="power=7.5">Ток при 400 В: 15,5 А</PRM>
+   <VIEW IF="control=auto_panel"><TYPE>схема автоматизации</TYPE><OFFSET>-7.5 0</OFFSET></VIEW><VIEW IF="control=auto_post"><TYPE>схема автоматизации</TYPE><OFFSET>7.5 0</OFFSET></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+
+  <OBJ IF="control=auto_post" id="spec-post-auto"><SNAME>Пост управления с трёхпозиционным переключателем</SNAME><POS>S1</POS><TPL>Post_SA3</TPL>
+   <VIEW><TYPE>схема автоматизации</TYPE></VIEW><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS>
+    <OBJ id="spec-post-case"><SNAME>Корпус поста на одно место</SNAME><MARK>M22-I1</MARK><MAKER>Eaton</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ IF="control=auto_post" id="spec-auto-post"><SNAME>Головка трёхпозиционного переключателя с фиксацией и подсветкой</SNAME><POS>SA1</POS><TPL>SA_M22_WRLK3</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="control=auto_post" id="spec-adapter-post"><SNAME>Крепёжный адаптер</SNAME><MARK>M22-A</MARK><MAKER>Eaton</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ IF="control=auto_post" id="spec-contact-post"><SNAME>Замыкающий контактный элемент переключателя</SNAME><MARK>M22-K10</MARK><MAKER>Eaton</MAKER><QTY>2</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ IF="control=auto_post" id="spec-led-post"><SNAME>Модуль подсветки переключателя ~220 В</SNAME><POS>SA1-HL</POS><TPL>HL_M22_LED230G</TPL><VIEW><TYPE>схема принципиальная</TYPE><OFFSET>22 5</OFFSET></VIEW></OBJ>
+   </OBJS>
+  </OBJ>
+  <OBJ><SNAME>Замыкающий контакт внешней команды «Авт.»</SNAME><POS>K1</POS><TPL>SP_Kontakt_NO</TPL><REF_SHEET>{k1_sheet}</REF_SHEET><VIEW><TYPE>схема принципиальная</TYPE><OFFSET>31 5</OFFSET></VIEW></OBJ>
+  <OBJ id="spec-5"><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>
+   <OBJS>
+    <OBJ id="spec-6"><SNAME>Ввод питания ~380 В</SNAME><POS>Ввод</POS><TPL>Vvod_380</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW PART="нейтраль"><TYPE>схема принципиальная</TYPE><OFFSET>21 0</OFFSET></VIEW></OBJ>
+
+    <OBJ IF="power&lt;=0.55" id="spec-7"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-1,6</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=0.75" id="spec-8"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-2,5</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power&gt;=1.1 power&lt;=1.5" id="spec-9"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-4</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=2.2" id="spec-10"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-6,3</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power&gt;=3 power&lt;=4" id="spec-11"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-10</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=5.5" id="spec-12"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-12</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+    <OBJ IF="power=7.5" id="spec-13"><SNAME>Автоматический выключатель защиты двигателя</SNAME><POS>QF1</POS><TPL>QF_PKZM0</TPL><MARK>PKZM0-16</MARK><VIEW><TYPE>схема принципиальная</TYPE></VIEW></OBJ>
+
+    <OBJ IF="power&lt;=3" id="spec-14"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM7-10</MARK><VIEW IF="control!=auto_post"><TYPE>схема автоматизации</TYPE></VIEW><VIEW IF="control=auto_post"><TYPE>схема автоматизации</TYPE><OFFSET>15 0</OFFSET></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW PART="катушка"><TYPE>схема принципиальная</TYPE><OFFSET>21 0</OFFSET></VIEW></OBJ>
+    <OBJ IF="power=4" id="spec-15"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM9-10</MARK><VIEW IF="control!=auto_post"><TYPE>схема автоматизации</TYPE></VIEW><VIEW IF="control=auto_post"><TYPE>схема автоматизации</TYPE><OFFSET>15 0</OFFSET></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW PART="катушка"><TYPE>схема принципиальная</TYPE><OFFSET>21 0</OFFSET></VIEW></OBJ>
+    <OBJ IF="power=5.5" id="spec-16"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM12-10</MARK><VIEW IF="control!=auto_post"><TYPE>схема автоматизации</TYPE></VIEW><VIEW IF="control=auto_post"><TYPE>схема автоматизации</TYPE><OFFSET>15 0</OFFSET></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW PART="катушка"><TYPE>схема принципиальная</TYPE><OFFSET>21 0</OFFSET></VIEW></OBJ>
+    <OBJ IF="power=7.5" id="spec-17"><SNAME>Пускатель (контактор)</SNAME><POS>KM1</POS><TPL>KM_DILM</TPL><MARK>DILM17-10</MARK><VIEW IF="control!=auto_post"><TYPE>схема автоматизации</TYPE></VIEW><VIEW IF="control=auto_post"><TYPE>схема автоматизации</TYPE><OFFSET>15 0</OFFSET></VIEW><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW PART="катушка"><TYPE>схема принципиальная</TYPE><OFFSET>21 0</OFFSET></VIEW></OBJ>
+    <OBJ IF="control=auto_panel" id="spec-auto-panel"><SNAME>Головка трёхпозиционного переключателя с фиксацией и подсветкой</SNAME><POS>SA1</POS><TPL>SA_M22_WRLK3</TPL><VIEW><TYPE>схема принципиальная</TYPE></VIEW><VIEW><TYPE>схема автоматизации</TYPE></VIEW></OBJ>
+    <OBJ IF="control=auto_panel" id="spec-adapter-panel"><SNAME>Крепёжный адаптер</SNAME><MARK>M22-A</MARK><MAKER>Eaton</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ IF="control=auto_panel" id="spec-contact-panel"><SNAME>Замыкающий контактный элемент переключателя</SNAME><MARK>M22-K10</MARK><MAKER>Eaton</MAKER><QTY>2</QTY><UNIT>шт</UNIT></OBJ>
+    <OBJ IF="control=auto_panel" id="spec-led-panel"><SNAME>Модуль подсветки переключателя ~220 В</SNAME><POS>SA1-HL</POS><TPL>HL_M22_LED230G</TPL><VIEW><TYPE>схема принципиальная</TYPE><OFFSET>22 5</OFFSET></VIEW></OBJ>
+    <OBJ id="spec-18"><SNAME>Клемма наборная</SNAME><POS>XT1</POS><MARK>STTB 2.5 3031270</MARK><QTY>8</QTY><UNIT>шт</UNIT></OBJ>
+   </OBJS>
+  </OBJ>
+
+
+  <OBJ IF="power&lt;=5.5" id="spec-19"><SNAME>Кабель силовой</SNAME><POS>1</POS><TPL>Kabel</TPL><MARK>ВВГнг-LS 4х1,5</MARK><QTY>{len1}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>M1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+  <OBJ IF="power=7.5" id="spec-20"><SNAME>Кабель силовой</SNAME><POS>1</POS><TPL>Kabel</TPL><MARK>ВВГнг-LS 4х2,5</MARK><QTY>{len1}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>M1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+  <OBJ IF="control!=auto_panel" id="spec-21"><SNAME>Кабель контрольный</SNAME><POS>2</POS><TPL>Kabel</TPL><MARK IF="control=auto_post">КВВГнг-LS 4х1,5</MARK><QTY>{len2}</QTY><UNIT>м</UNIT>
+   <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>S1</SNAME></TO>
+   <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW></OBJ>
+ </OBJS>
+
+
+
+<LNKS>
+<LNK IF="control=auto_panel"><TYPE>управление</TYPE><FROM><SNAME>SA1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA3</PIN></TO></LNK>
+  <LNK><TYPE>управление</TYPE><FROM><SNAME>KM1</SNAME><PIN>SA1</PIN></FROM><TO><SNAME>M1</SNAME><PIN>SA</PIN></TO></LNK>
+  <LNK IF="control=auto_post"><TYPE>управление</TYPE><FROM><SNAME>S1</SNAME><PIN>SA2</PIN></FROM><TO><SNAME>KM1</SNAME><PIN>SA4</PIN></TO></LNK>
+ </LNKS>
+
+
+<SPEC_OBJS>
+     <OBJ>
+       <SNAME>1. Электрооборудование по месту</SNAME>
+       <OBJS>
+         <OBJ>
+           <REF>spec-1</REF>
+         </OBJ>
+         <OBJ IF="control=auto_post">
+           <REF>spec-post-auto</REF><SNAME>Пост управления, в составе:</SNAME>
+           <OBJS>
+             <OBJ><REF>spec-post-case</REF></OBJ>
+           <OBJ><REF>spec-auto-post</REF></OBJ>
+           <OBJ><REF>spec-adapter-post</REF></OBJ>
+           <OBJ><REF>spec-contact-post</REF></OBJ>
+           <OBJ><REF>spec-led-post</REF></OBJ>
+           </OBJS>
+         </OBJ>
+       </OBJS>
+     </OBJ>
+     <OBJ>
+       <SNAME>2. Электроаппаратура, устанавливаемая в щит</SNAME>
+       <OBJS>
+           <OBJ><REF>spec-auto-panel</REF></OBJ>
+           <OBJ><REF>spec-adapter-panel</REF></OBJ>
+           <OBJ><REF>spec-contact-panel</REF></OBJ>
+           <OBJ><REF>spec-led-panel</REF></OBJ>
+         <OBJ>
+           <REF>spec-7</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-8</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-9</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-10</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-11</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-12</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-13</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-14</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-15</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-16</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-17</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-18</REF>
+         </OBJ>
+       </OBJS>
+     </OBJ>
+     <OBJ>
+       <SNAME>3. Кабельные изделия</SNAME>
+       <OBJS>
+         <OBJ>
+           <REF>spec-19</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-20</REF>
+         </OBJ>
+         <OBJ>
+           <REF>spec-21</REF>
+         </OBJ>
+       </OBJS>
+     </OBJ>
+   </SPEC_OBJS>
+
+ </DRIVE_DATA>
  <MODULES TPL="Prj_Dvigatel_Avt" VARS="power">
   <MODULE ID="1" Y="0">
+   <WIRE chain="supply_L1" from="Ввод.L1" to="QF1.1"/>
+   <WIRE chain="supply_L2" from="Ввод.L2" to="QF1.3"/>
+   <WIRE chain="supply_L3" from="Ввод.L3" to="QF1.5"/>
+   <WIRE chain="drive1_1" from="QF1.2" to="KM1.1"/>
+   <WIRE chain="drive1_2" from="QF1.4" to="KM1.3"/>
+   <WIRE chain="drive1_3" from="QF1.6" to="KM1.5"/>
+   <WIRE chain="drive1_4" from="KM1.2" to="M1.U" via="1"/>
+   <WIRE chain="drive1_5" from="KM1.4" to="M1.V" via="1"/>
+   <WIRE chain="drive1_6" from="KM1.6" to="M1.W" via="1"/>
+   <WIRE chain="supply_PE" from="Ввод.PE" to="M1.PE" via="1"/>
+   <WIRE chain="neutral" from="Ввод.N" to="KM1.A2"/>
+   <WIRE chain="drive1_1" from="QF1.2" to="SA1.13"/>
+   <WIRE chain="start1a" from="SA1.14" to="KM1.A1" LABEL_FROM="11" LABEL_TO="-25"/>
+   <WIRE chain="start1b" from="SA1.24" to="A1-Q1.13" LABEL_FROM="11"/>
+   <WIRE chain="neutral" from="Ввод.N" to="SA1-HL.X2"/>
+   <WIRE chain="drive1_1" from="SA1.23" to="SA1.13"/>
+   <WIRE chain="start1a" from="KM1.A1" to="A1-Q1.14"/>
+   <WIRE chain="start1a" from="SA1.14" to="SA1-HL.X1"/>
+   <PARAM NAME="feedback_from">{chain_common}</PARAM><PARAM NAME="feedback_to">{chain_feedback1}</PARAM>
    <PARAM NAME="control">auto_panel</PARAM><PARAM NAME="k1_sheet">4</PARAM><PARAM NAME="feedback_sheet">4</PARAM>
 
    <MAP FROM="K1" TO="A1-Q1"/>
@@ -65,7 +270,26 @@
    <SHOW POS="SA1-HL" TYPE="схема автоматизации"/>
    <LNK><TYPE>сигнализация</TYPE><FROM><SNAME>SA1</SNAME><PIN>SA3</PIN></FROM><TO><SNAME>SA1-HL</SNAME><PIN>SA1</PIN></TO></LNK>
   </MODULE>
-  <MODULE ID="2" Y="142" CHAIN_OFFSET="8" FEEDBACK_OFFSET="2">
+  <MODULE ID="2" Y="142" CHAIN_OFFSET="8">
+   <WIRE chain="supply_L1" from="Ввод 2.L1" to="QF2.1"/>
+   <WIRE chain="supply_L2" from="Ввод 2.L2" to="QF2.3"/>
+   <WIRE chain="supply_L3" from="Ввод 2.L3" to="QF2.5"/>
+   <WIRE chain="drive2_1" from="QF2.2" to="KM2.1"/>
+   <WIRE chain="drive2_2" from="QF2.4" to="KM2.3"/>
+   <WIRE chain="drive2_3" from="QF2.6" to="KM2.5"/>
+   <WIRE chain="drive2_4" from="KM2.2" to="M2.U" via="2"/>
+   <WIRE chain="drive2_5" from="KM2.4" to="M2.V" via="2"/>
+   <WIRE chain="drive2_6" from="KM2.6" to="M2.W" via="2"/>
+   <WIRE chain="supply_PE" from="Ввод 2.PE" to="M2.PE" via="2"/>
+   <WIRE chain="neutral" from="Ввод 2.N" to="KM2.A2"/>
+   <WIRE chain="drive2_1" from="QF2.2" to="SA2.13"/>
+   <WIRE chain="start2a" from="SA2.14" to="KM2.A1" LABEL_FROM="11" LABEL_TO="-25"/>
+   <WIRE chain="start2b" from="SA2.24" to="A1-Q3.13" LABEL_FROM="11"/>
+   <WIRE chain="neutral" from="Ввод 2.N" to="SA2-HL.X2"/>
+   <WIRE chain="drive2_1" from="SA2.23" to="SA2.13"/>
+   <WIRE chain="start2a" from="KM2.A1" to="A1-Q3.14"/>
+   <WIRE chain="start2a" from="SA2.14" to="SA2-HL.X1"/>
+   <PARAM NAME="feedback_from">{chain_common}</PARAM><PARAM NAME="feedback_to">{chain_feedback2}</PARAM>
    <PARAM NAME="len1">{len2}</PARAM><PARAM NAME="control">auto_panel</PARAM><PARAM NAME="k1_sheet">4</PARAM><PARAM NAME="feedback_sheet">4</PARAM>
    <MAP FROM="M1" TO="M2"/><MAP FROM="Ввод" TO="Ввод 2"/><MAP FROM="QF1" TO="QF2"/><MAP FROM="KM1" TO="KM2"/>
    <MAP FROM="SA1" TO="SA2"/><MAP FROM="SA1-HL" TO="SA2-HL"/><MAP FROM="K1" TO="A1-Q3"/><MAP FROM="XT1" TO="XT2"/>
