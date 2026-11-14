@@ -1,0 +1,11 @@
+<Bl Name="Архитектура насосной">
+ <var id="room_l" name="Длина помещения, м" type="i" default="14" min="12" max="30"/>
+ <var id="room_w" name="Ширина помещения, м" type="i" default="6" min="3" max="14"/>
+ <svg viewBox="0 0 140 60">
+  <Bl Name="PL_Pomeshchenie">
+   <Pr bid="1" width="{room_l*10}" height="{room_w*10}"/>
+   <Pr bid="2" width="{room_l*10-4}" height="{room_w*10-4}"/>
+   <Pr bid="11" x="{room_l*5}"/>
+  </Bl>
+ </svg>
+</Bl>

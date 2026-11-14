@@ -1,0 +1,33 @@
+<Bl Name="Технологическая группа из двух параллельных насосов">
+ <OBJS>
+  <OBJ id="pump1"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н1</POS><TPL>PmpE</TPL><ADDRESS>3</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+  <OBJ id="pump2"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н2</POS><TPL>PmpE</TPL><ADDRESS>4</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
+ </OBJS>
+ <svg viewBox="32 18 149 64" xmlns="http://www.w3.org/2000/svg">
+  <g id="collectors">
+   <path d="M 32 45 H 66 V 30 M 66 45 V 60 M 145 30 V 60 M 145 45 H 181"
+         fill="none" stroke="#000000" stroke-width="0.7"/>
+   <path d="M 32 44 L 37 45 L 32 46 Z M 176 44 L 181 45 L 176 46 Z" fill="#000000"/>
+   <text x="32" y="41" font-size="3.65" class="text">Всасывание</text>
+   <text x="181" y="41" font-size="3.65" class="text" text-anchor="end">Напор</text>
+  </g>
+  <g id="pump-branch-1">
+   <path d="M 66 30 H 71 M 79 30 H 91 M 101 30 H 116 M 124 30 H 132 M 140 30 H 145"
+         fill="none" stroke="#000000" stroke-width="0.7"/>
+   <Bl Name="Vlv" transform="translate(75 30)"/>
+   <Bl Name="Vlv" transform="translate(136 30)"/>
+   <Bl Name="Chk" transform="translate(120 30)"/>
+   <ObjView Name="pump1" tip="SA" transform="translate(96 30)"/>
+  </g>
+  <g id="pump-branch-2">
+   <path d="M 66 60 H 71 M 79 60 H 91 M 101 60 H 116 M 124 60 H 132 M 140 60 H 145"
+         fill="none" stroke="#000000" stroke-width="0.7"/>
+   <Bl Name="Vlv" transform="translate(75 60)"/>
+   <Bl Name="Vlv" transform="translate(136 60)"/>
+   <Bl Name="Chk" transform="translate(120 60)"/>
+   <ObjView Name="pump2" tip="SA" transform="translate(96 60)"/>
+  </g>
+  <Bl Name="Tap" transform="translate(56 45)"><Pr bid="1">1</Pr></Bl>
+  <Bl Name="Tap" transform="translate(155 45)"><Pr bid="1">2</Pr></Bl>
+ </svg>
+</Bl>

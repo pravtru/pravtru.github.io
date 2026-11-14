@@ -3,10 +3,10 @@
  <var id="len1" name="Длина силового кабеля ЩА — M1, м" type="i" default="20" min="1" max="500"/>
  <var id="len2" name="Длина силового кабеля ЩА — M2, м" type="i" default="20" min="1" max="500"/>
  <var id="pds_len" name="Длина кабеля реле перепада, м" type="i" default="15" min="1" max="500"/>
- <var id="room_l" name="Длина помещения, м" type="i" default="14" min="12" max="30"/>
- <var id="room_w" name="Ширина помещения, м" type="i" default="6" min="3" max="14"/>
 
  <!-- Общий щит, общий корпус поста и общий контрольный кабель задаются один раз. -->
+ <SECTION TPL="AvrTech"/>
+ <SECTION TPL="AvrArch" VIEW="план" REPLACE="PL_Pomeshchenie"/>
  <OBJS>
   <OBJ id="cabinet"><SNAME>Щит автоматизации</SNAME><POS>ЩА</POS><TPL>Shchit_ShA</TPL><VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW><OBJS/></OBJ>
   <OBJ id="pds"><SNAME>Реле перепада давления</SNAME><POS>PDS1</POS><TPL>RD55</TPL>
@@ -14,8 +14,6 @@
   </OBJ>
   <OBJ id="plc"><SNAME>Программируемое реле</SNAME><POS>A1</POS><TPL>PR200</TPL><MARK>ПР200-220.1.2.0</MARK><MAKER>ОВЕН</MAKER><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
   <OBJ id="plc-breaker"><SNAME>Автоматический выключатель</SNAME><POS>QF3</POS><TPL>QF_FAZ_C2</TPL><PRM>1P, для цепи ~230 В</PRM><QTY>1</QTY><UNIT>шт</UNIT></OBJ>
-  <OBJ id="pump1"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н1</POS><TPL>PmpE</TPL><ADDRESS>3</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
-  <OBJ id="pump2"><SNAME>Насос, гидравлическая часть</SNAME><POS>Н2</POS><TPL>PmpE</TPL><ADDRESS>4</ADDRESS><UNIT>шт</UNIT><PRM>Тип по расчётной подаче и напору</PRM></OBJ>
   <OBJ id="pds-cable"><SNAME>Кабель контрольный реле перепада</SNAME><POS>3</POS><TPL>Kabel</TPL><MARK>КВВГнг-LS 4х1,5</MARK><QTY>{pds_len}</QTY><UNIT>м</UNIT>
    <FROM><SNAME>ЩА</SNAME></FROM><TO><SNAME>PDS1</SNAME></TO>
    <VIEW><TYPE>схема внешних соединений</TYPE></VIEW><VIEW><TYPE>план</TYPE></VIEW>

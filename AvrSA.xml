@@ -1,9 +1,7 @@
 <Bl Name="Два насоса на параллельных ветвях с контролем перепада">
  <svg viewBox="20 8 170 217" xmlns="http://www.w3.org/2000/svg">
-  <Bl Name="Pmp2"/>
+  <Bl Name="AvrTech"/>
   <!-- Парные номера на концах связей по листу 11 КГД-ФТС5-Р-АК. -->
-  <Bl Name="Tap" transform="translate(56 45)"><Pr bid="1">1</Pr></Bl>
-  <Bl Name="Tap" transform="translate(155 45)"><Pr bid="1">2</Pr></Bl>
   <g transform="translate(-11.5 40)">
    <path d="M 48 97.5 H 185 V 185 H 48 Z M 48 122.5 H 185 M 48 153 H 185
             M 68 97.5 V 185 M 54 153 V 185 M 54 161 H 185 M 54 169 H 185 M 54 177 H 185"
