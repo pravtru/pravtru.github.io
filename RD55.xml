@@ -1,9 +1,11 @@
 <El Name="Реле перепада давления ОВЕН РД55-ДД">
  <TYPE>электроаппарат</TYPE><MARK>РД55-ДД</MARK><MAKER>ОВЕН</MAKER><UNIT>шт</UNIT>
- <svg tip="SA" viewBox="-6 -6 12 12" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="0" cy="0" r="6" fill="#FFFFFF" stroke="#000000" stroke-width="0.2"/>
-  <text x="0" y="-1" font-size="3.65" class="text" text-anchor="middle">PDS</text>
-  <text id="pos" x="0" y="3.5" font-size="3.65" class="text" text-anchor="middle">{POS}</text>
+ <svg tip="SA" viewBox="-5 -5 10 10" xmlns="http://www.w3.org/2000/svg">
+  <Bl Name="PriborSA">
+   <Pr bid="body" data-pribor-fixed="true"/>
+   <Pr bid="outline" fill="#FFFFFF"/>
+   <Pr bid="2">PDS</Pr><Pr bid="3">{POS}</Pr>
+  </Bl>
  </svg>
  <svg tip="SP" viewBox="-4 -8 23 13" xmlns="http://www.w3.org/2000/svg">
   <Bl Name="NO"><Pr bid="2">{POS}</Pr><Pr bid="3">1</Pr><Pr bid="4">3</Pr></Bl><circle cx="0" cy="0" r="0" PIN="1"/><circle cx="15" cy="0" r="0" PIN="3"/>
