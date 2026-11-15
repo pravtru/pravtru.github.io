@@ -175,6 +175,47 @@ async function material(o) {
  if(text(result,'UNIT')&&!text(result,'QTY')){const n=result.ownerDocument.createElement('QTY');n.textContent='1';result.append(n);}
  return result;
 }
+async function layoutInstruments(svg) {
+ const instruments=Array.from(svg.querySelectorAll('[data-pribor-sa]'));
+ if(!instruments.length)return;
+ await document.fonts.load('16px gost',instruments.map(node=>node.textContent).join(''));
+ const context=document.createElement('canvas').getContext('2d');
+ context.textAlign='center';
+ const radius=5, innerRadius=4.6;
+ let widened=false;
+ for(const instrument of instruments){
+  let offset=0;
+  const labels=instrument.querySelectorAll('text');
+  for(const [index,label] of Array.from(labels).entries()){
+   if(!label.textContent.trim()||getComputedStyle(label).display==='none')continue;
+   const style=getComputedStyle(label);
+   const size=Number(label.getAttribute('font-size'));
+   context.font=`${style.fontStyle} ${style.fontWeight} ${size*100}px ${style.fontFamily}`;
+   const box=context.measureText(label.textContent.trim());
+   const halfHeight=(box.actualBoundingBoxAscent+box.actualBoundingBoxDescent)/200;
+   const center=index===0?-2.5:2.5;
+   label.setAttribute('dominant-baseline','alphabetic');
+   label.setAttribute('y',center+(box.actualBoundingBoxAscent-box.actualBoundingBoxDescent)/200);
+   const x=Number(label.getAttribute('x'));
+   const farX=Math.max(Math.abs(x-box.actualBoundingBoxLeft/100),Math.abs(x+box.actualBoundingBoxRight/100));
+   const farY=Math.abs(center)+halfHeight;
+   offset=Math.max(offset,farX-Math.sqrt(Math.max(0,innerRadius**2-farY**2)));
+  }
+  instrument.querySelector('[data-pribor-outline]').setAttribute('d',
+   `M ${-offset} -5 H ${offset} A 5 5 0 0 1 ${offset} 5 H ${-offset} A 5 5 0 0 1 ${-offset} -5 Z`);
+  const divider=instrument.querySelector('[data-pribor-divider]');
+  divider.setAttribute('x1',-radius-offset);
+  divider.setAttribute('x2',radius+offset);
+  widened ||= offset>0;
+ }
+ if(widened&&svg.hasAttribute('viewBox')){
+  const {x,y,width,height}=svg.viewBox.baseVal;
+  const bounds=svg.getBBox();
+  const left=Math.min(x,bounds.x-0.1);
+  const right=Math.max(x+width,bounds.x+bounds.width+0.1);
+  svg.setAttribute('viewBox',`${left} ${y} ${right-left} ${height}`);
+ }
+}
 async function drawing(view, parent, label, tip, scope={}) {
  const card=el('article',null,parent,'view');el('h3',label,card);
  const area=el('div',null,card,'drawing');
@@ -183,7 +224,10 @@ async function drawing(view, parent, label, tip, scope={}) {
   for(const device of svg.querySelectorAll('Device'))apply(device,scope);
   await expand(svg,tip);apply(svg,scope);
 
-  const markup=xml(svg);area.innerHTML=markup;
+  area.innerHTML=xml(svg);
+  const rendered=area.querySelector('svg');
+  await layoutInstruments(rendered);
+  const markup=xml(rendered);
   const details=el('details',null,card);el('summary','SVG',details);el('pre',markup,details);
  }catch(error){el('p',error.message,area,'text-danger');}
 }
