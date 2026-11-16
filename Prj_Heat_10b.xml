@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Prj Name="Тепловой пункт, схема 10b">
+ <OBJS>
+  <OBJ id="item-1-1">
+   <POS>1.1</POS>
+   <SNAME>Теплообменник пластинчатый</SNAME>
+   <TPL>TS_HeatExchanger</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>215 109</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-2">
+   <POS>1.2</POS>
+   <SNAME>Клапан регулирующий проходной</SNAME>
+   <TPL>TS_HeatControl</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>155 90</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-4">
+   <POS>1.4</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>99 90</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-5-1">
+   <POS>1.5.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>62 90</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-5-2">
+   <POS>1.5.2</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>62 128</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-7">
+   <POS>1.7</POS>
+   <SNAME>Регулятор перепада давления</SNAME>
+   <TPL>TS_HeatDifferential</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>126 90</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-8-1">
+   <POS>3.8.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>359 90</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-ПК1">
+   <POS>ПК1</POS>
+   <SNAME>Клапан предохранительный</SNAME>
+   <TPL>TS_HeatSafety</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>249 71</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-8-2">
+   <POS>3.8.2</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>383 128</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-4">
+   <POS>3.4</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>341 128</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-6">
+   <POS>3.6</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>305 128</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-7-1">
+   <POS>3.7.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>374 192</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-3">
+   <POS>3.3</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>348 192</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-1">
+   <POS>3.1</POS>
+   <SNAME>Насос циркуляционный ГВС</SNAME>
+   <TPL>TS_HeatPump</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>321 192</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-5">
+   <POS>3.5</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>295 192</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-3-7-2">
+   <POS>3.7.2</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>270 192</XY>
+   </VIEW>
+  </OBJ>
+ </OBJS>
+ <DOCS>
+  <DOC>
+   <CODE>{CODE}</CODE>
+   <SNAME>Принципиальная технологическая схема</SNAME>
+   <TYPE>комплект рабочих чертежей</TYPE>
+   <SHTS>
+    <SHT>
+     <POS>1</POS>
+     <SNAME>Принципиальная технологическая схема</SNAME>
+     <TYPE>схема технологическая</TYPE>
+     <FMT>A3</FMT>
+     <svg tip="TS">
+      <g fill="none" stroke="#000000" stroke-width=".35">
+       <path d="M33 90H57 M67 90H93 M105 90H121 M131 90H150 M160 90H204" />
+       <path d="M204 128H67 M57 128H33" />
+       <path d="M226 90H354 M364 90H394" />
+       <path d="M249 90V75" />
+       <path d="M394 128H388 M378 128H347 M335 128H310 M300 128H226" />
+       <path d="M394 192H379 M369 192H354 M342 192H326 M316 192H300 M290 192H275 M265 192H253" />
+       <path d="M253 192V128" />
+       <path d="M45 90l-5 -1.4v2.8Z" fill="#000000" />
+       <path d="M35 128l5 -1.4v2.8Z" fill="#000000" />
+       <path d="M390 90l-5 -1.4v2.8Z" fill="#000000" />
+       <path d="M372 128l5 -1.4v2.8Z" fill="#000000" />
+       <path d="M385 192l5 -1.4v2.8Z" fill="#000000" />
+      </g>
+      <g fill="#000000" font-family="gost">
+       <text x="217" y="30" font-size="7.3" text-anchor="middle">Блочный тепловой пункт для системы ГВС · схема 10b</text>
+       <text x="88" y="51" font-size="5.11" text-anchor="middle">Первичный контур</text>
+       <text x="335" y="51" font-size="5.11" text-anchor="middle">Контур ГВС</text>
+       <text x="48" y="73" font-size="3.65" text-anchor="middle">Т1 · из теплосети</text>
+       <text x="48" y="140" font-size="3.65" text-anchor="middle">Т2 · в теплосеть</text>
+       <text x="366" y="73" font-size="3.65" text-anchor="middle">Т3 · к потребителю</text>
+       <text x="361" y="203" font-size="3.65" text-anchor="middle">Т4 · циркуляция ГВС</text>
+       <text x="353" y="111" font-size="3.65" text-anchor="middle">В1 · холодная вода</text>
+       <text x="215" y="81" font-size="5.11" text-anchor="middle">1.1</text>
+       <text x="155" y="76" font-size="5.11" text-anchor="middle">1.2</text>
+       <text x="99" y="82" font-size="5.11" text-anchor="middle">1.4</text>
+       <text x="62" y="82" font-size="5.11" text-anchor="middle">1.5.1</text>
+       <text x="62" y="120" font-size="5.11" text-anchor="middle">1.5.2</text>
+       <text x="126" y="82" font-size="5.11" text-anchor="middle">1.7</text>
+       <text x="359" y="82" font-size="5.11" text-anchor="middle">3.8.1</text>
+       <text x="249" y="57" font-size="5.11" text-anchor="middle">ПК1</text>
+       <text x="383" y="120" font-size="5.11" text-anchor="middle">3.8.2</text>
+       <text x="341" y="120" font-size="5.11" text-anchor="middle">3.4</text>
+       <text x="305" y="120" font-size="5.11" text-anchor="middle">3.6</text>
+       <text x="374" y="184" font-size="5.11" text-anchor="middle">3.7.1</text>
+       <text x="348" y="184" font-size="5.11" text-anchor="middle">3.3</text>
+       <text x="321" y="184" font-size="5.11" text-anchor="middle">3.1</text>
+       <text x="295" y="184" font-size="5.11" text-anchor="middle">3.5</text>
+       <text x="270" y="184" font-size="5.11" text-anchor="middle">3.7.2</text>
+      </g>
+     </svg>
+    </SHT>
+   </SHTS>
+  </DOC>
+  <DOC>
+   <CODE>{CODE}.СО</CODE>
+   <SNAME>Спецификация оборудования, изделий и материалов</SNAME>
+   <TYPE>спецификация оборудования</TYPE>
+   <OBJS>
+    <OBJ>
+     <SNAME>Первичный контур</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-1-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-4</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-5-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-5-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-7</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+    <OBJ>
+     <SNAME>Контур ГВС</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-3-8-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-ПК1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-8-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-4</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-6</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-7-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-3</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-5</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-3-7-2</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+   </OBJS>
+  </DOC>
+ </DOCS>
+</Prj>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<El Name="Регулятор перепада давления">
+ <TYPE>арматура</TYPE>
+ <UNIT>шт</UNIT>
+ <PIN>IN</PIN>
+ <PIN>OUT</PIN>
+ <svg tip="TS" viewBox="-12 -30 24 55">
+  <path d="M-5 -3L5 3V-3L-5 3Z M0 0V5 M-4 5Q0 10 4 5Z" fill="none" stroke="#000000" stroke-width=".3" />
+  <circle PIN="IN" cx="-5" cy="0" r="0" fill="none" />
+  <circle PIN="OUT" cx="5" cy="0" r="0" fill="none" />
+ </svg>
+</El>

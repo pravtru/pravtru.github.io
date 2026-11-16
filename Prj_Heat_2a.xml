@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Prj Name="Тепловой пункт, схема 2a">
+ <!-- Danfoss, альбом 2013, схема 2a, страница PDF 14, спецификация 13. Технологическая часть. -->
+ <OBJS>
+  <OBJ id="item-1-1">
+   <POS>1.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>41 63</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-2">
+   <POS>1.2</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>59 63</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-1-3">
+   <POS>1.3</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>55 342</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-1">
+   <POS>4.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>78 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-2">
+   <POS>4.2</POS>
+   <SNAME>Регулятор перепада давления</SNAME>
+   <TPL>TS_HeatDifferential</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>96 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-3">
+   <POS>4.3</POS>
+   <SNAME>Клапан регулирующий проходной</SNAME>
+   <TPL>TS_HeatControl</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>117 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-4">
+   <POS>4.4</POS>
+   <SNAME>Теплообменник пластинчатый</SNAME>
+   <TPL>TS_HeatExchanger</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>144 139</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-5">
+   <POS>4.5</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>240 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-6">
+   <POS>4.6</POS>
+   <SNAME>Клапан предохранительный</SNAME>
+   <TPL>TS_HeatSafety</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>198 104</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-7">
+   <POS>4.7</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>203 158</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-8">
+   <POS>4.8</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>230 158</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-9">
+   <POS>4.9</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>250 158</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-10">
+   <POS>4.10</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>187 239</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-11">
+   <POS>4.11</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>206 239</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-12">
+   <POS>4.12</POS>
+   <SNAME>Насос</SNAME>
+   <TPL>TS_HeatPump</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>225 239</XY>
+    <ROT>180</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-13">
+   <POS>4.13</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>243 239</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-4-14">
+   <POS>4.14</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>259 239</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-5">
+   <POS>2.5</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>299 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-6">
+   <POS>2.6</POS>
+   <SNAME>Регулятор перепада давления</SNAME>
+   <TPL>TS_HeatDifferential</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>317 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-7">
+   <POS>2.7</POS>
+   <SNAME>Клапан регулирующий проходной</SNAME>
+   <TPL>TS_HeatControl</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>338 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-8">
+   <POS>2.8</POS>
+   <SNAME>Теплообменник пластинчатый</SNAME>
+   <TPL>TS_HeatExchanger</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>365 139</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-9">
+   <POS>2.9</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>464 120</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-10">
+   <POS>2.10</POS>
+   <SNAME>Клапан предохранительный</SNAME>
+   <TPL>TS_HeatSafety</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>418 104</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-1-1">
+   <POS>2.1.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>399 171</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-2-1">
+   <POS>2.2.1</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>399 187</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-3-1">
+   <POS>2.3.1</POS>
+   <SNAME>Насос</SNAME>
+   <TPL>TS_HeatPump</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>399 203</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-4-1">
+   <POS>2.4.1</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>399 219</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-1-2">
+   <POS>2.1.2</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>439 171</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-2-2">
+   <POS>2.2.2</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>439 187</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-3-2">
+   <POS>2.3.2</POS>
+   <SNAME>Насос</SNAME>
+   <TPL>TS_HeatPump</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>439 203</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-4-2">
+   <POS>2.4.2</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>439 219</XY>
+    <ROT>90</ROT>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-11">
+   <POS>2.11</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>455 235</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-12">
+   <POS>2.12</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>472 235</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-14">
+   <POS>2.14</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>331 273</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-15">
+   <POS>2.15</POS>
+   <SNAME>Фильтр сетчатый</SNAME>
+   <TPL>TS_HeatFilter</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>351 273</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-16">
+   <POS>2.16</POS>
+   <SNAME>Клапан электромагнитный</SNAME>
+   <TPL>TS_HeatSolenoid</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>378 273</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-17">
+   <POS>2.17</POS>
+   <SNAME>Клапан обратный</SNAME>
+   <TPL>TS_HeatCheck</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>410 273</XY>
+   </VIEW>
+  </OBJ>
+  <OBJ id="item-2-18">
+   <POS>2.18</POS>
+   <SNAME>Кран шаровой</SNAME>
+   <TPL>TS_HeatBall</TPL>
+   <QTY>1</QTY>
+   <VIEW>
+    <TYPE>схема технологическая</TYPE>
+    <XY>431 273</XY>
+   </VIEW>
+  </OBJ>
+ </OBJS>
+ <DOCS>
+  <DOC>
+   <CODE>{CODE}</CODE>
+   <SNAME>Принципиальная технологическая схема</SNAME>
+   <TYPE>комплект рабочих чертежей</TYPE>
+   <SHTS>
+    <SHT>
+     <POS>1</POS>
+     <SNAME>Принципиальная технологическая схема</SNAME>
+     <TYPE>схема технологическая</TYPE>
+     <FMT>A2</FMT>
+     <svg tip="TS">
+      <g fill="none" stroke="#000000" stroke-width=".35">
+       <polyline points="28,63 36,63" />
+       <polyline points="46,63 53,63" />
+       <polyline points="65,63 288,63" />
+       <polyline points="28,342 50,342" />
+       <polyline points="60,342 315,342" />
+       <path d="M35 63l-5 -1.4v2.8Z" fill="#000000" />
+       <path d="M30 342l5 -1.4v2.8Z" fill="#000000" />
+       <polyline points="67,63 67,120" />
+       <polyline points="67,120 73,120" />
+       <polyline points="83,120 91,120" />
+       <polyline points="101,120 112,120" />
+       <polyline points="122,120 133,120" />
+       <polyline points="133,158 105,158 105,342" />
+       <polyline points="155,120 235,120" />
+       <polyline points="245,120 268,120" />
+       <polyline points="198,120 198,108" />
+       <polyline points="155,158 198,158" />
+       <polyline points="208,158 224,158" />
+       <polyline points="236,158 245,158" />
+       <polyline points="255,158 268,158" />
+       <polyline points="176,239 182,239" />
+       <polyline points="192,239 201,239" />
+       <polyline points="211,239 220,239" />
+       <polyline points="230,239 237,239" />
+       <polyline points="249,239 254,239" />
+       <polyline points="264,239 268,239" />
+       <polyline points="176,158 176,239" />
+       <path d="M268 120l-5 -1.4v2.8Z" fill="#000000" />
+       <path d="M268 158l5 -1.4v2.8Z" fill="#000000" />
+       <path d="M268 239l5 -1.4v2.8Z" fill="#000000" />
+       <polyline points="288,63 288,120" />
+       <polyline points="288,120 294,120" />
+       <polyline points="304,120 312,120" />
+       <polyline points="322,120 333,120" />
+       <polyline points="343,120 354,120" />
+       <polyline points="354,158 288,158 288,342" />
+       <polyline points="376,120 459,120" />
+       <polyline points="469,120 489,120" />
+       <polyline points="418,120 418,108" />
+       <polyline points="376,158 439,158" />
+       <polyline points="399,158 399,166" />
+       <polyline points="399,176 399,182" />
+       <polyline points="399,192 399,198" />
+       <polyline points="399,208 399,214" />
+       <polyline points="399,224 399,235" />
+       <polyline points="439,158 439,166" />
+       <polyline points="439,176 439,182" />
+       <polyline points="439,192 439,198" />
+       <polyline points="439,208 439,214" />
+       <polyline points="439,224 439,235" />
+       <polyline points="399,235 449,235" />
+       <polyline points="461,235 467,235" />
+       <polyline points="477,235 489,235" />
+       <path d="M489 120l-5 -1.4v2.8Z" fill="#000000" />
+       <path d="M486 235l5 -1.4v2.8Z" fill="#000000" />
+       <polyline points="315,342 315,273" />
+       <polyline points="315,273 326,273" />
+       <polyline points="336,273 345,273" />
+       <polyline points="357,273 373,273" />
+       <polyline points="383,273 405,273" />
+       <polyline points="415,273 426,273" />
+       <polyline points="436,273 483,273" />
+       <polyline points="483,273 483,235" />
+       <path d="M460 273l-5 -1.4v2.8Z" fill="#000000" />
+      </g>
+      <g fill="#000000" font-family="gost">
+       <text x="297.0" y="29" font-size="7.3" text-anchor="middle">Блочный тепловой пункт · схема 2a</text>
+       <text x="41" y="55" font-size="5.11" text-anchor="middle">1.1</text>
+       <text x="59" y="55" font-size="5.11" text-anchor="middle">1.2</text>
+       <text x="55" y="334" font-size="5.11" text-anchor="middle">1.3</text>
+       <text x="40" y="48" font-size="3.65" text-anchor="middle">Т1 · из теплосети</text>
+       <text x="40" y="327" font-size="3.65" text-anchor="middle">Т2 · в теплосеть</text>
+       <text x="155" y="84" font-size="5.11" text-anchor="middle">Горячее водоснабжение</text>
+       <text x="78" y="112" font-size="5.11" text-anchor="middle">4.1</text>
+       <text x="96" y="112" font-size="5.11" text-anchor="middle">4.2</text>
+       <text x="117" y="106" font-size="5.11" text-anchor="middle">4.3</text>
+       <text x="144" y="111" font-size="5.11" text-anchor="middle">4.4</text>
+       <text x="240" y="112" font-size="5.11" text-anchor="middle">4.5</text>
+       <text x="198" y="90" font-size="5.11" text-anchor="middle">4.6</text>
+       <text x="203" y="150" font-size="5.11" text-anchor="middle">4.7</text>
+       <text x="230" y="150" font-size="5.11" text-anchor="middle">4.8</text>
+       <text x="250" y="150" font-size="5.11" text-anchor="middle">4.9</text>
+       <text x="187" y="231" font-size="5.11" text-anchor="middle">4.10</text>
+       <text x="206" y="231" font-size="5.11" text-anchor="middle">4.11</text>
+       <text x="225" y="231" font-size="5.11" text-anchor="middle">4.12</text>
+       <text x="243" y="231" font-size="5.11" text-anchor="middle">4.13</text>
+       <text x="259" y="231" font-size="5.11" text-anchor="middle">4.14</text>
+       <text x="265" y="103" font-size="3.65" text-anchor="end">Т3 · к потребителю</text>
+       <text x="265" y="141" font-size="3.65" text-anchor="end">В1 · холодная вода</text>
+       <text x="265" y="222" font-size="3.65" text-anchor="end">Т4 · циркуляция ГВС</text>
+       <text x="376" y="84" font-size="5.11" text-anchor="middle">Отопление</text>
+       <text x="299" y="112" font-size="5.11" text-anchor="middle">2.5</text>
+       <text x="317" y="112" font-size="5.11" text-anchor="middle">2.6</text>
+       <text x="338" y="106" font-size="5.11" text-anchor="middle">2.7</text>
+       <text x="365" y="111" font-size="5.11" text-anchor="middle">2.8</text>
+       <text x="464" y="112" font-size="5.11" text-anchor="middle">2.9</text>
+       <text x="418" y="90" font-size="5.11" text-anchor="middle">2.10</text>
+       <text x="408" y="165" font-size="5.11" text-anchor="middle">2.1.1</text>
+       <text x="408" y="181" font-size="5.11" text-anchor="middle">2.2.1</text>
+       <text x="408" y="197" font-size="5.11" text-anchor="middle">2.3.1</text>
+       <text x="408" y="213" font-size="5.11" text-anchor="middle">2.4.1</text>
+       <text x="448" y="165" font-size="5.11" text-anchor="middle">2.1.2</text>
+       <text x="448" y="181" font-size="5.11" text-anchor="middle">2.2.2</text>
+       <text x="448" y="197" font-size="5.11" text-anchor="middle">2.3.2</text>
+       <text x="448" y="213" font-size="5.11" text-anchor="middle">2.4.2</text>
+       <text x="455" y="227" font-size="5.11" text-anchor="middle">2.11</text>
+       <text x="472" y="227" font-size="5.11" text-anchor="middle">2.12</text>
+       <text x="485" y="104" font-size="3.65" text-anchor="end">Т1 · к потребителю</text>
+       <text x="485" y="219" font-size="3.65" text-anchor="end">Т2 · от потребителя</text>
+       <text x="331" y="265" font-size="5.11" text-anchor="middle">2.14</text>
+       <text x="351" y="265" font-size="5.11" text-anchor="middle">2.15</text>
+       <text x="378" y="259" font-size="5.11" text-anchor="middle">2.16</text>
+       <text x="410" y="265" font-size="5.11" text-anchor="middle">2.17</text>
+       <text x="431" y="265" font-size="5.11" text-anchor="middle">2.18</text>
+       <text x="415" y="288" font-size="3.65" text-anchor="middle">Подпитка</text>
+      </g>
+     </svg>
+    </SHT>
+   </SHTS>
+  </DOC>
+  <DOC>
+   <CODE>{CODE}.СО</CODE>
+   <SNAME>Спецификация оборудования, изделий и материалов</SNAME>
+   <TYPE>спецификация оборудования</TYPE>
+   <OBJS>
+    <OBJ>
+     <SNAME>Ввод тепловой сети</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-1-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-1-3</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+    <OBJ>
+     <SNAME>Горячее водоснабжение</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-4-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-3</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-4</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-5</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-6</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-7</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-8</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-9</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-10</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-11</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-12</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-13</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-4-14</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+    <OBJ>
+     <SNAME>Отопление</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-2-5</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-6</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-7</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-8</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-9</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-10</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-1-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-2-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-3-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-4-1</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-1-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-2-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-3-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-4-2</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-11</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-12</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+    <OBJ>
+     <SNAME>Отопление. Подпитка</SNAME>
+     <OBJS>
+      <OBJ>
+       <REF>item-2-14</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-15</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-16</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-17</REF>
+      </OBJ>
+      <OBJ>
+       <REF>item-2-18</REF>
+      </OBJ>
+     </OBJS>
+    </OBJ>
+   </OBJS>
+  </DOC>
+ </DOCS>
+</Prj>
